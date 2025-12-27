@@ -43,13 +43,13 @@ const ContactSection = () => {
           {/* Section Header */}
           <div className="text-center mb-12">
             <span className="inline-block text-sm font-semibold text-primary uppercase tracking-wider mb-4">
-              Get Started
+              Say Hello!
             </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-              Ready to Grow Your Business?
+              Let's Start a Conversation 💬
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Let's discuss your goals and create a strategy that delivers real results. Fill out the form below to get started.
+              Got questions? Just want to say hi? I'd love to hear from you! Drop me a message and I'll get back to you super quick.
             </p>
           </div>
 
@@ -61,13 +61,13 @@ const ContactSection = () => {
                 <div className="space-y-2">
                   <label htmlFor="name" className="text-sm font-medium text-foreground flex items-center gap-2">
                     <User className="w-4 h-4 text-primary" />
-                    Your Name
+                    What should I call you?
                   </label>
                   <Input
                     id="name"
                     name="name"
                     type="text"
-                    placeholder="John Doe"
+                    placeholder="Your awesome name"
                     value={formData.name}
                     onChange={handleChange}
                     required
@@ -79,13 +79,13 @@ const ContactSection = () => {
                 <div className="space-y-2">
                   <label htmlFor="email" className="text-sm font-medium text-foreground flex items-center gap-2">
                     <Mail className="w-4 h-4 text-primary" />
-                    Email Address
+                    Where can I reach you?
                   </label>
                   <Input
                     id="email"
                     name="email"
                     type="email"
-                    placeholder="john@example.com"
+                    placeholder="your.email@example.com"
                     value={formData.email}
                     onChange={handleChange}
                     required
@@ -98,13 +98,13 @@ const ContactSection = () => {
               <div className="space-y-2">
                 <label htmlFor="phone" className="text-sm font-medium text-foreground flex items-center gap-2">
                   <Phone className="w-4 h-4 text-primary" />
-                  Phone Number
+                  Phone (optional, but nice to have!)
                 </label>
                 <Input
                   id="phone"
                   name="phone"
                   type="tel"
-                  placeholder="+91 9998311492"
+                  placeholder="Your phone number"
                   value={formData.phone}
                   onChange={handleChange}
                   className="bg-background"
@@ -115,12 +115,12 @@ const ContactSection = () => {
               <div className="space-y-2">
                 <label htmlFor="message" className="text-sm font-medium text-foreground flex items-center gap-2">
                   <MessageSquare className="w-4 h-4 text-primary" />
-                  Your Message
+                  What's on your mind?
                 </label>
                 <Textarea
                   id="message"
                   name="message"
-                  placeholder="Tell me about your project or marketing goals..."
+                  placeholder="Tell me about your business, your goals, or just say hi! I read every message personally 😊"
                   value={formData.message}
                   onChange={handleChange}
                   required
@@ -142,7 +142,7 @@ const ContactSection = () => {
                 ) : (
                   <>
                     <Send className="mr-2 w-5 h-5" />
-                    Send Inquiry
+                    Send Message
                     <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </>
                 )}
@@ -151,7 +151,7 @@ const ContactSection = () => {
 
             {/* Trust note */}
             <p className="text-sm text-muted-foreground mt-8 text-center">
-              No commitment required • 100% Free • Response within 24 hours
+              Zero pressure • Always free to chat • I reply within 24 hours ☀️
             </p>
           </div>
         </div>

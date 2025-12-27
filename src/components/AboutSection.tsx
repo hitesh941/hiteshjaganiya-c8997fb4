@@ -4,18 +4,18 @@ const AboutSection = () => {
   const values = [
     {
       icon: Target,
-      title: "Result-Focused",
-      description: "Every strategy is designed with measurable outcomes in mind.",
+      title: "Genuinely Care",
+      description: "Your success is my success. I treat every project like it's my own.",
     },
     {
       icon: TrendingUp,
-      title: "Growth-Oriented",
-      description: "Building for sustainable, long-term business growth.",
+      title: "Keep It Simple",
+      description: "No confusing jargon — just clear plans and honest conversations.",
     },
     {
       icon: BarChart3,
-      title: "Data-Driven",
-      description: "Decisions backed by analytics and real performance data.",
+      title: "Real Results",
+      description: "I focus on what actually moves the needle for your business.",
     },
   ];
 
@@ -26,20 +26,20 @@ const AboutSection = () => {
           {/* Left Content */}
           <div>
             <span className="inline-block text-sm font-semibold text-primary uppercase tracking-wider mb-4">
-              About Me
+              A Little About Me
             </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 text-balance">
-              Digital Marketing That Actually Works
+              Hi, I'm Hitesh! Nice to meet you 👋
             </h2>
             <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
               <p>
-                I'm Hitesh Jaganiya, a digital marketing professional helping businesses grow through structured, result-oriented digital strategies.
+                I'm a digital marketing enthusiast from Ahmedabad who genuinely loves helping businesses thrive online. There's nothing quite like seeing a client's face light up when the leads start rolling in!
               </p>
               <p>
-                I work directly with founders and decision-makers to improve visibility, generate quality leads, and scale revenue using SEO, paid advertising, and conversion optimization.
+                I work closely with founders and business owners — not just as a service provider, but as a partner who's invested in your growth. Think of me as that friend who happens to know a lot about SEO and ads.
               </p>
               <p>
-                I believe digital marketing should be measurable, transparent, and focused on long-term growth — not vanity metrics.
+                My approach? Keep things simple, be honest about what works, and celebrate every win together. No smoke and mirrors — just good old-fashioned hard work and smart strategies.
               </p>
             </div>
           </div>
