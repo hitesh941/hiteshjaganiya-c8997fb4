@@ -1,6 +1,6 @@
 import { ArrowRight, Play, Phone, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import hiteshProfile from "@/assets/hitesh-profile.jpg";
+import hiteshProfile from "@/assets/hitesh-new-profile.jpg";
 
 const HeroSection = () => {
   return (
