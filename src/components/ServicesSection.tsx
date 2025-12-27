@@ -1,37 +1,43 @@
-import { ArrowRight, Megaphone, Search, GitBranch, BarChart2, Bot } from "lucide-react";
+import { ArrowRight, Brain, Target, TrendingUp, Search, Share2, MousePointerClick } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const ServicesSection = () => {
   const services = [
     {
-      icon: Megaphone,
-      title: "Paid Ads That Work",
-      description: "Get your business in front of the right people at the right time",
-      features: ["Google Ads Made Easy", "Facebook & Instagram Ads", "Smart Retargeting"],
+      icon: Brain,
+      title: "AIO (AI Optimization)",
+      description: "Leverage artificial intelligence to optimize your digital presence",
+      features: ["AI-Powered Insights", "Smart Automation", "Predictive Analytics"],
+    },
+    {
+      icon: Target,
+      title: "AEO (Answer Engine Optimization)",
+      description: "Get featured in AI-powered search results and voice assistants",
+      features: ["Voice Search Ready", "Featured Snippets", "AI Search Visibility"],
+    },
+    {
+      icon: TrendingUp,
+      title: "Strategic Digital Marketing",
+      description: "Comprehensive strategies tailored to your business goals",
+      features: ["Custom Marketing Plans", "Competitor Analysis", "ROI-Focused Approach"],
     },
     {
       icon: Search,
-      title: "Get Found on Google",
-      description: "Show up when people search for what you offer",
-      features: ["SEO That Makes Sense", "Content People Love", "Local Search Boost"],
+      title: "SEO",
+      description: "Rank higher on Google and get found by your ideal customers",
+      features: ["On-Page Optimization", "Technical SEO", "Local SEO"],
     },
     {
-      icon: GitBranch,
-      title: "Turn Visitors Into Customers",
-      description: "Make your website work harder for you",
-      features: ["Landing Pages That Convert", "Simple A/B Testing", "User-Friendly Design"],
+      icon: Share2,
+      title: "Social Media Marketing",
+      description: "Build your brand and engage with your audience on social platforms",
+      features: ["Content Strategy", "Community Management", "Paid Social Ads"],
     },
     {
-      icon: BarChart2,
-      title: "Know Your Numbers",
-      description: "Understand what's working without the headaches",
-      features: ["Easy-to-Read Reports", "Tracking Setup", "Clear Insights"],
-    },
-    {
-      icon: Bot,
-      title: "Smart Automation",
-      description: "Save time with helpful automations",
-      features: ["Email Sequences", "Lead Follow-ups", "Chatbot Friends"],
+      icon: MousePointerClick,
+      title: "Google Adwords",
+      description: "Drive targeted traffic and leads with effective PPC campaigns",
+      features: ["Search Campaigns", "Display Advertising", "Remarketing"],
     },
   ];
 
