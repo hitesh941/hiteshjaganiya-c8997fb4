@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
           <a href="#" className="text-xl font-bold text-primary-foreground tracking-tight">
-            Hitesh<span className="text-primary">.</span>
+            Hitesh Jaganiya<span className="text-primary">.</span>
           </a>
 
           {/* Social Links */}

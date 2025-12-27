@@ -17,7 +17,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <a href="#" className="text-xl md:text-2xl font-bold text-foreground tracking-tight">
-            Hitesh<span className="text-primary">.</span>
+            Hitesh Jaganiya<span className="text-primary">.</span>
           </a>
 
           {/* Desktop Navigation */}
