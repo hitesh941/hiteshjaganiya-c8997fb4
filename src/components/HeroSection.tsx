@@ -47,9 +47,9 @@ const HeroSection = () => {
               I help amazing businesses like yours get found online and connect with the right people.
             </p>
 
-            {/* Supporting line */}
+            {/* Services line */}
             <p className="text-base text-muted-foreground mb-8 opacity-0 animate-fade-up animation-delay-400">
-              No jargon, no fluff — just honest marketing that works.
+              AIO | AEO | Strategic Digital Marketing | SEO | Social Media Marketing | Google Adwords
             </p>
 
             {/* CTA Buttons */}
