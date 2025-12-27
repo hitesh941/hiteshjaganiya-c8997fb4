@@ -1,6 +1,6 @@
 import { ArrowRight, Play, Phone, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import hiteshProfile from "@/assets/hitesh-profile.jpg";
+import hiteshProfile from "@/assets/hitesh-profile-cropped.png";
 
 const HeroSection = () => {
   return (
@@ -91,12 +91,12 @@ const HeroSection = () => {
           </div>
 
           {/* Right Content - Image */}
-          <div className="order-1 lg:order-2 flex justify-center lg:justify-end items-end">
+          <div className="order-1 lg:order-2 flex justify-center lg:justify-end items-center">
             <div className="relative opacity-0 animate-slide-in-right animation-delay-200">
               <img
                 src={hiteshProfile}
                 alt="Hitesh Jaganiya - Digital Marketing Professional"
-                className="w-64 md:w-72 lg:w-80 h-auto object-contain"
+                className="w-80 md:w-96 lg:w-[420px] h-auto object-contain"
               />
             </div>
           </div>
