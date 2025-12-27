@@ -91,28 +91,13 @@ const HeroSection = () => {
           </div>
 
           {/* Right Content - Image */}
-          <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
+          <div className="order-1 lg:order-2 flex justify-center lg:justify-end items-end">
             <div className="relative opacity-0 animate-slide-in-right animation-delay-200">
-              {/* Image container with decorative elements */}
-              <div className="relative">
-                {/* Decorative ring */}
-                <div className="absolute -inset-4 bg-gradient-to-br from-primary/20 via-transparent to-primary/10 rounded-3xl blur-xl" />
-                
-                {/* Main image */}
-                <div className="relative w-72 md:w-80 lg:w-96 aspect-[2/3] rounded-2xl overflow-hidden shadow-strong">
-                  <img
-                    src={hiteshProfile}
-                    alt="Hitesh Jaganiya - Digital Marketing Professional"
-                    className="w-full h-full object-cover object-top"
-                  />
-                  {/* Subtle overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-foreground/10 via-transparent to-transparent" />
-                </div>
-
-                {/* Floating accent */}
-                <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-primary/10 rounded-2xl -z-10" />
-                <div className="absolute -top-4 -right-4 w-16 h-16 bg-primary/5 rounded-xl -z-10" />
-              </div>
+              <img
+                src={hiteshProfile}
+                alt="Hitesh Jaganiya - Digital Marketing Professional"
+                className="w-64 md:w-72 lg:w-80 h-auto object-contain"
+              />
             </div>
           </div>
         </div>
