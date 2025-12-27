@@ -20,7 +20,7 @@ const HeroSection = () => {
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full mb-6 opacity-0 animate-fade-up">
               <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
               <span className="text-sm font-medium text-foreground">
-                Digital Marketing Consultant in Ahmedabad
+                Hey there! 👋 Welcome to my corner of the internet
               </span>
             </div>
 
@@ -38,53 +38,53 @@ const HeroSection = () => {
 
             {/* Headline */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight text-balance mb-6 opacity-0 animate-fade-up animation-delay-200">
-              I Help Businesses Grow with{" "}
-              <span className="text-primary">Performance-Driven</span> Digital Marketing
+              Let's Grow Your Business{" "}
+              <span className="text-primary">Together</span> 🌱
             </h1>
 
             {/* Sub-headline */}
             <p className="text-lg md:text-xl text-muted-foreground mb-4 opacity-0 animate-fade-up animation-delay-300">
-              SEO • Google Ads • Meta Ads • Funnels • Conversion Optimization
+              I help amazing businesses like yours get found online and connect with the right people.
             </p>
 
             {/* Supporting line */}
             <p className="text-base text-muted-foreground mb-8 opacity-0 animate-fade-up animation-delay-400">
-              Data-backed strategies. Clear reporting. Real ROI.
+              No jargon, no fluff — just honest marketing that works.
             </p>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 opacity-0 animate-fade-up animation-delay-500">
               <Button asChild variant="hero" size="xl">
                 <a href="#contact" className="group">
-                  Book a Free Strategy Call
+                  Let's Chat — It's Free!
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </a>
               </Button>
               <Button asChild variant="hero-outline" size="xl">
                 <a href="#services">
                   <Play className="mr-2 w-5 h-5" />
-                  View My Work
+                  See How I Can Help
                 </a>
               </Button>
             </div>
 
             {/* Trust indicators */}
             <div className="mt-12 pt-8 border-t border-border/50 opacity-0 animate-fade-up animation-delay-600">
-              <p className="text-sm text-muted-foreground mb-4">Trusted by businesses to deliver results</p>
+              <p className="text-sm text-muted-foreground mb-4">Trusted by happy clients across India</p>
               <div className="flex items-center gap-8">
                 <div>
                   <div className="text-2xl font-bold text-foreground">50+</div>
-                  <div className="text-sm text-muted-foreground">Projects</div>
+                  <div className="text-sm text-muted-foreground">Happy Clients</div>
                 </div>
                 <div className="w-px h-10 bg-border" />
                 <div>
                   <div className="text-2xl font-bold text-foreground">2-3x</div>
-                  <div className="text-sm text-muted-foreground">Lead Growth</div>
+                  <div className="text-sm text-muted-foreground">More Leads</div>
                 </div>
                 <div className="w-px h-10 bg-border" />
                 <div>
-                  <div className="text-2xl font-bold text-foreground">35%</div>
-                  <div className="text-sm text-muted-foreground">Lower CPL</div>
+                  <div className="text-2xl font-bold text-foreground">💚</div>
+                  <div className="text-sm text-muted-foreground">Honest Work</div>
                 </div>
               </div>
             </div>

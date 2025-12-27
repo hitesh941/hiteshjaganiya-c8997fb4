@@ -5,33 +5,33 @@ const ServicesSection = () => {
   const services = [
     {
       icon: Megaphone,
-      title: "Performance Marketing",
-      description: "High-quality leads & sales via Google Ads & Meta Ads",
-      features: ["Google Ads Management", "Meta Ads Campaigns", "Retargeting Strategies"],
+      title: "Paid Ads That Work",
+      description: "Get your business in front of the right people at the right time",
+      features: ["Google Ads Made Easy", "Facebook & Instagram Ads", "Smart Retargeting"],
     },
     {
       icon: Search,
-      title: "SEO & Organic Growth",
-      description: "Long-term rankings and traffic growth",
-      features: ["Technical SEO Audits", "Content Strategy", "Link Building"],
+      title: "Get Found on Google",
+      description: "Show up when people search for what you offer",
+      features: ["SEO That Makes Sense", "Content People Love", "Local Search Boost"],
     },
     {
       icon: GitBranch,
-      title: "Funnel & Conversion Optimization",
-      description: "Turning visitors into customers",
-      features: ["Landing Page Design", "A/B Testing", "CRO Strategies"],
+      title: "Turn Visitors Into Customers",
+      description: "Make your website work harder for you",
+      features: ["Landing Pages That Convert", "Simple A/B Testing", "User-Friendly Design"],
     },
     {
       icon: BarChart2,
-      title: "Analytics & Tracking Setup",
-      description: "GA4, GTM, conversion tracking",
-      features: ["GA4 Implementation", "GTM Configuration", "Custom Dashboards"],
+      title: "Know Your Numbers",
+      description: "Understand what's working without the headaches",
+      features: ["Easy-to-Read Reports", "Tracking Setup", "Clear Insights"],
     },
     {
       icon: Bot,
-      title: "AI-Powered Marketing Automation",
-      description: "Smarter workflows and efficiency",
-      features: ["Email Automation", "Lead Scoring", "Chatbot Integration"],
+      title: "Smart Automation",
+      description: "Save time with helpful automations",
+      features: ["Email Sequences", "Lead Follow-ups", "Chatbot Friends"],
     },
   ];
 
@@ -41,13 +41,13 @@ const ServicesSection = () => {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="inline-block text-sm font-semibold text-primary uppercase tracking-wider mb-4">
-            Services
+            How I Can Help
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            What I Help You With
+            Services Made Simple 🎯
           </h2>
           <p className="text-lg text-muted-foreground">
-            Comprehensive digital marketing solutions tailored to your business goals
+            Whether you're just starting out or ready to scale, I've got your back with friendly, no-nonsense digital marketing.
           </p>
         </div>
 
@@ -89,7 +89,7 @@ const ServicesSection = () => {
         <div className="text-center mt-16">
           <Button asChild variant="hero" size="xl">
             <a href="#contact" className="group">
-              Let's Discuss Your Project
+              Let's Have a Chat!
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
           </Button>
