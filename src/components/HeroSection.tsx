@@ -1,4 +1,4 @@
-import { ArrowRight, Play } from "lucide-react";
+import { ArrowRight, Play, Phone, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import hiteshProfile from "@/assets/hitesh-profile.jpg";
 
@@ -20,28 +20,40 @@ const HeroSection = () => {
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full mb-6 opacity-0 animate-fade-up">
               <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
               <span className="text-sm font-medium text-foreground">
-                Digital Marketing Expert
+                Digital Marketing Consultant in Ahmedabad
               </span>
             </div>
 
+            {/* Contact Info */}
+            <div className="flex flex-wrap items-center gap-4 mb-6 opacity-0 animate-fade-up animation-delay-100">
+              <a href="tel:9998311492" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Phone className="w-4 h-4" />
+                9998311492
+              </a>
+              <a href="mailto:hphitesh941@gmail.com" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Mail className="w-4 h-4" />
+                hphitesh941@gmail.com
+              </a>
+            </div>
+
             {/* Headline */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight text-balance mb-6 opacity-0 animate-fade-up animation-delay-100">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight text-balance mb-6 opacity-0 animate-fade-up animation-delay-200">
               I Help Businesses Grow with{" "}
               <span className="text-primary">Performance-Driven</span> Digital Marketing
             </h1>
 
             {/* Sub-headline */}
-            <p className="text-lg md:text-xl text-muted-foreground mb-4 opacity-0 animate-fade-up animation-delay-200">
+            <p className="text-lg md:text-xl text-muted-foreground mb-4 opacity-0 animate-fade-up animation-delay-300">
               SEO • Google Ads • Meta Ads • Funnels • Conversion Optimization
             </p>
 
             {/* Supporting line */}
-            <p className="text-base text-muted-foreground mb-8 opacity-0 animate-fade-up animation-delay-300">
+            <p className="text-base text-muted-foreground mb-8 opacity-0 animate-fade-up animation-delay-400">
               Data-backed strategies. Clear reporting. Real ROI.
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 opacity-0 animate-fade-up animation-delay-400">
+            <div className="flex flex-col sm:flex-row gap-4 opacity-0 animate-fade-up animation-delay-500">
               <Button asChild variant="hero" size="xl">
                 <a href="#contact" className="group">
                   Book a Free Strategy Call
@@ -57,7 +69,7 @@ const HeroSection = () => {
             </div>
 
             {/* Trust indicators */}
-            <div className="mt-12 pt-8 border-t border-border/50 opacity-0 animate-fade-up animation-delay-500">
+            <div className="mt-12 pt-8 border-t border-border/50 opacity-0 animate-fade-up animation-delay-600">
               <p className="text-sm text-muted-foreground mb-4">Trusted by businesses to deliver results</p>
               <div className="flex items-center gap-8">
                 <div>
