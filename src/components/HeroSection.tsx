@@ -49,7 +49,7 @@ const HeroSection = () => {
 
             {/* Supporting line */}
             <p className="text-base text-muted-foreground mb-8 opacity-0 animate-fade-up animation-delay-400">
-              No jargon, no fluff — just honest marketing that works.
+              AIO | AEO | Strategic Digital Marketing | SEO | Social Media Marketing | Google Adwords
             </p>
 
             {/* CTA Buttons */}
