@@ -99,14 +99,12 @@ const HeroSection = () => {
                 <div className="absolute -inset-4 bg-gradient-to-br from-primary/20 via-transparent to-primary/10 rounded-3xl blur-xl" />
                 
                 {/* Main image */}
-                <div className="relative w-72 md:w-80 lg:w-96 aspect-[3/4] rounded-2xl overflow-hidden shadow-strong">
+                <div className="relative w-72 md:w-80 lg:w-96 aspect-[3/4] rounded-2xl overflow-hidden shadow-strong bg-gradient-to-br from-primary/10 via-secondary/30 to-primary/5">
                   <img
                     src={hiteshProfile}
                     alt="Hitesh Jaganiya - Digital Marketing Professional"
-                    className="w-full h-full object-cover object-center"
+                    className="w-full h-full object-cover object-top"
                   />
-                  {/* Subtle overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-foreground/10 via-transparent to-transparent" />
                 </div>
 
                 {/* Floating accent */}
