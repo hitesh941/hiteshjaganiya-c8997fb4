@@ -1,6 +1,6 @@
 import { ArrowRight, Play, Phone, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import hiteshProfile from "@/assets/hitesh-profile-fixed.png";
+import hiteshProfile from "@/assets/hitesh-profile.jpg";
 
 const HeroSection = () => {
   return (
@@ -49,7 +49,7 @@ const HeroSection = () => {
 
             {/* Supporting line */}
             <p className="text-base text-muted-foreground mb-8 opacity-0 animate-fade-up animation-delay-400">
-              AIO | AEO | Strategic Digital Marketing | SEO | Social Media Marketing | Google Adwords
+              No jargon, no fluff — just honest marketing that works.
             </p>
 
             {/* CTA Buttons */}
@@ -98,45 +98,20 @@ const HeroSection = () => {
                 {/* Decorative ring */}
                 <div className="absolute -inset-4 bg-gradient-to-br from-primary/20 via-transparent to-primary/10 rounded-3xl blur-xl" />
                 
-                {/* Main image with white background */}
-                <div className="relative w-72 md:w-80 lg:w-96 aspect-[3/4] rounded-2xl overflow-hidden shadow-strong bg-white">
+                {/* Main image */}
+                <div className="relative w-72 md:w-80 lg:w-96 aspect-[3/4] rounded-2xl overflow-hidden shadow-strong">
                   <img
                     src={hiteshProfile}
                     alt="Hitesh Jaganiya - Digital Marketing Professional"
-                    className="w-full h-full object-cover object-top"
+                    className="w-full h-full object-cover object-center"
                   />
+                  {/* Subtle overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-foreground/10 via-transparent to-transparent" />
                 </div>
 
-                {/* Animated Digital Marketing Elements */}
-                {/* SEO Icon - Top Left */}
-                <div className="absolute -top-6 -left-6 w-14 h-14 bg-white rounded-xl shadow-lg flex items-center justify-center animate-bounce" style={{ animationDuration: '3s' }}>
-                  <span className="text-2xl">🔍</span>
-                </div>
-                
-                {/* Growth Chart - Top Right */}
-                <div className="absolute -top-4 -right-8 w-16 h-16 bg-white rounded-xl shadow-lg flex items-center justify-center animate-pulse">
-                  <span className="text-2xl">📈</span>
-                </div>
-                
-                {/* Target/Ads - Middle Right */}
-                <div className="absolute top-1/3 -right-10 w-12 h-12 bg-primary/90 rounded-full shadow-lg flex items-center justify-center animate-bounce" style={{ animationDuration: '2.5s', animationDelay: '0.5s' }}>
-                  <span className="text-xl">🎯</span>
-                </div>
-                
-                {/* Social Media - Bottom Right */}
-                <div className="absolute bottom-1/4 -right-8 w-14 h-14 bg-white rounded-xl shadow-lg flex items-center justify-center animate-pulse" style={{ animationDelay: '1s' }}>
-                  <span className="text-2xl">💬</span>
-                </div>
-                
-                {/* Email Marketing - Bottom Left */}
-                <div className="absolute -bottom-4 -left-6 w-14 h-14 bg-white rounded-xl shadow-lg flex items-center justify-center animate-bounce" style={{ animationDuration: '2.8s', animationDelay: '0.3s' }}>
-                  <span className="text-2xl">✉️</span>
-                </div>
-                
-                {/* Analytics - Middle Left */}
-                <div className="absolute top-1/2 -left-10 w-12 h-12 bg-primary/90 rounded-full shadow-lg flex items-center justify-center animate-pulse" style={{ animationDelay: '0.7s' }}>
-                  <span className="text-xl">📊</span>
-                </div>
+                {/* Floating accent */}
+                <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-primary/10 rounded-2xl -z-10" />
+                <div className="absolute -top-4 -right-4 w-16 h-16 bg-primary/5 rounded-xl -z-10" />
               </div>
             </div>
           </div>
