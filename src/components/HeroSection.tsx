@@ -39,7 +39,7 @@ const HeroSection = () => {
             {/* Headline */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight text-balance mb-6 opacity-0 animate-fade-up animation-delay-200">
               Let's Grow Your Business{" "}
-              <span className="text-primary">Together</span> 🌱
+              <span className="text-primary">Together</span>
             </h1>
 
             {/* Sub-headline */}
