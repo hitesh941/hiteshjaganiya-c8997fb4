@@ -4,7 +4,7 @@ import hiteshProfile from "@/assets/hitesh-profile.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center pt-20 md:pt-0 overflow-hidden">
+    <section className="relative min-h-screen flex items-center pt-32 md:pt-40 lg:pt-20 overflow-hidden">
       {/* Subtle gradient background */}
       <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-secondary/30" />
       
