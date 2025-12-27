@@ -33,7 +33,7 @@ const AboutSection = () => {
             </h2>
             <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
               <p>
-                I'm a digital marketing enthusiast from Ahmedabad who genuinely loves helping businesses thrive online. There's nothing quite like seeing a client's face light up when the leads start rolling in!
+                I'm a digital marketing enthusiast from Ahmedabad who genuinely loves helping businesses thrive online. As the <strong className="text-foreground">Best Digital Marketing Consultant in Ahmedabad</strong>, there's nothing quite like seeing a client's face light up when the leads start rolling in!
               </p>
               <p>
                 I work closely with founders and business owners — not just as a service provider, but as a partner who's invested in your growth. Think of me as that friend who happens to know a lot about SEO and ads.
