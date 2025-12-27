@@ -20,7 +20,7 @@ const HeroSection = () => {
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full mb-6 opacity-0 animate-fade-up">
               <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
               <span className="text-sm font-medium text-foreground">
-                Hey there! 👋 Welcome to my corner of the internet
+                Digital Marketing Consultant
               </span>
             </div>
 
