@@ -93,12 +93,10 @@ const HeroSection = () => {
           {/* Right Content - Image */}
           <div className="order-1 lg:order-2 flex justify-center lg:justify-end items-start">
             <div className="relative opacity-0 animate-slide-in-right animation-delay-200">
-              {/* Glow effect behind image */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-primary/10 to-transparent blur-3xl scale-110 -z-10" />
               <img
                 src={hiteshProfile}
                 alt="Hitesh Jaganiya - Digital Marketing Professional"
-                className="w-80 md:w-96 lg:w-[450px] h-[450px] md:h-[520px] lg:h-[580px] object-cover object-top drop-shadow-2xl"
+                className="w-80 md:w-96 lg:w-[450px] h-[450px] md:h-[520px] lg:h-[580px] object-cover object-top"
               />
             </div>
           </div>
