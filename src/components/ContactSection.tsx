@@ -54,24 +54,24 @@ const ContactSection = () => {
             
             {/* Contact Info */}
             <div className="space-y-4">
-              <div className="flex items-center gap-4 justify-center lg:justify-start">
+              <a href="mailto:hphitesh941@gmail.com" className="flex items-center gap-4 justify-center lg:justify-start hover:opacity-80 transition-opacity">
                 <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center">
                   <Mail className="w-5 h-5 text-primary" />
                 </div>
                 <div className="text-left">
                   <p className="text-sm text-primary-foreground/60">Email me at</p>
-                  <p className="text-primary-foreground font-medium">hello@hiteshjaganiya.com</p>
+                  <p className="text-primary-foreground font-medium">hphitesh941@gmail.com</p>
                 </div>
-              </div>
-              <div className="flex items-center gap-4 justify-center lg:justify-start">
+              </a>
+              <a href="tel:9998311492" className="flex items-center gap-4 justify-center lg:justify-start hover:opacity-80 transition-opacity">
                 <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center">
                   <Phone className="w-5 h-5 text-primary" />
                 </div>
                 <div className="text-left">
                   <p className="text-sm text-primary-foreground/60">Call me at</p>
-                  <p className="text-primary-foreground font-medium">+91 98765 43210</p>
+                  <p className="text-primary-foreground font-medium">+91 9998311492</p>
                 </div>
-              </div>
+              </a>
             </div>
             
             {/* Trust note */}
