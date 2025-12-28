@@ -37,31 +37,59 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="section-padding bg-secondary/30">
+    <section id="contact" className="section-padding bg-gradient-to-br from-foreground via-foreground to-foreground/95">
       <div className="container-custom">
-        <div className="max-w-4xl mx-auto">
-          {/* Section Header */}
-          <div className="text-center mb-12">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          {/* Left Side - Text Content */}
+          <div className="text-center lg:text-left">
             <span className="inline-block text-sm font-semibold text-primary uppercase tracking-wider mb-4">
               Say Hello!
             </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-6">
               Let's Start a Conversation 💬
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-primary-foreground/70 mb-8">
               Got questions? Just want to say hi? I'd love to hear from you! Drop me a message and I'll get back to you super quick.
+            </p>
+            
+            {/* Contact Info */}
+            <div className="space-y-4">
+              <div className="flex items-center gap-4 justify-center lg:justify-start">
+                <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center">
+                  <Mail className="w-5 h-5 text-primary" />
+                </div>
+                <div className="text-left">
+                  <p className="text-sm text-primary-foreground/60">Email me at</p>
+                  <p className="text-primary-foreground font-medium">hello@hiteshjaganiya.com</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-4 justify-center lg:justify-start">
+                <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center">
+                  <Phone className="w-5 h-5 text-primary" />
+                </div>
+                <div className="text-left">
+                  <p className="text-sm text-primary-foreground/60">Call me at</p>
+                  <p className="text-primary-foreground font-medium">+91 98765 43210</p>
+                </div>
+              </div>
+            </div>
+            
+            {/* Trust note */}
+            <p className="text-sm text-primary-foreground/60 mt-8">
+              Zero pressure • Always free to chat • I reply within 24 hours ☀️
             </p>
           </div>
 
-          {/* Inquiry Form Card */}
-          <div className="bg-card p-8 md:p-12 rounded-2xl border border-border/50 shadow-medium">
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* Right Side - Form */}
+          <div className="bg-card p-8 md:p-10 rounded-2xl border border-border/50 shadow-medium">
+            <h3 className="text-xl font-semibold text-foreground mb-6">Send me a message</h3>
+            <form onSubmit={handleSubmit} className="space-y-5">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 {/* Name Field */}
                 <div className="space-y-2">
                   <label htmlFor="name" className="text-sm font-medium text-foreground flex items-center gap-2">
                     <User className="w-4 h-4 text-primary" />
-                    What should I call you?
+                    Your Name
                   </label>
                   <Input
                     id="name"
@@ -79,7 +107,7 @@ const ContactSection = () => {
                 <div className="space-y-2">
                   <label htmlFor="email" className="text-sm font-medium text-foreground flex items-center gap-2">
                     <Mail className="w-4 h-4 text-primary" />
-                    Where can I reach you?
+                    Email Address
                   </label>
                   <Input
                     id="email"
@@ -98,7 +126,7 @@ const ContactSection = () => {
               <div className="space-y-2">
                 <label htmlFor="phone" className="text-sm font-medium text-foreground flex items-center gap-2">
                   <Phone className="w-4 h-4 text-primary" />
-                  Phone (optional, but nice to have!)
+                  Phone (optional)
                 </label>
                 <Input
                   id="phone"
@@ -115,16 +143,16 @@ const ContactSection = () => {
               <div className="space-y-2">
                 <label htmlFor="message" className="text-sm font-medium text-foreground flex items-center gap-2">
                   <MessageSquare className="w-4 h-4 text-primary" />
-                  What's on your mind?
+                  Your Message
                 </label>
                 <Textarea
                   id="message"
                   name="message"
-                  placeholder="Tell me about your business, your goals, or just say hi! I read every message personally 😊"
+                  placeholder="Tell me about your business, your goals, or just say hi!"
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  rows={5}
+                  rows={4}
                   className="bg-background resize-none"
                 />
               </div>
@@ -148,11 +176,6 @@ const ContactSection = () => {
                 )}
               </Button>
             </form>
-
-            {/* Trust note */}
-            <p className="text-sm text-muted-foreground mt-8 text-center">
-              Zero pressure • Always free to chat • I reply within 24 hours ☀️
-            </p>
           </div>
         </div>
       </div>
