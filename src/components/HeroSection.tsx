@@ -91,7 +91,7 @@ const HeroSection = () => {
           </div>
 
           {/* Right Content - Image */}
-          <div className="order-1 lg:order-2 flex justify-center lg:justify-end items-start lg:-mt-[180px]">
+          <div className="order-1 lg:order-2 flex justify-center lg:justify-end items-start lg:-mt-[200px]">
             <div className="relative opacity-0 animate-slide-in-right animation-delay-200">
               <img
                 src={hiteshProfile}
