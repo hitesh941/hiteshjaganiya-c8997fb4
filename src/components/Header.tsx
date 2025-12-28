@@ -36,7 +36,7 @@ const Header = () => {
           {/* CTA Button */}
           <div className="hidden md:block">
             <Button asChild size="default">
-              <a href="#contact">Book a Call</a>
+              <a href="tel:9998311492">Book a Call</a>
             </Button>
           </div>
 
@@ -65,7 +65,7 @@ const Header = () => {
                 </a>
               ))}
               <Button asChild className="mt-2" size="lg">
-                <a href="#contact" onClick={() => setMobileMenuOpen(false)}>
+                <a href="tel:9998311492" onClick={() => setMobileMenuOpen(false)}>
                   Book a Call
                 </a>
               </Button>

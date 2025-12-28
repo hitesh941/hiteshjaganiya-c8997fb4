@@ -1,12 +1,14 @@
-import { Linkedin, Twitter, Mail } from "lucide-react";
+import { Linkedin, Mail, Globe, Facebook, Instagram } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Mail, href: "mailto:hello@hiteshjaganiya.com", label: "Email" },
+    { icon: Globe, href: "https://www.hitzdigitalmarketing.com/", label: "Website" },
+    { icon: Facebook, href: "https://www.facebook.com/hitesh231016", label: "Facebook" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/hit1991/", label: "LinkedIn" },
+    { icon: Instagram, href: "https://www.instagram.com/jaganiyahitesh/", label: "Instagram" },
+    { icon: Mail, href: "mailto:hphitesh941@gmail.com", label: "Email" },
   ];
 
   return (
