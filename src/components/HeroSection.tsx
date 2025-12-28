@@ -96,7 +96,7 @@ const HeroSection = () => {
               <img
                 src={hiteshProfile}
                 alt="Hitesh Jaganiya - Digital Marketing Professional"
-                className="w-80 md:w-96 lg:w-[420px] h-auto object-contain"
+                className="w-80 md:w-96 lg:w-[420px] h-[400px] md:h-[480px] lg:h-[520px] object-cover object-top scale-110"
               />
             </div>
           </div>
