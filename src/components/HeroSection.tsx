@@ -91,12 +91,12 @@ const HeroSection = () => {
           </div>
 
           {/* Right Content - Image */}
-          <div className="order-1 lg:order-2 flex justify-center lg:justify-end items-start">
+          <div className="order-1 lg:order-2 flex justify-center lg:justify-end items-start mt-0 lg:mt-24">
             <div className="relative opacity-0 animate-slide-in-right animation-delay-200">
               <img
                 src={hiteshProfile}
                 alt="Hitesh Jaganiya - Digital Marketing Professional"
-                className="w-80 md:w-96 lg:w-[420px] h-[400px] md:h-[480px] lg:h-[520px] object-cover object-top scale-110"
+                className="w-80 md:w-96 lg:w-[450px] h-[450px] md:h-[520px] lg:h-[580px] object-cover object-[center_15%] scale-105"
               />
             </div>
           </div>
