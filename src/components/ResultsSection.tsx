@@ -122,7 +122,7 @@ const ResultsSection = () => {
                 <img
                   src={globalHuesLogo}
                   alt="The Global Hues Magazine"
-                  className="h-16 md:h-20 w-auto object-contain group-hover:scale-105 transition-transform duration-300"
+                  className="h-10 md:h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300"
                 />
               </a>
             </div>
