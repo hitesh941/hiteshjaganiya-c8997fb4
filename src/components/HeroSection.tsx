@@ -8,9 +8,6 @@ const HeroSection = () => {
       {/* Subtle gradient background */}
       <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-secondary/30" />
       
-      {/* Decorative elements */}
-      <div className="absolute top-1/4 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-1/4 left-0 w-64 h-64 bg-primary/3 rounded-full blur-2xl" />
 
       <div className="container-custom relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
