@@ -1,4 +1,5 @@
 import { TrendingUp, DollarSign, Users, CheckCircle, Clock } from "lucide-react";
+import globalHuesLogo from "@/assets/global-hues-logo.png";
 
 const ResultsSection = () => {
   const stats = [
@@ -96,6 +97,34 @@ const ResultsSection = () => {
                   <span className="text-foreground/90">{achievement}</span>
                 </div>
               ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured On Section */}
+      <section className="section-padding bg-muted/30">
+        <div className="container-custom">
+          <div className="text-center max-w-3xl mx-auto">
+            <span className="inline-block text-sm font-semibold text-primary uppercase tracking-wider mb-6">
+              As Seen In
+            </span>
+            <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-10">
+              Featured On
+            </h3>
+            <div className="flex justify-center items-center">
+              <a
+                href="https://theglobalhues.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group p-6 bg-background rounded-2xl border border-border hover:border-primary/30 hover:shadow-medium transition-all duration-300"
+              >
+                <img
+                  src={globalHuesLogo}
+                  alt="The Global Hues Magazine"
+                  className="h-16 md:h-20 w-auto object-contain group-hover:scale-105 transition-transform duration-300"
+                />
+              </a>
             </div>
           </div>
         </div>
