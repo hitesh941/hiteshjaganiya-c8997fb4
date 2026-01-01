@@ -5,8 +5,6 @@ import hiteshProfile from "@/assets/hitesh-new-profile.png";
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center pt-32 md:pt-40 lg:pt-20 overflow-hidden">
-      {/* Subtle gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-secondary/30" />
       
 
       <div className="container-custom relative z-10">
