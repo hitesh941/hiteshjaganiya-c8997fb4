@@ -1,5 +1,6 @@
 import { TrendingUp, DollarSign, Users, CheckCircle, Clock } from "lucide-react";
 import globalHuesLogo from "@/assets/global-hues-logo.png";
+import yourstoryLogo from "@/assets/yourstory-logo.svg";
 
 const ResultsSection = () => {
   const stats = [
@@ -112,16 +113,28 @@ const ResultsSection = () => {
             <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-10">
               Featured On
             </h3>
-            <div className="flex justify-center items-center">
+            <div className="flex flex-wrap justify-center items-center gap-6">
               <a
                 href="https://theglobalhues.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group p-6 bg-background rounded-2xl border border-border hover:border-primary/30 hover:shadow-medium transition-all duration-300"
+                className="group p-5 bg-background rounded-2xl border border-border hover:border-primary/30 hover:shadow-medium transition-all duration-300"
               >
                 <img
                   src={globalHuesLogo}
                   alt="The Global Hues Magazine"
+                  className="h-10 md:h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300"
+                />
+              </a>
+              <a
+                href="https://yourstory.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group p-5 bg-background rounded-2xl border border-border hover:border-primary/30 hover:shadow-medium transition-all duration-300"
+              >
+                <img
+                  src={yourstoryLogo}
+                  alt="YourStory"
                   className="h-10 md:h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300"
                 />
               </a>
