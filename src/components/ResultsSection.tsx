@@ -1,4 +1,4 @@
-import { TrendingUp, DollarSign, Users, CheckCircle, Clock } from "lucide-react";
+import { TrendingUp, DollarSign, Users, CheckCircle, Clock, Award, Quote } from "lucide-react";
 import globalHuesLogo from "@/assets/global-hues-logo.png";
 import yourstoryLogo from "@/assets/yourstory-logo.svg";
 
@@ -36,6 +36,13 @@ const ResultsSection = () => {
     "Managed and scaled ad budgets efficiently",
     "Improved conversion rates through funnel optimization",
     "Built sustainable organic traffic channels",
+  ];
+
+  const certifications = [
+    { name: "Google Ads Certified", icon: "🎯" },
+    { name: "Meta Blueprint Certified", icon: "📘" },
+    { name: "Google Analytics Certified", icon: "📊" },
+    { name: "HubSpot Inbound Marketing", icon: "🚀" },
   ];
 
   return (
@@ -138,6 +145,51 @@ const ResultsSection = () => {
                   className="h-10 md:h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300"
                 />
               </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Certifications Section */}
+      <section className="section-padding bg-background">
+        <div className="container-custom">
+          <div className="text-center max-w-3xl mx-auto">
+            <span className="inline-block text-sm font-semibold text-primary uppercase tracking-wider mb-6">
+              Professional Credentials
+            </span>
+            <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-10">
+              Certifications
+            </h3>
+            <div className="flex flex-wrap justify-center items-center gap-4">
+              {certifications.map((cert, index) => (
+                <div
+                  key={index}
+                  className="flex items-center gap-3 px-6 py-4 bg-muted/50 rounded-xl border border-border hover:border-primary/30 hover:shadow-soft transition-all duration-300"
+                >
+                  <span className="text-2xl">{cert.icon}</span>
+                  <span className="font-medium text-foreground">{cert.name}</span>
+                  <Award className="w-5 h-5 text-primary" />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Signature Quote Section */}
+      <section className="section-padding bg-foreground">
+        <div className="container-custom">
+          <div className="max-w-4xl mx-auto text-center">
+            <Quote className="w-12 h-12 text-primary mx-auto mb-6 opacity-60" />
+            <blockquote className="text-2xl md:text-3xl lg:text-4xl font-medium text-primary-foreground leading-relaxed mb-8 italic">
+              "We kick off our work with our clients by immersing ourselves in their industry, their vision and their culture."
+            </blockquote>
+            <div className="flex flex-col items-center gap-4">
+              {/* Placeholder for signature - user will provide later */}
+              <div className="w-48 h-16 border-2 border-dashed border-primary-foreground/30 rounded-lg flex items-center justify-center">
+                <span className="text-primary-foreground/50 text-sm">Signature coming soon</span>
+              </div>
+              <p className="text-primary-foreground/70 font-semibold">— Hitesh</p>
             </div>
           </div>
         </div>
