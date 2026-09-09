@@ -1,0 +1,43 @@
+import coverAsset from "@/assets/blog-top-8-agencies-ahmedabad.png.asset.json";
+
+export const SITE_URL = "https://hiteshjaganiya.com";
+
+export interface BlogPostMeta {
+  slug: string;
+  title: string;
+  description: string;
+  excerpt: string;
+  cover: string;
+  coverAlt: string;
+  datePublished: string;
+  dateModified: string;
+  readingTime: string;
+  category: string;
+  keywords: string[];
+}
+
+export const blogPosts: BlogPostMeta[] = [
+  {
+    slug: "top-8-digital-marketing-agencies-in-ahmedabad",
+    title: "Top 8 Digital Marketing Agencies in Ahmedabad",
+    description:
+      "An independent, experience-based look at 8 digital marketing agencies in Ahmedabad — compiled by Hitesh Jaganiya, a digital marketing consultant with 11 years in the field, for startup founders deciding who to hire.",
+    excerpt:
+      "Everyone claims to be the best. Here's an honest, consultant's view of 8 digital marketing agencies in Ahmedabad — who each one actually suits, and what to ask before you sign.",
+    cover: coverAsset.url,
+    coverAlt: "Top 8 Digital Marketing Agencies in Ahmedabad — Sabarmati riverfront at sunrise",
+    datePublished: "2026-09-09",
+    dateModified: "2026-09-09",
+    readingTime: "9 min read",
+    category: "Agency Selection",
+    keywords: [
+      "top digital marketing agencies in Ahmedabad",
+      "top 8 digital marketing agencies in ahmedabad",
+      "top 10 digital marketing companies in ahmedabad",
+      "best digital marketing agency Ahmedabad",
+    ],
+  },
+];
+
+export const getPostBySlug = (slug: string) =>
+  blogPosts.find((post) => post.slug === slug);
