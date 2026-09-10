@@ -1,12 +1,11 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { FolderOpen, Clock, Send } from "lucide-react";
+import { FolderOpen, Clock, Send, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { blogPosts } from "@/data/blogPosts";
-import BlogBreadcrumbs from "@/components/BlogBreadcrumbs";
 
 const BlogSidebar = () => {
   const { pathname } = useLocation();
@@ -24,6 +23,8 @@ const BlogSidebar = () => {
     .sort((a, b) => b.datePublished.localeCompare(a.datePublished))
     .slice(0, 5);
 
+  const relatedPosts = blogPosts.filter((post) => pathname !== `/blog/${post.slug}`);
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
@@ -35,8 +36,6 @@ const BlogSidebar = () => {
 
   return (
     <aside className="space-y-8 lg:sticky lg:top-28 self-start">
-      {pathname.startsWith("/blog/top-8-digital-marketing-agencies-in-ahmedabad") && <BlogBreadcrumbs />}
-
       <div className="bg-card rounded-2xl border border-border p-6 shadow-soft">
         <h3 className="flex items-center gap-2 text-lg font-bold text-foreground mb-4">
           <FolderOpen className="w-5 h-5 text-primary" /> Categories
@@ -61,11 +60,26 @@ const BlogSidebar = () => {
           {recentPosts.map((post) => (
             <li key={post.slug}>
               <Link to={`/blog/${post.slug}`} className="group flex gap-3">
-                <img src={post.cover} alt="" className="w-16 h-16 rounded-lg object-cover flex-shrink-0" loading="lazy" />
+                <img src={post.cover} alt={post.coverAlt} className="w-16 h-16 rounded-lg object-cover flex-shrink-0" loading="lazy" />
                 <div>
                   <p className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors line-clamp-2">{post.title}</p>
                   <p className="text-xs text-muted-foreground mt-1">{new Date(post.datePublished).toLocaleDateString("en-IN", { day: "numeric", month: "short", year: "numeric" })}</p>
                 </div>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div className="bg-card rounded-2xl border border-border p-6 shadow-soft">
+        <h3 className="flex items-center gap-2 text-lg font-bold text-foreground mb-4">
+          <ArrowRight className="w-5 h-5 text-primary" /> Related Reading
+        </h3>
+        <ul className="space-y-3">
+          {relatedPosts.map((post) => (
+            <li key={post.slug}>
+              <Link to={`/blog/${post.slug}`} className="group text-sm font-semibold text-foreground hover:text-primary transition-colors leading-snug">
+                {post.title}
               </Link>
             </li>
           ))}
