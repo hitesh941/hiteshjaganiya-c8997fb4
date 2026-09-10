@@ -20,7 +20,9 @@ const faqs = [
   { q: "Is paid advertising better than SEO for real estate in Ahmedabad?", a: "They serve different purposes rather than competing directly. Paid ads can generate faster visibility for active launches, while SEO builds compounding, long-term visibility that keeps working well after a campaign budget runs out. Most established real estate businesses eventually use both together." },
 ];
 
-const sections = [
+type Section = { heading: string; paragraphs: string[]; bullets?: [string, string][] };
+
+const sections: Section[] = [
   { heading: "Why Real Estate SEO Is Different From Most Other Industries", paragraphs: [
     "Two things make real estate unique from an SEO standpoint. First, the search intent is intensely local — nobody searches \"buy apartment India,\" they search \"3 BHK apartment SG Highway\" or \"villa for sale Shela.\" Second, the buying cycle is long and research-heavy, meaning the same person might search for the same location and property type a dozen times over several months before ever filling out a contact form. That combination — hyper-local intent plus a long research phase — shapes almost every decision you make in an SEO strategy for this industry.",
     "This also means generic SEO advice (\"write blog posts,\" \"get backlinks,\" \"optimize your title tags\") is technically true but not very useful on its own. What matters is which locations, which property types, and which stage of the buying journey you're actually targeting."
