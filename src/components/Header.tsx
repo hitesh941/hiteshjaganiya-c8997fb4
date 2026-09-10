@@ -1,4 +1,5 @@
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 
@@ -33,6 +34,15 @@ const Header = () => {
                 {item.label}
               </a>
             ))}
+            {extraLinks.map((item) => (
+              <Link
+                key={item.label}
+                to={item.to}
+                className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors duration-200"
+              >
+                {item.label}
+              </Link>
+            ))}
           </nav>
 
           {/* CTA Button */}
@@ -65,6 +75,16 @@ const Header = () => {
                 >
                   {item.label}
                 </a>
+              ))}
+              {extraLinks.map((item) => (
+                <Link
+                  key={item.label}
+                  to={item.to}
+                  className="text-base font-medium text-muted-foreground hover:text-foreground transition-colors duration-200"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  {item.label}
+                </Link>
               ))}
               <Button asChild className="mt-2" size="lg">
                 <a href="tel:9998311492" onClick={() => setMobileMenuOpen(false)}>
