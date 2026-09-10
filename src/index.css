@@ -22,10 +22,13 @@
 }
 
 @media (min-width: 1024px) {
+  /* Blog index: three equal article cards + a genuinely wider sidebar, with a tight gutter. */
   .blog-listing-grid { grid-template-columns: minmax(0, 1fr) 360px !important; gap: 24px !important; }
   .blog-listing-cards { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; gap: 20px !important; }
-  .blog-article-grid { grid-template-columns: minmax(0, 1fr) 360px !important; gap: 40px !important; }
-  .blog-article-content { max-width: 960px !important; }
+
+  /* Individual articles: use the available desktop width instead of leaving a large empty gutter. */
+  article > .container-custom > .grid { grid-template-columns: minmax(0, 960px) 360px !important; gap: 40px !important; }
+  article .max-w-3xl { max-width: 960px !important; }
 }
 
 @keyframes fade-up { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
