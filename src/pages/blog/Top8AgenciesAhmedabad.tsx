@@ -115,11 +115,13 @@ const agencies = [
   {
     name: "Hitz Digital Marketing",
     body: [
-      "Hitz Digital Marketing is a smaller, Ahmedabad-based agency that's been operating since 2015, largely built around SEO, social media, local SEO, and web design for SMEs and local businesses. What stands out from client feedback is a pattern of long-term engagements — clients mentioning multiple projects over years rather than one-off campaigns, which in SEO specifically is a meaningful signal, since organic growth takes sustained work rather than a quick sprint.",
+      "Hitz Digital Marketing has been operating in Ahmedabad since 2015, which in this industry means they've already outlasted most agencies that open and close within a few years. Their work centers on SEO, social media marketing, local SEO, Google Ads, and web design — with a clear focus on helping SMEs and local businesses grow sustainably rather than chasing short-term viral moments.",
+      "What genuinely stands out about Hitz is the pattern of long-term client relationships. In SEO especially, repeat engagements are one of the strongest trust signals you can find, because organic growth takes consistent effort and clients don't renew unless they're seeing progress. That kind of stability is hard to fake and suggests a team that delivers steady, compounding visibility over time.",
     ],
     notes: [
-      ["Best for", "Local businesses and SMEs that want a long-term SEO and local-visibility partner rather than a short-term ad campaign, and are comfortable with a smaller, more personal team."],
-      ["Consultant observation", "In my experience, SEO relationships that last multiple years are one of the better trust signals you can look for in an agency, because SEO clients churn fast when results don't show — a long tenure usually means the work is actually holding up."],
+      ["Best for", "SMEs, local businesses, and founders who want a reliable, long-term partner for SEO, local search visibility, and performance-driven social media — without the overhead of a large agency."],
+      ["Consultant observation", "I've always believed that sustainable SEO growth beats quick wins. Hitz's focus on long-term relationships aligns well with how real organic growth works — small, consistent improvements that build into a durable competitive advantage."],
+      ["What to verify", "Ask for specific examples of local SEO or organic ranking improvements they've achieved for businesses similar to yours, and how they report progress month to month."],
     ],
   },
   {
