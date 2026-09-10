@@ -16,6 +16,9 @@ const Blog = () => {
       <Helmet>
         <title>{title}</title>
         <meta name="description" content={description} />
+        <meta name="robots" content="index, follow, max-image-preview:large" />
+        <meta property="og:site_name" content="Hitesh Jaganiya" />
+        <link rel="alternate" hrefLang="en-IN" href={`${SITE_URL}/blog`} />
         <link rel="canonical" href={`${SITE_URL}/blog`} />
         <meta property="og:type" content="website" />
         <meta property="og:title" content={title} />
@@ -34,12 +37,23 @@ const Blog = () => {
               name: "Hitesh Jaganiya",
               url: `${SITE_URL}/`,
             },
+            publisher: {
+              "@type": "Organization",
+              "@id": `${SITE_URL}/#organization`,
+              name: "Hitz Digital Marketing",
+              url: "https://www.hitzdigitalmarketing.com/",
+              logo: { "@type": "ImageObject", url: `${SITE_URL}/favicon.ico` },
+            },
             blogPost: blogPosts.map((post) => ({
               "@type": "BlogPosting",
               headline: post.title,
+              description: post.description,
               url: `${SITE_URL}/blog/${post.slug}`,
               datePublished: post.datePublished,
-            })),
+              dateModified: post.dateModified,
+              author: { "@type": "Person", name: "Hitesh Jaganiya", url: `${SITE_URL}/#person` },
+              publisher: { "@id": `${SITE_URL}/#organization` },
+            })), 
           })}
         </script>
       </Helmet>

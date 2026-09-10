@@ -10,6 +10,7 @@ import { getPostBySlug, SITE_URL } from "@/data/blogPosts";
 
 const post = getPostBySlug("digital-marketing-packages-in-ahmedabad")!;
 const postUrl = `${SITE_URL}/blog/${post.slug}`;
+const coverUrl = post.cover.startsWith("http") ? post.cover : `${SITE_URL}${post.cover}`;
 
 const faqs = [
   {
@@ -34,37 +35,79 @@ const faqs = [
   },
 ];
 
+const schema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: post.description,
+    image: coverUrl,
+    url: postUrl,
+    datePublished: post.datePublished,
+    dateModified: post.dateModified,
+    inLanguage: "en-IN",
+    articleSection: post.category,
+    keywords: post.keywords.join(", "),
+    mainEntityOfPage: { "@type": "WebPage", "@id": postUrl },
+    author: {
+      "@type": "Person",
+      "@id": `${SITE_URL}/#person`,
+      name: "Hitesh Jaganiya",
+      url: `${SITE_URL}/`,
+      jobTitle: "Digital Marketing Consultant",
+    },
+    publisher: {
+      "@type": "Organization",
+      "@id": `${SITE_URL}/#organization`,
+      name: "Hitz Digital Marketing",
+      url: "https://www.hitzdigitalmarketing.com/",
+      logo: { "@type": "ImageObject", url: `${SITE_URL}/favicon.ico` },
+    },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
+      { "@type": "ListItem", position: 2, name: "Blog", item: `${SITE_URL}/blog` },
+      { "@type": "ListItem", position: 3, name: post.title, item: postUrl },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.q,
+      acceptedAnswer: { "@type": "Answer", text: faq.a },
+    })),
+  },
+];
 const DigitalMarketingPackagesAhmedabad = () => (
   <div className="min-h-screen bg-background">
     <Helmet>
       <title>{post.title} | Hitesh Jaganiya</title>
       <meta name="description" content={post.description} />
+      <meta name="keywords" content={post.keywords.join(", ")} />
+      <meta name="author" content="Hitesh Jaganiya" />
+      <meta name="robots" content="index, follow, max-image-preview:large" />
       <link rel="canonical" href={postUrl} />
+      <link rel="alternate" hrefLang="en-IN" href={postUrl} />
+      <meta property="article:published_time" content={post.datePublished} />
+      <meta property="article:modified_time" content={post.dateModified} />
+      <meta property="article:section" content={post.category} />
       <meta property="og:type" content="article" />
+      <meta property="og:site_name" content="Hitesh Jaganiya" />
       <meta property="og:title" content={post.title} />
       <meta property="og:description" content={post.description} />
       <meta property="og:url" content={postUrl} />
-      <meta property="og:image" content={post.cover} />
+      <meta property="og:image" content={coverUrl} />
+      <meta property="og:image:alt" content={post.coverAlt} />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={post.title} />
       <meta name="twitter:description" content={post.description} />
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "BlogPosting",
-          headline: post.title,
-          description: post.description,
-          image: post.cover,
-          url: postUrl,
-          datePublished: post.datePublished,
-          dateModified: post.dateModified,
-          author: {
-            "@type": "Person",
-            name: "Hitesh Jaganiya",
-            url: SITE_URL,
-          },
-        })}
-      </script>
+      <meta name="twitter:image" content={coverUrl} />
+      <script type="application/ld+json">{JSON.stringify(schema)}</script>
     </Helmet>
 
     <Header />
@@ -242,6 +285,13 @@ const DigitalMarketingPackagesAhmedabad = () => (
                     Before signing, ask three questions: how much of your budget is actual ad spend versus fees, who specifically will manage your account day to day, and what reporting will look like a month from now. Those answers tell you more about value than the number on the invoice.
                   </p>
                 </section>
+
+                <div className="p-6 bg-secondary/40 rounded-2xl border border-border">
+                  <p className="text-sm font-semibold text-foreground mb-2">Related reading</p>
+                  <p className="text-base">
+                    Before comparing package prices, read <Link to="/blog/top-8-digital-marketing-agencies-in-ahmedabad" className="text-primary font-semibold hover:underline">the guide to choosing a digital marketing agency in Ahmedabad</Link>. You can also review <Link to="/#services" className="text-primary font-semibold hover:underline">the services offered</Link> and <Link to="/#contact" className="text-primary font-semibold hover:underline">get in touch</Link>.
+                  </p>
+                </div>
 
                 <section>
                   <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-5">

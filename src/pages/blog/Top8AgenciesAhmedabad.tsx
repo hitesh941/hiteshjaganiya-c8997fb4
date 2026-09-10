@@ -10,6 +10,7 @@ import { getPostBySlug, SITE_URL } from "@/data/blogPosts";
 
 const post = getPostBySlug("top-8-digital-marketing-agencies-in-ahmedabad")!;
 const postUrl = `${SITE_URL}/blog/${post.slug}`;
+const coverUrl = post.cover.startsWith("http") ? post.cover : coverUrl;
 
 const comparison = [
   ["SmartFish Designs", "Branding + web-led businesses", "Premium design + end-to-end digital execution"],
@@ -153,7 +154,9 @@ const Top8AgenciesAhmedabad = () => {
       "@type": "BlogPosting",
       headline: post.title,
       description: post.description,
-      image: `${SITE_URL}${post.cover}`,
+      image: coverUrl,
+      url: postUrl,
+      articleSection: post.category,
       datePublished: post.datePublished,
       dateModified: post.dateModified,
       inLanguage: "en-IN",
@@ -167,9 +170,11 @@ const Top8AgenciesAhmedabad = () => {
         jobTitle: "Digital Marketing Consultant",
       },
       publisher: {
-        "@type": "Person",
-        name: "Hitesh Jaganiya",
-        url: `${SITE_URL}/`,
+        "@type": "Organization",
+        "@id": `${SITE_URL}/#organization`,
+        name: "Hitz Digital Marketing",
+        url: "https://www.hitzdigitalmarketing.com/",
+        logo: { "@type": "ImageObject", url: `${SITE_URL}/favicon.ico` },
       },
       about: { "@type": "Place", name: "Ahmedabad, Gujarat, India" },
     },
@@ -212,16 +217,23 @@ const Top8AgenciesAhmedabad = () => {
         <meta name="description" content={post.description} />
         <meta name="keywords" content={post.keywords.join(", ")} />
         <meta name="author" content="Hitesh Jaganiya" />
+        <meta name="robots" content="index, follow, max-image-preview:large" />
+        <link rel="alternate" hrefLang="en-IN" href={postUrl} />
+        <meta property="article:published_time" content={post.datePublished} />
+        <meta property="article:modified_time" content={post.dateModified} />
+        <meta property="article:section" content={post.category} />
         <link rel="canonical" href={postUrl} />
         <meta property="og:type" content="article" />
         <meta property="og:title" content={post.title} />
         <meta property="og:description" content={post.description} />
         <meta property="og:url" content={postUrl} />
-        <meta property="og:image" content={`${SITE_URL}${post.cover}`} />
+        <meta property="og:image" content={coverUrl} />
+        <meta property="og:image:alt" content={post.coverAlt} />
+        <meta property="og:site_name" content="Hitesh Jaganiya" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={post.title} />
         <meta name="twitter:description" content={post.description} />
-        <meta name="twitter:image" content={`${SITE_URL}${post.cover}`} />
+        <meta name="twitter:image" content={coverUrl} />
         <script type="application/ld+json">{JSON.stringify(schema)}</script>
       </Helmet>
 
@@ -403,6 +415,13 @@ const Top8AgenciesAhmedabad = () => {
                 </Link>{" "}
                 for businesses in Ahmedabad.
               </p>
+
+              <div className="mt-12 p-6 bg-secondary/40 rounded-2xl border border-border">
+                <p className="text-sm font-semibold text-foreground mb-2">Related reading</p>
+                <p className="text-muted-foreground">
+                  Comparing agencies is only half the decision. Read the guide to <Link to="/blog/digital-marketing-packages-in-ahmedabad" className="text-primary font-semibold hover:underline">digital marketing package pricing in Ahmedabad</Link> before you request quotes.
+                </p>
+              </div>
 
               {/* FAQ */}
               <h2 className="text-2xl md:text-3xl font-bold text-foreground mt-16 mb-6">

@@ -1,6 +1,6 @@
 import coverAsset from "@/assets/blog-top-8-agencies-ahmedabad.png.asset.json";
 
-export const SITE_URL = "https://hiteshjaganiya.com";
+export const SITE_URL = "https://www.hiteshjaganiya.com";
 
 export interface BlogPostMeta {
   slug: string;
