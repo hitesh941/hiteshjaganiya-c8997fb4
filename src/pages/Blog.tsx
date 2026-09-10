@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, CalendarDays, Clock } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import BlogSidebar from "@/components/BlogSidebar";
 import { blogPosts, SITE_URL } from "@/data/blogPosts";
 
 const Blog = () => {
@@ -61,7 +62,8 @@ const Blog = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+            <div className="grid lg:grid-cols-[minmax(0,1fr)_320px] gap-12 mt-12 items-start">
+              <div className="grid md:grid-cols-2 gap-8">
               {blogPosts.map((post) => (
                 <article
                   key={post.slug}
@@ -100,6 +102,8 @@ const Blog = () => {
                   </Link>
                 </article>
               ))}
+              </div>
+              <BlogSidebar />
             </div>
           </div>
         </section>
