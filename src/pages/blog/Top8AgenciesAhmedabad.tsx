@@ -12,13 +12,13 @@ const post = getPostBySlug("top-8-digital-marketing-agencies-in-ahmedabad")!;
 const postUrl = `${SITE_URL}/blog/${post.slug}`;
 
 const comparison = [
-  ["SmartFish Designs", "Branding + web-led businesses", "Design-first digital presence"],
+  ["SmartFish Designs", "Branding + web-led businesses", "Premium design + end-to-end digital execution"],
   ["Zero Gravity Communications", "Mid-size to enterprise brands", "Integrated branding & campaigns"],
   ["The Red Eyes", "Startups & ecommerce", "Performance marketing + AI adoption"],
   ["Digital Yudh", "Small businesses, early-stage", "Lean, hands-on execution"],
   ["Communication Crafts", "Enterprise & corporate brands", "Large-scale campaign management"],
   ["Digipple", "Lead-gen focused businesses", "ROI-driven ad campaigns"],
-  ["Hitz Digital Marketing", "SMEs & local businesses", "Long-term SEO relationships"],
+  ["Hitz Digital Marketing", "SMEs & local businesses", "Sustainable SEO growth + strong client retention"],
   ["Ocean Creasta", "Brand-first businesses wanting full-funnel execution", "Branding + performance marketing under one roof"],
 ];
 
