@@ -11,8 +11,8 @@ import DigitalMarketingPackagesAhmedabad from "./pages/blog/DigitalMarketingPack
 import NotFound from "./pages/NotFound";
 
 const SITE_URL = "https://www.hiteshjaganiya.com";
-const PUBLISHER_NAME = "Hitz Digital Marketing";
-const PUBLISHER_URL = "https://www.hitzdigitalmarketing.com/";
+const PUBLISHER_NAME = "Hitesh Jaganiya";
+const PUBLISHER_URL = "https://www.hiteshjaganiya.com/";
 
 const RouteSeo = () => {
   const { pathname } = useLocation();
@@ -34,13 +34,13 @@ const RouteSeo = () => {
         <title>{title}</title>
         <meta name="description" content={description} />
         <meta name="robots" content="index, follow, max-image-preview:large" />
-        <meta name="author" content="Hitesh Jaganiya" />
+        <meta name="author" content={PUBLISHER_NAME} />
         <meta name="publisher" content={PUBLISHER_NAME} />
         <link rel="canonical" href={url} />
         <link rel="alternate" hrefLang="en-IN" href={url} />
         <meta property="article:publisher" content={PUBLISHER_URL} />
         <meta property="og:type" content="article" />
-        <meta property="og:site_name" content="Hitesh Jaganiya" />
+        <meta property="og:site_name" content={PUBLISHER_NAME} />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:url" content={url} />
