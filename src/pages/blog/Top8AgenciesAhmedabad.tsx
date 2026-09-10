@@ -10,7 +10,7 @@ import { getPostBySlug, SITE_URL } from "@/data/blogPosts";
 
 const post = getPostBySlug("top-8-digital-marketing-agencies-in-ahmedabad")!;
 const postUrl = `${SITE_URL}/blog/${post.slug}`;
-const coverUrl = post.cover.startsWith("http") ? post.cover : coverUrl;
+const coverUrl = post.cover.startsWith("http") ? post.cover : `${SITE_URL}${post.cover}`;
 
 const comparison = [
   ["SmartFish Designs", "Branding + web-led businesses", "Premium design + end-to-end digital execution"],
