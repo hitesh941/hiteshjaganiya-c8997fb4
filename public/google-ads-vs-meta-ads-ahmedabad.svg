@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Google Ads vs Meta Ads for Ahmedabad Businesses</title>
+  <desc id="desc">A premium editorial cover comparing Google Ads and Meta Ads.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0b0d"/><stop offset="1" stop-color="#1b1b20"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".92"/><stop offset="1" stop-color="#a9a9b0" stop-opacity=".55"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1000" cy="80" r="260" fill="#fff" opacity=".035"/>
+  <circle cx="1040" cy="540" r="190" fill="#fff" opacity=".025"/>
+  <path d="M90 520H1110" stroke="#fff" stroke-opacity=".12"/>
+  <text x="90" y="110" fill="#b8b8bf" font-family="Arial, Helvetica, sans-serif" font-size="22" letter-spacing="5">PAID ADVERTISING · AHMEDABAD</text>
+  <text x="90" y="205" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="62" font-weight="700">Google Ads</text>
+  <text x="90" y="275" fill="#85858d" font-family="Arial, Helvetica, sans-serif" font-size="42">vs</text>
+  <text x="90" y="345" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="62" font-weight="700">Meta Ads</text>
+  <rect x="90" y="395" width="430" height="3" fill="url(#accent)"/>
+  <text x="90" y="455" fill="#d7d7dc" font-family="Arial, Helvetica, sans-serif" font-size="28">Which should your business use first?</text>
+  <text x="90" y="505" fill="#85858d" font-family="Arial, Helvetica, sans-serif" font-size="20">A practical guide by Hitesh Jaganiya</text>
+  <g transform="translate(770 205)">
+    <rect x="0" y="0" width="270" height="190" rx="28" fill="#fff" opacity=".06" stroke="#fff" stroke-opacity=".16"/>
+    <path d="M48 130V72l87-40 87 40v58l-87 40z" fill="none" stroke="#fff" stroke-width="5" opacity=".9"/>
+    <circle cx="135" cy="92" r="22" fill="none" stroke="#fff" stroke-width="5" opacity=".9"/>
+    <path d="M135 114v36M110 150h50" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".9"/>
+  </g>
+</svg>
