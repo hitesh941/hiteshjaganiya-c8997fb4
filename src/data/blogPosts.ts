@@ -59,6 +59,28 @@ export const blogPosts: BlogPostMeta[] = [
       "Google Ads management cost Ahmedabad",
     ],
   },
+  {
+    slug: "google-ads-vs-meta-ads-ahmedabad",
+    title: "Google Ads vs Meta Ads: Which Should Ahmedabad Businesses Use First?",
+    description:
+      "A practical, experience-based comparison of Google Ads and Meta Ads for Ahmedabad businesses deciding where to spend their first advertising rupee.",
+    excerpt:
+      "Google or Meta? A practical guide for Ahmedabad businesses deciding which advertising platform to use first based on customer intent, product type, budget, and decision stage.",
+    cover: "/google-ads-vs-meta-ads-ahmedabad.svg",
+    coverAlt: "Google Ads vs Meta Ads for Ahmedabad businesses — which advertising platform should you use first?",
+    datePublished: "2026-09-10",
+    dateModified: "2026-09-10",
+    readingTime: "7 min read",
+    category: "Paid Advertising",
+    keywords: [
+      "Google Ads vs Meta Ads Ahmedabad",
+      "Google Ads Ahmedabad",
+      "Meta Ads Ahmedabad",
+      "Google Ads or Meta Ads",
+      "Facebook Ads Ahmedabad",
+      "Instagram Ads Ahmedabad",
+    ],
+  },
 ];
 
 export const getPostBySlug = (slug: string) =>
