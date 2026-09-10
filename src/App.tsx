@@ -8,7 +8,7 @@ import Index from "./pages/Index";
 import Blog from "./pages/Blog";
 import Top8AgenciesAhmedabad from "./pages/blog/Top8AgenciesAhmedabad";
 import DigitalMarketingPackagesAhmedabad from "./pages/blog/DigitalMarketingPackagesAhmedabad";
-import GoogleAdsVsMetaAdsAhmedabad from "./pages/blog/GoogleAdsVsMetaAdsAhmedabad";
+import GoogleAdsVsMetaAdsAhmedabadBudgetFix from "./pages/blog/GoogleAdsVsMetaAdsAhmedabadBudgetFix";
 import NotFound from "./pages/NotFound";
 
 const SITE_URL = "https://www.hiteshjaganiya.com";
@@ -62,7 +62,7 @@ const App = () => (
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/top-8-digital-marketing-agencies-in-ahmedabad" element={<Top8AgenciesAhmedabad />} />
           <Route path="/blog/digital-marketing-packages-in-ahmedabad" element={<DigitalMarketingPackagesAhmedabad />} />
-          <Route path="/blog/google-ads-vs-meta-ads-ahmedabad" element={<GoogleAdsVsMetaAdsAhmedabad />} />
+          <Route path="/blog/google-ads-vs-meta-ads-ahmedabad" element={<GoogleAdsVsMetaAdsAhmedabadBudgetFix />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <RouteSeo />
