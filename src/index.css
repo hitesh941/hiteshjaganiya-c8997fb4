@@ -26,9 +26,16 @@
   .blog-listing-grid { grid-template-columns: minmax(0, 1fr) 360px !important; gap: 24px !important; }
   .blog-listing-cards { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; gap: 20px !important; }
 
-  /* Individual articles: restore the wider reading column and sidebar proportions. */
-  article > .container-custom > .grid { grid-template-columns: minmax(0, 960px) 360px !important; gap: 40px !important; justify-content: center; }
-  article .max-w-3xl { max-width: 960px !important; }
+  /* Individual articles: the article and breadcrumb now share the exact same left edge. */
+  article > .container-custom > .grid {
+    grid-template-columns: minmax(0, 1fr) 360px !important;
+    gap: 24px !important;
+    justify-content: initial;
+  }
+  article .max-w-3xl {
+    max-width: none !important;
+    width: 100% !important;
+  }
 
   /* Keep the tighter header-to-content spacing from the previous fix. */
   main.pt-28.md\:pt-36 { padding-top: 5rem !important; }
