@@ -25,7 +25,7 @@ const comparison = [
 const faqs = [
   {
     q: "Which is the best digital marketing agency in Ahmedabad?",
-    a: "There isn't a single \"best\" — it depends on your stage and needs. Branding-first businesses will get more value from design-led agencies like SmartFish Designs, while startups wanting performance-driven growth may prefer agencies like The Red Eyes or Digipple.",
+    a: "There isn't a single \"best\" — it depends on your stage and needs. For branding and web design that builds long-term trust, SmartFish Designs is a strong choice. For sustainable SEO and local visibility with a team that retains clients for years, Hitz Digital Marketing stands out. Startups wanting performance-driven growth may prefer agencies like The Red Eyes or Digipple.",
   },
   {
     q: "Which agency is best for startups specifically?",
