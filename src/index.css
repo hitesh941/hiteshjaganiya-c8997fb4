@@ -6,7 +6,6 @@
 
 @layer base {
   :root {
-    /* Nature-inspired warm palette */
     --background: 0 0% 100%;
     --foreground: 150 20% 20%;
     --card: 45 25% 99%;
@@ -28,7 +27,7 @@
     --ring: 145 45% 42%;
     --radius: 1rem;
     --section-padding: 5rem;
-    --container-max: 1400px;
+    --container-max: 1600px;
     --gradient-hero: linear-gradient(135deg, hsl(45 30% 97%) 0%, hsl(140 25% 95%) 50%, hsl(45 40% 96%) 100%);
     --gradient-card: linear-gradient(180deg, hsl(45 25% 99%) 0%, hsl(140 20% 97%) 100%);
     --gradient-nature: linear-gradient(135deg, hsl(145 45% 42%) 0%, hsl(160 40% 50%) 100%);
@@ -66,7 +65,7 @@
 @layer utilities {
   .text-balance { text-wrap: balance; }
   .section-padding { @apply py-16 md:py-24; }
-  .container-custom { @apply w-full max-w-[1400px] mx-auto px-5 sm:px-8 lg:px-10 xl:px-12; }
+  .container-custom { @apply w-full max-w-[1600px] mx-auto px-5 sm:px-8 lg:px-10 xl:px-12; }
 }
 
 @keyframes fade-up { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
