@@ -11,6 +11,8 @@ const Header = () => {
     { label: "Results", href: "#results" },
   ];
 
+  const extraLinks = [{ label: "Blog", to: "/blog" }];
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
       <div className="container-custom">
