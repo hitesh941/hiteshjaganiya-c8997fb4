@@ -9,6 +9,7 @@ import Blog from "./pages/Blog";
 import Top8AgenciesAhmedabad from "./pages/blog/Top8AgenciesAhmedabad";
 import DigitalMarketingPackagesAhmedabad from "./pages/blog/DigitalMarketingPackagesAhmedabad";
 import GoogleAdsVsMetaAdsAhmedabadBudgetFix from "./pages/blog/GoogleAdsVsMetaAdsAhmedabadBudgetFix";
+import SeoRealEstateAhmedabad from "./pages/blog/SeoRealEstateAhmedabad";
 import NotFound from "./pages/NotFound";
 
 const SITE_URL = "https://www.hiteshjaganiya.com";
@@ -19,8 +20,10 @@ const RouteSeo = () => {
   const { pathname } = useLocation();
   const packagePath = "/blog/digital-marketing-packages-in-ahmedabad";
   const googleMetaPath = "/blog/google-ads-vs-meta-ads-ahmedabad";
+  const realEstatePath = "/blog/seo-for-real-estate-businesses-in-ahmedabad";
   const isPackage = pathname === packagePath;
   const isGoogleMeta = pathname === googleMetaPath;
+  const isRealEstate = pathname === realEstatePath;
   const isBlogArticle = pathname.startsWith("/blog/");
   const isHome = pathname === "/";
   const isNotFound = pathname !== "/" && pathname !== "/blog" && !pathname.startsWith("/blog/");
@@ -40,6 +43,14 @@ const RouteSeo = () => {
     const url = `${SITE_URL}${googleMetaPath}`;
     const image = `${SITE_URL}/google-ads-vs-meta-ads-ahmedabad.svg`;
     return <Helmet><title>{title}</title><meta name="description" content={description} /><meta name="robots" content="index, follow, max-image-preview:large" /><meta name="author" content={PUBLISHER_NAME} /><meta name="publisher" content={PUBLISHER_NAME} /><link rel="canonical" href={url} /><link rel="alternate" hrefLang="en-IN" href={url} /><meta property="article:publisher" content={PUBLISHER_URL} /><meta property="og:type" content="article" /><meta property="og:site_name" content={PUBLISHER_NAME} /><meta property="og:title" content={title} /><meta property="og:description" content={description} /><meta property="og:url" content={url} /><meta property="og:image" content={image} /><meta property="og:image:alt" content="Google Ads vs Meta Ads for Ahmedabad businesses" /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" /><meta property="og:locale" content="en_IN" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content={title} /><meta name="twitter:description" content={description} /><meta name="twitter:image" content={image} /></Helmet>;
+  }
+
+  if (isRealEstate) {
+    const title = "SEO for Real Estate Businesses in Ahmedabad: A Practical Guide";
+    const description = "A practical guide to SEO for real estate businesses in Ahmedabad, covering hyper-local keyword research, project pages, Google Business Profile, technical SEO, backlinks, content, trust and realistic timelines.";
+    const url = `${SITE_URL}${realEstatePath}`;
+    const image = `${SITE_URL}/seo-real-estate-ahmedabad.svg`;
+    return <Helmet><title>{title}</title><meta name="description" content={description} /><meta name="robots" content="index, follow, max-image-preview:large" /><meta name="author" content={PUBLISHER_NAME} /><meta name="publisher" content={PUBLISHER_NAME} /><link rel="canonical" href={url} /><link rel="alternate" hrefLang="en-IN" href={url} /><meta property="article:publisher" content={PUBLISHER_URL} /><meta property="og:type" content="article" /><meta property="og:site_name" content={PUBLISHER_NAME} /><meta property="og:title" content={title} /><meta property="og:description" content={description} /><meta property="og:url" content={url} /><meta property="og:image" content={image} /><meta property="og:image:alt" content="SEO for real estate businesses in Ahmedabad" /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" /><meta property="og:locale" content="en_IN" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content={title} /><meta name="twitter:description" content={description} /><meta name="twitter:image" content={image} /><meta name="twitter:image:alt" content="SEO for real estate businesses in Ahmedabad" /></Helmet>;
   }
 
   if (isBlogArticle) return <Helmet><meta name="publisher" content={PUBLISHER_NAME} /><meta property="article:publisher" content={PUBLISHER_URL} /></Helmet>;
@@ -63,6 +74,7 @@ const App = () => (
           <Route path="/blog/top-8-digital-marketing-agencies-in-ahmedabad" element={<Top8AgenciesAhmedabad />} />
           <Route path="/blog/digital-marketing-packages-in-ahmedabad" element={<DigitalMarketingPackagesAhmedabad />} />
           <Route path="/blog/google-ads-vs-meta-ads-ahmedabad" element={<GoogleAdsVsMetaAdsAhmedabadBudgetFix />} />
+          <Route path="/blog/seo-for-real-estate-businesses-in-ahmedabad" element={<SeoRealEstateAhmedabad />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <RouteSeo />
