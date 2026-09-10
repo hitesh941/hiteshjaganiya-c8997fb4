@@ -79,6 +79,28 @@ export const blogPosts: BlogPostMeta[] = [
       "Instagram Ads Ahmedabad",
     ],
   },
+  {
+    slug: "seo-for-real-estate-businesses-in-ahmedabad",
+    title: "SEO for Real Estate Businesses in Ahmedabad: A Practical Guide",
+    description:
+      "A practical guide to SEO for real estate businesses in Ahmedabad, covering hyper-local keyword research, project pages, Google Business Profile, technical SEO, backlinks, content, trust and realistic timelines.",
+    excerpt:
+      "How builders, brokers and property consultants in Ahmedabad can use local SEO to reach buyers across locations, property types and stages of the buying journey.",
+    cover: "/seo-real-estate-ahmedabad.svg",
+    coverAlt: "SEO for real estate businesses in Ahmedabad — practical guide for builders, brokers and property consultants",
+    datePublished: "2026-09-10",
+    dateModified: "2026-09-10",
+    readingTime: "8 min read",
+    category: "Real Estate SEO",
+    keywords: [
+      "SEO for real estate businesses in Ahmedabad",
+      "real estate SEO Ahmedabad",
+      "real estate SEO company Ahmedabad",
+      "property SEO Ahmedabad",
+      "real estate marketing Ahmedabad",
+      "SEO for builders Ahmedabad",
+    ],
+  },
 ];
 
 export const getPostBySlug = (slug: string) =>
