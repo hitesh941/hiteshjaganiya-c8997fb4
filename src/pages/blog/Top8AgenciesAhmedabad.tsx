@@ -4,6 +4,7 @@ import { CalendarDays, Clock, User, ArrowRight } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import AuthorCard from "@/components/AuthorCard";
+import BlogSidebar from "@/components/BlogSidebar";
 import { Button } from "@/components/ui/button";
 import { getPostBySlug, SITE_URL } from "@/data/blogPosts";
 
@@ -225,7 +226,8 @@ const Top8AgenciesAhmedabad = () => {
       <main className="pt-28 md:pt-36">
         <article className="section-padding pt-0">
           <div className="container-custom">
-            <div className="max-w-3xl mx-auto">
+            <div className="grid lg:grid-cols-[minmax(0,1fr)_320px] gap-12 items-start">
+              <div className="max-w-3xl">
               {/* Breadcrumb */}
               <nav aria-label="Breadcrumb" className="text-sm text-muted-foreground mb-6">
                 <ol className="flex flex-wrap items-center gap-2">
@@ -433,6 +435,8 @@ const Top8AgenciesAhmedabad = () => {
                   </Button>
                 </div>
               </div>
+              </div>
+              <BlogSidebar />
             </div>
           </div>
         </article>
