@@ -11,16 +11,19 @@ import DigitalMarketingPackagesAhmedabad from "./pages/blog/DigitalMarketingPack
 import NotFound from "./pages/NotFound";
 
 const SITE_URL = "https://www.hiteshjaganiya.com";
+const PUBLISHER_NAME = "Hitz Digital Marketing";
+const PUBLISHER_URL = "https://www.hitzdigitalmarketing.com/";
 
 const RouteSeo = () => {
   const { pathname } = useLocation();
   const packagePath = "/blog/digital-marketing-packages-in-ahmedabad";
   const isPackage = pathname === packagePath;
+  const isBlogArticle = pathname.startsWith("/blog/");
   const isHome = pathname === "/";
   const isNotFound = pathname !== "/" && pathname !== "/blog" && !pathname.startsWith("/blog/");
 
   if (isPackage) {
-    const title = "Digital Marketing Packages in Ahmedabad: 2026 Pricing Guide";
+    const title = "Digital Marketing Packages in Ahmedabad: ₹15K vs ₹50K vs ₹1L+";
     const description =
       "Compare digital marketing packages in Ahmedabad from ₹15K to ₹1L+. See what is included, ad spend, SEO, pricing, and how to choose the right package in 2026.";
     const url = `${SITE_URL}${packagePath}`;
@@ -31,8 +34,11 @@ const RouteSeo = () => {
         <title>{title}</title>
         <meta name="description" content={description} />
         <meta name="robots" content="index, follow, max-image-preview:large" />
+        <meta name="author" content="Hitesh Jaganiya" />
+        <meta name="publisher" content={PUBLISHER_NAME} />
         <link rel="canonical" href={url} />
         <link rel="alternate" hrefLang="en-IN" href={url} />
+        <meta property="article:publisher" content={PUBLISHER_URL} />
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="Hitesh Jaganiya" />
         <meta property="og:title" content={title} />
@@ -48,6 +54,15 @@ const RouteSeo = () => {
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={image} />
         <meta name="twitter:image:alt" content="Digital marketing packages and pricing in Ahmedabad for 2026" />
+      </Helmet>
+    );
+  }
+
+  if (isBlogArticle) {
+    return (
+      <Helmet>
+        <meta name="publisher" content={PUBLISHER_NAME} />
+        <meta property="article:publisher" content={PUBLISHER_URL} />
       </Helmet>
     );
   }
