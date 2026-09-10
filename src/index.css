@@ -26,9 +26,12 @@
   .blog-listing-grid { grid-template-columns: minmax(0, 1fr) 360px !important; gap: 24px !important; }
   .blog-listing-cards { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; gap: 20px !important; }
 
-  /* Individual articles: use the available desktop width instead of leaving a large empty gutter. */
-  article > .container-custom > .grid { grid-template-columns: minmax(0, 960px) 360px !important; gap: 40px !important; }
-  article .max-w-3xl { max-width: 960px !important; }
+  /* Individual articles: keep the reading column wide while pulling the sidebar close. */
+  article > .container-custom > .grid { grid-template-columns: minmax(0, 920px) 320px !important; gap: 24px !important; justify-content: center; }
+  article .max-w-3xl { max-width: 920px !important; }
+
+  /* Reduce the oversized header-to-content whitespace on blog article pages. */
+  main.pt-28.md\:pt-36 { padding-top: 5rem !important; }
 }
 
 @keyframes fade-up { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
