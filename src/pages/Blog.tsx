@@ -25,8 +25,8 @@ const Blog = () => {
               <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-foreground mb-5 text-balance">Honest notes on SEO, ads and growth</h1>
               <p className="text-lg md:text-xl text-muted-foreground max-w-3xl leading-relaxed">Things I've learned over 11 years of running SEO and Google Ads for businesses in Ahmedabad — written for founders, not for search engines.</p>
             </div>
-            <div className="grid lg:grid-cols-[minmax(0,1fr)_320px] xl:grid-cols-[minmax(0,1fr)_340px] gap-8 xl:gap-10 mt-10 md:mt-14 items-start">
-              <div className="grid sm:grid-cols-2 gap-6 xl:gap-8">
+            <div className="blog-listing-grid grid lg:grid-cols-[minmax(0,1fr)_320px] xl:grid-cols-[minmax(0,1fr)_340px] gap-8 xl:gap-10 mt-10 md:mt-14 items-start">
+              <div className="blog-listing-cards grid sm:grid-cols-2 gap-6 xl:gap-8">
                 {blogPosts.map((post) => (
                   <article key={post.slug} className="group bg-card rounded-2xl border border-border overflow-hidden shadow-soft hover:shadow-medium transition-all duration-300 hover:-translate-y-1">
                     <Link to={`/blog/${post.slug}`} className="block h-full">
