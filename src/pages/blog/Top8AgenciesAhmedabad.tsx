@@ -358,7 +358,17 @@ const Top8AgenciesAhmedabad = () => {
               {agencies.map((agency, index) => (
                 <section key={agency.name} className="mt-14">
                   <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-5">
-                    {index + 1}. {agency.name}
+                    {index === 0 ? (
+                      <a href="https://www.smartfish.co.in/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                        {index + 1}. {agency.name}
+                      </a>
+                    ) : index === 6 ? (
+                      <a href="https://www.hitzdigitalmarketing.com/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                        {index + 1}. {agency.name}
+                      </a>
+                    ) : (
+                      <>{index + 1}. {agency.name}</>
+                    )}
                   </h2>
                   <div className="space-y-5 text-lg text-muted-foreground leading-relaxed">
                     {agency.body.map((paragraph) => (
