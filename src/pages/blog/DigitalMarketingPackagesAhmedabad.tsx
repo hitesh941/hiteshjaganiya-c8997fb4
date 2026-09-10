@@ -22,7 +22,7 @@ const faqs = [
 ];
 
 const schema = [
-  { "@context": "https://schema.org", "@type": "BlogPosting", headline: post.title, description: post.description, image: coverUrl, url: postUrl, datePublished: post.datePublished, dateModified: post.dateModified, inLanguage: "en-IN", articleSection: post.category, keywords: post.keywords.join(", "), mainEntityOfPage: { "@type": "WebPage", "@id": postUrl }, author: { "@type": "Person", "@id": `${SITE_URL}/#person`, name: "Hitesh Jaganiya", url: `${SITE_URL}/`, jobTitle: "Digital Marketing Consultant" }, publisher: { "@type": "Organization", "@id": `${SITE_URL}/#organization`, name: "Hitz Digital Marketing", url: "https://www.hitzdigitalmarketing.com/", logo: { "@type": "ImageObject", url: `${SITE_URL}/favicon.ico` } } },
+  { "@context": "https://schema.org", "@type": "BlogPosting", headline: post.title, description: post.description, image: coverUrl, url: postUrl, datePublished: post.datePublished, dateModified: post.dateModified, inLanguage: "en-IN", articleSection: post.category, keywords: post.keywords.join(", "), mainEntityOfPage: { "@type": "WebPage", "@id": postUrl }, author: { "@type": "Person", "@id": `${SITE_URL}/#person`, name: "Hitesh Jaganiya", url: `${SITE_URL}/`, jobTitle: "Digital Marketing Consultant" }, publisher: { "@type": "Person", "@id": `${SITE_URL}/#person`, name: "Hitesh Jaganiya", url: `${SITE_URL}/`, jobTitle: "Digital Marketing Consultant" } },
   { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [ { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` }, { "@type": "ListItem", position: 2, name: "Blog", item: `${SITE_URL}/blog` }, { "@type": "ListItem", position: 3, name: post.title, item: postUrl } ] },
   { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map((faq) => ({ "@type": "Question", name: faq.q, acceptedAnswer: { "@type": "Answer", text: faq.a } })) },
 ];
@@ -34,14 +34,14 @@ const DigitalMarketingPackagesAhmedabad = () => (
       <meta name="description" content={post.description} />
       <meta name="keywords" content={post.keywords.join(", ")} />
       <meta name="author" content="Hitesh Jaganiya" />
-      <meta name="publisher" content="Hitz Digital Marketing" />
+      <meta name="publisher" content="Hitesh Jaganiya" />
       <meta name="robots" content="index, follow, max-image-preview:large" />
       <link rel="canonical" href={postUrl} />
       <link rel="alternate" hrefLang="en-IN" href={postUrl} />
       <meta property="article:published_time" content={post.datePublished} />
       <meta property="article:modified_time" content={post.dateModified} />
       <meta property="article:section" content={post.category} />
-      <meta property="article:publisher" content="https://www.hitzdigitalmarketing.com/" />
+      <meta property="article:publisher" content="https://www.hiteshjaganiya.com/" />
       <meta property="og:type" content="article" />
       <meta property="og:site_name" content="Hitesh Jaganiya" />
       <meta property="og:title" content={post.title} />
