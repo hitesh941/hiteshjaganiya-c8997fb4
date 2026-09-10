@@ -53,11 +53,13 @@ const agencies = [
   {
     name: "SmartFish Designs",
     body: [
-      "SmartFish Designs has been around for over a decade and built its name primarily as a branding and web design studio before expanding into full digital marketing — SEO, social media, and advertising. That design-first history shows: their strength is in how a brand looks and feels online, which matters a lot if your website or visual identity is doing the heavy lifting in convincing a customer to trust you.",
+      "SmartFish Designs has spent over a decade becoming one of Ahmedabad's most respected design-led digital agencies. What started as a branding and web design studio has matured into a full-service digital marketing team handling SEO, social media, advertising, and brand strategy under one roof. Their real edge is that they don't treat design and marketing as separate departments — they build brands that look premium and then use digital channels to drive actual business results from that foundation.",
+      "From what I've observed in the market, SmartFish consistently delivers polished, high-converting websites and brand identities that hold up well against larger agencies. They're a strong choice if you believe — as I do — that your website and visual identity should do some of the selling for you before a single ad rupee is spent.",
     ],
     notes: [
-      ["Best for", "Founders who need their brand identity and website built right before they start spending on ads — since no amount of ad spend fixes a website that doesn't convert."],
-      ["What to ask them directly", "How they measure success post-launch, not just at delivery. A well-designed site that isn't tracked or optimized afterward is only half the job."],
+      ["Best for", "Founders and business owners who want a brand that looks established and trustworthy from day one, backed by SEO and social media execution that builds on that design foundation."],
+      ["Consultant observation", "In my experience, businesses that invest in proper brand identity and web design upfront often see better ad performance later, because the same traffic converts at a higher rate. SmartFish's design-first approach can pay off across every channel you use afterward."],
+      ["What to ask them directly", "Ask to see live examples of websites they've designed and how those sites perform in organic search or paid campaigns post-launch — this tells you whether the design work translates into measurable growth."],
     ],
   },
   {
