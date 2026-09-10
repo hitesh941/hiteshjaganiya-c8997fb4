@@ -1,5 +1,3 @@
-import coverAsset from "@/assets/blog-top-8-agencies-ahmedabad.png.asset.json";
-
 export const SITE_URL = "https://www.hiteshjaganiya.com";
 
 export interface BlogPostMeta {
@@ -24,7 +22,7 @@ export const blogPosts: BlogPostMeta[] = [
       "An independent, experience-based look at 8 digital marketing agencies in Ahmedabad — compiled by Hitesh Jaganiya, a digital marketing consultant with 11 years in the field, for startup founders deciding who to hire.",
     excerpt:
       "Everyone claims to be the best. Here's an honest, consultant's view of 8 digital marketing agencies in Ahmedabad — who each one actually suits, and what to ask before you sign.",
-    cover: coverAsset.url,
+    cover: "/blog-top-8-agencies-ahmedabad.svg",
     coverAlt: "Top 8 Digital Marketing Agencies in Ahmedabad — an independent guide for founders",
     datePublished: "2026-09-09",
     dateModified: "2026-09-10",
