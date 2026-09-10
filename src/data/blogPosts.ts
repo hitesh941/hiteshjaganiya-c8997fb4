@@ -37,6 +37,27 @@ export const blogPosts: BlogPostMeta[] = [
       "best digital marketing agency Ahmedabad",
     ],
   },
+  {
+    slug: "digital-marketing-packages-in-ahmedabad",
+    title: "Digital Marketing Packages in Ahmedabad: What You Actually Get at ₹15K vs ₹50K vs ₹1L+",
+    description:
+      "A practical breakdown of digital marketing package pricing in Ahmedabad — what ₹15,000, ₹50,000, and ₹1 lakh+ typically buy, and how to choose the right level for your business.",
+    excerpt:
+      "What really changes between a ₹15,000, ₹50,000, and ₹1 lakh+ digital marketing package in Ahmedabad? A practical guide to the work, people, ad spend, and expectations behind each tier.",
+    cover: "/placeholder.svg",
+    coverAlt: "Digital marketing package pricing guide for businesses in Ahmedabad",
+    datePublished: "2026-09-10",
+    dateModified: "2026-09-10",
+    readingTime: "8 min read",
+    category: "Marketing Budget",
+    keywords: [
+      "digital marketing packages in Ahmedabad",
+      "digital marketing cost in Ahmedabad",
+      "SEO packages Ahmedabad",
+      "digital marketing agency pricing Ahmedabad",
+      "Google Ads management cost Ahmedabad",
+    ],
+  },
 ];
 
 export const getPostBySlug = (slug: string) =>
