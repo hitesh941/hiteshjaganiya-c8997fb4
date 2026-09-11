@@ -22,17 +22,41 @@
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "@id": "https://www.hiteshjaganiya.com/#person",
-  "name": "Hitesh Jaganiya",
-  "url": "https://www.hiteshjaganiya.com/",
-  "image": "https://www.hiteshjaganiya.com/assets/hitesh-new-profile-B9JyaFg3.png",
-  "jobTitle": "Digital Marketing Consultant",
-  "description": "Hitesh Jaganiya is a Digital Marketing Consultant in Ahmedabad helping businesses grow with SEO, Google Ads, and clear, data-driven digital strategies.",
-  "address": {"@type": "PostalAddress", "addressLocality": "Ahmedabad", "addressRegion": "Gujarat", "addressCountry": "IN"},
-  "sameAs": ["https://www.linkedin.com/in/hiteshjaganiya/", "https://github.com/hitesh941"],
-  "knowsAbout": ["Digital Marketing", "SEO", "Google Ads", "Meta Ads", "Conversion Optimization", "Google Analytics", "Google Tag Manager"],
-  "worksFor": {"@type": "Organization", "name": "Hitz Digital Marketing", "url": "https://www.hitzdigitalmarketing.com/"}
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://www.hiteshjaganiya.com/#person",
+      "name": "Hitesh Jaganiya",
+      "url": "https://www.hiteshjaganiya.com/",
+      "image": "https://www.hiteshjaganiya.com/assets/hitesh-new-profile-B9JyaFg3.png",
+      "jobTitle": "Digital Marketing Consultant",
+      "description": "Hitesh Jaganiya is a Digital Marketing Consultant in Ahmedabad helping businesses grow with SEO, Google Ads, and clear, data-driven digital strategies.",
+      "address": {"@type": "PostalAddress", "addressLocality": "Ahmedabad", "addressRegion": "Gujarat", "addressCountry": "IN"},
+      "sameAs": ["https://www.linkedin.com/in/hiteshjaganiya/", "https://github.com/hitesh941"],
+      "knowsAbout": ["Digital Marketing", "SEO", "Google Ads", "Meta Ads", "Conversion Optimization", "Google Analytics", "Google Tag Manager"],
+      "worksFor": {"@id": "https://www.hiteshjaganiya.com/#organization"}
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.hiteshjaganiya.com/#organization",
+      "name": "Hitz Digital Marketing",
+      "url": "https://www.hitzdigitalmarketing.com/",
+      "description": "Hitz Digital Marketing is the digital marketing business associated with Hitesh Jaganiya, providing SEO, Google Ads, social media marketing, local SEO, and web design services.",
+      "founder": {"@id": "https://www.hiteshjaganiya.com/#person"},
+      "sameAs": ["https://www.hitzdigitalmarketing.com/"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.hiteshjaganiya.com/#website",
+      "url": "https://www.hiteshjaganiya.com/",
+      "name": "Hitesh Jaganiya",
+      "description": "Hitesh Jaganiya's website covering digital marketing consulting, SEO, Google Ads, and practical growth strategies for businesses.",
+      "inLanguage": "en-IN",
+      "publisher": {"@id": "https://www.hiteshjaganiya.com/#person"},
+      "about": {"@id": "https://www.hiteshjaganiya.com/#person"},
+      "mainEntity": {"@id": "https://www.hiteshjaganiya.com/#person"}
+    }
+  ]
 }
 </script>
   </head>
