@@ -18,7 +18,6 @@ const Index = () => {
         <ServicesSection />
         <ResultsSection />
         <LatestInsightsSection />
-        <ContactSection />
         <section className="section-padding bg-foreground">
           <div className="container-custom">
             <div className="max-w-4xl mx-auto text-center">
@@ -30,6 +29,7 @@ const Index = () => {
             </div>
           </div>
         </section>
+        <ContactSection />
       </main>
       <Footer />
     </div>
