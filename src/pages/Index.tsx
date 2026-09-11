@@ -5,6 +5,7 @@ import AboutSection from "@/components/AboutSection";
 import ServicesSection from "@/components/ServicesSection";
 import ResultsSection from "@/components/ResultsSection";
 import LatestInsightsSection from "@/components/LatestInsightsSection";
+import FeaturedCredentialsSection from "@/components/FeaturedCredentialsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
@@ -17,7 +18,6 @@ const Index = () => {
         <AboutSection />
         <ServicesSection />
         <ResultsSection />
-        <LatestInsightsSection />
         <section className="section-padding bg-muted/30 border-y border-border/60">
           <div className="container-custom">
             <div className="max-w-4xl mx-auto text-center">
@@ -29,6 +29,8 @@ const Index = () => {
             </div>
           </div>
         </section>
+        <LatestInsightsSection />
+        <FeaturedCredentialsSection />
         <ContactSection />
       </main>
       <Footer />
