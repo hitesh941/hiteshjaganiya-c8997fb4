@@ -16,6 +16,7 @@ const ResultsSection = () => {
     "Managed and scaled ad budgets efficiently",
     "Improved conversion rates through funnel optimization",
     "Built sustainable organic traffic channels",
+    "Developed data-driven strategies focused on measurable growth",
   ];
 
   const certifications = [
@@ -48,9 +49,9 @@ const ResultsSection = () => {
       </section>
 
       <section className="section-padding bg-background">
-        <div className="container-custom"><div className="max-w-3xl mx-auto">
+        <div className="container-custom"><div className="max-w-5xl mx-auto">
           <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-8 text-center">Key Achievements</h3>
-          <div className="grid sm:grid-cols-2 gap-4">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {achievements.map((achievement, index) => <div key={index} className="flex items-start gap-3 p-4 bg-muted/50 rounded-xl border border-border"><CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" /><span className="text-foreground/90">{achievement}</span></div>)}
           </div>
         </div></div>
