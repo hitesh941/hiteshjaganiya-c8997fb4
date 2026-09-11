@@ -18,10 +18,12 @@ const Index = () => {
         <AboutSection />
         <ServicesSection />
         <ResultsSection />
+        <LatestInsightsSection />
+        <FeaturedCredentialsSection />
         <section className="section-padding bg-muted/30 border-y border-border/60">
           <div className="container-custom">
             <div className="max-w-4xl mx-auto text-center">
-              <Quote className="w-12 h-12 text-primary mx-auto mb-6 opacity-80" />
+              <Quote className="w-12 h-12 text-primary mx-auto mb-6" />
               <blockquote className="text-2xl md:text-3xl lg:text-4xl font-medium text-foreground leading-relaxed mb-8 italic">
                 "We kick off our work with our clients by immersing ourselves in their industry, their vision and their culture."
               </blockquote>
@@ -29,8 +31,6 @@ const Index = () => {
             </div>
           </div>
         </section>
-        <LatestInsightsSection />
-        <FeaturedCredentialsSection />
         <ContactSection />
       </main>
       <Footer />
