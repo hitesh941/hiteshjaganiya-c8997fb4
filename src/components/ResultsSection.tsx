@@ -1,4 +1,4 @@
-import { TrendingUp, DollarSign, Users, CheckCircle, Clock, Award, Quote } from "lucide-react";
+import { TrendingUp, DollarSign, Users, CheckCircle, Clock, Award } from "lucide-react";
 import globalHuesLogo from "@/assets/global-hues-logo.png";
 import yourstoryLogo from "@/assets/yourstory-logo.svg";
 
@@ -49,7 +49,7 @@ const ResultsSection = () => {
       </section>
 
       <section className="section-padding bg-background">
-        <div className="container-custom"><div className="max-w-5xl mx-auto">
+        <div className="container-custom"><div className="max-w-4xl mx-auto">
           <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-8 text-center">Key Achievements</h3>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {achievements.map((achievement, index) => <div key={index} className="flex items-start gap-3 p-4 bg-muted/50 rounded-xl border border-border"><CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" /><span className="text-foreground/90">{achievement}</span></div>)}
@@ -94,14 +94,6 @@ const ResultsSection = () => {
             </div>
           </div>
         </div>
-      </section>
-
-      <section className="section-padding bg-foreground">
-        <div className="container-custom"><div className="max-w-4xl mx-auto text-center">
-          <Quote className="w-12 h-12 text-primary mx-auto mb-6 opacity-60" />
-          <blockquote className="text-2xl md:text-3xl lg:text-4xl font-medium text-primary-foreground leading-relaxed mb-8 italic">"We kick off our work with our clients by immersing ourselves in their industry, their vision and their culture."</blockquote>
-          <p className="text-primary-foreground/70 font-semibold">Hitesh Jaganiya</p>
-        </div></div>
       </section>
     </>
   );
