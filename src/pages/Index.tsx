@@ -18,14 +18,14 @@ const Index = () => {
         <ServicesSection />
         <ResultsSection />
         <LatestInsightsSection />
-        <section className="section-padding bg-foreground">
+        <section className="section-padding bg-muted/30 border-y border-border/60">
           <div className="container-custom">
             <div className="max-w-4xl mx-auto text-center">
-              <Quote className="w-12 h-12 text-primary mx-auto mb-6 opacity-60" />
-              <blockquote className="text-2xl md:text-3xl lg:text-4xl font-medium text-primary-foreground leading-relaxed mb-8 italic">
+              <Quote className="w-12 h-12 text-primary mx-auto mb-6 opacity-80" />
+              <blockquote className="text-2xl md:text-3xl lg:text-4xl font-medium text-foreground leading-relaxed mb-8 italic">
                 "We kick off our work with our clients by immersing ourselves in their industry, their vision and their culture."
               </blockquote>
-              <p className="text-primary-foreground/70 font-semibold">Hitesh Jaganiya</p>
+              <p className="text-muted-foreground font-semibold">Hitesh Jaganiya</p>
             </div>
           </div>
         </section>
