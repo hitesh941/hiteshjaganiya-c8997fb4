@@ -9,12 +9,13 @@ import { blogPosts, SITE_URL } from "@/data/blogPosts";
 const Blog = () => {
   const title = "Blog | SEO & Digital Marketing Insights — Hitesh Jaganiya";
   const description = "Practical SEO, Google Ads and growth strategy articles for Ahmedabad business owners and founders, written by digital marketing consultant Hitesh Jaganiya.";
+  const sortedPosts = [...blogPosts].sort((a, b) => b.datePublished.localeCompare(a.datePublished));
 
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>{title}</title><meta name="description" content={description} /><meta name="robots" content="index, follow, max-image-preview:large" /><meta property="og:site_name" content="Hitesh Jaganiya" /><link rel="alternate" hrefLang="en-IN" href={`${SITE_URL}/blog`} /><link rel="canonical" href={`${SITE_URL}/blog`} /><meta property="og:type" content="website" /><meta property="og:title" content={title} /><meta property="og:description" content={description} /><meta property="og:url" content={`${SITE_URL}/blog`} /><meta name="twitter:title" content={title} /><meta name="twitter:description" content={description} />
-        <script type="application/ld+json">{JSON.stringify({ "@context": "https://schema.org", "@type": "Blog", name: "Hitesh Jaganiya Blog", url: `${SITE_URL}/blog`, author: { "@type": "Person", name: "Hitesh Jaganiya", url: `${SITE_URL}/` }, publisher: { "@type": "Person", "@id": `${SITE_URL}/#person`, name: "Hitesh Jaganiya", url: `${SITE_URL}/` }, blogPost: blogPosts.map((post) => ({ "@type": "BlogPosting", headline: post.title, description: post.description, url: `${SITE_URL}/blog/${post.slug}`, datePublished: post.datePublished, dateModified: post.dateModified, author: { "@type": "Person", name: "Hitesh Jaganiya", url: `${SITE_URL}/#person` }, publisher: { "@id": `${SITE_URL}/#person` } })) })}</script>
+        <script type="application/ld+json">{JSON.stringify({ "@context": "https://schema.org", "@type": "Blog", name: "Hitesh Jaganiya Blog", url: `${SITE_URL}/blog`, author: { "@type": "Person", name: "Hitesh Jaganiya", url: `${SITE_URL}/` }, publisher: { "@type": "Person", "@id": `${SITE_URL}/#person`, name: "Hitesh Jaganiya", url: `${SITE_URL}/` }, blogPost: sortedPosts.map((post) => ({ "@type": "BlogPosting", headline: post.title, description: post.description, url: `${SITE_URL}/blog/${post.slug}`, datePublished: post.datePublished, dateModified: post.dateModified, author: { "@type": "Person", name: "Hitesh Jaganiya", url: `${SITE_URL}/#person` }, publisher: { "@id": `${SITE_URL}/#person` } })) })}</script>
       </Helmet>
       <Header />
       <main className="pt-24 md:pt-28">
@@ -27,7 +28,7 @@ const Blog = () => {
             </div>
             <div className="blog-listing-grid grid lg:grid-cols-[minmax(0,1fr)_320px] xl:grid-cols-[minmax(0,1fr)_340px] gap-8 xl:gap-10 mt-10 md:mt-14 items-start">
               <div className="blog-listing-cards grid sm:grid-cols-2 gap-6 xl:gap-8">
-                {blogPosts.map((post) => (
+                {sortedPosts.map((post) => (
                   <article key={post.slug} className="group bg-card rounded-2xl border border-border overflow-hidden shadow-soft hover:shadow-medium transition-all duration-300 hover:-translate-y-1">
                     <Link to={`/blog/${post.slug}`} className="block h-full">
                       <div className="overflow-hidden bg-secondary/30"><img src={post.cover} alt={post.coverAlt} className="w-full aspect-[16/9] object-cover transition-transform duration-500 group-hover:scale-[1.02]" loading="lazy" /></div>
