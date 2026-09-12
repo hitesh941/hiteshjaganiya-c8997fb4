@@ -1,6 +1,10 @@
 {
   "rewrites": [
     {
+      "source": "/blog/smart-objectives-competitive-benchmarking",
+      "destination": "/blog/smart-objectives-competitive-benchmarking/index.html"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }
