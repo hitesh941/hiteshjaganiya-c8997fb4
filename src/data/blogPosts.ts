@@ -24,8 +24,8 @@ export const blogPosts: BlogPostMeta[] = [
       "Everyone claims to be the best. Here's an honest, consultant's view of 8 digital marketing agencies in Ahmedabad — who each one actually suits, and what to ask before you sign.",
     cover: "/blog-top-8-agencies-ahmedabad.svg",
     coverAlt: "Top 8 Digital Marketing Agencies in Ahmedabad — an independent guide for founders",
-    datePublished: "2026-09-09",
-    dateModified: "2026-09-10",
+    datePublished: "2026-06-20",
+    dateModified: "2026-06-22",
     readingTime: "9 min read",
     category: "Agency Selection",
     keywords: [
@@ -44,8 +44,8 @@ export const blogPosts: BlogPostMeta[] = [
       "What really changes between a ₹15,000, ₹50,000, and ₹1 lakh+ digital marketing package in Ahmedabad? A practical guide to the work, people, ad spend, and expectations behind each tier.",
     cover: "/digital-marketing-packages-ahmedabad.svg",
     coverAlt: "Digital marketing packages and pricing in Ahmedabad — ₹15K, ₹50K and ₹1L+ guide for 2026",
-    datePublished: "2026-09-10",
-    dateModified: "2026-09-10",
+    datePublished: "2026-07-04",
+    dateModified: "2026-07-06",
     readingTime: "8 min read",
     category: "Marketing Budget",
     keywords: [
