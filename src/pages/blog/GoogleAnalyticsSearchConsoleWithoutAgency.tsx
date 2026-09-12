@@ -1,0 +1,144 @@
+import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
+import { ArrowRight, CalendarDays, Clock, User } from "lucide-react";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import AuthorCard from "@/components/AuthorCard";
+import BlogSidebar from "@/components/BlogSidebar";
+import BlogBreadcrumbs from "@/components/BlogBreadcrumbs";
+import { Button } from "@/components/ui/button";
+import { getPostBySlug, SITE_URL } from "@/data/blogPosts";
+
+const post = getPostBySlug("how-to-read-google-analytics-search-console-without-an-agency")!;
+const postUrl = `${SITE_URL}/blog/${post.slug}`;
+const coverUrl = post.cover.startsWith("http") ? post.cover : `${SITE_URL}${post.cover}`;
+
+const faqs = [
+  { q: "Is Google Analytics free to use?", a: "Yes, Google Analytics 4 is free for most small and medium businesses. There's a paid enterprise version (Google Analytics 360) meant for very high-traffic websites, but the vast majority of businesses will never need it." },
+  { q: "How often should I check my Analytics and Search Console data?", a: "A monthly review is usually enough for most small businesses. Checking daily often leads to reacting to normal fluctuations that don't actually mean anything meaningful over a short window." },
+  { q: "Why does Search Console show different numbers than Google Analytics?", a: "They measure different things. Search Console tracks visibility and clicks specifically from Google Search results, while Analytics tracks all traffic to your site regardless of source, plus what visitors do once they arrive. Some discrepancy between the two is completely normal." },
+  { q: "What's the single most important metric for a small business to track?", a: "Conversions — whatever action actually matters for your business, whether that's a form submission, a call, or a purchase. Traffic and rankings are only useful insofar as they lead to that outcome." },
+  { q: "Do I need to hire someone just to set up conversion tracking?", a: "Basic conversion tracking (a form submission or button click) can often be set up through GA4's built-in event tracking without needing custom code, though it does take a bit of patience to configure correctly the first time. More advanced tracking — ecommerce purchases, multi-step funnels — usually benefits from someone experienced setting it up properly from the start." },
+];
+
+const schema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "@id": `${postUrl}#article`,
+    headline: post.title,
+    description: post.description,
+    image: [coverUrl],
+    url: postUrl,
+    datePublished: `${post.datePublished}T09:00:00+05:30`,
+    dateModified: `${post.dateModified}T09:00:00+05:30`,
+    inLanguage: "en-IN",
+    articleSection: post.category,
+    keywords: post.keywords.join(", "),
+    mainEntityOfPage: { "@type": "WebPage", "@id": postUrl },
+    author: { "@type": "Person", "@id": `${SITE_URL}/#person`, name: "Hitesh Jaganiya", url: `${SITE_URL}/`, jobTitle: "Digital Marketing Consultant" },
+    publisher: { "@type": "Person", "@id": `${SITE_URL}/#person`, name: "Hitesh Jaganiya", url: `${SITE_URL}/`, jobTitle: "Digital Marketing Consultant" },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
+      { "@type": "ListItem", position: 2, name: "Blog", item: `${SITE_URL}/blog` },
+      { "@type": "ListItem", position: 3, name: post.title, item: postUrl },
+    ],
+  },
+];
+
+const GoogleAnalyticsSearchConsoleWithoutAgency = () => (
+  <div className="min-h-screen bg-background">
+    <Helmet>
+      <title>{post.title}</title>
+      <meta name="description" content={post.description} />
+      <meta name="keywords" content={post.keywords.join(", ")} />
+      <meta name="author" content="Hitesh Jaganiya" />
+      <meta name="publisher" content="Hitesh Jaganiya" />
+      <meta name="robots" content="index, follow, max-image-preview:large" />
+      <link rel="canonical" href={postUrl} />
+      <link rel="alternate" hrefLang="en-IN" href={postUrl} />
+      <meta property="article:publisher" content={`${SITE_URL}/`} />
+      <meta property="article:published_time" content={post.datePublished} />
+      <meta property="article:modified_time" content={post.dateModified} />
+      <meta property="article:section" content={post.category} />
+      <meta property="og:type" content="article" />
+      <meta property="og:site_name" content="Hitesh Jaganiya" />
+      <meta property="og:title" content={post.title} />
+      <meta property="og:description" content={post.description} />
+      <meta property="og:url" content={postUrl} />
+      <meta property="og:image" content={coverUrl} />
+      <meta property="og:image:alt" content={post.coverAlt} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:locale" content="en_IN" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={post.title} />
+      <meta name="twitter:description" content={post.description} />
+      <meta name="twitter:image" content={coverUrl} />
+      <meta name="twitter:image:alt" content={post.coverAlt} />
+      <script type="application/ld+json">{JSON.stringify(schema)}</script>
+    </Helmet>
+    <Header />
+    <main className="pt-28 md:pt-36">
+      <article className="section-padding pt-0">
+        <div className="container-custom">
+          <BlogBreadcrumbs />
+          <div className="grid lg:grid-cols-[minmax(0,1fr)_320px] gap-12 items-start">
+            <div className="max-w-3xl">
+              <Link to="/blog" className="inline-flex items-center text-sm font-semibold text-primary hover:underline mb-8">← Back to blog</Link>
+              <header>
+                <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground mb-6">
+                  <span className="inline-flex items-center gap-1.5"><CalendarDays className="w-4 h-4" />{new Date(post.datePublished).toLocaleDateString("en-IN", { day: "numeric", month: "long", year: "numeric" })}</span>
+                  <span className="inline-flex items-center gap-1.5"><Clock className="w-4 h-4" />{post.readingTime}</span>
+                  <span className="inline-flex items-center gap-1.5"><User className="w-4 h-4" />Hitesh Jaganiya</span>
+                </div>
+                <span className="inline-block text-sm font-semibold text-primary uppercase tracking-wider mb-4">{post.category}</span>
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight text-balance mb-6">{post.title}</h1>
+                <p className="text-xl text-muted-foreground leading-relaxed mb-8">{post.excerpt}</p>
+                <img src={post.cover} alt={post.coverAlt} className="w-full aspect-[16/9] object-cover rounded-2xl border border-border mb-10" />
+              </header>
+
+              <div className="mb-10 rounded-2xl border border-primary/20 bg-primary/5 p-6 md:p-7">
+                <p className="text-sm font-semibold uppercase tracking-wider text-primary mb-3">Quick answer</p>
+                <p className="text-lg md:text-xl font-medium text-foreground leading-relaxed">Use Search Console to understand how Google searchers find you, and GA4 to understand what visitors do after they arrive. For a small business, start with clicks, impressions, queries, traffic sources, engagement, pages, indexing, and — most importantly — properly configured conversions.</p>
+              </div>
+
+              <div className="space-y-8 text-lg text-muted-foreground leading-relaxed">
+                <p>I get asked a version of this question almost every month, usually by a founder who's just been sent a "monthly performance report" from their agency and has no idea what half the numbers actually mean. They nod along on the call, thank the agency, and quietly close the PDF without understanding whether things are actually going well or not.</p>
+                <p>I'm Hitesh Jaganiya, a digital marketing consultant based in Ahmedabad with 11 years in this field, and I'm certified in both Google Ads and Google Analytics. One thing I genuinely believe — even though it's not in most consultants' interest to say it — is that every founder should be able to open their own Analytics and Search Console accounts and understand, at a basic level, what's happening on their website. You don't need to become an analyst. You just need to know which five or six numbers actually matter and where to find them.</p>
+                <p>This is going to be a practical walkthrough, not a feature tour. I'm skipping the stuff that looks impressive in a screenshot but doesn't actually tell you anything useful.</p>
+
+                <section><h2 className="text-2xl md:text-3xl font-bold text-foreground mb-5">First, Understand What Each Tool Is Actually For</h2><p>People often mix these two up, so let's separate them cleanly. Google Analytics tells you what happens <em>on</em> your website — how many people visited, what they did, how long they stayed, whether they converted. Search Console tells you what happens <em>before</em> someone lands on your site — how you're showing up in Google search, which queries bring people to you, and whether Google can even find and index your pages properly.</p><p className="mt-5">Think of Search Console as "why are people finding me (or not)" and Analytics as "what do they do once they arrive." You genuinely need both, because a problem in one often explains a symptom in the other. Traffic dropping in Analytics? Check Search Console first — often the real story is a ranking drop, not a website problem at all.</p></section>
+
+                <section><h2 className="text-2xl md:text-3xl font-bold text-foreground mb-5">Starting With Google Analytics 4 (GA4)</h2><p>If you set up GA4 recently, the interface can feel overwhelming compared to the old Universal Analytics — there's a lot more clicking around to get to the same numbers. Here's where I'd actually spend time.</p><div className="space-y-6 mt-6"><div><h3 className="text-xl font-semibold text-foreground mb-2">1. Start with Traffic Acquisition</h3><p><strong className="text-foreground">Go to Reports → Acquisition → Traffic Acquisition first.</strong> This single screen answers the most important question: where are your visitors actually coming from? You'll see channels like Organic Search (people who found you through Google), Direct (people who typed your URL directly or have you bookmarked), Paid Search (ad clicks), and Social. If 80% of your traffic is Direct and almost nothing is Organic Search, that's telling you something real — either your SEO isn't working yet, or you're too new to be ranking for anything meaningful yet.</p></div><div><h3 className="text-xl font-semibold text-foreground mb-2">2. Check Engagement Rate, not Bounce Rate</h3><p><strong className="text-foreground">Check Engagement Rate, not Bounce Rate.</strong> GA4 replaced the old bounce rate metric with engagement rate, which honestly confuses a lot of people who learned Analytics years ago. Engagement rate shows the percentage of sessions that lasted longer than 10 seconds, had a conversion event, or included at least two page views. Anything below 40-50% for a service business website is usually worth investigating — it often means people are landing and leaving almost immediately, which points to a mismatch between what your ad or search result promised and what the page actually delivers.</p></div><div><h3 className="text-xl font-semibold text-foreground mb-2">3. Compare Average Engagement Time Across Pages</h3><p><strong className="text-foreground">Look at Average Engagement Time per session, and compare it across your top pages.</strong> Go to Reports → Engagement → Pages and Screens. If your homepage gets thirty seconds of attention but your pricing page gets three minutes, that tells you something about where real interest is happening on your site — often more useful than raw pageview counts.</p></div><div><h3 className="text-xl font-semibold text-foreground mb-2">4. Set Up and Check Conversions Properly</h3><p><strong className="text-foreground">Set up and check your Conversions properly.</strong> This is the step most founders skip entirely, and it's the one that actually matters most. A "conversion" in GA4 needs to be defined by you — form submission, WhatsApp click, phone number click, add to cart, whatever counts as a meaningful action for your business. Without this set up, you're just looking at traffic numbers with no way to tell if that traffic is actually doing anything valuable. If nothing is currently marked as a conversion in your account, that's the very first thing to fix before any of the other numbers mean much.</p></div></div></section>
+
+                <section><h2 className="text-2xl md:text-3xl font-bold text-foreground mb-5">Reading Search Console the Right Way</h2><p>Search Console is, in my opinion, more immediately useful for most small business owners than Analytics, simply because it tells you exactly how you're performing in Google search without needing you to interpret behavior.</p><div className="space-y-6 mt-6"><div><h3 className="text-xl font-semibold text-foreground mb-2">1. Start with the Performance Report</h3><p><strong className="text-foreground">Start with the Performance report.</strong> This shows three numbers that matter more than anything else on the whole platform: total clicks, total impressions, and average position. Clicks are self-explanatory — actual visits from search. Impressions tell you how often your site showed up in search results, even if nobody clicked. Average position tells you roughly where you're ranking on average across all your keywords combined.</p></div><div><h3 className="text-xl font-semibold text-foreground mb-2">2. Watch Impressions vs Clicks</h3><p>Here's the pattern worth watching for: high impressions with low clicks usually means you're showing up in search but your title and meta description aren't compelling enough to earn the click — a fixable copywriting problem, not a ranking problem. Low impressions altogether usually means you're either not ranking for enough relevant terms yet, or you're targeting search terms with genuinely low search volume.</p></div><div><h3 className="text-xl font-semibold text-foreground mb-2">3. Check Queries</h3><p><strong className="text-foreground">Check the Queries tab under Performance.</strong> This shows the actual search terms people used to find your site. I'd genuinely encourage every business owner to scroll through this list at least once a month. You'll often find you're ranking — sometimes decently — for terms you never intentionally targeted, which can point you toward content opportunities you hadn't considered. You'll also sometimes find you're not showing up at all for the terms you assumed were your bread and butter, which is worth knowing before you keep investing in content that isn't reaching the right audience.</p></div><div><h3 className="text-xl font-semibold text-foreground mb-2">4. Check Which Pages Earn Clicks</h3><p><strong className="text-foreground">Look at the Pages tab to see which specific pages are earning clicks.</strong> If one blog post or service page is quietly outperforming everything else, that's useful information — it tells you what kind of content or messaging is actually working, and it's often worth building more content around whatever made that page succeed.</p></div><div><h3 className="text-xl font-semibold text-foreground mb-2">5. Don't Ignore Indexing</h3><p><strong className="text-foreground">Don't ignore the Coverage/Indexing report.</strong> This one gets skipped constantly, but it tells you if Google is actually able to find and index all your pages. A page that isn't indexed can't rank for anything, no matter how good the content is. If you've published pages that aren't showing up anywhere in search after a few weeks, this is the first place to check — sometimes it's a simple technical block, and fixing it can unlock traffic that's been sitting there unused.</p></div></div></section>
+
+                <section><h2 className="text-2xl md:text-3xl font-bold text-foreground mb-5">Numbers I'd Tell You to Mostly Ignore</h2><p>Not every metric deserves your attention, and honestly, some of them exist mainly to make a report look more substantial than it is.</p><ul className="list-disc pl-6 space-y-4 mt-5"><li><strong className="text-foreground">Total pageviews on their own.</strong> A page can get a thousand views and generate zero business value if nobody who lands on it is actually a potential customer. Raw traffic numbers without context on quality or conversion are close to meaningless.</li><li><strong className="text-foreground">Session duration in isolation.</strong> Someone spending five minutes on your site could mean deep interest, or it could mean they got confused trying to find your contact information. This number needs the "what did they actually do" context around it to mean anything.</li><li><strong className="text-foreground">Bounce rate comparisons across completely different page types.</strong> A blog post with a 70% bounce rate might be perfectly healthy — someone read the article, got their answer, and left satisfied. A contact page with the same bounce rate is a real problem. The same number means completely different things depending on what the page is supposed to do.</li></ul></section>
+
+                <section><h2 className="text-2xl md:text-3xl font-bold text-foreground mb-5">A Simple Monthly Habit Worth Building</h2><p>You don't need to check these tools daily, and honestly, doing so often leads to overreacting to normal day-to-day fluctuations that don't mean anything. What I'd actually suggest is a 15-20 minute check once a month: open Search Console's Performance report and compare this month's clicks and impressions to last month's, scan the Queries tab for anything new or unexpected, then switch to GA4 and check your Traffic Acquisition report alongside your conversion numbers for the same period.</p><p className="mt-5">That single habit — done consistently — will tell you more about whether your marketing is actually working than any glossy PDF report, because you're looking at the raw numbers yourself instead of trusting someone else's summary of them.</p></section>
+
+                <section><h2 className="text-2xl md:text-3xl font-bold text-foreground mb-5">Why This Matters Even If You Do Hire Help</h2><p>None of this is meant to suggest you shouldn't work with an agency or consultant — plenty of the deeper strategic work genuinely benefits from experience and time that most founders don't have to spare. But understanding these basics changes the conversation you have with whoever you hire. You'll be able to ask better questions, spot when a report is glossing over a weak month, and generally have a much clearer sense of whether your marketing spend is doing what it's supposed to. That's a better position to negotiate and make decisions from, regardless of who's actually running your campaigns day to day.</p></section>
+
+                <div className="p-6 bg-secondary/40 rounded-2xl border border-border"><p className="text-sm font-semibold text-foreground mb-3">Related reading</p><div className="grid gap-3 text-base"><Link to="/blog/digital-marketing-packages-in-ahmedabad" className="text-primary font-semibold hover:underline">Digital Marketing Packages in Ahmedabad →</Link><Link to="/blog/google-ads-vs-meta-ads-ahmedabad" className="text-primary font-semibold hover:underline">Google Ads vs Meta Ads for Ahmedabad Businesses →</Link><Link to="/blog/seo-for-real-estate-businesses-in-ahmedabad" className="text-primary font-semibold hover:underline">SEO for Real Estate Businesses in Ahmedabad →</Link><Link to="/blog/top-8-digital-marketing-agencies-in-ahmedabad" className="text-primary font-semibold hover:underline">Top Digital Marketing Agencies in Ahmedabad →</Link></div></div>
+
+                <section><h2 className="text-2xl md:text-3xl font-bold text-foreground mb-5">Frequently Asked Questions</h2><div className="space-y-6">{faqs.map((faq) => <div key={faq.q}><h3 className="text-xl font-semibold text-foreground mb-2">{faq.q}</h3><p>{faq.a}</p></div>)}</div></section>
+              </div>
+
+              <div className="mt-12"><AuthorCard /></div>
+              <div className="mt-10 flex justify-center"><Button asChild variant="hero" size="lg"><Link to="/">Work With Hitesh <ArrowRight className="ml-2 w-4 h-4" /></Link></Button></div>
+            </div>
+            <BlogSidebar currentSlug={post.slug} />
+          </div>
+        </div>
+      </article>
+    </main>
+    <Footer />
+  </div>
+);
+
+export default GoogleAnalyticsSearchConsoleWithoutAgency;
