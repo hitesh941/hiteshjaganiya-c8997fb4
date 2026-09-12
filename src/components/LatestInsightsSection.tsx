@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 import { blogPosts } from "@/data/blogPosts";
 
 const LatestInsightsSection = () => {
-  const latestPosts = blogPosts.slice(0, 3);
+  const latestPosts = [...blogPosts]
+    .sort((a, b) => b.datePublished.localeCompare(a.datePublished))
+    .slice(0, 3);
 
   return (
     <section className="section-padding bg-background">
