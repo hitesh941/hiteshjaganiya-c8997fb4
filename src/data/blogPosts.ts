@@ -124,6 +124,28 @@ export const blogPosts: BlogPostMeta[] = [
       "how to understand website analytics",
     ],
   },
+  {
+    slug: "smart-objectives-competitive-benchmarking",
+    title: "Where SMART Objectives Meet Competitive Benchmarking: The Origins of Evidence-Based Target Setting in Digital Marketing",
+    description:
+      "A research-led look at how SMART objectives and competitive benchmarking developed separately and later converged in digital marketing planning.",
+    excerpt:
+      "Why should you benchmark your own and competitors' performance before setting SMART objectives? This article traces the management ideas behind evidence-based target setting.",
+    cover: "/smart-objectives-competitive-benchmarking.svg",
+    coverAlt: "SMART objectives and competitive benchmarking — evidence-based target setting in digital marketing",
+    datePublished: "2026-09-12",
+    dateModified: "2026-09-12",
+    readingTime: "8 min read",
+    category: "Digital Strategy",
+    keywords: [
+      "SMART objectives digital marketing",
+      "competitive benchmarking digital marketing",
+      "evidence-based target setting",
+      "SMART marketing objectives",
+      "digital marketing benchmarking",
+      "competitive benchmarking",
+    ],
+  },
 ];
 
 export const getPostBySlug = (slug: string) =>
