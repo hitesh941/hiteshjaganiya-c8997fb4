@@ -101,6 +101,29 @@ export const blogPosts: BlogPostMeta[] = [
       "SEO for builders Ahmedabad",
     ],
   },
+  {
+    slug: "how-to-read-google-analytics-search-console-without-an-agency",
+    title: "How to Read Your Own Google Analytics and Search Console Without an Agency",
+    description:
+      "A practical, no-jargon guide to reading Google Analytics 4 and Search Console yourself, written by Ahmedabad-based digital marketing consultant Hitesh Jaganiya.",
+    excerpt:
+      "Learn which Google Analytics 4 and Search Console numbers actually matter, where to find them, and how to judge your website marketing without relying on an agency report.",
+    cover: "/google-analytics-search-console-without-agency.svg",
+    coverAlt: "How to Read Your Own Google Analytics and Search Console Without an Agency — practical guide by Hitesh Jaganiya",
+    datePublished: "2026-09-12",
+    dateModified: "2026-09-12",
+    readingTime: "10 min read",
+    category: "Analytics & SEO",
+    keywords: [
+      "how to read Google Analytics without an agency",
+      "how to read Google Analytics",
+      "how to read Search Console",
+      "Google Analytics 4 guide for business owners",
+      "Google Search Console guide for business owners",
+      "Google Analytics and Search Console",
+      "how to understand website analytics",
+    ],
+  },
 ];
 
 export const getPostBySlug = (slug: string) =>
