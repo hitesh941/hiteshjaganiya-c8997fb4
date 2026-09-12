@@ -1,0 +1,9 @@
+/* Keep the static crawler-safe article aligned with the site's 1600px desktop container. */
+:root{--max:1600px}
+body{overflow-x:hidden}
+.nav,.wrap{width:min(var(--max),calc(100% - 80px))}
+.layout{grid-template-columns:minmax(0,1fr) 360px;gap:24px}
+.article{max-width:900px}
+.hero{max-width:1000px}
+@media(max-width:900px){.wrap,.nav{width:min(var(--max),calc(100% - 40px))}.layout{grid-template-columns:1fr}}
+@media(max-width:560px){.wrap{width:min(100% - 28px,var(--max))}}
