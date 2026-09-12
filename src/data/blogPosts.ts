@@ -66,8 +66,8 @@ export const blogPosts: BlogPostMeta[] = [
       "Google or Meta? A practical guide for Ahmedabad businesses deciding which advertising platform to use first based on customer intent, product type, budget, and decision stage.",
     cover: "/google-ads-vs-meta-ads-ahmedabad.svg",
     coverAlt: "Google Ads vs Meta Ads for Ahmedabad businesses — which advertising platform should you use first?",
-    datePublished: "2026-09-10",
-    dateModified: "2026-09-10",
+    datePublished: "2026-07-28",
+    dateModified: "2026-07-29",
     readingTime: "7 min read",
     category: "Paid Advertising",
     keywords: [
@@ -88,8 +88,8 @@ export const blogPosts: BlogPostMeta[] = [
       "How builders, brokers and property consultants in Ahmedabad can use local SEO to reach buyers across locations, property types and stages of the buying journey.",
     cover: "/seo-real-estate-ahmedabad.svg",
     coverAlt: "SEO for real estate businesses in Ahmedabad — practical guide for builders, brokers and property consultants",
-    datePublished: "2026-09-10",
-    dateModified: "2026-09-10",
+    datePublished: "2026-08-15",
+    dateModified: "2026-08-17",
     readingTime: "8 min read",
     category: "Real Estate SEO",
     keywords: [
@@ -110,8 +110,8 @@ export const blogPosts: BlogPostMeta[] = [
       "Learn which Google Analytics 4 and Search Console numbers actually matter, where to find them, and how to judge your website marketing without relying on an agency report.",
     cover: "/google-analytics-search-console-without-agency.svg",
     coverAlt: "How to Read Your Own Google Analytics and Search Console Without an Agency — practical guide by Hitesh Jaganiya",
-    datePublished: "2026-09-12",
-    dateModified: "2026-09-12",
+    datePublished: "2026-08-30",
+    dateModified: "2026-09-01",
     readingTime: "10 min read",
     category: "Analytics & SEO",
     keywords: [
@@ -133,8 +133,8 @@ export const blogPosts: BlogPostMeta[] = [
       "What happens when the standard advice to benchmark competitors before setting objectives is tested against the research? This research note examines the evidence, the surprising cross-industry result, and what KPI benchmarking misses.",
     cover: "/smart-objectives-competitive-benchmarking.svg",
     coverAlt: "What the Research Actually Says About Benchmarking KPIs Against Competitors — research note by Hitesh Jaganiya",
-    datePublished: "2026-09-12",
-    dateModified: "2026-09-12",
+    datePublished: "2026-09-10",
+    dateModified: "2026-09-11",
     readingTime: "9 min read",
     category: "Digital Strategy",
     keywords: [
