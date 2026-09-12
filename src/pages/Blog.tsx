@@ -33,7 +33,7 @@ const Blog = () => {
                     <Link to={`/blog/${post.slug}`} className="block h-full">
                       <div className="overflow-hidden bg-secondary/30"><img src={post.cover} alt={post.coverAlt} className="w-full aspect-[16/9] object-cover transition-transform duration-500 group-hover:scale-[1.02]" loading="lazy" /></div>
                       <div className="p-5 md:p-6">
-                        <div className="flex items-center gap-4 text-xs text-muted-foreground mb-3"><span className="inline-flex items-center gap-1.5"><Clock className="w-3.5 h-3.5" />{post.readingTime}</span></div>
+                        <div className="flex items-center gap-4 text-xs text-muted-foreground mb-3"><span className="font-semibold text-primary uppercase tracking-wide">{new Date(post.datePublished).toLocaleDateString("en-IN", { day: "2-digit", month: "short", year: "numeric" })}</span><span className="inline-flex items-center gap-1.5"><Clock className="w-3.5 h-3.5" />{post.readingTime}</span></div>
                         <h2 className="text-xl xl:text-2xl font-bold text-foreground leading-snug mb-3 group-hover:text-primary transition-colors">{post.title}</h2>
                         <p className="text-muted-foreground leading-relaxed mb-5">{post.excerpt}</p>
                         <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary">Read article <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" /></span>
