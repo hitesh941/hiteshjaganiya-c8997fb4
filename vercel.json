@@ -1,4 +1,15 @@
 {
+  "headers": [
+    {
+      "source": "/blog/smart-objectives-competitive-benchmarking",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "</blog/smart-objectives-competitive-benchmarking/layout-fix.css>; rel=stylesheet"
+        }
+      ]
+    }
+  ],
   "routes": [
     {
       "src": "^/blog/smart-objectives-competitive-benchmarking/?$",
