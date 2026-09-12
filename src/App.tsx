@@ -10,6 +10,7 @@ import Top8AgenciesAhmedabad from "./pages/blog/Top8AgenciesAhmedabad";
 import DigitalMarketingPackagesAhmedabad from "./pages/blog/DigitalMarketingPackagesAhmedabad";
 import GoogleAdsVsMetaAdsAhmedabadBudgetFix from "./pages/blog/GoogleAdsVsMetaAdsAhmedabadBudgetFix";
 import SeoRealEstateAhmedabad from "./pages/blog/SeoRealEstateAhmedabad";
+import GoogleAnalyticsSearchConsoleWithoutAgency from "./pages/blog/GoogleAnalyticsSearchConsoleWithoutAgency";
 import NotFound from "./pages/NotFound";
 
 const SITE_URL = "https://www.hiteshjaganiya.com";
@@ -30,8 +31,7 @@ const RouteSeo = () => {
 
   if (isPackage) {
     const title = "Digital Marketing Packages in Ahmedabad: ₹15K vs ₹50K vs ₹1L+";
-    const description =
-      "Compare digital marketing packages in Ahmedabad from ₹15K to ₹1L+. See what is included, ad spend, SEO, pricing, and how to choose the right package in 2026.";
+    const description = "Compare digital marketing packages in Ahmedabad from ₹15K to ₹1L+. See what is included, ad spend, SEO, pricing, and how to choose the right package in 2026.";
     const url = `${SITE_URL}${packagePath}`;
     const image = `${SITE_URL}/digital-marketing-packages-ahmedabad.svg`;
     return <Helmet><title>{title}</title><meta name="description" content={description} /><meta name="robots" content="index, follow, max-image-preview:large" /><meta name="author" content={PUBLISHER_NAME} /><meta name="publisher" content={PUBLISHER_NAME} /><link rel="canonical" href={url} /><link rel="alternate" hrefLang="en-IN" href={url} /><meta property="article:publisher" content={PUBLISHER_URL} /><meta property="og:type" content="article" /><meta property="og:site_name" content={PUBLISHER_NAME} /><meta property="og:title" content={title} /><meta property="og:description" content={description} /><meta property="og:url" content={url} /><meta property="og:image" content={image} /><meta property="og:image:alt" content="Digital marketing packages and pricing in Ahmedabad for 2026" /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" /><meta property="og:locale" content="en_IN" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content={title} /><meta name="twitter:description" content={description} /><meta name="twitter:image" content={image} /><meta name="twitter:image:alt" content="Digital marketing packages and pricing in Ahmedabad for 2026" /></Helmet>;
@@ -75,6 +75,7 @@ const App = () => (
           <Route path="/blog/digital-marketing-packages-in-ahmedabad" element={<DigitalMarketingPackagesAhmedabad />} />
           <Route path="/blog/google-ads-vs-meta-ads-ahmedabad" element={<GoogleAdsVsMetaAdsAhmedabadBudgetFix />} />
           <Route path="/blog/seo-for-real-estate-businesses-in-ahmedabad" element={<SeoRealEstateAhmedabad />} />
+          <Route path="/blog/how-to-read-google-analytics-search-console-without-an-agency" element={<GoogleAnalyticsSearchConsoleWithoutAgency />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <RouteSeo />
