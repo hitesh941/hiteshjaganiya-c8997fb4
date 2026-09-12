@@ -1,12 +1,15 @@
 {
-  "rewrites": [
+  "routes": [
     {
-      "source": "/blog/smart-objectives-competitive-benchmarking",
-      "destination": "/blog/smart-objectives-competitive-benchmarking/index.html"
+      "src": "^/blog/smart-objectives-competitive-benchmarking/?$",
+      "dest": "/blog/smart-objectives-competitive-benchmarking/index.html"
     },
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "handle": "filesystem"
+    },
+    {
+      "src": "^/(.*)$",
+      "dest": "/index.html"
     }
   ]
 }
