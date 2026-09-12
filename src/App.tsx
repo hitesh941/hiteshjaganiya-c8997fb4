@@ -11,6 +11,7 @@ import DigitalMarketingPackagesAhmedabad from "./pages/blog/DigitalMarketingPack
 import GoogleAdsVsMetaAdsAhmedabadBudgetFix from "./pages/blog/GoogleAdsVsMetaAdsAhmedabadBudgetFix";
 import SeoRealEstateAhmedabad from "./pages/blog/SeoRealEstateAhmedabad";
 import GoogleAnalyticsSearchConsoleWithoutAgency from "./pages/blog/GoogleAnalyticsSearchConsoleWithoutAgency";
+import SmartObjectivesCompetitiveBenchmarking from "./pages/blog/SmartObjectivesCompetitiveBenchmarking";
 import NotFound from "./pages/NotFound";
 
 const SITE_URL = "https://www.hiteshjaganiya.com";
@@ -76,6 +77,7 @@ const App = () => (
           <Route path="/blog/google-ads-vs-meta-ads-ahmedabad" element={<GoogleAdsVsMetaAdsAhmedabadBudgetFix />} />
           <Route path="/blog/seo-for-real-estate-businesses-in-ahmedabad" element={<SeoRealEstateAhmedabad />} />
           <Route path="/blog/how-to-read-google-analytics-search-console-without-an-agency" element={<GoogleAnalyticsSearchConsoleWithoutAgency />} />
+          <Route path="/blog/smart-objectives-competitive-benchmarking" element={<SmartObjectivesCompetitiveBenchmarking />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <RouteSeo />
