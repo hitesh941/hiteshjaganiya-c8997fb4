@@ -7,7 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { blogPosts } from "@/data/blogPosts";
 
-const BlogSidebar = () => {
+const BlogSidebar = ({ currentSlug }: { currentSlug?: string }) => {
   const { pathname } = useLocation();
   const { toast } = useToast();
   const [form, setForm] = useState({ name: "", email: "", message: "" });
