@@ -7,6 +7,7 @@ import ResultsSection from "@/components/ResultsSection";
 import LatestInsightsSection from "@/components/LatestInsightsSection";
 import FeaturedCredentialsSection from "@/components/FeaturedCredentialsSection";
 import ContactSection from "@/components/ContactSection";
+import PeopleAlsoSearchSection from "@/components/PeopleAlsoSearchSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -32,6 +33,7 @@ const Index = () => {
           </div>
         </section>
         <ContactSection />
+        <PeopleAlsoSearchSection />
       </main>
       <Footer />
     </div>
