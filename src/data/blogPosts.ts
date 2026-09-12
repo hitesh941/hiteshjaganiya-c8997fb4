@@ -133,8 +133,8 @@ export const blogPosts: BlogPostMeta[] = [
       "What happens when the standard advice to benchmark competitors before setting objectives is tested against the research? This research note examines the evidence, the surprising cross-industry result, and what KPI benchmarking misses.",
     cover: "/smart-objectives-competitive-benchmarking.svg",
     coverAlt: "What the Research Actually Says About Benchmarking KPIs Against Competitors — research note by Hitesh Jaganiya",
-    datePublished: "2026-09-10",
-    dateModified: "2026-09-11",
+    datePublished: "2026-09-08",
+    dateModified: "2026-09-09",
     readingTime: "9 min read",
     category: "Digital Strategy",
     keywords: [
