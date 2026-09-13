@@ -65,6 +65,7 @@ const seoOverrides = {
   "/blog/google-ads-optimization-moves-experts": {
     title: "10 Google Ads Optimization Moves Most Accounts Miss",
     description: "Ten practical Google Ads optimization moves that experienced account managers use to reduce wasted spend, improve relevance, and find missed opportunities inside active campaigns.",
+    h1: "10 Google Ads Optimization Moves Most Accounts Miss",
     alt: "10 Google Ads Optimization Moves Every Expert Makes — practical account audit guide",
   },
 };
