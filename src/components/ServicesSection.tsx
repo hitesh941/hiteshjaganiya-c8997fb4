@@ -1,43 +1,43 @@
-import { ArrowRight, Brain, Target, TrendingUp, Search, Share2, MousePointerClick } from "lucide-react";
+import { ArrowRight, Search, MousePointerClick, TrendingUp, Share2, Sparkles } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 const ServicesSection = () => {
   const services = [
     {
-      icon: Brain,
-      title: "AIO (AI Optimization)",
-      description: "Leverage artificial intelligence to optimize your digital presence",
-      features: ["AI-Powered Insights", "Smart Automation", "Predictive Analytics"],
-    },
-    {
-      icon: Target,
-      title: "AEO (Answer Engine Optimization)",
-      description: "Get featured in AI-powered search results and voice assistants",
-      features: ["Voice Search Ready", "Featured Snippets", "AI Search Visibility"],
-    },
-    {
-      icon: TrendingUp,
-      title: "Strategic Digital Marketing",
-      description: "Comprehensive strategies tailored to your business goals",
-      features: ["Custom Marketing Plans", "Competitor Analysis", "ROI-Focused Approach"],
-    },
-    {
       icon: Search,
       title: "SEO",
-      description: "Rank higher on Google and get found by your ideal customers",
-      features: ["On-Page Optimization", "Technical SEO", "Local SEO"],
-    },
-    {
-      icon: Share2,
-      title: "Social Media Marketing",
-      description: "Build your brand and engage with your audience on social platforms",
-      features: ["Content Strategy", "Community Management", "Paid Social Ads"],
+      href: "/services/seo",
+      description: "Build sustainable search visibility with technical SEO, useful content and local search optimisation.",
+      features: ["Technical SEO", "Search Intent", "Local SEO"],
     },
     {
       icon: MousePointerClick,
       title: "Google Ads",
-      description: "Drive targeted traffic and leads with effective PPC campaigns",
-      features: ["Search Campaigns", "Display Advertising", "Remarketing"],
+      href: "/services/google-ads",
+      description: "Reach people with active buying intent and improve lead quality through focused PPC campaigns.",
+      features: ["Search Campaigns", "Conversion Tracking", "Budget Optimisation"],
+    },
+    {
+      icon: TrendingUp,
+      title: "Digital Marketing Strategy",
+      href: "/services/digital-marketing-strategy",
+      description: "Decide what to do first, which channels deserve attention and how success will be measured.",
+      features: ["Business Goals", "Channel Strategy", "Performance Measurement"],
+    },
+    {
+      icon: Share2,
+      title: "Social Media Marketing",
+      href: "/services/social-media-marketing",
+      description: "Create a clearer social presence with content and paid campaigns connected to business goals.",
+      features: ["Content Planning", "Audience Research", "Paid Social"],
+    },
+    {
+      icon: Sparkles,
+      title: "AI Search Visibility",
+      href: "/services/ai-search-visibility",
+      description: "Make useful, authoritative content easier for modern search and answer systems to understand.",
+      features: ["Answer-Focused Content", "Entity Signals", "Topical Coverage"],
     },
   ];
 
@@ -49,10 +49,10 @@ const ServicesSection = () => {
             How I Can Help
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Services Made Simple
+            Digital Marketing Services
           </h2>
           <p className="text-lg text-muted-foreground">
-            Whether you're just starting out or ready to scale, I've got your back with friendly, no-nonsense digital marketing.
+            I focus on the channels and priorities that make sense for your business — starting with the fundamentals before adding complexity.
           </p>
         </div>
 
@@ -74,7 +74,7 @@ const ServicesSection = () => {
                 {service.description}
               </p>
 
-              <ul className="space-y-2">
+              <ul className="space-y-2 mb-6">
                 {service.features.map((feature) => (
                   <li key={feature} className="flex items-center gap-2 text-sm text-muted-foreground">
                     <div className="w-1.5 h-1.5 rounded-full bg-primary" />
@@ -82,6 +82,14 @@ const ServicesSection = () => {
                   </li>
                 ))}
               </ul>
+
+              <Link
+                to={service.href}
+                className="inline-flex items-center text-sm font-semibold text-primary hover:underline underline-offset-4"
+              >
+                Explore {service.title}
+                <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </Link>
             </div>
           ))}
         </div>
@@ -89,7 +97,7 @@ const ServicesSection = () => {
         <div className="text-center mt-16">
           <Button asChild variant="hero" size="xl">
             <a href="#contact" className="group">
-              Let's Have a Chat!
+              Discuss Your Marketing Goals
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
           </Button>
