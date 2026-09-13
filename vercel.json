@@ -22,7 +22,7 @@
   "routes": [
     {
       "src": "^/blog/top-8-digital-marketing-agencies-in-ahmedabad/?$",
-      "dest": "/blog/top-8-digital-marketing-agencies-in-ahmedabad/index.html"
+      "dest": "/top-8-digital-marketing-agencies-in-ahmedabad.html"
     },
     {
       "src": "^/blog/digital-marketing-packages-in-ahmedabad/?$",
