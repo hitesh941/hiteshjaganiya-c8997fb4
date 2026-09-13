@@ -25,17 +25,20 @@ const ConsultantFaqSection = () => {
   return (
     <section className="section-padding bg-background" aria-labelledby="consultant-faq-heading">
       <div className="container-custom">
-        <div className="max-w-4xl mx-auto">
-          <span className="inline-block text-sm font-semibold text-primary uppercase tracking-wider mb-4">
-            Common Questions
-          </span>
-          <h2 id="consultant-faq-heading" className="text-2xl md:text-3xl font-bold text-foreground mb-8">
-            Digital Marketing Consultant FAQs
-          </h2>
-          <div className="space-y-7">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <span className="inline-block text-sm font-semibold text-primary uppercase tracking-wider mb-4">
+              Common Questions
+            </span>
+            <h2 id="consultant-faq-heading" className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
+              Digital Marketing Consultant FAQs
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-x-10 lg:gap-x-16 gap-y-10">
             {faqs.map((faq) => (
               <div key={faq.question}>
-                <h3 className="text-lg md:text-xl font-semibold text-foreground mb-2">
+                <h3 className="text-lg md:text-xl font-semibold text-foreground mb-3">
                   {faq.question}
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">{faq.answer}</p>
