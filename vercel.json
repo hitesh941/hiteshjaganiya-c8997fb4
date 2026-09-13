@@ -16,6 +16,10 @@
       "dest": "/blog/smart-objectives-competitive-benchmarking/index.html"
     },
     {
+      "src": "^/blog/first-year-startup-marketing-budget/?$",
+      "dest": "/blog/first-year-startup-marketing-budget/index.html"
+    },
+    {
       "handle": "filesystem"
     },
     {
