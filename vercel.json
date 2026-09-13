@@ -55,6 +55,10 @@
       "dest": "/blog/first-year-startup-marketing-budget/index.html"
     },
     {
+      "src": "^/blog/google-ads-optimization-moves-experts/?$",
+      "dest": "/blog/google-ads-optimization-moves-experts/index.html"
+    },
+    {
       "src": "^/blog/?$",
       "dest": "/blog/index.html"
     },
