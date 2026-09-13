@@ -120,6 +120,21 @@ export const blogPosts: BlogPostMeta[] = [
     category: "Marketing Budget",
     keywords: ["first-year startup marketing budget", "startup marketing budget", "how much should a startup spend on marketing", "startup marketing budget India", "first year marketing budget", "startup marketing costs", "marketing budget for startups"],
   },
+  {
+    slug: "google-ads-optimization-moves-experts",
+    title: "10 Google Ads Optimization Moves Every Expert Makes (That Most Accounts Are Missing)",
+    description:
+      "Ten practical Google Ads optimization moves that experienced account managers use to reduce wasted spend, improve relevance, and find missed opportunities inside active campaigns.",
+    excerpt:
+      "Ten specific Google Ads optimization moves I look for when auditing an account — from weekly search-term mining and negative keywords to impression share, bidding, audiences and landing-page relevance.",
+    cover: "/google-ads-optimization-moves-experts.svg",
+    coverAlt: "10 Google Ads Optimization Moves Every Expert Makes — practical account audit guide",
+    datePublished: "2026-09-13",
+    dateModified: "2026-09-13",
+    readingTime: "9 min read",
+    category: "Paid Advertising",
+    keywords: ["Google Ads optimization", "Google Ads optimization tips", "Google Ads expert", "Google Ads account audit", "Google Ads campaign optimization", "Google Ads search terms", "negative keywords Google Ads", "Google Ads impression share", "Google Ads landing page optimization"],
+  },
 ];
 
 export const getPostBySlug = (slug: string) =>
