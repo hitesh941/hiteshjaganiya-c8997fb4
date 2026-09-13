@@ -12,12 +12,36 @@
   ],
   "routes": [
     {
+      "src": "^/blog/top-8-digital-marketing-agencies-in-ahmedabad/?$",
+      "dest": "/blog/top-8-digital-marketing-agencies-in-ahmedabad/index.html"
+    },
+    {
+      "src": "^/blog/digital-marketing-packages-in-ahmedabad/?$",
+      "dest": "/blog/digital-marketing-packages-in-ahmedabad/index.html"
+    },
+    {
+      "src": "^/blog/google-ads-vs-meta-ads-ahmedabad/?$",
+      "dest": "/blog/google-ads-vs-meta-ads-ahmedabad/index.html"
+    },
+    {
+      "src": "^/blog/seo-for-real-estate-businesses-in-ahmedabad/?$",
+      "dest": "/blog/seo-for-real-estate-businesses-in-ahmedabad/index.html"
+    },
+    {
+      "src": "^/blog/how-to-read-google-analytics-search-console-without-an-agency/?$",
+      "dest": "/blog/how-to-read-google-analytics-search-console-without-an-agency/index.html"
+    },
+    {
       "src": "^/blog/smart-objectives-competitive-benchmarking/?$",
       "dest": "/blog/smart-objectives-competitive-benchmarking/index.html"
     },
     {
       "src": "^/blog/first-year-startup-marketing-budget/?$",
       "dest": "/blog/first-year-startup-marketing-budget/index.html"
+    },
+    {
+      "src": "^/blog/?$",
+      "dest": "/blog/index.html"
     },
     {
       "handle": "filesystem"
