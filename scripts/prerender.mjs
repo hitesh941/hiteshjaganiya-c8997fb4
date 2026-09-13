@@ -162,6 +162,7 @@ for (const route of routes) {
 
   if (route === "/blog/top-8-digital-marketing-agencies-in-ahmedabad") {
     await fs.writeFile(path.join(distDir, "top-8-digital-marketing-agencies-in-ahmedabad.html"), page, "utf8");
+    await fs.writeFile(path.join(distDir, "agency-guide-ahmedabad.html"), page, "utf8");
   }
 
   console.log(`Prerendered ${route}`);
