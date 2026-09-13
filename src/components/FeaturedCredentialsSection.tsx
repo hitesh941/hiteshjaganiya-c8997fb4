@@ -1,13 +1,28 @@
-import { Award } from "lucide-react";
 import globalHuesLogo from "@/assets/global-hues-logo.png";
 import yourstoryLogo from "@/assets/yourstory-logo.svg";
 
 const FeaturedCredentialsSection = () => {
   const certifications = [
-    { name: "Google Ads Certified", icon: "🎯" },
-    { name: "Meta Blueprint Certified", icon: "📘" },
-    { name: "Google Analytics Certified", icon: "📊" },
-    { name: "HubSpot Inbound Marketing", icon: "🚀" },
+    {
+      name: "Google Ads Certified",
+      href: "https://verify.skillshop.withgoogle.com/",
+      label: "Google Skillshop",
+    },
+    {
+      name: "Meta Blueprint Certified",
+      href: "https://www.facebook.com/business/learn/certification",
+      label: "Meta Blueprint",
+    },
+    {
+      name: "Google Analytics Certified",
+      href: "https://verify.skillshop.withgoogle.com/",
+      label: "Google Skillshop",
+    },
+    {
+      name: "HubSpot Inbound Marketing",
+      href: "https://academy.hubspot.com/certification-overview",
+      label: "HubSpot Academy",
+    },
   ];
 
   return (
@@ -30,21 +45,38 @@ const FeaturedCredentialsSection = () => {
             </div>
           </div>
 
-          <div className="lg:pl-0">
+          <div>
             <span className="inline-block text-sm font-semibold text-primary uppercase tracking-wider mb-5">Professional Credentials</span>
             <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Certifications</h3>
             <p className="text-muted-foreground leading-relaxed mb-8 max-w-xl">
               Professional certifications across the digital marketing platforms and tools I use in my work.
             </p>
             <div className="grid sm:grid-cols-2 gap-4">
-              {certifications.map((cert, index) => (
-                <div key={index} className="flex items-center gap-3 px-5 py-4 bg-background rounded-xl border border-border hover:border-primary/30 hover:shadow-soft transition-all duration-300">
-                  <span className="text-2xl">{cert.icon}</span>
-                  <span className="font-medium text-foreground flex-1">{cert.name}</span>
-                  <Award className="w-5 h-5 text-primary flex-shrink-0" />
-                </div>
+              {certifications.map((cert) => (
+                <a
+                  key={cert.name}
+                  href={cert.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group block px-5 py-5 bg-background rounded-xl border border-border hover:border-primary/30 hover:shadow-soft transition-all duration-300"
+                >
+                  <span className="block font-semibold text-foreground group-hover:text-primary transition-colors">
+                    {cert.name}
+                  </span>
+                  <span className="block mt-2 text-sm text-muted-foreground">
+                    View on {cert.label}
+                  </span>
+                </a>
               ))}
             </div>
+            <a
+              href="https://www.linkedin.com/in/hiteshjaganiya/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex mt-6 font-semibold text-primary hover:underline"
+            >
+              View LinkedIn profile
+            </a>
           </div>
         </div>
 
@@ -69,14 +101,6 @@ const FeaturedCredentialsSection = () => {
                 digital marketing. With 11+ years of experience and 150+ clients served, my focus
                 is practical strategy, measurable results and clear reporting.
               </p>
-              <a
-                href="https://www.linkedin.com/in/hiteshjaganiya/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex mt-5 font-semibold text-primary hover:underline"
-              >
-                View LinkedIn profile
-              </a>
             </div>
             <div className="md:w-56 shrink-0 border-t md:border-t-0 md:border-l border-border pt-5 md:pt-0 md:pl-7">
               <p className="text-sm text-muted-foreground mb-2">Experience</p>
