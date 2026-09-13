@@ -12,6 +12,7 @@ import GoogleAdsVsMetaAdsAhmedabadBudgetFix from "./pages/blog/GoogleAdsVsMetaAd
 import SeoRealEstateAhmedabad from "./pages/blog/SeoRealEstateAhmedabad";
 import GoogleAnalyticsSearchConsoleWithoutAgency from "./pages/blog/GoogleAnalyticsSearchConsoleWithoutAgency";
 import SmartObjectivesCompetitiveBenchmarking from "./pages/blog/SmartObjectivesCompetitiveBenchmarking";
+import FirstYearStartupMarketingBudget from "./pages/blog/FirstYearStartupMarketingBudget";
 import NotFound from "./pages/NotFound";
 
 const SITE_URL = "https://www.hiteshjaganiya.com";
@@ -55,9 +56,7 @@ const RouteSeo = () => {
   }
 
   if (isBlogArticle) return <Helmet><meta name="publisher" content={PUBLISHER_NAME} /><meta property="article:publisher" content={PUBLISHER_URL} /></Helmet>;
-
   if (isHome) return <Helmet><title>Hitesh Jaganiya | Digital Marketing Consultant in Ahmedabad</title><meta name="description" content="Hitesh Jaganiya is a Digital Marketing Consultant in Ahmedabad helping businesses grow with SEO, Google Ads, and data-driven digital marketing strategies." /><meta name="robots" content="index, follow, max-image-preview:large" /><link rel="canonical" href={`${SITE_URL}/`} /></Helmet>;
-
   if (isNotFound) return <Helmet><meta name="robots" content="noindex, follow" /></Helmet>;
   return null;
 };
@@ -78,6 +77,7 @@ const App = () => (
           <Route path="/blog/seo-for-real-estate-businesses-in-ahmedabad" element={<SeoRealEstateAhmedabad />} />
           <Route path="/blog/how-to-read-google-analytics-search-console-without-an-agency" element={<GoogleAnalyticsSearchConsoleWithoutAgency />} />
           <Route path="/blog/smart-objectives-competitive-benchmarking" element={<SmartObjectivesCompetitiveBenchmarking />} />
+          <Route path="/blog/first-year-startup-marketing-budget" element={<FirstYearStartupMarketingBudget />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <RouteSeo />
