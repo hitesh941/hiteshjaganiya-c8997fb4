@@ -6,7 +6,6 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Index from "./pages/Index";
 import Blog from "./pages/Blog";
-import ServicePage from "./pages/ServicePage";
 import Top8AgenciesAhmedabad from "./pages/blog/Top8AgenciesAhmedabad";
 import DigitalMarketingPackagesAhmedabad from "./pages/blog/DigitalMarketingPackagesAhmedabad";
 import GoogleAdsVsMetaAdsAhmedabadBudgetFix from "./pages/blog/GoogleAdsVsMetaAdsAhmedabadBudgetFix";
@@ -29,9 +28,8 @@ const RouteSeo = () => {
   const isGoogleMeta = pathname === googleMetaPath;
   const isRealEstate = pathname === realEstatePath;
   const isBlogArticle = pathname.startsWith("/blog/");
-  const isServicePage = pathname.startsWith("/services/");
   const isHome = pathname === "/";
-  const isNotFound = pathname !== "/" && pathname !== "/blog" && !pathname.startsWith("/blog/") && !isServicePage;
+  const isNotFound = pathname !== "/" && pathname !== "/blog" && !pathname.startsWith("/blog/");
 
   if (isPackage) {
     const title = "Digital Marketing Packages in Ahmedabad: ₹15K vs ₹50K vs ₹1L+";
@@ -57,7 +55,7 @@ const RouteSeo = () => {
     return <Helmet><title>{title}</title><meta name="description" content={description} /><meta name="robots" content="index, follow, max-image-preview:large" /><meta name="author" content={PUBLISHER_NAME} /><meta name="publisher" content={PUBLISHER_NAME} /><link rel="canonical" href={url} /><link rel="alternate" hrefLang="en-IN" href={url} /><meta property="article:publisher" content={PUBLISHER_URL} /><meta property="og:type" content="article" /><meta property="og:site_name" content={PUBLISHER_NAME} /><meta property="og:title" content={title} /><meta property="og:description" content={description} /><meta property="og:url" content={url} /><meta property="og:image" content={image} /><meta property="og:image:alt" content="SEO for real estate businesses in Ahmedabad" /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" /><meta property="og:locale" content="en_IN" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content={title} /><meta name="twitter:description" content={description} /><meta name="twitter:image" content={image} /><meta name="twitter:image:alt" content="SEO for real estate businesses in Ahmedabad" /></Helmet>;
   }
 
-  if (isBlogArticle || isServicePage) return <Helmet><meta name="publisher" content={PUBLISHER_NAME} /><meta property="article:publisher" content={PUBLISHER_URL} /></Helmet>;
+  if (isBlogArticle) return <Helmet><meta name="publisher" content={PUBLISHER_NAME} /><meta property="article:publisher" content={PUBLISHER_URL} /></Helmet>;
   if (isHome) return <Helmet><title>Hitesh Jaganiya | Digital Marketing Consultant in Ahmedabad</title><meta name="description" content="Hitesh Jaganiya is a Digital Marketing Consultant in Ahmedabad helping businesses grow with SEO, Google Ads, and data-driven digital marketing strategies." /><meta name="robots" content="index, follow, max-image-preview:large" /><link rel="canonical" href={`${SITE_URL}/`} /></Helmet>;
   if (isNotFound) return <Helmet><meta name="robots" content="noindex, follow" /></Helmet>;
   return null;
@@ -73,11 +71,6 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/services/seo" element={<ServicePage />} />
-          <Route path="/services/google-ads" element={<ServicePage />} />
-          <Route path="/services/digital-marketing-strategy" element={<ServicePage />} />
-          <Route path="/services/social-media-marketing" element={<ServicePage />} />
-          <Route path="/services/ai-search-visibility" element={<ServicePage />} />
           <Route path="/blog/top-8-digital-marketing-agencies-in-ahmedabad" element={<Top8AgenciesAhmedabad />} />
           <Route path="/blog/digital-marketing-packages-in-ahmedabad" element={<DigitalMarketingPackagesAhmedabad />} />
           <Route path="/blog/google-ads-vs-meta-ads-ahmedabad" element={<GoogleAdsVsMetaAdsAhmedabadBudgetFix />} />
