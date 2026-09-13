@@ -20,6 +20,10 @@ const routes = [
 ];
 
 const seoOverrides = {
+  "/": {
+    title: "Hitesh Jaganiya | Digital Marketing Consultant in Ahmedabad",
+    description: "Hitesh Jaganiya, Digital Marketing Consultant in Ahmedabad, offering SEO, Google Ads, and performance-focused digital marketing strategies.",
+  },
   "/blog/top-8-digital-marketing-agencies-in-ahmedabad": {
     title: "Top 8 Digital Marketing Agencies in Ahmedabad",
     description: "An independent guide to 8 digital marketing agencies in Ahmedabad, including who each agency suits, what to ask before hiring, and how to compare them.",
@@ -74,11 +78,11 @@ let template = await fs.readFile(templatePath, "utf8");
 
 function cleanTemplate(source) {
   return source
-    .replace(/\s*<title>[\s\S]*?<\/title>/i, "")
+    .replace(/\s*<title\b[^>]*>[\s\S]*?<\/title>/i, "")
     .replace(/\s*<meta\s+name=["']description["'][^>]*>/i, "")
     .replace(/\s*<meta\s+name=["']author["'][^>]*>/i, "")
     .replace(/\s*<meta\s+name=["']robots["'][^>]*>/i, "")
-    .replace(/\s*<script\s+type=["']application\/ld\+json["']>[\s\S]*?<\/script>/i, "")
+    .replace(/\s*<script\s+type=["']application\/ld\+json["']>[\s\S]*?<\/script>/gi, "")
     .replace(/<div id=["']root["']><\/div>/i, "<!--__PRERENDERED_ROOT__-->");
 }
 
@@ -126,7 +130,7 @@ function applySeoOverrides(page, route) {
 
   if (!override) return output;
 
-  output = output.replace(/<title>[\s\S]*?<\/title>/i, `<title>${override.title}</title>`);
+  output = output.replace(/<title\b[^>]*>[\s\S]*?<\/title>/i, `<title>${override.title}</title>`);
   output = output.replace(/<meta\s+name=["']description["'][^>]*>/i, `<meta name="description" content="${override.description}">`);
   output = output.replace(/<meta\s+property=["']og:title["'][^>]*>/i, `<meta property="og:title" content="${override.title}">`);
   output = output.replace(/<meta\s+property=["']og:description["'][^>]*>/i, `<meta property="og:description" content="${override.description}">`);
