@@ -17,6 +17,7 @@ const routes = [
   "/blog/how-to-read-google-analytics-search-console-without-an-agency",
   "/blog/smart-objectives-competitive-benchmarking",
   "/blog/first-year-startup-marketing-budget",
+  "/blog/google-ads-optimization-moves-experts",
 ];
 
 const seoOverrides = {
@@ -60,6 +61,11 @@ const seoOverrides = {
     title: "First-Year Startup Marketing Budget: How Much to Spend",
     description: "First-year startup marketing budget guide covering foundation costs, testing spend, scaling, customer value, runway and when to hire outside help.",
     alt: "First-year startup marketing budget guide",
+  },
+  "/blog/google-ads-optimization-moves-experts": {
+    title: "10 Google Ads Optimization Moves Most Accounts Miss",
+    description: "Ten practical Google Ads optimization moves that experienced account managers use to reduce wasted spend, improve relevance, and find missed opportunities inside active campaigns.",
+    alt: "10 Google Ads Optimization Moves Every Expert Makes — practical account audit guide",
   },
 };
 
@@ -106,8 +112,8 @@ function addImageDimensions(page) {
     const className = (attrs.match(/\bclass=["']([^"']+)["']/i) || [])[1] || "";
     let dimensions = null;
 
-    if (/blog-top-8|digital-marketing-packages|google-ads-vs-meta-ads|seo-real-estate|google-analytics-search-console|smart-objectives-competitive-benchmarking|first-year-startup-marketing-budget/i.test(src)) {
-      dimensions = [1200, 630];
+    if (/blog-top-8|digital-marketing-packages|google-ads-vs-meta-ads|seo-real-estate|google-analytics-search-console|smart-objectives-competitive-benchmarking|first-year-startup-marketing-budget|google-ads-optimization-moves-experts|google-ads-optimization-workflow/i.test(src)) {
+      dimensions = /google-ads-optimization-workflow/i.test(src) ? [1200, 675] : [1200, 630];
     } else if (/hitesh-new-profile/i.test(src) && /rounded-full/i.test(className)) {
       dimensions = [96, 96];
     } else if (/hitesh-new-profile/i.test(src)) {
