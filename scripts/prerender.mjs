@@ -10,6 +10,11 @@ const serverDir = path.join(root, "dist-server");
 const routes = [
   "/",
   "/blog",
+  "/services/seo",
+  "/services/google-ads",
+  "/services/digital-marketing-strategy",
+  "/services/social-media-marketing",
+  "/services/ai-search-visibility",
   "/blog/top-8-digital-marketing-agencies-in-ahmedabad",
   "/blog/digital-marketing-packages-in-ahmedabad",
   "/blog/google-ads-vs-meta-ads-ahmedabad",
