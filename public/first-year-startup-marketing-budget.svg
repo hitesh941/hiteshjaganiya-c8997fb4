@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+<rect width="1200" height="630" fill="#f8faf8"/>
+<rect x="55" y="55" width="1090" height="520" rx="34" fill="#ffffff" stroke="#dfe6e1"/>
+<text x="105" y="145" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700" letter-spacing="4" fill="#29945f">STARTUP MARKETING · BUDGET GUIDE</text>
+<text x="105" y="235" font-family="Arial,Helvetica,sans-serif" font-size="58" font-weight="800" fill="#18211d">How Much Should a</text>
+<text x="105" y="305" font-family="Arial,Helvetica,sans-serif" font-size="58" font-weight="800" fill="#18211d">First-Year Startup</text>
+<text x="105" y="375" font-family="Arial,Helvetica,sans-serif" font-size="58" font-weight="800" fill="#18211d">Budget for Marketing?</text>
+<rect x="105" y="430" width="260" height="8" rx="4" fill="#29945f"/>
+<text x="105" y="490" font-family="Arial,Helvetica,sans-serif" font-size="22" fill="#65716b">Foundation · Testing · Scaling</text>
+<text x="105" y="530" font-family="Arial,Helvetica,sans-serif" font-size="18" fill="#65716b">Hitesh Jaganiya · Digital Marketing Consultant</text>
+<circle cx="1010" cy="470" r="78" fill="#eaf7ef"/>
+<path d="M970 500 L970 438 L1000 458 L1035 410 L1060 430 L1060 500 Z" fill="none" stroke="#29945f" stroke-width="10" stroke-linejoin="round"/>
+</svg>
