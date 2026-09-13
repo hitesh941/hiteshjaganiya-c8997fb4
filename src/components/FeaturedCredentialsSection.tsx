@@ -47,6 +47,45 @@ const FeaturedCredentialsSection = () => {
             </div>
           </div>
         </div>
+
+        <div className="mt-12 rounded-2xl border border-border bg-background p-7 md:p-9">
+          <div className="flex flex-col md:flex-row md:items-center gap-7 md:gap-9">
+            <img
+              src="/assets/hitesh-new-profile-B9JyaFg3.png"
+              alt="Hitesh Jaganiya, Digital Marketing Consultant in Ahmedabad"
+              width="96"
+              height="96"
+              className="w-24 h-24 rounded-full object-cover border border-border shrink-0"
+            />
+            <div className="flex-1">
+              <p className="text-sm font-semibold text-primary uppercase tracking-wider mb-2">
+                About Hitesh Jaganiya
+              </p>
+              <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-3">
+                Digital Marketing Consultant in Ahmedabad
+              </h3>
+              <p className="text-muted-foreground leading-relaxed max-w-3xl">
+                I help businesses grow through SEO, Google Ads, content strategy and data-driven
+                digital marketing. With 11+ years of experience and 150+ clients served, my focus
+                is practical strategy, measurable results and clear reporting.
+              </p>
+              <a
+                href="https://www.linkedin.com/in/hiteshjaganiya/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex mt-5 font-semibold text-primary hover:underline"
+              >
+                View LinkedIn profile
+              </a>
+            </div>
+            <div className="md:w-56 shrink-0 border-t md:border-t-0 md:border-l border-border pt-5 md:pt-0 md:pl-7">
+              <p className="text-sm text-muted-foreground mb-2">Experience</p>
+              <p className="text-2xl font-bold text-foreground">11+ years</p>
+              <p className="text-sm text-muted-foreground mt-3 mb-2">Clients served</p>
+              <p className="text-2xl font-bold text-foreground">150+</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
