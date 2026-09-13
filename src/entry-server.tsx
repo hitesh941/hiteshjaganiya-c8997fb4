@@ -2,6 +2,7 @@ import React from "react";
 import { renderToString } from "react-dom/server";
 import { HelmetProvider } from "react-helmet-async";
 import { StaticRouter } from "react-router-dom/server";
+import Index from "./pages/Index";
 import Top8AgenciesAhmedabad from "./pages/blog/Top8AgenciesAhmedabad";
 import DigitalMarketingPackagesAhmedabad from "./pages/blog/DigitalMarketingPackagesAhmedabad";
 import GoogleAdsVsMetaAdsAhmedabadBudgetFix from "./pages/blog/GoogleAdsVsMetaAdsAhmedabadBudgetFix";
@@ -12,6 +13,7 @@ import FirstYearStartupMarketingBudget from "./pages/blog/FirstYearStartupMarket
 import Blog from "./pages/Blog";
 
 const routes: Record<string, React.ComponentType> = {
+  "/": Index,
   "/blog": Blog,
   "/blog/top-8-digital-marketing-agencies-in-ahmedabad": Top8AgenciesAhmedabad,
   "/blog/digital-marketing-packages-in-ahmedabad": DigitalMarketingPackagesAhmedabad,
