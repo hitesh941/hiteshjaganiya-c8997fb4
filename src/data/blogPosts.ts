@@ -28,12 +28,7 @@ export const blogPosts: BlogPostMeta[] = [
     dateModified: "2026-06-22",
     readingTime: "9 min read",
     category: "Agency Selection",
-    keywords: [
-      "top digital marketing agencies in Ahmedabad",
-      "top 8 digital marketing agencies in ahmedabad",
-      "top 10 digital marketing companies in ahmedabad",
-      "best digital marketing agency Ahmedabad",
-    ],
+    keywords: ["top digital marketing agencies in Ahmedabad", "top 8 digital marketing agencies in ahmedabad", "top 10 digital marketing companies in ahmedabad", "best digital marketing agency Ahmedabad"],
   },
   {
     slug: "digital-marketing-packages-in-ahmedabad",
@@ -48,14 +43,7 @@ export const blogPosts: BlogPostMeta[] = [
     dateModified: "2026-07-06",
     readingTime: "8 min read",
     category: "Marketing Budget",
-    keywords: [
-      "digital marketing packages in Ahmedabad",
-      "digital marketing cost in Ahmedabad",
-      "digital marketing pricing Ahmedabad",
-      "SEO packages Ahmedabad",
-      "digital marketing agency pricing Ahmedabad",
-      "Google Ads management cost Ahmedabad",
-    ],
+    keywords: ["digital marketing packages in Ahmedabad", "digital marketing cost in Ahmedabad", "digital marketing pricing Ahmedabad", "SEO packages Ahmedabad", "digital marketing agency pricing Ahmedabad", "Google Ads management cost Ahmedabad"],
   },
   {
     slug: "google-ads-vs-meta-ads-ahmedabad",
@@ -70,14 +58,7 @@ export const blogPosts: BlogPostMeta[] = [
     dateModified: "2026-07-29",
     readingTime: "7 min read",
     category: "Paid Advertising",
-    keywords: [
-      "Google Ads vs Meta Ads Ahmedabad",
-      "Google Ads Ahmedabad",
-      "Meta Ads Ahmedabad",
-      "Google Ads or Meta Ads",
-      "Facebook Ads Ahmedabad",
-      "Instagram Ads Ahmedabad",
-    ],
+    keywords: ["Google Ads vs Meta Ads Ahmedabad", "Google Ads Ahmedabad", "Meta Ads Ahmedabad", "Google Ads or Meta Ads", "Facebook Ads Ahmedabad", "Instagram Ads Ahmedabad"],
   },
   {
     slug: "seo-for-real-estate-businesses-in-ahmedabad",
@@ -92,14 +73,7 @@ export const blogPosts: BlogPostMeta[] = [
     dateModified: "2026-08-17",
     readingTime: "8 min read",
     category: "Real Estate SEO",
-    keywords: [
-      "SEO for real estate businesses in Ahmedabad",
-      "real estate SEO Ahmedabad",
-      "real estate SEO company Ahmedabad",
-      "property SEO Ahmedabad",
-      "real estate marketing Ahmedabad",
-      "SEO for builders Ahmedabad",
-    ],
+    keywords: ["SEO for real estate businesses in Ahmedabad", "real estate SEO Ahmedabad", "real estate SEO company Ahmedabad", "property SEO Ahmedabad", "real estate marketing Ahmedabad", "SEO for builders Ahmedabad"],
   },
   {
     slug: "how-to-read-google-analytics-search-console-without-an-agency",
@@ -114,15 +88,7 @@ export const blogPosts: BlogPostMeta[] = [
     dateModified: "2026-09-01",
     readingTime: "10 min read",
     category: "Analytics & SEO",
-    keywords: [
-      "how to read Google Analytics without an agency",
-      "how to read Google Analytics",
-      "how to read Search Console",
-      "Google Analytics 4 guide for business owners",
-      "Google Search Console guide for business owners",
-      "Google Analytics and Search Console",
-      "how to understand website analytics",
-    ],
+    keywords: ["how to read Google Analytics without an agency", "how to read Google Analytics", "how to read Search Console", "Google Analytics 4 guide for business owners", "Google Search Console guide for business owners", "Google Analytics and Search Console", "how to understand website analytics"],
   },
   {
     slug: "smart-objectives-competitive-benchmarking",
@@ -137,15 +103,22 @@ export const blogPosts: BlogPostMeta[] = [
     dateModified: "2026-09-09",
     readingTime: "9 min read",
     category: "Digital Strategy",
-    keywords: [
-      "benchmarking KPIs against competitors",
-      "competitive benchmarking digital marketing",
-      "marketing KPI benchmarking",
-      "SMART objectives digital marketing",
-      "evidence-based target setting",
-      "capability benchmarking",
-      "benchmark selection",
-    ],
+    keywords: ["benchmarking KPIs against competitors", "competitive benchmarking digital marketing", "marketing KPI benchmarking", "SMART objectives digital marketing", "evidence-based target setting", "capability benchmarking", "benchmark selection"],
+  },
+  {
+    slug: "first-year-startup-marketing-budget",
+    title: "How Much Should a First-Year Startup Budget for Marketing?",
+    description:
+      "A practical guide to first-year startup marketing budgets, including foundation costs, testing spend, scaling, customer value, runway, and when to hire outside marketing help.",
+    excerpt:
+      "How much should a startup actually budget for marketing in year one? A practical framework for deciding what to spend on foundation, testing and scaling without relying on a generic percentage rule.",
+    cover: "/first-year-startup-marketing-budget.svg",
+    coverAlt: "How Much Should a First-Year Startup Budget for Marketing? — practical budget guide by Hitesh Jaganiya",
+    datePublished: "2026-09-13",
+    dateModified: "2026-09-13",
+    readingTime: "8 min read",
+    category: "Marketing Budget",
+    keywords: ["first-year startup marketing budget", "startup marketing budget", "how much should a startup spend on marketing", "startup marketing budget India", "first year marketing budget", "startup marketing costs", "marketing budget for startups"],
   },
 ];
 
