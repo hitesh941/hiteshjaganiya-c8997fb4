@@ -5,7 +5,7 @@ const ResultsSection = () => {
     { icon: TrendingUp, value: "2-3X", label: "Lead Volume Increase", description: "Consistent growth in qualified lead generation" },
     { icon: DollarSign, value: "20-25%", label: "Reduced Cost Per Lead", description: "Optimized campaigns for better ROI" },
     { icon: Users, value: "150+", label: "Clients Served", description: "Businesses scaled with proven strategies" },
-    { icon: Clock, value: "9+", label: "Years Experience", description: "Proven expertise in digital marketing" },
+    { icon: Clock, value: "11+", label: "Years Experience", description: "Digital marketing experience across SEO, Ads and strategy" },
   ];
 
   const achievements = [
@@ -24,7 +24,7 @@ const ResultsSection = () => {
           <div className="text-center max-w-3xl mx-auto mb-16">
             <span className="inline-block text-sm font-semibold text-primary uppercase tracking-wider mb-4">Track Record</span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-6">Results & Experience</h2>
-            <p className="text-lg text-primary-foreground/70">Proven track record of delivering measurable business growth</p>
+            <p className="text-lg text-primary-foreground/70">A practical track record built through hands-on digital marketing work</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((stat) => (
