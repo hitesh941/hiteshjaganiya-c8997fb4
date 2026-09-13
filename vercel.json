@@ -10,6 +10,12 @@
       ]
     },
     {
+      "source": "/blog/top-8-digital-marketing-agencies-in-ahmedabad",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
+      ]
+    },
+    {
       "source": "/blog/smart-objectives-competitive-benchmarking",
       "headers": [
         {
@@ -22,7 +28,7 @@
   "routes": [
     {
       "src": "^/blog/top-8-digital-marketing-agencies-in-ahmedabad/?$",
-      "dest": "/top-8-digital-marketing-agencies-in-ahmedabad.html"
+      "dest": "/agency-guide-ahmedabad.html"
     },
     {
       "src": "^/blog/digital-marketing-packages-in-ahmedabad/?$",
