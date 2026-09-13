@@ -1,4 +1,4 @@
-import { ArrowRight, Play, Phone, Mail } from "lucide-react";
+import { ArrowRight, Play, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import hiteshProfile from "@/assets/hitesh-new-profile.png";
 
@@ -23,10 +23,6 @@ const HeroSection = () => {
                 <Phone className="w-4 h-4" />
                 9998311492
               </a>
-              <a href="mailto:hphitesh941@gmail.com" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors">
-                <Mail className="w-4 h-4" />
-                hphitesh941@gmail.com
-              </a>
             </div>
 
             {/* Keyword-focused H1 */}
@@ -36,20 +32,15 @@ const HeroSection = () => {
             </h1>
 
             {/* Sub-headline */}
-            <p className="text-lg md:text-xl text-muted-foreground mb-4 opacity-0 animate-fade-up animation-delay-300">
+            <p className="text-lg md:text-xl text-muted-foreground mb-8 opacity-0 animate-fade-up animation-delay-300">
               I help businesses grow through SEO, Google Ads, content strategy and data-driven digital marketing — with a focus on qualified leads, customers and sustainable growth.
-            </p>
-
-            {/* Services line */}
-            <p className="text-base text-muted-foreground mb-8 opacity-0 animate-fade-up animation-delay-400">
-              SEO | Google Ads | AEO | AI Search Visibility | Strategic Digital Marketing | Conversion Optimization
             </p>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 opacity-0 animate-fade-up animation-delay-500">
               <Button asChild variant="hero" size="xl">
                 <a href="#contact" className="group">
-                  Let's Chat — It's Free!
+                  Book a Free Call
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </a>
               </Button>
@@ -61,35 +52,43 @@ const HeroSection = () => {
               </Button>
             </div>
 
-            {/* Consistent trust indicators */}
+            {/* Trust indicators */}
             <div className="mt-12 pt-8 border-t border-border/50 opacity-0 animate-fade-up animation-delay-600">
-              <p className="text-sm text-muted-foreground mb-4">Experience you can verify, not just marketing claims</p>
-              <div className="flex items-center gap-8">
+              <p className="text-sm text-muted-foreground mb-4">Credentials and hands-on experience</p>
+              <div className="flex flex-wrap items-start gap-x-8 gap-y-5">
                 <div>
                   <div className="text-2xl font-bold text-foreground">11+</div>
                   <div className="text-sm text-muted-foreground">Years Experience</div>
                 </div>
-                <div className="w-px h-10 bg-border" />
+                <div className="w-px h-10 bg-border hidden sm:block" />
                 <div>
                   <div className="text-2xl font-bold text-foreground">150+</div>
                   <div className="text-sm text-muted-foreground">Clients Served</div>
                 </div>
-                <div className="w-px h-10 bg-border" />
+                <div className="w-px h-10 bg-border hidden sm:block" />
                 <div>
                   <div className="text-2xl font-bold text-foreground">Google</div>
                   <div className="text-sm text-muted-foreground">Ads & Analytics Certified</div>
                 </div>
               </div>
+              <a
+                href="https://www.linkedin.com/in/hiteshjaganiya/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex mt-5 text-sm font-semibold text-primary hover:underline"
+              >
+                View LinkedIn profile
+              </a>
             </div>
           </div>
 
           {/* Right Content - Image */}
-          <div className="order-1 lg:order-2 flex justify-center lg:justify-end items-start lg:-mt-[232px]">
-            <div className="relative opacity-0 animate-slide-in-right animation-delay-200">
+          <div className="order-1 lg:order-2 flex justify-center lg:justify-end items-center">
+            <div className="relative w-full max-w-[450px] opacity-0 animate-slide-in-right animation-delay-200">
               <img
                 src={hiteshProfile}
                 alt="Hitesh Jaganiya, Digital Marketing Consultant in Ahmedabad"
-                className="w-80 md:w-96 lg:w-[450px] h-[450px] md:h-[520px] lg:h-[580px] object-cover object-top"
+                className="w-full h-auto max-h-[580px] object-contain object-top"
               />
             </div>
           </div>
