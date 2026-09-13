@@ -19,6 +19,44 @@ const routes = [
   "/blog/first-year-startup-marketing-budget",
 ];
 
+const seoOverrides = {
+  "/blog/digital-marketing-packages-in-ahmedabad": {
+    title: "Digital Marketing Packages Ahmedabad: ₹15K vs ₹50K vs ₹1L+",
+    description: "Compare digital marketing packages in Ahmedabad from ₹15K to ₹1L+, including SEO, ad spend, deliverables, pricing, and how to choose the right tier.",
+    alt: "Digital marketing packages in Ahmedabad — ₹15K, ₹50K and ₹1L+",
+  },
+  "/blog/google-ads-vs-meta-ads-ahmedabad": {
+    title: "Google Ads vs Meta Ads for Ahmedabad Businesses",
+    description: "A practical comparison of Google Ads and Meta Ads for Ahmedabad businesses deciding where to spend their first advertising rupee.",
+    alt: "Google Ads vs Meta Ads for Ahmedabad businesses",
+  },
+  "/blog/seo-for-real-estate-businesses-in-ahmedabad": {
+    title: "SEO for Real Estate Businesses in Ahmedabad: Practical Guide",
+    description: "Practical SEO guide for Ahmedabad real estate businesses covering local keywords, project pages, Google Business Profile, technical SEO and content.",
+    alt: "SEO for real estate businesses in Ahmedabad — practical guide",
+  },
+  "/blog/how-to-read-google-analytics-search-console-without-an-agency": {
+    title: "How to Read Google Analytics and Search Console Yourself",
+    description: "A practical guide to reading Google Analytics 4 and Search Console yourself, with the key numbers business owners should understand.",
+    h1: "How to Read Google Analytics and Search Console Yourself",
+    alt: "How to read Google Analytics and Search Console without an agency",
+  },
+  "/blog/smart-objectives-competitive-benchmarking": {
+    title: "Benchmarking Marketing KPIs: What the Research Says",
+    description: "Research-led guide to benchmarking marketing KPIs against competitors, including benchmark selection, capability benchmarking and target setting.",
+    h1: "What Research Says About Benchmarking KPIs Against Competitors",
+    alt: "Research on benchmarking KPIs against competitors",
+  },
+  "/blog/first-year-startup-marketing-budget": {
+    title: "First-Year Startup Marketing Budget: How Much to Spend",
+    description: "First-year startup marketing budget guide covering foundation costs, testing spend, scaling, customer value, runway and when to hire outside help.",
+    alt: "First-year startup marketing budget guide",
+  },
+  "/blog/top-8-digital-marketing-agencies-in-ahmedabad": {
+    alt: "Top 8 Digital Marketing Agencies in Ahmedabad — independent guide",
+  },
+};
+
 await build({
   build: {
     ssr: "src/entry-server.tsx",
@@ -54,14 +92,67 @@ function helmetToHead(helmet) {
   ].filter(Boolean).join("\n");
 }
 
+function addImageDimensions(page) {
+  return page.replace(/<img\b([^>]*?)>/gi, (match, attrs) => {
+    if (/\bwidth\s*=|\bheight\s*=/i.test(attrs)) return match;
+
+    const src = (attrs.match(/\bsrc=["']([^"']+)["']/i) || [])[1] || "";
+    const className = (attrs.match(/\bclass=["']([^"']+)["']/i) || [])[1] || "";
+    let dimensions = null;
+
+    if (/blog-top-8|digital-marketing-packages|google-ads-vs-meta-ads|seo-real-estate|google-analytics-search-console|smart-objectives-competitive-benchmarking|first-year-startup-marketing-budget/i.test(src)) {
+      dimensions = [1200, 630];
+    } else if (/hitesh-new-profile/i.test(src) && /rounded-full/i.test(className)) {
+      dimensions = [96, 96];
+    } else if (/hitesh-new-profile/i.test(src)) {
+      dimensions = [450, 580];
+    }
+
+    if (!dimensions) return match;
+    return `<img${attrs} width="${dimensions[0]}" height="${dimensions[1]}">`;
+  });
+}
+
+function applySeoOverrides(page, route) {
+  const override = seoOverrides[route];
+  let output = addImageDimensions(page);
+
+  const canonicalMatch = output.match(/<link\s+rel=["']canonical["']\s+href=["']([^"']+)["'][^>]*>/i);
+  if (canonicalMatch && !/hreflang=["']x-default["']/i.test(output)) {
+    output = output.replace("</head>", `<link rel="alternate" hrefLang="x-default" href="${canonicalMatch[1]}">\n</head>`);
+  }
+
+  if (!override) return output;
+
+  output = output.replace(/<title>[\s\S]*?<\/title>/i, `<title>${override.title}</title>`);
+  output = output.replace(/<meta\s+name=["']description["'][^>]*>/i, `<meta name="description" content="${override.description}">`);
+  output = output.replace(/<meta\s+property=["']og:title["'][^>]*>/i, `<meta property="og:title" content="${override.title}">`);
+  output = output.replace(/<meta\s+property=["']og:description["'][^>]*>/i, `<meta property="og:description" content="${override.description}">`);
+  output = output.replace(/<meta\s+name=["']twitter:title["'][^>]*>/i, `<meta name="twitter:title" content="${override.title}">`);
+  output = output.replace(/<meta\s+name=["']twitter:description["'][^>]*>/i, `<meta name="twitter:description" content="${override.description}">`);
+
+  if (override.h1) {
+    output = output.replace(/<h1\b([^>]*)>[\s\S]*?<\/h1>/i, `<h1$1>${override.h1}</h1>`);
+  }
+
+  if (override.alt) {
+    output = output.replace(/<img\b([^>]*?)alt=["'][^"']*["']([^>]*)>/gi, `<img$1alt="${override.alt}"$2>`);
+  }
+
+  return output;
+}
+
 template = cleanTemplate(template);
 
 for (const route of routes) {
   const { html, helmet } = render(route);
   const head = helmetToHead(helmet);
-  const page = template
-    .replace("<!--__PRERENDERED_ROOT__-->", `<div id="root">${html}</div>`)
-    .replace("</head>", `${head}\n</head>`);
+  const page = applySeoOverrides(
+    template
+      .replace("<!--__PRERENDERED_ROOT__-->", `<div id="root">${html}</div>`)
+      .replace("</head>", `${head}\n</head>`),
+    route,
+  );
 
   const outputDir = path.join(distDir, route.replace(/^\//, ""));
   await fs.mkdir(outputDir, { recursive: true });
