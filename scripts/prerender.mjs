@@ -20,6 +20,11 @@ const routes = [
 ];
 
 const seoOverrides = {
+  "/blog/top-8-digital-marketing-agencies-in-ahmedabad": {
+    title: "Top 8 Digital Marketing Agencies in Ahmedabad",
+    description: "An independent guide to 8 digital marketing agencies in Ahmedabad, including who each agency suits, what to ask before hiring, and how to compare them.",
+    alt: "Top 8 Digital Marketing Agencies in Ahmedabad — independent guide",
+  },
   "/blog/digital-marketing-packages-in-ahmedabad": {
     title: "Digital Marketing Packages Ahmedabad: ₹15K vs ₹50K vs ₹1L+",
     description: "Compare digital marketing packages in Ahmedabad from ₹15K to ₹1L+, including SEO, ad spend, deliverables, pricing, and how to choose the right tier.",
@@ -51,9 +56,6 @@ const seoOverrides = {
     title: "First-Year Startup Marketing Budget: How Much to Spend",
     description: "First-year startup marketing budget guide covering foundation costs, testing spend, scaling, customer value, runway and when to hire outside help.",
     alt: "First-year startup marketing budget guide",
-  },
-  "/blog/top-8-digital-marketing-agencies-in-ahmedabad": {
-    alt: "Top 8 Digital Marketing Agencies in Ahmedabad — independent guide",
   },
 };
 
@@ -157,6 +159,11 @@ for (const route of routes) {
   const outputDir = path.join(distDir, route.replace(/^\//, ""));
   await fs.mkdir(outputDir, { recursive: true });
   await fs.writeFile(path.join(outputDir, "index.html"), page, "utf8");
+
+  if (route === "/blog/top-8-digital-marketing-agencies-in-ahmedabad") {
+    await fs.writeFile(path.join(distDir, "top-8-digital-marketing-agencies-in-ahmedabad.html"), page, "utf8");
+  }
+
   console.log(`Prerendered ${route}`);
 }
 
