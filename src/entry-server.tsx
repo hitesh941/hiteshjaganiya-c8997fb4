@@ -3,6 +3,8 @@ import { renderToString } from "react-dom/server";
 import { HelmetProvider } from "react-helmet-async";
 import { StaticRouter } from "react-router-dom/server";
 import Index from "./pages/Index";
+import Blog from "./pages/Blog";
+import ServicePage from "./pages/ServicePage";
 import Top8AgenciesAhmedabad from "./pages/blog/Top8AgenciesAhmedabad";
 import DigitalMarketingPackagesAhmedabad from "./pages/blog/DigitalMarketingPackagesAhmedabad";
 import GoogleAdsVsMetaAdsAhmedabadBudgetFix from "./pages/blog/GoogleAdsVsMetaAdsAhmedabadBudgetFix";
@@ -10,11 +12,15 @@ import SeoRealEstateAhmedabad from "./pages/blog/SeoRealEstateAhmedabad";
 import GoogleAnalyticsSearchConsoleWithoutAgency from "./pages/blog/GoogleAnalyticsSearchConsoleWithoutAgency";
 import SmartObjectivesCompetitiveBenchmarking from "./pages/blog/SmartObjectivesCompetitiveBenchmarking";
 import FirstYearStartupMarketingBudget from "./pages/blog/FirstYearStartupMarketingBudget";
-import Blog from "./pages/Blog";
 
 const routes: Record<string, React.ComponentType> = {
   "/": Index,
   "/blog": Blog,
+  "/services/seo": ServicePage,
+  "/services/google-ads": ServicePage,
+  "/services/digital-marketing-strategy": ServicePage,
+  "/services/social-media-marketing": ServicePage,
+  "/services/ai-search-visibility": ServicePage,
   "/blog/top-8-digital-marketing-agencies-in-ahmedabad": Top8AgenciesAhmedabad,
   "/blog/digital-marketing-packages-in-ahmedabad": DigitalMarketingPackagesAhmedabad,
   "/blog/google-ads-vs-meta-ads-ahmedabad": GoogleAdsVsMetaAdsAhmedabadBudgetFix,
