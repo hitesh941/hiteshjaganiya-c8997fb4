@@ -27,6 +27,26 @@
   ],
   "routes": [
     {
+      "src": "^/services/seo/?$",
+      "dest": "/services/seo/index.html"
+    },
+    {
+      "src": "^/services/google-ads/?$",
+      "dest": "/services/google-ads/index.html"
+    },
+    {
+      "src": "^/services/digital-marketing-strategy/?$",
+      "dest": "/services/digital-marketing-strategy/index.html"
+    },
+    {
+      "src": "^/services/social-media-marketing/?$",
+      "dest": "/services/social-media-marketing/index.html"
+    },
+    {
+      "src": "^/services/ai-search-visibility/?$",
+      "dest": "/services/ai-search-visibility/index.html"
+    },
+    {
       "src": "^/blog/top-8-digital-marketing-agencies-in-ahmedabad/?$",
       "dest": "/agency-guide-ahmedabad.html"
     },
