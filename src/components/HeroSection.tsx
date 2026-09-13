@@ -5,8 +5,6 @@ import hiteshProfile from "@/assets/hitesh-new-profile.png";
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center pt-32 md:pt-40 lg:pt-20 overflow-hidden">
-      
-
       <div className="container-custom relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Content */}
@@ -15,7 +13,7 @@ const HeroSection = () => {
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full mb-6 opacity-0 animate-fade-up">
               <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
               <span className="text-sm font-medium text-foreground">
-                Digital Marketing Consultant
+                Digital Marketing Consultant in Ahmedabad
               </span>
             </div>
 
@@ -31,20 +29,20 @@ const HeroSection = () => {
               </a>
             </div>
 
-            {/* Headline */}
+            {/* Keyword-focused H1 */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight text-balance mb-6 opacity-0 animate-fade-up animation-delay-200">
-              Let's Make Digital Marketing{" "}
-              <span className="text-primary">Work for Your Business</span>
+              Digital Marketing Consultant in Ahmedabad{" "}
+              <span className="text-primary">Helping Businesses Grow</span>
             </h1>
 
             {/* Sub-headline */}
             <p className="text-lg md:text-xl text-muted-foreground mb-4 opacity-0 animate-fade-up animation-delay-300">
-              I help amazing businesses like yours get found online and connect with the right people.
+              I help businesses grow through SEO, Google Ads, content strategy and data-driven digital marketing — with a focus on qualified leads, customers and sustainable growth.
             </p>
 
             {/* Services line */}
             <p className="text-base text-muted-foreground mb-8 opacity-0 animate-fade-up animation-delay-400">
-              AIO | AEO | Strategic Digital Marketing | SEO | Social Media Marketing | Google Adwords
+              SEO | Google Ads | AEO | AI Search Visibility | Strategic Digital Marketing | Conversion Optimization
             </p>
 
             {/* CTA Buttons */}
@@ -63,23 +61,23 @@ const HeroSection = () => {
               </Button>
             </div>
 
-            {/* Trust indicators */}
+            {/* Consistent trust indicators */}
             <div className="mt-12 pt-8 border-t border-border/50 opacity-0 animate-fade-up animation-delay-600">
-              <p className="text-sm text-muted-foreground mb-4">Trusted by happy clients across India</p>
+              <p className="text-sm text-muted-foreground mb-4">Experience you can verify, not just marketing claims</p>
               <div className="flex items-center gap-8">
                 <div>
-                  <div className="text-2xl font-bold text-foreground">50+</div>
-                  <div className="text-sm text-muted-foreground">Happy Clients</div>
+                  <div className="text-2xl font-bold text-foreground">11+</div>
+                  <div className="text-sm text-muted-foreground">Years Experience</div>
                 </div>
                 <div className="w-px h-10 bg-border" />
                 <div>
-                  <div className="text-2xl font-bold text-foreground">2-3x</div>
-                  <div className="text-sm text-muted-foreground">More Leads</div>
+                  <div className="text-2xl font-bold text-foreground">150+</div>
+                  <div className="text-sm text-muted-foreground">Clients Served</div>
                 </div>
                 <div className="w-px h-10 bg-border" />
                 <div>
-                  <div className="text-2xl font-bold text-foreground">💚</div>
-                  <div className="text-sm text-muted-foreground">Honest Work</div>
+                  <div className="text-2xl font-bold text-foreground">Google</div>
+                  <div className="text-sm text-muted-foreground">Ads & Analytics Certified</div>
                 </div>
               </div>
             </div>
@@ -90,7 +88,7 @@ const HeroSection = () => {
             <div className="relative opacity-0 animate-slide-in-right animation-delay-200">
               <img
                 src={hiteshProfile}
-                alt="Hitesh Jaganiya - Digital Marketing Professional"
+                alt="Hitesh Jaganiya, Digital Marketing Consultant in Ahmedabad"
                 className="w-80 md:w-96 lg:w-[450px] h-[450px] md:h-[520px] lg:h-[580px] object-cover object-top"
               />
             </div>
