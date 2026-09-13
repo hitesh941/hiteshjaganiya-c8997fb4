@@ -31,7 +31,7 @@ const ConsultantFaqSection = () => {
               Common Questions
             </span>
             <h2 id="consultant-faq-heading" className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
-              Digital Marketing Consultant FAQs
+              Questions Before Hiring a Digital Marketing Consultant
             </h2>
           </div>
 
