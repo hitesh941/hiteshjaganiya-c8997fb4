@@ -18,11 +18,14 @@ const ConsultantSeoSection = () => {
             >
               What a Digital Marketing Consultant in Ahmedabad Actually Does
             </h2>
-            <p className="mt-6 text-lg md:text-xl leading-relaxed text-muted-foreground max-w-3xl">
-              Most people picture ads and social posts. That&apos;s the output. It&apos;s not the job.
-              The job is finding out where your business is losing customers, and fixing that
-              before spending more to attract new ones.
-            </p>
+            <div className="mt-6 max-w-3xl space-y-2 text-lg md:text-xl leading-relaxed text-muted-foreground">
+              <p>Most people picture ads and social posts.</p>
+              <p>That&apos;s the output. It&apos;s not the job.</p>
+              <p>
+                The job is finding out where your business is losing customers, and fixing that
+                before spending more to attract new ones.
+              </p>
+            </div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-5 lg:gap-7">
@@ -69,6 +72,10 @@ const ConsultantSeoSection = () => {
                   One change we can measure inside a month. If it works, it gets more budget. If
                   it doesn&apos;t, it gets dropped and we try the next thing.
                 </p>
+                <blockquote className="border-l-2 border-primary/30 pl-4 py-1 text-base italic text-muted-foreground">
+                  Most businesses skip this step and launch five things at once. Then when results
+                  move, nobody knows which one caused it.
+                </blockquote>
                 <p>
                   That loop is the whole method. It&apos;s unglamorous, and it&apos;s why the work
                   compounds instead of resetting every quarter.
@@ -80,7 +87,7 @@ const ConsultantSeoSection = () => {
               <div className="flex items-start justify-between gap-6 mb-6">
                 <span className="text-sm font-semibold tracking-[0.18em] text-primary">03</span>
                 <span className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
-                  Business first
+                  No fixed package
                 </span>
               </div>
               <h3 className="text-2xl font-semibold text-foreground mb-4">
