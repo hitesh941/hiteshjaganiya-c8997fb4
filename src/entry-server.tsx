@@ -10,6 +10,7 @@ import SeoRealEstateAhmedabad from "./pages/blog/SeoRealEstateAhmedabad";
 import GoogleAnalyticsSearchConsoleWithoutAgency from "./pages/blog/GoogleAnalyticsSearchConsoleWithoutAgency";
 import SmartObjectivesCompetitiveBenchmarking from "./pages/blog/SmartObjectivesCompetitiveBenchmarking";
 import FirstYearStartupMarketingBudget from "./pages/blog/FirstYearStartupMarketingBudget";
+import GoogleAdsOptimizationMoves from "./pages/blog/GoogleAdsOptimizationMoves";
 import Blog from "./pages/Blog";
 
 const routes: Record<string, React.ComponentType> = {
@@ -22,6 +23,7 @@ const routes: Record<string, React.ComponentType> = {
   "/blog/how-to-read-google-analytics-search-console-without-an-agency": GoogleAnalyticsSearchConsoleWithoutAgency,
   "/blog/smart-objectives-competitive-benchmarking": SmartObjectivesCompetitiveBenchmarking,
   "/blog/first-year-startup-marketing-budget": FirstYearStartupMarketingBudget,
+  "/blog/google-ads-optimization-moves-experts": GoogleAdsOptimizationMoves,
 };
 
 export function render(url: string) {
