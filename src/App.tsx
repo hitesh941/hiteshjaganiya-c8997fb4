@@ -13,6 +13,7 @@ import SeoRealEstateAhmedabad from "./pages/blog/SeoRealEstateAhmedabad";
 import GoogleAnalyticsSearchConsoleWithoutAgency from "./pages/blog/GoogleAnalyticsSearchConsoleWithoutAgency";
 import SmartObjectivesCompetitiveBenchmarking from "./pages/blog/SmartObjectivesCompetitiveBenchmarking";
 import FirstYearStartupMarketingBudget from "./pages/blog/FirstYearStartupMarketingBudget";
+import GoogleAdsOptimizationMoves from "./pages/blog/GoogleAdsOptimizationMoves";
 import NotFound from "./pages/NotFound";
 
 const SITE_URL = "https://www.hiteshjaganiya.com";
@@ -78,6 +79,7 @@ const App = () => (
           <Route path="/blog/how-to-read-google-analytics-search-console-without-an-agency" element={<GoogleAnalyticsSearchConsoleWithoutAgency />} />
           <Route path="/blog/smart-objectives-competitive-benchmarking" element={<SmartObjectivesCompetitiveBenchmarking />} />
           <Route path="/blog/first-year-startup-marketing-budget" element={<FirstYearStartupMarketingBudget />} />
+          <Route path="/blog/google-ads-optimization-moves-experts" element={<GoogleAdsOptimizationMoves />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <RouteSeo />
