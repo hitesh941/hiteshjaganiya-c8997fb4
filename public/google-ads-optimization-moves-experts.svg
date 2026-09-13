@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">10 Google Ads Optimization Moves Most Accounts Miss</title>
+  <desc id="desc">Premium editorial cover showing a Google Ads optimization dashboard concept.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0b0d"/><stop offset="1" stop-color="#19191d"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".9"/><stop offset="1" stop-color="#9d9da5" stop-opacity=".45"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1050" cy="90" r="260" fill="#fff" opacity=".035"/>
+  <circle cx="1080" cy="570" r="230" fill="#fff" opacity=".025"/>
+  <text x="80" y="95" fill="#a9a9b0" font-family="Arial, Helvetica, sans-serif" font-size="21" letter-spacing="4">GOOGLE ADS · OPTIMIZATION</text>
+  <text x="80" y="185" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="700">10 Optimization</text>
+  <text x="80" y="250" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="700">Moves Experts Make</text>
+  <rect x="80" y="285" width="430" height="3" fill="url(#line)"/>
+  <text x="80" y="345" fill="#d7d7dc" font-family="Arial, Helvetica, sans-serif" font-size="27">That most accounts are missing</text>
+  <text x="80" y="395" fill="#85858d" font-family="Arial, Helvetica, sans-serif" font-size="20">A practical guide by Hitesh Jaganiya</text>
+  <g transform="translate(700 125)">
+    <rect x="0" y="0" width="390" height="315" rx="28" fill="#fff" opacity=".055" stroke="#fff" stroke-opacity=".16"/>
+    <rect x="35" y="35" width="320" height="42" rx="9" fill="#fff" opacity=".07"/>
+    <rect x="35" y="105" width="145" height="155" rx="14" fill="#fff" opacity=".045" stroke="#fff" stroke-opacity=".12"/>
+    <rect x="200" y="105" width="155" height="155" rx="14" fill="#fff" opacity=".045" stroke="#fff" stroke-opacity=".12"/>
+    <path d="M55 235L92 205l34 18 45-63" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity=".85"/>
+    <circle cx="92" cy="205" r="5" fill="#fff"/><circle cx="126" cy="223" r="5" fill="#fff"/><circle cx="171" cy="160" r="5" fill="#fff"/>
+    <path d="M225 220h105M225 190h78M225 160h120" stroke="#fff" stroke-width="7" stroke-linecap="round" opacity=".45"/>
+  </g>
+</svg>
