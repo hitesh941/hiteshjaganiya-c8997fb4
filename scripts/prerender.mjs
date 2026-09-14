@@ -18,6 +18,7 @@ const routes = [
   "/blog/smart-objectives-competitive-benchmarking",
   "/blog/first-year-startup-marketing-budget",
   "/blog/google-ads-optimization-moves-experts",
+  "/blog/business-not-showing-google-maps-ahmedabad",
 ];
 
 const seoOverrides = {
@@ -68,6 +69,12 @@ const seoOverrides = {
     h1: "10 Google Ads Optimization Moves Most Accounts Miss",
     alt: "10 Google Ads Optimization Moves Every Expert Makes — practical account audit guide",
   },
+  "/blog/business-not-showing-google-maps-ahmedabad": {
+    title: "Business Not Showing on Google Maps in Ahmedabad? 7 Fixes",
+    description: "A practical troubleshooting guide for Ahmedabad business owners whose business is not appearing on Google Maps, covering verification, NAP consistency, categories, reviews, service areas, duplicates and suspensions.",
+    h1: "Business Not Showing on Google Maps in Ahmedabad? 7 Fixes",
+    alt: "Business not showing on Google Maps in Ahmedabad — local SEO troubleshooting guide",
+  },
 };
 
 await build({
@@ -113,8 +120,8 @@ function addImageDimensions(page) {
     const className = (attrs.match(/\bclass=["']([^"']+)["']/i) || [])[1] || "";
     let dimensions = null;
 
-    if (/blog-top-8|digital-marketing-packages|google-ads-vs-meta-ads|seo-real-estate|google-analytics-search-console|smart-objectives-competitive-benchmarking|first-year-startup-marketing-budget|google-ads-optimization-moves-experts|google-ads-optimization-workflow/i.test(src)) {
-      dimensions = /google-ads-optimization-workflow/i.test(src) ? [1200, 675] : [1200, 630];
+    if (/blog-top-8|digital-marketing-packages|google-ads-vs-meta-ads|seo-real-estate|google-analytics-search-console|smart-objectives-competitive-benchmarking|first-year-startup-marketing-budget|google-ads-optimization-moves-experts|google-ads-optimization-workflow|business-not-showing-google-maps-ahmedabad|business-not-showing-google-maps-workflow/i.test(src)) {
+      dimensions = /google-ads-optimization-workflow|business-not-showing-google-maps-workflow/i.test(src) ? [1200, 675] : [1200, 630];
     } else if (/hitesh-new-profile/i.test(src) && /rounded-full/i.test(className)) {
       dimensions = [96, 96];
     } else if (/hitesh-new-profile/i.test(src)) {
