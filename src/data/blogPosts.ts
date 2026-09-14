@@ -135,6 +135,21 @@ export const blogPosts: BlogPostMeta[] = [
     category: "Paid Advertising",
     keywords: ["Google Ads optimization", "Google Ads optimization tips", "Google Ads expert", "Google Ads account audit", "Google Ads campaign optimization", "Google Ads search terms", "negative keywords Google Ads", "Google Ads impression share", "Google Ads landing page optimization"],
   },
+  {
+    slug: "business-not-showing-google-maps-ahmedabad",
+    title: "Business Not Showing on Google Maps in Ahmedabad? 7 Common Fixes",
+    description:
+      "A practical troubleshooting guide for Ahmedabad business owners whose business is not appearing on Google Maps, covering verification, NAP consistency, categories, reviews, service areas, duplicates and suspensions.",
+    excerpt:
+      "Can't find your business on Google Maps in Ahmedabad? Work through seven common causes, from verification and inconsistent business information to duplicate or suspended profiles.",
+    cover: "/business-not-showing-google-maps-ahmedabad.svg",
+    coverAlt: "Business not showing on Google Maps in Ahmedabad — local SEO troubleshooting guide",
+    datePublished: "2026-09-14",
+    dateModified: "2026-09-14",
+    readingTime: "8 min read",
+    category: "Local SEO",
+    keywords: ["business not showing on Google Maps Ahmedabad", "Google Maps business not showing", "Google Business Profile Ahmedabad", "Google Maps ranking Ahmedabad", "local SEO Ahmedabad", "business profile not appearing Google Maps", "Google Maps visibility"],
+  },
 ];
 
 export const getPostBySlug = (slug: string) =>
