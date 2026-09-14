@@ -1,4 +1,4 @@
-import { Target, TrendingUp, BarChart3 } from "lucide-react";
+import { Target, TrendingUp, BarChart3, CheckCircle2 } from "lucide-react";
 
 const AboutSection = () => {
   const values = [
@@ -19,6 +19,12 @@ const AboutSection = () => {
       number: "03",
       title: "Measurable Growth",
       description: "SEO, Ads or both — the focus stays on leads, customers and revenue, not impressive-looking reports.",
+    },
+    {
+      icon: CheckCircle2,
+      number: "04",
+      title: "Hands-On Execution",
+      description: "I stay close to the work, keep testing what matters, and make decisions based on what the data is actually showing.",
     },
   ];
 
