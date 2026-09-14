@@ -11,6 +11,7 @@ import GoogleAnalyticsSearchConsoleWithoutAgency from "./pages/blog/GoogleAnalyt
 import SmartObjectivesCompetitiveBenchmarking from "./pages/blog/SmartObjectivesCompetitiveBenchmarking";
 import FirstYearStartupMarketingBudget from "./pages/blog/FirstYearStartupMarketingBudget";
 import GoogleAdsOptimizationMoves from "./pages/blog/GoogleAdsOptimizationMoves";
+import BusinessNotShowingGoogleMapsAhmedabad from "./pages/blog/BusinessNotShowingGoogleMapsAhmedabad";
 import Blog from "./pages/Blog";
 
 const routes: Record<string, React.ComponentType> = {
@@ -24,6 +25,7 @@ const routes: Record<string, React.ComponentType> = {
   "/blog/smart-objectives-competitive-benchmarking": SmartObjectivesCompetitiveBenchmarking,
   "/blog/first-year-startup-marketing-budget": FirstYearStartupMarketingBudget,
   "/blog/google-ads-optimization-moves-experts": GoogleAdsOptimizationMoves,
+  "/blog/business-not-showing-google-maps-ahmedabad": BusinessNotShowingGoogleMapsAhmedabad,
 };
 
 export function render(url: string) {
