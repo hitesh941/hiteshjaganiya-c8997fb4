@@ -59,6 +59,10 @@
       "dest": "/blog/google-ads-optimization-moves-experts/index.html"
     },
     {
+      "src": "^/blog/business-not-showing-google-maps-ahmedabad/?$",
+      "dest": "/blog/business-not-showing-google-maps-ahmedabad/index.html"
+    },
+    {
       "src": "^/blog/?$",
       "dest": "/blog/index.html"
     },
