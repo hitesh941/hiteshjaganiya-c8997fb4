@@ -1,4 +1,14 @@
 {
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        { "type": "host", "value": "hiteshjaganiya.com" }
+      ],
+      "destination": "https://www.hiteshjaganiya.com/$1",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
