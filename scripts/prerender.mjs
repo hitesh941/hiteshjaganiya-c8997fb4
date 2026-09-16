@@ -19,6 +19,7 @@ const routes = [
   "/blog/first-year-startup-marketing-budget",
   "/blog/google-ads-optimization-moves-experts",
   "/blog/business-not-showing-google-maps-ahmedabad",
+  "/blog/can-ai-content-rank-on-google",
 ];
 
 const seoOverrides = {
@@ -75,14 +76,16 @@ const seoOverrides = {
     h1: "Business Not Showing on Google Maps in Ahmedabad? 7 Fixes",
     alt: "Business not showing on Google Maps in Ahmedabad — local SEO troubleshooting guide",
   },
+  "/blog/can-ai-content-rank-on-google": {
+    title: "Can AI Content Rank on Google? Honest Answer for 2026",
+    description: "Can AI content rank on Google in 2026? An honest, data-backed breakdown covering Google's position, ranking data, common AI-content failures, and how to use AI without replacing expertise.",
+    h1: "Can AI Content Rank on Google? A Consultant's Honest Answer for 2026",
+    alt: "Share of AI-generated content in Google's top 20 search results, 2019 to 2025",
+  },
 };
 
 await build({
-  build: {
-    ssr: "src/entry-server.tsx",
-    outDir: serverDir,
-    emptyOutDir: true,
-  },
+  build: { ssr: "src/entry-server.tsx", outDir: serverDir, emptyOutDir: true },
 });
 
 const serverEntry = path.join(serverDir, "entry-server.js");
@@ -101,33 +104,22 @@ function cleanTemplate(source) {
 }
 
 function helmetToHead(helmet) {
-  return [
-    helmet?.base?.toString?.() || "",
-    helmet?.title?.toString?.() || "",
-    helmet?.meta?.toString?.() || "",
-    helmet?.link?.toString?.() || "",
-    helmet?.style?.toString?.() || "",
-    helmet?.script?.toString?.() || "",
-    helmet?.noscript?.toString?.() || "",
-  ].filter(Boolean).join("\n");
+  return [helmet?.base?.toString?.() || "", helmet?.title?.toString?.() || "", helmet?.meta?.toString?.() || "", helmet?.link?.toString?.() || "", helmet?.style?.toString?.() || "", helmet?.script?.toString?.() || "", helmet?.noscript?.toString?.() || ""].filter(Boolean).join("\n");
 }
 
 function addImageDimensions(page) {
   return page.replace(/<img\b([^>]*?)>/gi, (match, attrs) => {
     if (/\bwidth\s*=|\bheight\s*=/i.test(attrs)) return match;
-
     const src = (attrs.match(/\bsrc=["']([^"']+)["']/i) || [])[1] || "";
     const className = (attrs.match(/\bclass=["']([^"']+)["']/i) || [])[1] || "";
     let dimensions = null;
-
-    if (/blog-top-8|digital-marketing-packages|google-ads-vs-meta-ads|seo-real-estate|google-analytics-search-console|smart-objectives-competitive-benchmarking|first-year-startup-marketing-budget|google-ads-optimization-moves-experts|google-ads-optimization-workflow|business-not-showing-google-maps-ahmedabad|business-not-showing-google-maps-workflow/i.test(src)) {
-      dimensions = /google-ads-optimization-workflow|business-not-showing-google-maps-workflow/i.test(src) ? [1200, 675] : [1200, 630];
+    if (/blog-top-8|digital-marketing-packages|google-ads-vs-meta-ads|seo-real-estate|google-analytics-search-console|smart-objectives-competitive-benchmarking|first-year-startup-marketing-budget|google-ads-optimization-moves-experts|google-ads-optimization-workflow|business-not-showing-google-maps-ahmedabad|business-not-showing-google-maps-workflow|ai-content-google-rankings-chart/i.test(src)) {
+      dimensions = /google-ads-optimization-workflow|business-not-showing-google-maps-workflow/i.test(src) ? [1200, 675] : /ai-content-google-rankings-chart/i.test(src) ? [1600, 900] : [1200, 630];
     } else if (/hitesh-new-profile/i.test(src) && /rounded-full/i.test(className)) {
       dimensions = [96, 96];
     } else if (/hitesh-new-profile/i.test(src)) {
       dimensions = [450, 580];
     }
-
     if (!dimensions) return match;
     return `<img${attrs} width="${dimensions[0]}" height="${dimensions[1]}">`;
   });
@@ -136,29 +128,17 @@ function addImageDimensions(page) {
 function applySeoOverrides(page, route) {
   const override = seoOverrides[route];
   let output = addImageDimensions(page);
-
   const canonicalMatch = output.match(/<link\s+rel=["']canonical["']\s+href=["']([^"']+)["'][^>]*>/i);
-  if (canonicalMatch && !/hreflang=["']x-default["']/i.test(output)) {
-    output = output.replace("</head>", `<link rel="alternate" hrefLang="x-default" href="${canonicalMatch[1]}">\n</head>`);
-  }
-
+  if (canonicalMatch && !/hreflang=["']x-default["']/i.test(output)) output = output.replace("</head>", `<link rel="alternate" hrefLang="x-default" href="${canonicalMatch[1]}">\n</head>`);
   if (!override) return output;
-
   output = output.replace(/<title\b[^>]*>[\s\S]*?<\/title>/i, `<title>${override.title}</title>`);
   output = output.replace(/<meta\s+name=["']description["'][^>]*>/i, `<meta name="description" content="${override.description}">`);
   output = output.replace(/<meta\s+property=["']og:title["'][^>]*>/i, `<meta property="og:title" content="${override.title}">`);
   output = output.replace(/<meta\s+property=["']og:description["'][^>]*>/i, `<meta property="og:description" content="${override.description}">`);
   output = output.replace(/<meta\s+name=["']twitter:title["'][^>]*>/i, `<meta name="twitter:title" content="${override.title}">`);
   output = output.replace(/<meta\s+name=["']twitter:description["'][^>]*>/i, `<meta name="twitter:description" content="${override.description}">`);
-
-  if (override.h1) {
-    output = output.replace(/<h1\b([^>]*)>[\s\S]*?<\/h1>/i, `<h1$1>${override.h1}</h1>`);
-  }
-
-  if (override.alt) {
-    output = output.replace(/<img\b([^>]*?)alt=["'][^"']*["']([^>]*)>/gi, `<img$1alt="${override.alt}"$2>`);
-  }
-
+  if (override.h1) output = output.replace(/<h1\b([^>]*)>[\s\S]*?<\/h1>/i, `<h1$1>${override.h1}</h1>`);
+  if (override.alt) output = output.replace(/<img\b([^>]*?)alt=["'][^"']*["']([^>]*)>/gi, `<img$1alt="${override.alt}"$2>`);
   return output;
 }
 
@@ -167,22 +147,14 @@ template = cleanTemplate(template);
 for (const route of routes) {
   const { html, helmet } = render(route);
   const head = helmetToHead(helmet);
-  const page = applySeoOverrides(
-    template
-      .replace("<!--__PRERENDERED_ROOT__-->", `<div id="root">${html}</div>`)
-      .replace("</head>", `${head}\n</head>`),
-    route,
-  );
-
+  const page = applySeoOverrides(template.replace("<!--__PRERENDERED_ROOT__-->", `<div id="root">${html}</div>`).replace("</head>", `${head}\n</head>`), route);
   const outputDir = path.join(distDir, route.replace(/^\//, ""));
   await fs.mkdir(outputDir, { recursive: true });
   await fs.writeFile(path.join(outputDir, "index.html"), page, "utf8");
-
   if (route === "/blog/top-8-digital-marketing-agencies-in-ahmedabad") {
     await fs.writeFile(path.join(distDir, "top-8-digital-marketing-agencies-in-ahmedabad.html"), page, "utf8");
     await fs.writeFile(path.join(distDir, "agency-guide-ahmedabad.html"), page, "utf8");
   }
-
   console.log(`Prerendered ${route}`);
 }
 
