@@ -12,6 +12,7 @@ import SmartObjectivesCompetitiveBenchmarking from "./pages/blog/SmartObjectives
 import FirstYearStartupMarketingBudget from "./pages/blog/FirstYearStartupMarketingBudget";
 import GoogleAdsOptimizationMoves from "./pages/blog/GoogleAdsOptimizationMoves";
 import BusinessNotShowingGoogleMapsAhmedabad from "./pages/blog/BusinessNotShowingGoogleMapsAhmedabad";
+import CanAiContentRankOnGoogle from "./pages/blog/CanAiContentRankOnGoogle";
 import Blog from "./pages/Blog";
 
 const routes: Record<string, React.ComponentType> = {
@@ -26,22 +27,19 @@ const routes: Record<string, React.ComponentType> = {
   "/blog/first-year-startup-marketing-budget": FirstYearStartupMarketingBudget,
   "/blog/google-ads-optimization-moves-experts": GoogleAdsOptimizationMoves,
   "/blog/business-not-showing-google-maps-ahmedabad": BusinessNotShowingGoogleMapsAhmedabad,
+  "/blog/can-ai-content-rank-on-google": CanAiContentRankOnGoogle,
 };
 
 export function render(url: string) {
   const pathname = new URL(url, "https://www.hiteshjaganiya.com").pathname.replace(/\/$/, "") || "/";
   const Page = routes[pathname];
 
-  if (!Page) {
-    throw new Error(`No prerender route configured for ${pathname}`);
-  }
+  if (!Page) throw new Error(`No prerender route configured for ${pathname}`);
 
   const helmetContext: Record<string, unknown> = {};
   const html = renderToString(
     <HelmetProvider context={helmetContext}>
-      <StaticRouter location={pathname}>
-        <Page />
-      </StaticRouter>
+      <StaticRouter location={pathname}><Page /></StaticRouter>
     </HelmetProvider>,
   );
 
