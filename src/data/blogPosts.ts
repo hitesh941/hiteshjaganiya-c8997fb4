@@ -152,18 +152,18 @@ export const blogPosts: BlogPostMeta[] = [
   },
   {
     slug: "can-ai-content-rank-on-google",
-    title: "Can AI Content Rank on Google? A Consultant's Honest Answer for 2026",
+    title: "Can AI Content Rank on Google? Honest Answer for 2026",
     description:
-      "Can AI content rank on Google in 2026? An honest, data-backed breakdown from digital marketing consultant Hitesh Jaganiya, covering what actually ranks and what doesn't.",
+      "Can AI content rank on Google in 2026? A practical, data-led look at Google's position on AI-assisted content, what the evidence shows, and how to use AI without publishing generic, unedited pages.",
     excerpt:
-      "Can AI content rank on Google in 2026? A practical look at Google's position, ranking data, common AI-content failures, and how to use AI without replacing expertise.",
-    cover: "/ai-content-google-rankings-chart.svg",
-    coverAlt: "Share of AI-generated content in Google's top 20 search results, 2019 to 2025",
+      "Yes, AI-assisted content can rank — but the finished page still needs usefulness, accuracy, originality and human editorial judgment. Here's what the data and Google's guidance actually suggest.",
+    cover: "/can-ai-content-rank-on-google-cover.svg",
+    coverAlt: "Can AI Content Rank on Google? Modern AI and Google search illustration for a practical SEO guide",
     datePublished: "2026-09-16",
     dateModified: "2026-09-16",
     readingTime: "8 min read",
     category: "AI & SEO",
-    keywords: ["can AI content rank on Google", "AI content SEO", "AI-generated content Google ranking", "Google AI content policy", "AI content and SEO 2026", "AI writing for SEO", "human edited AI content"],
+    keywords: ["can AI content rank on Google", "AI content rank Google", "AI generated content SEO", "Google AI content policy", "AI content and SEO", "AI assisted content", "AI content Google ranking"],
   },
 ];
 
