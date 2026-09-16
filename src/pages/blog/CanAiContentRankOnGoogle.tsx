@@ -11,6 +11,7 @@ import { getPostBySlug, SITE_URL } from "@/data/blogPosts";
 const post = getPostBySlug("can-ai-content-rank-on-google")!;
 const postUrl = `${SITE_URL}/blog/${post.slug}`;
 const imageUrl = `${SITE_URL}${post.cover}`;
+const dataChartUrl = `${SITE_URL}/ai-content-google-rankings-chart.svg`;
 
 const CanAiContentRankOnGoogle = () => {
   const articleSchema = {
@@ -19,7 +20,7 @@ const CanAiContentRankOnGoogle = () => {
     "@id": `${postUrl}#article`,
     headline: post.title,
     description: post.description,
-    image: [imageUrl],
+    image: [imageUrl, dataChartUrl],
     url: postUrl,
     datePublished: "2026-09-16T12:00:00+05:30",
     dateModified: "2026-09-16T12:00:00+05:30",
@@ -58,8 +59,8 @@ const CanAiContentRankOnGoogle = () => {
         <meta property="og:url" content={postUrl} />
         <meta property="og:image" content={imageUrl} />
         <meta property="og:image:alt" content={post.coverAlt} />
-        <meta property="og:image:width" content="1600" />
-        <meta property="og:image:height" content="900" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta property="og:locale" content="en_IN" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={post.title} />
@@ -88,8 +89,8 @@ const CanAiContentRankOnGoogle = () => {
                     <span className="inline-flex items-center gap-2"><User className="w-4 h-4" />Hitesh Jaganiya</span>
                   </div>
                   <figure className="relative overflow-hidden rounded-3xl border border-border bg-card shadow-sm">
-                    <img src={post.cover} alt={post.coverAlt} width="1600" height="900" className="w-full h-auto" />
-                    <figcaption className="px-5 py-3 text-sm text-muted-foreground border-t border-border">Illustrative summary of publicly reported figures on AI-generated content appearing in Google&apos;s top 20 results.</figcaption>
+                    <img src={post.cover} alt={post.coverAlt} width="1200" height="630" className="w-full h-auto" />
+                    <figcaption className="px-5 py-3 text-sm text-muted-foreground border-t border-border">Can AI content rank on Google? A practical look at AI-assisted content, search visibility and the role of human editorial judgment.</figcaption>
                   </figure>
                 </header>
 
@@ -116,6 +117,10 @@ const CanAiContentRankOnGoogle = () => {
                     <p>Independent tracking studies that sample Google&apos;s top search results over time have shown something useful: the share of AI-generated content appearing in top rankings has grown substantially since 2019, but it has not grown in a straight line. It dips around major Google algorithm updates and can climb again afterward.</p>
                     <p>Notice the dip around the March 2024 core update. The article&apos;s source material frames this as part of the broader quality shake-up around low-quality content. The later recovery does not mean quality standards disappeared; it is more consistent with the idea that some AI-assisted content can perform when it has enough editorial value.</p>
                     <p>Separately, research from SEO analytics firms looking at the correlation between how much of a page is AI-generated and where it ranks has found little meaningful relationship. In practical terms, whether a page started as an AI draft tells you far less about ranking potential than the quality of the finished work.</p>
+                    <figure className="overflow-hidden rounded-3xl border border-border bg-card shadow-sm">
+                      <img src="/ai-content-google-rankings-chart.svg" alt="Share of AI-generated content in Google's top 20 results across reported tracking dates from 2019 to 2025" width="1600" height="900" loading="lazy" className="w-full h-auto" />
+                      <figcaption className="px-5 py-3 text-sm text-muted-foreground border-t border-border">Source: Originality.ai ongoing AI-in-search tracking study — illustrative summary of publicly reported figures supplied for this article.</figcaption>
+                    </figure>
                   </section>
 
                   <section>
