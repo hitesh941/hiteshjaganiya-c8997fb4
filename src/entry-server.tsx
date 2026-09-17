@@ -13,11 +13,13 @@ import FirstYearStartupMarketingBudget from "./pages/blog/FirstYearStartupMarket
 import GoogleAdsOptimizationMoves from "./pages/blog/GoogleAdsOptimizationMoves";
 import BusinessNotShowingGoogleMapsAhmedabad from "./pages/blog/BusinessNotShowingGoogleMapsAhmedabad";
 import CanAiContentRankOnGoogle from "./pages/blog/CanAiContentRankOnGoogle";
+import ThankYou from "./pages/ThankYou";
 import Blog from "./pages/Blog";
 
 const routes: Record<string, React.ComponentType> = {
   "/": Index,
   "/blog": Blog,
+  "/thank-you": ThankYou,
   "/blog/top-8-digital-marketing-agencies-in-ahmedabad": Top8AgenciesAhmedabad,
   "/blog/digital-marketing-packages-in-ahmedabad": DigitalMarketingPackagesAhmedabad,
   "/blog/google-ads-vs-meta-ads-ahmedabad": GoogleAdsVsMetaAdsAhmedabadBudgetFix,
