@@ -28,8 +28,8 @@ const ResultsSection = () => {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((stat) => (
-              <div key={stat.label} className="text-center p-8 bg-primary-foreground/5 rounded-2xl border border-primary-foreground/10">
-                <div className="w-14 h-14 rounded-xl bg-primary/20 flex items-center justify-center mx-auto mb-6"><stat.icon className="w-7 h-7 text-primary" /></div>
+              <div key={stat.label} className="text-left p-8 bg-primary-foreground/5 rounded-2xl border border-primary-foreground/10">
+                <div className="w-14 h-14 rounded-xl bg-primary/20 flex items-center justify-center mb-6"><stat.icon className="w-7 h-7 text-primary" /></div>
                 <div className="text-4xl md:text-5xl font-bold text-primary mb-2">{stat.value}</div>
                 <div className="text-lg font-semibold text-primary-foreground mb-2">{stat.label}</div>
                 <p className="text-sm text-primary-foreground/60">{stat.description}</p>
