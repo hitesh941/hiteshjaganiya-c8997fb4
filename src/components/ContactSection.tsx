@@ -8,6 +8,7 @@ import { useNavigate } from "react-router-dom";
 const ContactSection = () => {
   const navigate = useNavigate();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState("");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -23,13 +24,36 @@ const ContactSection = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setError("");
 
-    // Keep the existing submission flow; redirect only after it completes successfully.
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/hphitesh941@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone || "Not provided",
+          message: formData.message,
+          _subject: "New Contact Form Submission - Hitesh Jaganiya",
+          _template: "table",
+        }),
+      });
 
-    setFormData({ name: "", email: "", phone: "", message: "" });
-    setIsSubmitting(false);
-    navigate("/thank-you");
+      if (!response.ok) {
+        throw new Error("Submission failed");
+      }
+
+      setFormData({ name: "", email: "", phone: "", message: "" });
+      navigate("/thank-you");
+    } catch {
+      setError("Something went wrong while sending your message. Please try again or contact me directly by email.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -108,6 +132,8 @@ const ContactSection = () => {
                 </label>
                 <Textarea id="message" name="message" placeholder="Tell me about your business, your goals, or just say hi!" value={formData.message} onChange={handleChange} required rows={4} className="bg-background resize-none" />
               </div>
+
+              {error && <p className="text-sm text-destructive" role="alert">{error}</p>}
 
               <Button type="submit" variant="hero" size="xl" className="w-full group" disabled={isSubmitting}>
                 {isSubmitting ? "Sending..." : <><Send className="mr-2 w-5 h-5" />Send Message<ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" /></>}
