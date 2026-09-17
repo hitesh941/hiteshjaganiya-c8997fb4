@@ -6,6 +6,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Index from "./pages/Index";
 import Blog from "./pages/Blog";
+import ThankYou from "./pages/ThankYou";
 import Top8AgenciesAhmedabad from "./pages/blog/Top8AgenciesAhmedabad";
 import DigitalMarketingPackagesAhmedabad from "./pages/blog/DigitalMarketingPackagesAhmedabad";
 import GoogleAdsVsMetaAdsAhmedabadBudgetFix from "./pages/blog/GoogleAdsVsMetaAdsAhmedabadBudgetFix";
@@ -32,8 +33,10 @@ const RouteSeo = () => {
   const isRealEstate = pathname === realEstatePath;
   const isBlogArticle = pathname.startsWith("/blog/");
   const isHome = pathname === "/";
-  const isNotFound = pathname !== "/" && pathname !== "/blog" && !pathname.startsWith("/blog/");
+  const isThankYou = pathname === "/thank-you";
+  const isNotFound = pathname !== "/" && pathname !== "/blog" && !pathname.startsWith("/blog/") && !isThankYou;
 
+  if (isThankYou) return <Helmet><title>Thank You | Hitesh Jaganiya</title><meta name="description" content="Thank you for contacting Hitesh Jaganiya. Your message has been submitted successfully." /><meta name="robots" content="noindex, follow" /><link rel="canonical" href={`${SITE_URL}/thank-you`} /></Helmet>;
   if (isPackage) {
     const title = "Digital Marketing Packages in Ahmedabad: ₹15K vs ₹50K vs ₹1L+";
     const description = "Compare digital marketing packages in Ahmedabad from ₹15K to ₹1L+. See what is included, ad spend, SEO, pricing, and how to choose the right package in 2026.";
@@ -74,6 +77,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/thank-you" element={<ThankYou />} />
           <Route path="/blog/top-8-digital-marketing-agencies-in-ahmedabad" element={<Top8AgenciesAhmedabad />} />
           <Route path="/blog/digital-marketing-packages-in-ahmedabad" element={<DigitalMarketingPackagesAhmedabad />} />
           <Route path="/blog/google-ads-vs-meta-ads-ahmedabad" element={<GoogleAdsVsMetaAdsAhmedabadBudgetFix />} />
