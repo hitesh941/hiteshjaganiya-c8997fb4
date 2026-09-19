@@ -172,7 +172,7 @@ export const blogPosts: BlogPostMeta[] = [
       "What is competitive benchmarking? Learn how to compare competitors, choose useful KPIs, run a benchmarking analysis, and avoid common mistakes.",
     excerpt:
       "A practical beginner's guide to competitive benchmarking — what to measure, how to choose competitors, how to turn the comparison into decisions, and where benchmarking can go wrong.",
-    cover: "/competitive-benchmarking-beginners-guide.svg",
+    cover: "/competitive-benchmarking-beginners-guide-cover.svg",
     coverAlt: "What Is Competitive Benchmarking? A beginner's guide to comparing competitors and KPIs",
     datePublished: "2026-08-09",
     dateModified: "2026-09-19",
