@@ -144,7 +144,7 @@ const WhatIsCompetitiveBenchmarking = () => {
                   </p>
 
                   <div className="flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-muted-foreground mb-8">
-                    <span className="inline-flex items-center gap-2"><CalendarDays className="w-4 h-4" />September 19, 2026</span>
+                    <span className="inline-flex items-center gap-2"><CalendarDays className="w-4 h-4" />August 9, 2026</span>
                     <span className="inline-flex items-center gap-2"><Clock className="w-4 h-4" />8 min read</span>
                     <span className="inline-flex items-center gap-2"><User className="w-4 h-4" />Hitesh Jaganiya</span>
                   </div>
