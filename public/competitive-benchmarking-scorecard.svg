@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+<title id="title">Competitor benchmarking scorecard example</title><desc id="desc">A side-by-side scorecard comparing a business with three competitors across four marketing metrics.</desc>
+<rect width="1200" height="675" rx="32" fill="#f7faf8"/>
+<text x="70" y="78" font-family="Arial,Helvetica,sans-serif" font-size="34" font-weight="800" fill="#203d34">Competitor benchmarking scorecard</text>
+<text x="70" y="116" font-family="Arial,Helvetica,sans-serif" font-size="20" fill="#657970">A simple side-by-side view turns a vague “we should do more marketing” into specific gaps.</text>
+<g transform="translate(70 165)" font-family="Arial,Helvetica,sans-serif">
+<rect width="1060" height="390" rx="22" fill="#fff" stroke="#d7e4dd" stroke-width="2"/>
+<g fill="#edf5f1"><rect x="20" y="20" width="1020" height="54" rx="12"/></g>
+<g font-size="16" font-weight="700" fill="#35574b"><text x="40" y="54">Metric</text><text x="365" y="54">You</text><text x="540" y="54">Competitor A</text><text x="735" y="54">Competitor B</text><text x="930" y="54">Competitor C</text></g>
+<g font-size="16" fill="#50685f">
+<text x="40" y="112">Top-10 organic keywords</text><text x="365" y="112">42</text><text x="540" y="112">180</text><text x="735" y="112">65</text><text x="930" y="112">38</text>
+<text x="40" y="177">Mobile homepage load time</text><text x="365" y="177">6.1s</text><text x="540" y="177">2.8s</text><text x="735" y="177">3.4s</text><text x="930" y="177">5.9s</text>
+<text x="40" y="242">Google reviews</text><text x="365" y="242">24</text><text x="540" y="242">210</text><text x="735" y="242">88</text><text x="930" y="242">31</text>
+<text x="40" y="307">Blog posts in 6 months</text><text x="365" y="307">2</text><text x="540" y="307">24</text><text x="735" y="307">9</text><text x="930" y="307">0</text>
+</g>
+<g stroke="#e4ece8"><line x1="20" y1="138" x2="1040" y2="138"/><line x1="20" y1="203" x2="1040" y2="203"/><line x1="20" y1="268" x2="1040" y2="268"/><line x1="20" y1="333" x2="1040" y2="333"/></g>
+<rect x="20" y="344" width="1020" height="26" rx="13" fill="#dcece3"/><rect x="20" y="344" width="570" height="26" rx="13" fill="#2f9d68"/>
+</g>
+<text x="70" y="615" font-family="Arial,Helvetica,sans-serif" font-size="17" fill="#71827b">Example data from the article — the point is the decision the comparison enables, not the exact numbers.</text>
+</svg>
