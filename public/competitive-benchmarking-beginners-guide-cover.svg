@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+<title id="title">What Is Competitive Benchmarking? A Beginner's Guide</title>
+<desc id="desc">Editorial illustration showing a business dashboard comparing performance with competitors.</desc>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#173c32"/><stop offset="1" stop-color="#2f6b58"/></linearGradient>
+<linearGradient id="card" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#edf5f1"/></linearGradient>
+</defs>
+<rect width="1200" height="630" rx="36" fill="url(#bg)"/>
+<circle cx="1040" cy="110" r="150" fill="#4ade80" opacity=".08"/>
+<circle cx="1090" cy="500" r="210" fill="#ffffff" opacity=".05"/>
+<g transform="translate(80 78)">
+<text x="0" y="42" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700" letter-spacing="4" fill="#65d58b">DIGITAL STRATEGY</text>
+<text x="0" y="112" font-family="Arial,Helvetica,sans-serif" font-size="52" font-weight="800" fill="#ffffff">What Is Competitive</text>
+<text x="0" y="172" font-family="Arial,Helvetica,sans-serif" font-size="52" font-weight="800" fill="#ffffff">Benchmarking?</text>
+<text x="0" y="222" font-family="Arial,Helvetica,sans-serif" font-size="25" fill="#d6e7df">A beginner's guide to measuring your performance</text>
+<text x="0" y="257" font-family="Arial,Helvetica,sans-serif" font-size="25" fill="#d6e7df">against real competitors — and turning gaps into decisions.</text>
+</g>
+<g transform="translate(710 92)">
+<rect x="0" y="0" width="390" height="420" rx="28" fill="url(#card)"/>
+<text x="34" y="46" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700" fill="#36564a">COMPETITOR SNAPSHOT</text>
+<line x1="34" y1="70" x2="356" y2="70" stroke="#d5e2dc"/>
+<g font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#587168">
+<text x="34" y="110">Organic visibility</text><text x="34" y="180">Site speed</text><text x="34" y="250">Reviews</text><text x="34" y="320">Content output</text>
+</g>
+<g stroke-linecap="round">
+<line x1="34" y1="128" x2="356" y2="128" stroke="#d9e5df" stroke-width="10"/>
+<line x1="34" y1="128" x2="295" y2="128" stroke="#2f9d68" stroke-width="10"/>
+<line x1="34" y1="198" x2="356" y2="198" stroke="#d9e5df" stroke-width="10"/>
+<line x1="34" y1="198" x2="220" y2="198" stroke="#2f9d68" stroke-width="10"/>
+<line x1="34" y1="268" x2="356" y2="268" stroke="#d9e5df" stroke-width="10"/>
+<line x1="34" y1="268" x2="320" y2="268" stroke="#2f9d68" stroke-width="10"/>
+<line x1="34" y1="338" x2="356" y2="338" stroke="#d9e5df" stroke-width="10"/>
+<line x1="34" y1="338" x2="180" y2="338" stroke="#2f9d68" stroke-width="10"/>
+</g>
+<circle cx="330" cy="386" r="20" fill="#2f9d68"/>
+<path d="M320 386l7 7 14-16" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<text x="80" y="565" font-family="Arial,Helvetica,sans-serif" font-size="18" fill="#b8d1c5">Hitesh Jaganiya · Digital Marketing Consultant</text>
+</svg>
