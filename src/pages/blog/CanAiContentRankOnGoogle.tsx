@@ -22,7 +22,7 @@ const CanAiContentRankOnGoogle = () => {
     description: post.description,
     image: [imageUrl, dataChartUrl],
     url: postUrl,
-    datePublished: "2026-09-16T12:00:00+05:30",
+    datePublished: "2026-08-16T12:00:00+05:30",
     dateModified: "2026-09-16T12:00:00+05:30",
     inLanguage: "en-IN",
     articleSection: post.category,
@@ -84,7 +84,7 @@ const CanAiContentRankOnGoogle = () => {
                   <h1 className="max-w-4xl text-3xl md:text-5xl lg:text-[3.65rem] font-bold text-foreground leading-[1.08] tracking-tight text-balance mb-6">{post.title}</h1>
                   <p className="max-w-3xl text-lg md:text-xl text-muted-foreground leading-relaxed mb-7">{post.excerpt}</p>
                   <div className="flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-muted-foreground mb-8">
-                    <span className="inline-flex items-center gap-2"><CalendarDays className="w-4 h-4" />September 16, 2026</span>
+                    <span className="inline-flex items-center gap-2"><CalendarDays className="w-4 h-4" />August 16, 2026</span>
                     <span className="inline-flex items-center gap-2"><Clock className="w-4 h-4" />{post.readingTime}</span>
                     <span className="inline-flex items-center gap-2"><User className="w-4 h-4" />Hitesh Jaganiya</span>
                   </div>
