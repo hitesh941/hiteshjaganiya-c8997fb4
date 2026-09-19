@@ -165,6 +165,22 @@ export const blogPosts: BlogPostMeta[] = [
     category: "AI & SEO",
     keywords: ["can AI content rank on Google", "AI content rank Google", "AI generated content SEO", "Google AI content policy", "AI content and SEO", "AI assisted content", "AI content Google ranking"],
   },
+  {
+    slug: "what-is-competitive-benchmarking-beginners-guide",
+    title: "What Is Competitive Benchmarking? A Beginner's Guide",
+    description:
+      "What is competitive benchmarking? Learn how to compare competitors, choose useful KPIs, run a benchmarking analysis, and avoid common mistakes.",
+    excerpt:
+      "A practical beginner's guide to competitive benchmarking — what to measure, how to choose competitors, how to turn the comparison into decisions, and where benchmarking can go wrong.",
+    cover: "/competitive-benchmarking-beginners-guide.svg",
+    coverAlt: "What Is Competitive Benchmarking? A beginner's guide to comparing competitors and KPIs",
+    datePublished: "2026-09-19",
+    dateModified: "2026-09-19",
+    readingTime: "8 min read",
+    category: "Digital Strategy",
+    keywords: ["what is competitive benchmarking", "competitive benchmarking", "competitive benchmarking analysis", "competitor benchmarking example", "competitive benchmarking KPIs", "how to benchmark competitors"],
+  },
+
 ];
 
 export const getPostBySlug = (slug: string) =>
