@@ -159,7 +159,7 @@ export const blogPosts: BlogPostMeta[] = [
       "Yes, AI-assisted content can rank — but the finished page still needs usefulness, accuracy, originality and human editorial judgment. Here's what the data and Google's guidance actually suggest.",
     cover: "/can-ai-content-rank-on-google-cover.svg",
     coverAlt: "Can AI Content Rank on Google? Modern AI and Google search illustration for a practical SEO guide",
-    datePublished: "2026-09-16",
+    datePublished: "2026-08-16",
     dateModified: "2026-09-16",
     readingTime: "8 min read",
     category: "AI & SEO",
