@@ -13,6 +13,7 @@ import FirstYearStartupMarketingBudget from "./pages/blog/FirstYearStartupMarket
 import GoogleAdsOptimizationMoves from "./pages/blog/GoogleAdsOptimizationMoves";
 import BusinessNotShowingGoogleMapsAhmedabad from "./pages/blog/BusinessNotShowingGoogleMapsAhmedabad";
 import CanAiContentRankOnGoogle from "./pages/blog/CanAiContentRankOnGoogle";
+import WhatIsCompetitiveBenchmarking from "./pages/blog/WhatIsCompetitiveBenchmarking";
 import ThankYou from "./pages/ThankYou";
 import Blog from "./pages/Blog";
 
@@ -30,6 +31,7 @@ const routes: Record<string, React.ComponentType> = {
   "/blog/google-ads-optimization-moves-experts": GoogleAdsOptimizationMoves,
   "/blog/business-not-showing-google-maps-ahmedabad": BusinessNotShowingGoogleMapsAhmedabad,
   "/blog/can-ai-content-rank-on-google": CanAiContentRankOnGoogle,
+  "/blog/what-is-competitive-benchmarking-beginners-guide": WhatIsCompetitiveBenchmarking,
 };
 
 export function render(url: string) {
