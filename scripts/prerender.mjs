@@ -88,7 +88,6 @@ const seoOverrides = {
     title: "What Is Competitive Benchmarking? A Beginner's Guide",
     description: "What is competitive benchmarking? Learn how to compare competitors, choose useful KPIs, run a benchmarking analysis, and avoid common mistakes.",
     h1: "What Is Competitive Benchmarking? A Beginner's Guide",
-    alt: "What Is Competitive Benchmarking? A Beginner's Guide — competitor performance dashboard illustration",
   },
 };
 
