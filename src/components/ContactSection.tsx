@@ -61,7 +61,7 @@ const ContactSection = () => {
       <div className="container-custom">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Side - Text Content */}
-          <div className="text-left">
+          <div className="!text-left">
             <span className="inline-block text-sm font-semibold text-primary uppercase tracking-wider mb-4">
               Say Hello!
             </span>
@@ -72,7 +72,7 @@ const ContactSection = () => {
               Got questions? Just want to say hi? I'd love to hear from you! Drop me a message and I'll get back to you super quick.
             </p>
             <div className="space-y-4">
-              <a href="mailto:hphitesh941@gmail.com" className="flex items-center gap-4 justify-start hover:opacity-80 transition-opacity">
+              <a href="mailto:hphitesh941@gmail.com" className="flex items-center gap-4 !justify-start hover:opacity-80 transition-opacity">
                 <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center flex-shrink-0">
                   <Mail className="w-5 h-5 text-primary" />
                 </div>
@@ -81,7 +81,7 @@ const ContactSection = () => {
                   <p className="text-primary-foreground font-medium">hphitesh941@gmail.com</p>
                 </div>
               </a>
-              <a href="tel:9998311492" className="flex items-center gap-4 justify-start hover:opacity-80 transition-opacity">
+              <a href="tel:9998311492" className="flex items-center gap-4 !justify-start hover:opacity-80 transition-opacity">
                 <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center flex-shrink-0">
                   <Phone className="w-5 h-5 text-primary" />
                 </div>
@@ -91,7 +91,7 @@ const ContactSection = () => {
                 </div>
               </a>
             </div>
-            <p className="text-sm text-primary-foreground/60 mt-8">
+            <p className="!text-left text-sm text-primary-foreground/60 mt-8">
               Zero pressure • Always free to chat • I reply within 24 hours ☀️
             </p>
           </div>
