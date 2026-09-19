@@ -17,6 +17,7 @@ import FirstYearStartupMarketingBudget from "./pages/blog/FirstYearStartupMarket
 import GoogleAdsOptimizationMoves from "./pages/blog/GoogleAdsOptimizationMoves";
 import BusinessNotShowingGoogleMapsAhmedabad from "./pages/blog/BusinessNotShowingGoogleMapsAhmedabad";
 import CanAiContentRankOnGoogle from "./pages/blog/CanAiContentRankOnGoogle";
+import WhatIsCompetitiveBenchmarking from "./pages/blog/WhatIsCompetitiveBenchmarking";
 import NotFound from "./pages/NotFound";
 
 const SITE_URL = "https://www.hiteshjaganiya.com";
@@ -88,6 +89,7 @@ const App = () => (
           <Route path="/blog/google-ads-optimization-moves-experts" element={<GoogleAdsOptimizationMoves />} />
           <Route path="/blog/business-not-showing-google-maps-ahmedabad" element={<BusinessNotShowingGoogleMapsAhmedabad />} />
           <Route path="/blog/can-ai-content-rank-on-google" element={<CanAiContentRankOnGoogle />} />
+          <Route path="/blog/what-is-competitive-benchmarking-beginners-guide" element={<WhatIsCompetitiveBenchmarking />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <RouteSeo />
