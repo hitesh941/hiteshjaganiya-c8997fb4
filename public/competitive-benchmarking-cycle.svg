@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+<title id="title">Competitive benchmarking cycle</title><desc id="desc">A six-month benchmarking cycle showing competitor selection, data collection, gap analysis, action and repeat measurement.</desc>
+<rect width="1200" height="675" rx="32" fill="#173c32"/>
+<text x="70" y="78" font-family="Arial,Helvetica,sans-serif" font-size="34" font-weight="800" fill="#fff">A practical six-month benchmarking cycle</text>
+<text x="70" y="116" font-family="Arial,Helvetica,sans-serif" font-size="20" fill="#cfe1d9">Keep the process small enough to repeat and focused enough to produce decisions.</text>
+<g transform="translate(600 355)">
+<circle r="155" fill="#235344" stroke="#55c984" stroke-width="3"/>
+<circle r="78" fill="#f5faf7"/>
+<text text-anchor="middle" y="-8" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="800" fill="#203d34">REPEAT</text>
+<text text-anchor="middle" y="25" font-family="Arial,Helvetica,sans-serif" font-size="18" fill="#657970">in 6 months</text>
+<g font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700" fill="#fff">
+<text x="-340" y="-150">1. Pick 3–5 competitors</text>
+<text x="90" y="-150">2. Choose metrics</text>
+<text x="170" y="10">3. Collect data</text>
+<text x="90" y="155">4. Find the gaps</text>
+<text x="-350" y="155">5. Act on two gaps</text>
+<text x="-410" y="10">6. Record the baseline</text>
+</g>
+<g fill="#55c984">
+<circle cx="-245" cy="-137" r="8"/><circle cx="75" cy="-137" r="8"/><circle cx="250" cy="5" r="8"/><circle cx="75" cy="137" r="8"/><circle cx="-245" cy="137" r="8"/><circle cx="-310" cy="5" r="8"/>
+</g>
+</g>
+<text x="70" y="620" font-family="Arial,Helvetica,sans-serif" font-size="17" fill="#b8d1c5">Benchmarking is a diagnostic loop — not a one-time report.</text>
+</svg>
