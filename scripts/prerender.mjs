@@ -21,6 +21,7 @@ const routes = [
   "/blog/google-ads-optimization-moves-experts",
   "/blog/business-not-showing-google-maps-ahmedabad",
   "/blog/can-ai-content-rank-on-google",
+  "/blog/what-is-competitive-benchmarking-beginners-guide",
 ];
 
 const seoOverrides = {
@@ -83,6 +84,12 @@ const seoOverrides = {
     h1: "Can AI Content Rank on Google? A Consultant's Honest Answer for 2026",
     alt: "Share of AI-generated content in Google's top 20 search results, 2019 to 2025",
   },
+  "/blog/what-is-competitive-benchmarking-beginners-guide": {
+    title: "What Is Competitive Benchmarking? A Beginner's Guide",
+    description: "What is competitive benchmarking? Learn how to compare competitors, choose useful KPIs, run a benchmarking analysis, and avoid common mistakes.",
+    h1: "What Is Competitive Benchmarking? A Beginner's Guide",
+    alt: "What Is Competitive Benchmarking? A Beginner's Guide — competitor performance dashboard illustration",
+  },
 };
 
 await build({
@@ -114,7 +121,7 @@ function addImageDimensions(page) {
     const src = (attrs.match(/\bsrc=["']([^"']+)["']/i) || [])[1] || "";
     const className = (attrs.match(/\bclass=["']([^"']+)["']/i) || [])[1] || "";
     let dimensions = null;
-    if (/blog-top-8|digital-marketing-packages|google-ads-vs-meta-ads|seo-real-estate|google-analytics-search-console|smart-objectives-competitive-benchmarking|first-year-startup-marketing-budget|google-ads-optimization-moves-experts|google-ads-optimization-workflow|business-not-showing-google-maps-ahmedabad|business-not-showing-google-maps-workflow|ai-content-google-rankings-chart/i.test(src)) {
+    if (/blog-top-8|digital-marketing-packages|google-ads-vs-meta-ads|seo-real-estate|google-analytics-search-console|smart-objectives-competitive-benchmarking|first-year-startup-marketing-budget|google-ads-optimization-moves-experts|google-ads-optimization-workflow|business-not-showing-google-maps-ahmedabad|business-not-showing-google-maps-workflow|ai-content-google-rankings-chart|competitive-benchmarking-beginners-guide|competitive-benchmarking-framework|competitive-benchmarking-scorecard|competitive-benchmarking-cycle/i.test(src)) {
       dimensions = /google-ads-optimization-workflow|business-not-showing-google-maps-workflow/i.test(src) ? [1200, 675] : /ai-content-google-rankings-chart/i.test(src) ? [1600, 900] : [1200, 630];
     } else if (/hitesh-new-profile/i.test(src) && /rounded-full/i.test(className)) {
       dimensions = [96, 96];
