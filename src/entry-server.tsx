@@ -14,6 +14,7 @@ import GoogleAdsOptimizationMoves from "./pages/blog/GoogleAdsOptimizationMoves"
 import BusinessNotShowingGoogleMapsAhmedabad from "./pages/blog/BusinessNotShowingGoogleMapsAhmedabad";
 import CanAiContentRankOnGoogle from "./pages/blog/CanAiContentRankOnGoogle";
 import WhatIsCompetitiveBenchmarking from "./pages/blog/WhatIsCompetitiveBenchmarking";
+import GoogleAdsCpcHigh from "./pages/blog/GoogleAdsCpcHigh";
 import ThankYou from "./pages/ThankYou";
 import Blog from "./pages/Blog";
 
@@ -32,6 +33,7 @@ const routes: Record<string, React.ComponentType> = {
   "/blog/business-not-showing-google-maps-ahmedabad": BusinessNotShowingGoogleMapsAhmedabad,
   "/blog/can-ai-content-rank-on-google": CanAiContentRankOnGoogle,
   "/blog/what-is-competitive-benchmarking-beginners-guide": WhatIsCompetitiveBenchmarking,
+  "/blog/why-is-google-ads-cpc-high": GoogleAdsCpcHigh,
 };
 
 export function render(url: string) {
