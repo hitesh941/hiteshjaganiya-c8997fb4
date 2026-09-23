@@ -180,7 +180,21 @@ export const blogPosts: BlogPostMeta[] = [
     category: "Digital Strategy",
     keywords: ["what is competitive benchmarking", "competitive benchmarking", "competitive benchmarking analysis", "competitor benchmarking example", "competitive benchmarking KPIs", "how to benchmark competitors"],
   },
-
+  {
+    slug: "why-is-google-ads-cpc-high",
+    title: "Why Is My Google Ads Cost Per Click So High? 8 Causes and Fixes",
+    description:
+      "Why is Google Ads CPC so high? Learn 8 common causes — Quality Score signals, broad ad groups, auction competition, match types, landing pages, competitor terms, bidding and conversion tracking — plus practical fixes.",
+    excerpt:
+      "High Google Ads CPC is not always a bidding problem. Here are eight practical causes to check before simply lowering your bids, from ad relevance and search terms to landing pages and conversion tracking.",
+    cover: "/google-ads-high-cpc-cover.svg",
+    coverAlt: "Why Is My Google Ads Cost Per Click So High? Eight causes and fixes for high CPC",
+    datePublished: "2026-09-23",
+    dateModified: "2026-09-23",
+    readingTime: "9 min read",
+    category: "Paid Advertising",
+    keywords: ["why is my Google Ads CPC so high", "Google Ads CPC too high", "high cost per click Google Ads", "Google Ads cost per click", "reduce Google Ads CPC", "Google Ads Quality Score", "Google Ads auction competition", "Google Ads landing page experience", "Google Ads conversion tracking"],
+  },
 ];
 
 export const getPostBySlug = (slug: string) =>
