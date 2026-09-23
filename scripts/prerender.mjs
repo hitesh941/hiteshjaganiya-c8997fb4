@@ -22,6 +22,7 @@ const routes = [
   "/blog/business-not-showing-google-maps-ahmedabad",
   "/blog/can-ai-content-rank-on-google",
   "/blog/what-is-competitive-benchmarking-beginners-guide",
+  "/blog/why-is-google-ads-cpc-high",
 ];
 
 const seoOverrides = {
@@ -89,6 +90,12 @@ const seoOverrides = {
     description: "What is competitive benchmarking? Learn how to compare competitors, choose useful KPIs, run a benchmarking analysis, and avoid common mistakes.",
     h1: "What Is Competitive Benchmarking? A Beginner's Guide",
   },
+  "/blog/why-is-google-ads-cpc-high": {
+    title: "Why Is My Google Ads Cost Per Click So High? 8 Causes and Fixes",
+    description: "Why is Google Ads CPC so high? Learn 8 common causes — Quality Score signals, broad ad groups, auction competition, match types, landing pages, competitor terms, bidding and conversion tracking — plus practical fixes.",
+    h1: "Why Is My Google Ads Cost Per Click So High? 8 Causes and Fixes",
+    alt: "Why Is My Google Ads Cost Per Click So High? Eight causes and fixes for high CPC",
+  },
 };
 
 await build({
@@ -120,8 +127,8 @@ function addImageDimensions(page) {
     const src = (attrs.match(/\bsrc=["']([^"']+)["']/i) || [])[1] || "";
     const className = (attrs.match(/\bclass=["']([^"']+)["']/i) || [])[1] || "";
     let dimensions = null;
-    if (/blog-top-8|digital-marketing-packages|google-ads-vs-meta-ads|seo-real-estate|google-analytics-search-console|smart-objectives-competitive-benchmarking|first-year-startup-marketing-budget|google-ads-optimization-moves-experts|google-ads-optimization-workflow|business-not-showing-google-maps-ahmedabad|business-not-showing-google-maps-workflow|ai-content-google-rankings-chart|competitive-benchmarking-beginners-guide|competitive-benchmarking-framework|competitive-benchmarking-scorecard|competitive-benchmarking-cycle/i.test(src)) {
-      dimensions = /google-ads-optimization-workflow|business-not-showing-google-maps-workflow/i.test(src) ? [1200, 675] : /ai-content-google-rankings-chart/i.test(src) ? [1600, 900] : [1200, 630];
+    if (/blog-top-8|digital-marketing-packages|google-ads-vs-meta-ads|seo-real-estate|google-analytics-search-console|smart-objectives-competitive-benchmarking|first-year-startup-marketing-budget|google-ads-optimization-moves-experts|google-ads-optimization-workflow|business-not-showing-google-maps-ahmedabad|business-not-showing-google-maps-workflow|ai-content-google-rankings-chart|competitive-benchmarking-beginners-guide|competitive-benchmarking-framework|competitive-benchmarking-scorecard|google-ads-high-cpc-cover|google-ads-cpc-diagnosis/i.test(src)) {
+      dimensions = /google-ads-optimization-workflow|business-not-showing-google-maps-workflow|google-ads-cpc-diagnosis/i.test(src) ? [1200, 675] : /ai-content-google-rankings-chart/i.test(src) ? [1600, 900] : [1200, 630];
     } else if (/hitesh-new-profile/i.test(src) && /rounded-full/i.test(className)) {
       dimensions = [96, 96];
     } else if (/hitesh-new-profile/i.test(src)) {
