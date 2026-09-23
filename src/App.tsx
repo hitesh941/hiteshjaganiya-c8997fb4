@@ -18,6 +18,7 @@ import GoogleAdsOptimizationMoves from "./pages/blog/GoogleAdsOptimizationMoves"
 import BusinessNotShowingGoogleMapsAhmedabad from "./pages/blog/BusinessNotShowingGoogleMapsAhmedabad";
 import CanAiContentRankOnGoogle from "./pages/blog/CanAiContentRankOnGoogle";
 import WhatIsCompetitiveBenchmarking from "./pages/blog/WhatIsCompetitiveBenchmarking";
+import GoogleAdsCpcHigh from "./pages/blog/GoogleAdsCpcHigh";
 import NotFound from "./pages/NotFound";
 
 const SITE_URL = "https://www.hiteshjaganiya.com";
@@ -45,7 +46,6 @@ const RouteSeo = () => {
     const image = `${SITE_URL}/digital-marketing-packages-ahmedabad.svg`;
     return <Helmet><title>{title}</title><meta name="description" content={description} /><meta name="robots" content="index, follow, max-image-preview:large" /><meta name="author" content={PUBLISHER_NAME} /><meta name="publisher" content={PUBLISHER_NAME} /><link rel="canonical" href={url} /><link rel="alternate" hrefLang="en-IN" href={url} /><meta property="article:publisher" content={PUBLISHER_URL} /><meta property="og:type" content="article" /><meta property="og:site_name" content={PUBLISHER_NAME} /><meta property="og:title" content={title} /><meta property="og:description" content={description} /><meta property="og:url" content={url} /><meta property="og:image" content={image} /><meta property="og:image:alt" content="Digital marketing packages and pricing in Ahmedabad for 2026" /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" /><meta property="og:locale" content="en_IN" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content={title} /><meta name="twitter:description" content={description} /><meta name="twitter:image" content={image} /><meta name="twitter:image:alt" content="Digital marketing packages and pricing in Ahmedabad for 2026" /></Helmet>;
   }
-
   if (isGoogleMeta) {
     const title = "Google Ads vs Meta Ads: Which Should Ahmedabad Businesses Use First?";
     const description = "A practical, experience-based comparison of Google Ads and Meta Ads for Ahmedabad businesses deciding where to spend their first advertising rupee.";
@@ -53,7 +53,6 @@ const RouteSeo = () => {
     const image = `${SITE_URL}/google-ads-vs-meta-ads-ahmedabad.svg`;
     return <Helmet><title>{title}</title><meta name="description" content={description} /><meta name="robots" content="index, follow, max-image-preview:large" /><meta name="author" content={PUBLISHER_NAME} /><meta name="publisher" content={PUBLISHER_NAME} /><link rel="canonical" href={url} /><link rel="alternate" hrefLang="en-IN" href={url} /><meta property="article:publisher" content={PUBLISHER_URL} /><meta property="og:type" content="article" /><meta property="og:site_name" content={PUBLISHER_NAME} /><meta property="og:title" content={title} /><meta property="og:description" content={description} /><meta property="og:url" content={url} /><meta property="og:image" content={image} /><meta property="og:image:alt" content="Google Ads vs Meta Ads for Ahmedabad businesses" /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" /><meta property="og:locale" content="en_IN" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content={title} /><meta name="twitter:description" content={description} /><meta name="twitter:image" content={image} /></Helmet>;
   }
-
   if (isRealEstate) {
     const title = "SEO for Real Estate Businesses in Ahmedabad: A Practical Guide";
     const description = "A practical guide to SEO for real estate businesses in Ahmedabad, covering hyper-local keyword research, project pages, Google Business Profile, technical SEO, backlinks, content, trust and realistic timelines.";
@@ -61,7 +60,6 @@ const RouteSeo = () => {
     const image = `${SITE_URL}/seo-real-estate-ahmedabad.svg`;
     return <Helmet><title>{title}</title><meta name="description" content={description} /><meta name="robots" content="index, follow, max-image-preview:large" /><meta name="author" content={PUBLISHER_NAME} /><meta name="publisher" content={PUBLISHER_NAME} /><link rel="canonical" href={url} /><link rel="alternate" hrefLang="en-IN" href={url} /><meta property="article:publisher" content={PUBLISHER_URL} /><meta property="og:type" content="article" /><meta property="og:site_name" content={PUBLISHER_NAME} /><meta property="og:title" content={title} /><meta property="og:description" content={description} /><meta property="og:url" content={url} /><meta property="og:image" content={image} /><meta property="og:image:alt" content="SEO for real estate businesses in Ahmedabad" /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" /><meta property="og:locale" content="en_IN" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content={title} /><meta name="twitter:description" content={description} /><meta name="twitter:image" content={image} /><meta name="twitter:image:alt" content="SEO for real estate businesses in Ahmedabad" /></Helmet>;
   }
-
   if (isBlogArticle) return <Helmet><meta name="publisher" content={PUBLISHER_NAME} /><meta property="article:publisher" content={PUBLISHER_URL} /></Helmet>;
   if (isHome) return <Helmet><title>Hitesh Jaganiya | Digital Marketing Consultant in Ahmedabad</title><meta name="description" content="Hitesh Jaganiya is a Digital Marketing Consultant in Ahmedabad helping businesses grow with SEO, Google Ads, and data-driven digital marketing strategies." /><meta name="robots" content="index, follow, max-image-preview:large" /><link rel="canonical" href={`${SITE_URL}/`} /></Helmet>;
   if (isNotFound) return <Helmet><meta name="robots" content="noindex, follow" /></Helmet>;
@@ -90,6 +88,7 @@ const App = () => (
           <Route path="/blog/business-not-showing-google-maps-ahmedabad" element={<BusinessNotShowingGoogleMapsAhmedabad />} />
           <Route path="/blog/can-ai-content-rank-on-google" element={<CanAiContentRankOnGoogle />} />
           <Route path="/blog/what-is-competitive-benchmarking-beginners-guide" element={<WhatIsCompetitiveBenchmarking />} />
+          <Route path="/blog/why-is-google-ads-cpc-high" element={<GoogleAdsCpcHigh />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <RouteSeo />
