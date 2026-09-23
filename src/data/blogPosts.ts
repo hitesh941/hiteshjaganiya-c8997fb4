@@ -189,7 +189,7 @@ export const blogPosts: BlogPostMeta[] = [
       "High Google Ads CPC is not always a bidding problem. Here are eight practical causes to check before simply lowering your bids, from ad relevance and search terms to landing pages and conversion tracking.",
     cover: "/google-ads-high-cpc-cover.svg",
     coverAlt: "Why Is My Google Ads Cost Per Click So High? Eight causes and fixes for high CPC",
-    datePublished: "2026-09-23",
+    datePublished: "2026-09-13",
     dateModified: "2026-09-23",
     readingTime: "9 min read",
     category: "Paid Advertising",
