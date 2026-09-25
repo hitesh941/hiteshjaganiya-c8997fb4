@@ -19,6 +19,7 @@ import BusinessNotShowingGoogleMapsAhmedabad from "./pages/blog/BusinessNotShowi
 import CanAiContentRankOnGoogle from "./pages/blog/CanAiContentRankOnGoogle";
 import WhatIsCompetitiveBenchmarking from "./pages/blog/WhatIsCompetitiveBenchmarking";
 import GoogleAdsCpcHigh from "./pages/blog/GoogleAdsCpcHigh";
+import SeoStrategy2027 from "./pages/blog/SeoStrategy2027";
 import NotFound from "./pages/NotFound";
 
 const SITE_URL = "https://www.hiteshjaganiya.com";
@@ -89,6 +90,7 @@ const App = () => (
           <Route path="/blog/can-ai-content-rank-on-google" element={<CanAiContentRankOnGoogle />} />
           <Route path="/blog/what-is-competitive-benchmarking-beginners-guide" element={<WhatIsCompetitiveBenchmarking />} />
           <Route path="/blog/why-is-google-ads-cpc-high" element={<GoogleAdsCpcHigh />} />
+          <Route path="/blog/seo-strategy-2027" element={<SeoStrategy2027 />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <RouteSeo />
