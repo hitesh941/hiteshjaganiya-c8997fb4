@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">The 5 SEO Shifts That Will Matter Most in 2027</title>
+  <desc id="desc">A practical SEO strategy 2027 guide for Indian businesses.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#17352d"/>
+      <stop offset="1" stop-color="#2d5b4c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1030" cy="105" r="180" fill="#35b978" opacity=".12"/>
+  <circle cx="1100" cy="520" r="230" fill="#fff" opacity=".04"/>
+  <rect x="78" y="76" width="118" height="34" rx="17" fill="#35b978" opacity=".18"/>
+  <text x="137" y="99" text-anchor="middle" fill="#59d28e" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" letter-spacing="2">SEO STRATEGY</text>
+  <text x="78" y="190" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="800">The 5 SEO Shifts</text>
+  <text x="78" y="252" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="800">That Will Matter Most</text>
+  <text x="78" y="314" fill="#59d28e" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="800">in 2027</text>
+  <text x="78" y="372" fill="#dce9e4" font-family="Arial, Helvetica, sans-serif" font-size="25">What they mean for Indian businesses</text>
+  <g transform="translate(790 185)">
+    <rect x="0" y="0" width="300" height="280" rx="28" fill="#fff" opacity=".08" stroke="#fff" stroke-opacity=".14"/>
+    <path d="M62 207 L115 154 L151 179 L226 87" fill="none" stroke="#59d28e" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="62" cy="207" r="10" fill="#59d28e"/><circle cx="115" cy="154" r="10" fill="#59d28e"/><circle cx="151" cy="179" r="10" fill="#59d28e"/><circle cx="226" cy="87" r="10" fill="#59d28e"/>
+    <path d="M204 87 H226 V109" fill="none" stroke="#59d28e" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="150" y="245" text-anchor="middle" fill="#dce9e4" font-family="Arial, Helvetica, sans-serif" font-size="17">Human • Intent • Data</text>
+  </g>
+  <text x="78" y="560" fill="#b9cec6" font-family="Arial, Helvetica, sans-serif" font-size="17">Hitesh Jaganiya • Digital Marketing Consultant</text>
+</svg>
