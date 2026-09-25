@@ -143,7 +143,7 @@ const SeoStrategy2027 = () => {
                       ].map(([num, title, text]) => (
                         <div key={num} className="rounded-2xl border border-border bg-card p-5 shadow-sm">
                           <div className="text-xs font-bold tracking-[0.16em] text-primary mb-2">{num}</div>
-                          <h2 className="text-lg font-bold text-foreground mb-2">{title}</h2>
+                          <h3 className="text-lg font-bold text-foreground mb-2">{title}</h3>
                           <p className="text-sm leading-relaxed text-muted-foreground mb-0">{text}</p>
                         </div>
                       ))}
