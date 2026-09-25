@@ -23,6 +23,7 @@ const routes = [
   "/blog/can-ai-content-rank-on-google",
   "/blog/what-is-competitive-benchmarking-beginners-guide",
   "/blog/why-is-google-ads-cpc-high",
+  "/blog/seo-strategy-2027",
 ];
 
 const seoOverrides = {
@@ -89,6 +90,12 @@ const seoOverrides = {
     title: "What Is Competitive Benchmarking? A Beginner's Guide",
     description: "What is competitive benchmarking? Learn how to compare competitors, choose useful KPIs, run a benchmarking analysis, and avoid common mistakes.",
     h1: "What Is Competitive Benchmarking? A Beginner's Guide",
+  },
+  "/blog/seo-strategy-2027": {
+    title: "The 5 SEO Shifts That Will Matter Most in 2027 | Hitesh Jaganiya",
+    description: "Five SEO strategy shifts for 2027 — human-first content, commodity keywords, bottom-of-funnel intent, content with multiple jobs, and original data — applied to Indian businesses.",
+    h1: "The 5 SEO Shifts That Will Matter Most in 2027 (And What They Mean for Indian Businesses)",
+    alt: "The 5 SEO Shifts That Will Matter Most in 2027 — practical SEO strategy guide for Indian businesses",
   },
   "/blog/why-is-google-ads-cpc-high": {
     title: "Why Is My Google Ads Cost Per Click So High? 8 Causes and Fixes",
