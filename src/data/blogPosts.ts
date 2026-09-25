@@ -181,6 +181,21 @@ export const blogPosts: BlogPostMeta[] = [
     keywords: ["what is competitive benchmarking", "competitive benchmarking", "competitive benchmarking analysis", "competitor benchmarking example", "competitive benchmarking KPIs", "how to benchmark competitors"],
   },
   {
+    slug: "seo-strategy-2027",
+    title: "The 5 SEO Shifts That Will Matter Most in 2027 (And What They Mean for Indian Businesses)",
+    description:
+      "Five SEO strategy shifts for 2027 — human-first content, commodity keywords, bottom-of-funnel intent, content with multiple jobs, and original data — applied to small business realities.",
+    excerpt:
+      "What will actually change about SEO in 2027? Five practical shifts, translated for Indian businesses that don't have huge content teams or budgets.",
+    cover: "/seo-strategy-2027-cover.svg",
+    coverAlt: "The 5 SEO Shifts That Will Matter Most in 2027 — practical SEO strategy guide for Indian businesses",
+    datePublished: "2026-09-25",
+    dateModified: "2026-09-25",
+    readingTime: "9 min read",
+    category: "SEO Strategy",
+    keywords: ["SEO strategy 2027", "SEO trends 2027", "SEO strategy for Indian businesses", "SEO India 2027", "AI search SEO", "bottom-of-funnel SEO", "original data SEO", "human-first content"],
+  },
+  {
     slug: "why-is-google-ads-cpc-high",
     title: "Why Is My Google Ads Cost Per Click So High? 8 Causes and Fixes",
     description:
