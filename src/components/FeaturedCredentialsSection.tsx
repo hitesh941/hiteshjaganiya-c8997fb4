@@ -76,9 +76,6 @@ const FeaturedCredentialsSection = () => {
                 <span className="block mt-2 text-sm text-muted-foreground">
                   Issued by Microsoft Advertising · Verified through Credly
                 </span>
-                <span className="inline-flex mt-4 text-sm font-semibold text-primary">
-                  View certification →
-                </span>
               </div>
             </a>
 
