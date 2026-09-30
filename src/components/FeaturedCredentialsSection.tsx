@@ -51,6 +51,37 @@ const FeaturedCredentialsSection = () => {
             <p className="text-muted-foreground leading-relaxed mb-8 max-w-xl">
               Professional certifications across the digital marketing platforms and tools I use in my work.
             </p>
+            <a
+              href="https://www.credly.com/org/microsoft-advertising/badge/microsoft-advertising-search-certification"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group mb-5 flex flex-col sm:flex-row items-center sm:items-start gap-5 rounded-2xl border border-border bg-background p-5 md:p-6 hover:border-primary/30 hover:shadow-medium transition-all duration-300"
+              aria-label="Microsoft Advertising Search Certification on Credly"
+            >
+              <img
+                src="https://images.credly.com/images/b72420dc-38fc-4e8c-8b7d-61edf3f87258/image.png"
+                alt="Microsoft Advertising Search Certification badge"
+                width="128"
+                height="128"
+                loading="lazy"
+                className="w-28 h-28 object-contain shrink-0 group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="text-center sm:text-left">
+                <span className="block text-xs font-semibold text-primary uppercase tracking-wider mb-2">
+                  New Certification
+                </span>
+                <span className="block text-lg md:text-xl font-bold text-foreground group-hover:text-primary transition-colors">
+                  Microsoft Advertising Search Certification
+                </span>
+                <span className="block mt-2 text-sm text-muted-foreground">
+                  Issued by Microsoft Advertising · Verified through Credly
+                </span>
+                <span className="inline-flex mt-4 text-sm font-semibold text-primary">
+                  View certification →
+                </span>
+              </div>
+            </a>
+
             <div className="grid sm:grid-cols-2 gap-4">
               {certifications.map((cert) => (
                 <a
