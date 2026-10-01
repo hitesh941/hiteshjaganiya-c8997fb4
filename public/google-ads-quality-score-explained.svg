@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f7fbf8"/><stop offset="1" stop-color="#e8f4ec"/></linearGradient></defs>
+<rect width="1200" height="630" rx="36" fill="url(#g)"/><circle cx="1010" cy="110" r="150" fill="#d8eadf"/><circle cx="1060" cy="520" r="190" fill="#eef6f0"/>
+<text x="78" y="105" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#3f7f58" letter-spacing="4">GOOGLE ADS • PAID SEARCH</text>
+<text x="78" y="190" font-family="Arial,sans-serif" font-size="54" font-weight="800" fill="#183b2a">Google Ads Quality</text>
+<text x="78" y="255" font-family="Arial,sans-serif" font-size="54" font-weight="800" fill="#183b2a">Score Explained</text>
+<text x="78" y="310" font-family="Arial,sans-serif" font-size="24" fill="#567264">What the 1–10 score means — and how to improve it.</text>
+<rect x="735" y="170" width="280" height="280" rx="140" fill="#152235"/><text x="875" y="280" text-anchor="middle" font-family="Arial,sans-serif" font-size="92" font-weight="800" fill="white">7–10</text><text x="875" y="325" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" fill="#dce8e1">QUALITY SCORE</text>
+<rect x="100" y="390" width="520" height="92" rx="20" fill="white"/><text x="135" y="430" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#183b2a">Expected CTR</text><text x="135" y="458" font-family="Arial,sans-serif" font-size="18" fill="#567264">Ad Relevance</text><text x="350" y="430" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#183b2a">Landing Page Experience</text>
+</svg>
