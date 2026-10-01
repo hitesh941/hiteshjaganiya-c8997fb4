@@ -210,6 +210,21 @@ export const blogPosts: BlogPostMeta[] = [
     category: "Paid Advertising",
     keywords: ["why is my Google Ads CPC so high", "Google Ads CPC too high", "high cost per click Google Ads", "Google Ads cost per click", "reduce Google Ads CPC", "Google Ads Quality Score", "Google Ads auction competition", "Google Ads landing page experience", "Google Ads conversion tracking"],
   },
+  {
+    slug: "chatgpt-ads-india-spend-money",
+    title: "ChatGPT Ads Are Live in India. Should You Actually Spend Money on Them?",
+    description:
+      "ChatGPT Ads are now available in India. Here's what the early performance data shows, who should test the channel, what it costs, and why paid placement is different from organic AI visibility.",
+    excerpt:
+      "ChatGPT Ads have arrived in India. Here's what the early campaign data says, who has a real case for testing the channel, and where the format is still too immature to justify spend.",
+    cover: "/chatgpt-ads-india.svg",
+    coverAlt: "ChatGPT Ads in India — evaluating paid AI advertising, budget, audience and performance",
+    datePublished: "2026-10-01",
+    dateModified: "2026-10-01",
+    readingTime: "9 min read",
+    category: "Paid Advertising",
+    keywords: ["ChatGPT Ads India", "ChatGPT advertising", "ChatGPT Ads Manager", "ChatGPT Ads cost India", "advertise on ChatGPT", "OpenAI Ads India", "ChatGPT advertising India"],
+  },
 ];
 
 export const getPostBySlug = (slug: string) =>
