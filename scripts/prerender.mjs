@@ -24,6 +24,7 @@ const routes = [
   "/blog/what-is-competitive-benchmarking-beginners-guide",
   "/blog/why-is-google-ads-cpc-high",
   "/blog/seo-strategy-2027",
+  "/blog/chatgpt-ads-india-spend-money",
 ];
 
 const seoOverrides = {
@@ -96,6 +97,12 @@ const seoOverrides = {
     description: "Five SEO strategy shifts for 2027 — human-first content, commodity keywords, bottom-of-funnel intent, content with multiple jobs, and original data — applied to Indian businesses.",
     h1: "The 5 SEO Shifts That Will Matter Most in 2027 (And What They Mean for Indian Businesses)",
     alt: "The 5 SEO Shifts That Will Matter Most in 2027 — practical SEO strategy guide for Indian businesses",
+  },
+  "/blog/chatgpt-ads-india-spend-money": {
+    title: "ChatGPT Ads Are Live in India. Should You Actually Spend Money on Them?",
+    description: "ChatGPT Ads are now available in India. Here is what the early performance data shows, who should test the channel, what it costs, and why paid placement is different from organic AI visibility.",
+    h1: "ChatGPT Ads Are Live in India. Should You Actually Spend Money on Them?",
+    alt: "ChatGPT Ads in India — evaluating paid AI advertising, budget, audience and performance",
   },
   "/blog/why-is-google-ads-cpc-high": {
     title: "Why Is My Google Ads Cost Per Click So High? 8 Causes and Fixes",
