@@ -151,6 +151,7 @@ const ChatgptAdsIndia = () => {
                     </section>
                   </div>
               <div className="mt-14"><AuthorCard /></div>
+              </div>
             </div>
             <BlogSidebar />
           </div>
