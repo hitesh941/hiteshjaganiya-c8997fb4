@@ -211,6 +211,19 @@ export const blogPosts: BlogPostMeta[] = [
     keywords: ["why is my Google Ads CPC so high", "Google Ads CPC too high", "high cost per click Google Ads", "Google Ads cost per click", "reduce Google Ads CPC", "Google Ads Quality Score", "Google Ads auction competition", "Google Ads landing page experience", "Google Ads conversion tracking"],
   },
   {
+    slug: "google-ads-quality-score-explained",
+    title: "Google Ads Quality Score Explained (And How to Actually Improve It)",
+    description: "Google Ads Quality Score explained in plain English: what the 1–10 score means, the three components behind it, what improves it, and what does not.",
+    excerpt: "What does Google Ads Quality Score actually measure? A practical guide to Expected CTR, Ad Relevance, Landing Page Experience, and the changes that can genuinely improve account performance.",
+    cover: "/google-ads-quality-score-explained.svg",
+    coverAlt: "Google Ads Quality Score explained with Expected CTR, Ad Relevance and Landing Page Experience",
+    datePublished: "2026-10-01",
+    dateModified: "2026-10-01",
+    readingTime: "8 min read",
+    category: "Paid Advertising",
+    keywords: ["Google Ads Quality Score", "Quality Score Google Ads", "Google Ads Quality Score explained", "improve Quality Score", "Quality Score", "Expected CTR", "Ad Relevance", "Landing Page Experience"],
+  },
+  {
     slug: "chatgpt-ads-india-spend-money",
     title: "ChatGPT Ads Are Live in India. Should You Actually Spend Money on Them?",
     description:
