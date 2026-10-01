@@ -25,6 +25,7 @@ const routes = [
   "/blog/why-is-google-ads-cpc-high",
   "/blog/seo-strategy-2027",
   "/blog/chatgpt-ads-india-spend-money",
+  "/blog/google-ads-quality-score-explained",
 ];
 
 const seoOverrides = {
@@ -103,6 +104,12 @@ const seoOverrides = {
     description: "ChatGPT Ads are now available in India. Here is what the early performance data shows, who should test the channel, what it costs, and why paid placement is different from organic AI visibility.",
     h1: "ChatGPT Ads Are Live in India. Should You Actually Spend Money on Them?",
     alt: "ChatGPT Ads in India — evaluating paid AI advertising, budget, audience and performance",
+  },
+  "/blog/google-ads-quality-score-explained": {
+    title: "Google Ads Quality Score Explained (And How to Actually Improve It)",
+    description: "Google Ads Quality Score explained in plain English: what the 1–10 score means, the three components behind it, what improves it, and what does not.",
+    h1: "Google Ads Quality Score Explained (And How to Actually Improve It)",
+    alt: "Google Ads Quality Score explained with Expected CTR, Ad Relevance and Landing Page Experience",
   },
   "/blog/why-is-google-ads-cpc-high": {
     title: "Why Is My Google Ads Cost Per Click So High? 8 Causes and Fixes",
