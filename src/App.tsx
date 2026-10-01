@@ -20,6 +20,7 @@ import CanAiContentRankOnGoogle from "./pages/blog/CanAiContentRankOnGoogle";
 import WhatIsCompetitiveBenchmarking from "./pages/blog/WhatIsCompetitiveBenchmarking";
 import GoogleAdsCpcHigh from "./pages/blog/GoogleAdsCpcHigh";
 import ChatgptAdsIndia from "./pages/blog/ChatgptAdsIndia";
+import GoogleAdsQualityScore from "./pages/blog/GoogleAdsQualityScore";
 import SeoStrategy2027 from "./pages/blog/SeoStrategy2027";
 import NotFound from "./pages/NotFound";
 
@@ -93,6 +94,7 @@ const App = () => (
           <Route path="/blog/why-is-google-ads-cpc-high" element={<GoogleAdsCpcHigh />} />
           <Route path="/blog/seo-strategy-2027" element={<SeoStrategy2027 />} />
           <Route path="/blog/chatgpt-ads-india-spend-money" element={<ChatgptAdsIndia />} />
+          <Route path="/blog/google-ads-quality-score-explained" element={<GoogleAdsQualityScore />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <RouteSeo />
