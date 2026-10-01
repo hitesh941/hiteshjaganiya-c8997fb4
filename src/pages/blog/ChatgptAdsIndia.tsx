@@ -58,7 +58,7 @@ const ChatgptAdsIndia = () => {
       <Header />
       <main className="pt-28 md:pt-36">
         <article className="section-padding pt-0"><div className="container-custom"><BlogBreadcrumbs />
-          <div className="grid lg:grid-cols-[minmax(0,1fr)_320px] xl:grid-cols-[minmax(0,1fr)_360px] gap-8 xl:gap-10 items-start">
+          <div className="w-full max-w-none grid lg:grid-cols-[minmax(0,1fr)_360px] gap-6 items-start">
             <div className="min-w-0">
               <Link to="/blog" className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline mb-7"><ArrowLeft className="w-4 h-4" /> Back to blog</Link>
               <header className="mb-10">
