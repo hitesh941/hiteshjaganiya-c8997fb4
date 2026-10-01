@@ -49,6 +49,10 @@
       "dest": "/blog/google-ads-vs-meta-ads-ahmedabad/index.html"
     },
     {
+      "src": "^/blog/chatgpt-ads-india-spend-money/?$",
+      "dest": "/blog/chatgpt-ads-india-spend-money/index.html"
+    },
+    {
       "src": "^/blog/seo-for-real-estate-businesses-in-ahmedabad/?$",
       "dest": "/blog/seo-for-real-estate-businesses-in-ahmedabad/index.html"
     },
