@@ -53,6 +53,10 @@
       "dest": "/blog/chatgpt-ads-india-spend-money/index.html"
     },
     {
+      "src": "^/blog/google-ads-quality-score-explained/?$",
+      "dest": "/blog/google-ads-quality-score-explained/index.html"
+    },
+    {
       "src": "^/blog/seo-for-real-estate-businesses-in-ahmedabad/?$",
       "dest": "/blog/seo-for-real-estate-businesses-in-ahmedabad/index.html"
     },
