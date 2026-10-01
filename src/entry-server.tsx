@@ -17,6 +17,7 @@ import WhatIsCompetitiveBenchmarking from "./pages/blog/WhatIsCompetitiveBenchma
 import GoogleAdsCpcHigh from "./pages/blog/GoogleAdsCpcHigh";
 import SeoStrategy2027 from "./pages/blog/SeoStrategy2027";
 import ChatgptAdsIndia from "./pages/blog/ChatgptAdsIndia";
+import GoogleAdsQualityScore from "./pages/blog/GoogleAdsQualityScore";
 import ThankYou from "./pages/ThankYou";
 import Blog from "./pages/Blog";
 
@@ -38,6 +39,7 @@ const routes: Record<string, React.ComponentType> = {
   "/blog/why-is-google-ads-cpc-high": GoogleAdsCpcHigh,
   "/blog/seo-strategy-2027": SeoStrategy2027,
   "/blog/chatgpt-ads-india-spend-money": ChatgptAdsIndia,
+  "/blog/google-ads-quality-score-explained": GoogleAdsQualityScore,
 };
 
 export function render(url: string) {
