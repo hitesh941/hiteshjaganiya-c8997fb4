@@ -16,6 +16,7 @@ import CanAiContentRankOnGoogle from "./pages/blog/CanAiContentRankOnGoogle";
 import WhatIsCompetitiveBenchmarking from "./pages/blog/WhatIsCompetitiveBenchmarking";
 import GoogleAdsCpcHigh from "./pages/blog/GoogleAdsCpcHigh";
 import SeoStrategy2027 from "./pages/blog/SeoStrategy2027";
+import ChatgptAdsIndia from "./pages/blog/ChatgptAdsIndia";
 import ThankYou from "./pages/ThankYou";
 import Blog from "./pages/Blog";
 
@@ -36,6 +37,7 @@ const routes: Record<string, React.ComponentType> = {
   "/blog/what-is-competitive-benchmarking-beginners-guide": WhatIsCompetitiveBenchmarking,
   "/blog/why-is-google-ads-cpc-high": GoogleAdsCpcHigh,
   "/blog/seo-strategy-2027": SeoStrategy2027,
+  "/blog/chatgpt-ads-india-spend-money": ChatgptAdsIndia,
 };
 
 export function render(url: string) {
