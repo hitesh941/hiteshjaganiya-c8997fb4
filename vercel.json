@@ -37,6 +37,10 @@
   ],
   "routes": [
     {
+      "src": "^/digital-card/?$",
+      "dest": "/digital-card/index.html"
+    },
+    {
       "src": "^/blog/top-8-digital-marketing-agencies-in-ahmedabad/?$",
       "dest": "/agency-guide-ahmedabad.html"
     },
