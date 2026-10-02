@@ -272,19 +272,6 @@ const DigitalCard = () => {
             </div>
           </section>
 
-          <section className="mt-6 rounded-2xl border border-slate-200 bg-white p-5 text-center shadow-sm">
-            <p className="font-semibold text-slate-900">Scan to open this card</p>
-            <p className="mt-1 text-sm text-slate-500">Save and share my contact details</p>
-            <img
-              src={`https://quickchart.io/qr?size=190&text=${encodeURIComponent(CARD_URL)}`}
-              alt="QR code for Hitesh Jaganiya digital card"
-              className="mx-auto mt-4 h-[190px] w-[190px] rounded-xl"
-              width="190"
-              height="190"
-              loading="lazy"
-            />
-          </section>
-
           <div className="mt-4 grid grid-cols-2 gap-3">
             <button
               type="button"
