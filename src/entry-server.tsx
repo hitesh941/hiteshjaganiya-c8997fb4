@@ -19,12 +19,14 @@ import SeoStrategy2027 from "./pages/blog/SeoStrategy2027";
 import ChatgptAdsIndia from "./pages/blog/ChatgptAdsIndia";
 import GoogleAdsQualityScore from "./pages/blog/GoogleAdsQualityScore";
 import ThankYou from "./pages/ThankYou";
+import DigitalCard from "./pages/DigitalCard";
 import Blog from "./pages/Blog";
 
 const routes: Record<string, React.ComponentType> = {
   "/": Index,
   "/blog": Blog,
   "/thank-you": ThankYou,
+  "/digital-card": DigitalCard,
   "/blog/top-8-digital-marketing-agencies-in-ahmedabad": Top8AgenciesAhmedabad,
   "/blog/digital-marketing-packages-in-ahmedabad": DigitalMarketingPackagesAhmedabad,
   "/blog/google-ads-vs-meta-ads-ahmedabad": GoogleAdsVsMetaAdsAhmedabadBudgetFix,
