@@ -11,6 +11,7 @@ const routes = [
   "/",
   "/blog",
   "/thank-you",
+  "/digital-card",
   "/blog/top-8-digital-marketing-agencies-in-ahmedabad",
   "/blog/digital-marketing-packages-in-ahmedabad",
   "/blog/google-ads-vs-meta-ads-ahmedabad",
@@ -29,6 +30,10 @@ const routes = [
 ];
 
 const seoOverrides = {
+  "/digital-card": {
+    title: "Digital Card | Hitesh Jaganiya — Digital Marketing Consultant",
+    description: "Digital business card for Hitesh Jaganiya, Digital Marketing Consultant in Ahmedabad. Call, WhatsApp, email, save contact and connect online.",
+  },
   "/": {
     title: "Hitesh Jaganiya | Digital Marketing Consultant in Ahmedabad",
     description: "Hitesh Jaganiya, Digital Marketing Consultant in Ahmedabad, offering SEO, Google Ads, and performance-focused digital marketing strategies.",
