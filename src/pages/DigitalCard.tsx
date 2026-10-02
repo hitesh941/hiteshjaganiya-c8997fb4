@@ -131,7 +131,7 @@ const DigitalCard = () => {
                 />
                 <div className="min-w-0">
                   <p className="mb-1 text-xs font-semibold uppercase tracking-[0.16em] text-primary-foreground/65">
-                    Digital Business Card
+                    Let’s Grow Your Business
                   </p>
                   <h1 className="text-[27px] font-bold leading-tight tracking-tight">
                     Hitesh Jaganiya
