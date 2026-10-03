@@ -31,7 +31,7 @@ const routes = [
 
 const seoOverrides = {
   "/digital-card": {
-    title: "Digital Card | Hitesh Jaganiya — Digital Marketing Consultant",
+    title: "Digital Card | Hitesh Jaganiya",
     description: "Digital business card for Hitesh Jaganiya, Digital Marketing Consultant in Ahmedabad. Call, WhatsApp, email, save contact and connect online.",
   },
   "/": {
@@ -77,19 +77,19 @@ const seoOverrides = {
   },
   "/blog/google-ads-optimization-moves-experts": {
     title: "10 Google Ads Optimization Moves Most Accounts Miss",
-    description: "Ten practical Google Ads optimization moves that experienced account managers use to reduce wasted spend, improve relevance, and find missed opportunities inside active campaigns.",
+    description: "Ten practical Google Ads optimization moves to reduce wasted spend, improve relevance, and find missed opportunities in active campaigns.",
     h1: "10 Google Ads Optimization Moves Most Accounts Miss",
     alt: "10 Google Ads Optimization Moves Every Expert Makes — practical account audit guide",
   },
   "/blog/business-not-showing-google-maps-ahmedabad": {
     title: "Business Not Showing on Google Maps in Ahmedabad? 7 Fixes",
-    description: "A practical troubleshooting guide for Ahmedabad business owners whose business is not appearing on Google Maps, covering verification, NAP consistency, categories, reviews, service areas, duplicates and suspensions.",
+    description: "Troubleshoot an Ahmedabad business missing from Google Maps: verification, NAP, categories, reviews, service areas, duplicates, and suspensions.",
     h1: "Business Not Showing on Google Maps in Ahmedabad? 7 Fixes",
     alt: "Business not showing on Google Maps in Ahmedabad — local SEO troubleshooting guide",
   },
   "/blog/can-ai-content-rank-on-google": {
     title: "Can AI Content Rank on Google? Honest Answer for 2026",
-    description: "Can AI content rank on Google in 2026? An honest, data-backed breakdown covering Google's position, ranking data, common AI-content failures, and how to use AI without replacing expertise.",
+    description: "Can AI content rank on Google? A practical look at Google's guidance, ranking evidence, common AI-content failures, and useful AI-assisted publishing.",
     h1: "Can AI Content Rank on Google? A Consultant's Honest Answer for 2026",
     alt: "Share of AI-generated content in Google's top 20 search results, 2019 to 2025",
   },
@@ -100,13 +100,13 @@ const seoOverrides = {
   },
   "/blog/seo-strategy-2027": {
     title: "SEO Strategy 2027: 5 Shifts That Will Matter Most",
-    description: "Five SEO strategy shifts for 2027 — human-first content, commodity keywords, bottom-of-funnel intent, content with multiple jobs, and original data — applied to Indian businesses.",
+    description: "Five SEO shifts for 2027: human-first content, bottom-of-funnel intent, original data, and what they mean for Indian businesses.",
     h1: "The 5 SEO Shifts That Will Matter Most in 2027 (And What They Mean for Indian Businesses)",
     alt: "The 5 SEO Shifts That Will Matter Most in 2027 — practical SEO strategy guide for Indian businesses",
   },
   "/blog/chatgpt-ads-india-spend-money": {
     title: "ChatGPT Ads in India: Should You Actually Spend?",
-    description: "ChatGPT Ads are now available in India. Here is what the early performance data shows, who should test the channel, what it costs, and why paid placement is different from organic AI visibility.",
+    description: "ChatGPT Ads are available in India. See what early performance data shows, who might test the channel, and how paid placement differs from organic AI visibility.",
     h1: "ChatGPT Ads in India: Should You Actually Spend?",
     alt: "ChatGPT Ads in India — evaluating paid AI advertising, budget, audience and performance",
   },
@@ -118,7 +118,7 @@ const seoOverrides = {
   },
   "/blog/why-is-google-ads-cpc-high": {
     title: "Why Is My Google Ads CPC So High? 8 Causes & Fixes",
-    description: "Why is Google Ads CPC so high? Learn 8 common causes — Quality Score signals, broad ad groups, auction competition, match types, landing pages, competitor terms, bidding and conversion tracking — plus practical fixes.",
+    description: "Why is Google Ads CPC high? Check Quality Score, match types, auction competition, landing pages, bidding, competitors, and conversion tracking.",
     h1: "Why Is My Google Ads CPC So High? 8 Causes & Fixes",
     alt: "Why Is My Google Ads Cost Per Click So High? Eight causes and fixes for high CPC",
   },
