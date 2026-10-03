@@ -168,8 +168,16 @@ function addImageDimensions(page) {
 function applySeoOverrides(page, route) {
   const override = seoOverrides[route];
   let output = addImageDimensions(page);
-  const canonicalMatch = output.match(/<link\s+rel=["']canonical["']\s+href=["']([^"']+)["'][^>]*>/i);
-  if (canonicalMatch && !/hreflang=["']x-default["']/i.test(output)) output = output.replace("</head>", `<link rel="alternate" hrefLang="x-default" href="${canonicalMatch[1]}">\n</head>`);
+  let canonicalMatch = output.match(/<link\s+rel=["']canonical["']\s+href=["']([^"']+)["'][^>]*>/i);
+  if (!canonicalMatch) {
+    const canonicalUrl = `https://www.hiteshjaganiya.com${route === "/" ? "/" : route}`;
+    output = output.replace("</head>", `<link rel="canonical" href="${canonicalUrl}">\n</head>`);
+    canonicalMatch = [null, canonicalUrl];
+  }
+  // This site is English (India) only. Keep exactly one self-referencing en-IN
+  // alternate and one x-default alternate on every indexable page.
+  output = output.replace(/<link\s+rel=["']alternate["'][^>]*hreflang=["'][^"']+["'][^>]*>/gi, "");
+  output = output.replace("</head>", `<link rel="alternate" hrefLang="en-IN" href="${canonicalMatch[1]}">\n<link rel="alternate" hrefLang="x-default" href="${canonicalMatch[1]}">\n</head>`);
   if (!override) return output;
   output = output.replace(/<title\b[^>]*>[\s\S]*?<\/title>/i, `<title>${override.title}</title>`);
   output = output.replace(/<meta\s+name=["']description["'][^>]*>/i, `<meta name="description" content="${override.description}">`);
