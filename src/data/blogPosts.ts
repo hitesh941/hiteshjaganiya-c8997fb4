@@ -16,6 +16,20 @@ export interface BlogPostMeta {
 
 export const blogPosts: BlogPostMeta[] = [
   {
+    slug: "digital-marketing-for-ca-firms-ahmedabad",
+    title: "Digital Marketing for CA Firms in Ahmedabad: What ICAI Actually Allows",
+    description: "A practical guide to digital marketing for CA firms in Ahmedabad under ICAI's 13th Edition Code of Ethics — what's permitted, what isn't, and what works.",
+    excerpt: "What can a CA firm in Ahmedabad actually do online after the 2026 ICAI changes? A practical guide to websites, SEO, LinkedIn, Google Business Profile, reviews and paid advertising.",
+    cover: "/digital-marketing-ca-firms-ahmedabad.svg",
+    coverAlt: "Digital Marketing for CA Firms in Ahmedabad — ICAI rules and practical marketing guide",
+    datePublished: "2026-10-03",
+    dateModified: "2026-10-03",
+    readingTime: "8 min read",
+    category: "Professional Services Marketing",
+    keywords: ["digital marketing for CA firms Ahmedabad", "CA firm marketing Ahmedabad", "digital marketing for chartered accountants", "ICAI advertising rules 2026", "SEO for CA firms Ahmedabad", "CA firm website Ahmedabad"],
+  },
+
+  {
     slug: "top-8-digital-marketing-agencies-in-ahmedabad",
     title: "Top 8 Digital Marketing Agencies in Ahmedabad",
     description:
