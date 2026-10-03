@@ -85,6 +85,10 @@
       "dest": "/blog/business-not-showing-google-maps-ahmedabad/index.html"
     },
     {
+      "src": "^/blog/digital-marketing-for-ca-firms-ahmedabad/?$",
+      "dest": "/blog/digital-marketing-for-ca-firms-ahmedabad/index.html"
+    },
+    {
       "src": "^/blog/?$",
       "dest": "/blog/index.html"
     },
