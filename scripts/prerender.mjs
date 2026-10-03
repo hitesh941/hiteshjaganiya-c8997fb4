@@ -118,8 +118,8 @@ const seoOverrides = {
     alt: "Google Ads Quality Score explained with Expected CTR, Ad Relevance and Landing Page Experience",
   },
   "/blog/digital-marketing-for-ca-firms-ahmedabad": {
-    title: "Digital Marketing for CA Firms in Ahmedabad: ICAI Rules",
-    description: "A practical guide to digital marketing for CA firms in Ahmedabad under ICAI's 13th Edition Code of Ethics — what's permitted, what isn't, and what works.",
+    title: "Digital Marketing for CA Firms in Ahmedabad | ICAI 2026",
+    description: "Practical digital marketing guide for CA firms in Ahmedabad under ICAI's 2026 ethics rules: what's permitted, what's restricted, and what works.",
     h1: "Digital Marketing for CA Firms in Ahmedabad: What ICAI Actually Allows",
     alt: "Digital Marketing for CA Firms in Ahmedabad — ICAI rules and practical marketing guide",
   },
@@ -160,7 +160,7 @@ function addImageDimensions(page) {
     const src = (attrs.match(/\bsrc=["']([^"']+)["']/i) || [])[1] || "";
     const className = (attrs.match(/\bclass=["']([^"']+)["']/i) || [])[1] || "";
     let dimensions = null;
-    if (/blog-top-8|digital-marketing-packages|google-ads-vs-meta-ads|seo-real-estate|google-analytics-search-console|smart-objectives-competitive-benchmarking|first-year-startup-marketing-budget|google-ads-optimization-moves-experts|google-ads-optimization-workflow|business-not-showing-google-maps-ahmedabad|business-not-showing-google-maps-workflow|ai-content-google-rankings-chart|competitive-benchmarking-beginners-guide|competitive-benchmarking-framework|competitive-benchmarking-scorecard|seo-strategy-2027-cover|google-ads-high-cpc-cover|google-ads-cpc-diagnosis/i.test(src)) {
+    if (/blog-top-8|digital-marketing-packages|google-ads-vs-meta-ads|seo-real-estate|google-analytics-search-console|smart-objectives-competitive-benchmarking|first-year-startup-marketing-budget|google-ads-optimization-moves-experts|google-ads-optimization-workflow|business-not-showing-google-maps-ahmedabad|business-not-showing-google-maps-workflow|ai-content-google-rankings-chart|competitive-benchmarking-beginners-guide|competitive-benchmarking-framework|competitive-benchmarking-scorecard|seo-strategy-2027-cover|google-ads-high-cpc-cover|google-ads-cpc-diagnosis|digital-marketing-ca-firms-ahmedabad|ca-firm-digital-marketing-pull-vs-push/i.test(src)) {
       dimensions = /google-ads-optimization-workflow|business-not-showing-google-maps-workflow|google-ads-cpc-diagnosis/i.test(src) ? [1200, 675] : /ai-content-google-rankings-chart/i.test(src) ? [1600, 900] : [1200, 630];
     } else if (/hitesh-new-profile/i.test(src) && /rounded-full/i.test(className)) {
       dimensions = [96, 96];
