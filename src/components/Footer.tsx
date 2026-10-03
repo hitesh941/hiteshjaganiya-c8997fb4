@@ -6,7 +6,7 @@ const Footer = () => {
   const socialLinks = [
     { icon: Globe, href: "https://www.hitzdigitalmarketing.com/", label: "Website" },
     { icon: Facebook, href: "https://www.facebook.com/hitesh231016", label: "Facebook" },
-    { icon: Linkedin, href: "https://www.linkedin.com/in/hit1991/", label: "LinkedIn" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/hiteshjaganiya/", label: "LinkedIn" },
     { icon: Instagram, href: "https://www.instagram.com/jaganiyahitesh/", label: "Instagram" },
     { icon: Mail, href: "mailto:hphitesh941@gmail.com", label: "Email" },
   ];
@@ -20,7 +20,7 @@ const Footer = () => {
             Hitesh Jaganiya<span className="text-primary">.</span>
           </a>
 
-          {/* Social Links */}
+          <a href="/digital-card" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">Digital Card</a>\n\n          {/* Social Links */}
           <div className="flex items-center gap-4">
             {socialLinks.map((social) => (
               <a
