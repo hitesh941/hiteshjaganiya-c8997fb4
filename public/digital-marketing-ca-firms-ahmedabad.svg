@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#082f36"/><stop offset="1" stop-color="#0f766e"/></linearGradient></defs>
+<rect width="1200" height="630" fill="url(#bg)"/>
+<circle cx="1030" cy="110" r="190" fill="#ffffff" opacity=".06"/>
+<circle cx="1090" cy="520" r="260" fill="#ffffff" opacity=".05"/>
+<rect x="76" y="72" width="8" height="486" rx="4" fill="#f59e0b"/>
+<text x="125" y="155" fill="#fbbf24" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" letter-spacing="3">HITESH JAGANIYA</text>
+<text x="125" y="250" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700">Digital Marketing</text>
+<text x="125" y="315" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700">for CA Firms</text>
+<text x="125" y="380" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700">in Ahmedabad</text>
+<text x="125" y="445" fill="#d7f4f1" font-family="Arial, Helvetica, sans-serif" font-size="27">What ICAI actually allows in 2026</text>
+<text x="125" y="515" fill="#b8d9d6" font-family="Arial, Helvetica, sans-serif" font-size="21">SEO • Content • LinkedIn • Local Search • Compliance</text>
+</svg>
