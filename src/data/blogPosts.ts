@@ -227,7 +227,7 @@ export const blogPosts: BlogPostMeta[] = [
     slug: "chatgpt-ads-india-spend-money",
     title: "ChatGPT Ads in India: Should You Actually Spend?",
     description:
-      "ChatGPT Ads are available in India. See what early performance data shows, who might test the channel, and how paid placement differs from organic AI visibility.",
+      "ChatGPT Ads are available in India. See what early data shows, who might test the channel, and how paid placement differs from organic AI visibility.",
     excerpt:
       "ChatGPT Ads have arrived in India. Here's what the early campaign data says, who has a real case for testing the channel, and where the format is still too immature to justify spend.",
     cover: "/chatgpt-ads-india.svg",
