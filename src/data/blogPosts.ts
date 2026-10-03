@@ -19,7 +19,7 @@ export const blogPosts: BlogPostMeta[] = [
     slug: "top-8-digital-marketing-agencies-in-ahmedabad",
     title: "Top 8 Digital Marketing Agencies in Ahmedabad",
     description:
-      "An independent, experience-based look at 8 digital marketing agencies in Ahmedabad — compiled by Hitesh Jaganiya, a digital marketing consultant with 11 years in the field, for startup founders deciding who to hire.",
+      "An independent guide to 8 digital marketing agencies in Ahmedabad, with practical notes on fit, services, and what to ask before hiring.",
     excerpt:
       "Everyone claims to be the best. Here's an honest, consultant's view of 8 digital marketing agencies in Ahmedabad — who each one actually suits, and what to ask before you sign.",
     cover: "/blog-top-8-agencies-ahmedabad.svg",
@@ -32,9 +32,9 @@ export const blogPosts: BlogPostMeta[] = [
   },
   {
     slug: "digital-marketing-packages-in-ahmedabad",
-    title: "Digital Marketing Packages in Ahmedabad: ₹15K vs ₹50K vs ₹1L+",
+    title: "Digital Marketing Packages Ahmedabad: ₹15K vs ₹50K vs ₹1L+",
     description:
-      "Compare digital marketing packages in Ahmedabad from ₹15K to ₹1L+. See what is included, typical ad spend, SEO work, pricing, and how to choose the right package for your business in 2026.",
+      "Compare digital marketing packages in Ahmedabad from ₹15K to ₹1L+, including SEO, ad spend, deliverables, pricing, and how to choose a tier.",
     excerpt:
       "What really changes between a ₹15,000, ₹50,000, and ₹1 lakh+ digital marketing package in Ahmedabad? A practical guide to the work, people, ad spend, and expectations behind each tier.",
     cover: "/digital-marketing-packages-ahmedabad.svg",
@@ -47,7 +47,7 @@ export const blogPosts: BlogPostMeta[] = [
   },
   {
     slug: "google-ads-vs-meta-ads-ahmedabad",
-    title: "Google Ads vs Meta Ads: Which Should Ahmedabad Businesses Use First?",
+    title: "Google Ads vs Meta Ads for Ahmedabad Businesses",
     description:
       "A practical, experience-based comparison of Google Ads and Meta Ads for Ahmedabad businesses deciding where to spend their first advertising rupee.",
     excerpt:
@@ -62,9 +62,9 @@ export const blogPosts: BlogPostMeta[] = [
   },
   {
     slug: "seo-for-real-estate-businesses-in-ahmedabad",
-    title: "SEO for Real Estate Businesses in Ahmedabad: A Practical Guide",
+    title: "SEO for Real Estate Businesses in Ahmedabad: Practical Guide",
     description:
-      "A practical guide to SEO for real estate businesses in Ahmedabad, covering hyper-local keyword research, project pages, Google Business Profile, technical SEO, backlinks, content, trust and realistic timelines.",
+      "Practical SEO guide for Ahmedabad real estate businesses covering local keywords, project pages, Google Business Profile, technical SEO, and content.",
     excerpt:
       "How builders, brokers and property consultants in Ahmedabad can use local SEO to reach buyers across locations, property types and stages of the buying journey.",
     cover: "/seo-real-estate-ahmedabad.svg",
@@ -77,13 +77,13 @@ export const blogPosts: BlogPostMeta[] = [
   },
   {
     slug: "how-to-read-google-analytics-search-console-without-an-agency",
-    title: "How to Read Your Own Google Analytics and Search Console Without an Agency",
+    title: "How to Read Google Analytics and Search Console Yourself",
     description:
-      "A practical, no-jargon guide to reading Google Analytics 4 and Search Console yourself, written by Ahmedabad-based digital marketing consultant Hitesh Jaganiya.",
+      "A practical guide to reading Google Analytics 4 and Search Console yourself, with the key numbers business owners should understand.",
     excerpt:
       "Learn which Google Analytics 4 and Search Console numbers actually matter, where to find them, and how to judge your website marketing without relying on an agency report.",
     cover: "/google-analytics-search-console-without-agency.svg",
-    coverAlt: "How to Read Your Own Google Analytics and Search Console Without an Agency — practical guide by Hitesh Jaganiya",
+    coverAlt: "How to Read Google Analytics and Search Console Yourself — practical guide by Hitesh Jaganiya",
     datePublished: "2026-08-30",
     dateModified: "2026-09-01",
     readingTime: "10 min read",
@@ -92,13 +92,13 @@ export const blogPosts: BlogPostMeta[] = [
   },
   {
     slug: "smart-objectives-competitive-benchmarking",
-    title: "What the Research Actually Says About Benchmarking KPIs Against Competitors",
+    title: "Benchmarking Marketing KPIs: What the Research Says",
     description:
-      "A research-led examination of what the evidence actually says about benchmarking marketing KPIs against competitors, including benchmark selection, cross-industry comparisons, capability benchmarking, and target setting.",
+      "Research-led guide to benchmarking marketing KPIs against competitors, including benchmark selection, capability benchmarking, and target setting.",
     excerpt:
       "What happens when the standard advice to benchmark competitors before setting objectives is tested against the research? This research note examines the evidence, the surprising cross-industry result, and what KPI benchmarking misses.",
     cover: "/smart-objectives-competitive-benchmarking.svg",
-    coverAlt: "What the Research Actually Says About Benchmarking KPIs Against Competitors — research note by Hitesh Jaganiya",
+    coverAlt: "Benchmarking Marketing KPIs: What the Research Says — research note by Hitesh Jaganiya",
     datePublished: "2026-09-08",
     dateModified: "2026-09-09",
     readingTime: "9 min read",
@@ -109,7 +109,7 @@ export const blogPosts: BlogPostMeta[] = [
     slug: "first-year-startup-marketing-budget",
     title: "How Much Should a First-Year Startup Budget for Marketing?",
     description:
-      "A practical guide to first-year startup marketing budgets, including foundation costs, testing spend, scaling, customer value, runway, and when to hire outside marketing help.",
+      "Practical guide to first-year startup marketing budgets, covering foundation costs, testing, scaling, customer value, runway, and outside help.",
     excerpt:
       "How much should a startup actually budget for marketing in year one? A practical framework for deciding what to spend on foundation, testing and scaling without relying on a generic percentage rule.",
     cover: "/first-year-startup-marketing-budget.svg",
@@ -122,9 +122,9 @@ export const blogPosts: BlogPostMeta[] = [
   },
   {
     slug: "google-ads-optimization-moves-experts",
-    title: "10 Google Ads Optimization Moves Every Expert Makes (That Most Accounts Are Missing)",
+    title: "10 Google Ads Optimization Moves Most Accounts Miss",
     description:
-      "Ten practical Google Ads optimization moves that experienced account managers use to reduce wasted spend, improve relevance, and find missed opportunities inside active campaigns.",
+      "Ten practical Google Ads optimization moves to reduce wasted spend, improve relevance, and find missed opportunities in active campaigns.",
     excerpt:
       "Ten specific Google Ads optimization moves I look for when auditing an account — from weekly search-term mining and negative keywords to impression share, bidding, audiences and landing-page relevance.",
     cover: "/google-ads-optimization-moves-experts.svg",
@@ -137,9 +137,9 @@ export const blogPosts: BlogPostMeta[] = [
   },
   {
     slug: "business-not-showing-google-maps-ahmedabad",
-    title: "Business Not Showing on Google Maps in Ahmedabad? 7 Common Fixes",
+    title: "Business Not Showing on Google Maps in Ahmedabad? 7 Fixes",
     description:
-      "A practical troubleshooting guide for Ahmedabad business owners whose business is not appearing on Google Maps, covering verification, NAP consistency, categories, reviews, service areas, duplicates and suspensions.",
+      "Troubleshoot an Ahmedabad business missing from Google Maps: verification, NAP, categories, reviews, service areas, duplicates, and suspensions.",
     excerpt:
       "Can't find your business on Google Maps in Ahmedabad? Work through seven common causes, from verification and inconsistent business information to duplicate or suspended profiles.",
     cover: "/business-not-showing-google-maps-ahmedabad.svg",
@@ -154,7 +154,7 @@ export const blogPosts: BlogPostMeta[] = [
     slug: "can-ai-content-rank-on-google",
     title: "Can AI Content Rank on Google? Honest Answer for 2026",
     description:
-      "Can AI content rank on Google in 2026? A practical, data-led look at Google's position on AI-assisted content, what the evidence shows, and how to use AI without publishing generic, unedited pages.",
+      "Can AI content rank on Google? A practical look at Google's guidance, ranking evidence, common AI-content failures, and useful AI-assisted publishing.",
     excerpt:
       "Yes, AI-assisted content can rank — but the finished page still needs usefulness, accuracy, originality and human editorial judgment. Here's what the data and Google's guidance actually suggest.",
     cover: "/can-ai-content-rank-on-google-cover.svg",
@@ -182,9 +182,9 @@ export const blogPosts: BlogPostMeta[] = [
   },
   {
     slug: "seo-strategy-2027",
-    title: "The 5 SEO Shifts That Will Matter Most in 2027 (And What They Mean for Indian Businesses)",
+    title: "SEO Strategy 2027: 5 Shifts That Will Matter Most",
     description:
-      "Five SEO strategy shifts for 2027 — human-first content, commodity keywords, bottom-of-funnel intent, content with multiple jobs, and original data — applied to small business realities.",
+      "Five SEO shifts for 2027: human-first content, bottom-of-funnel intent, original data, and what they mean for Indian businesses.",
     excerpt:
       "What will actually change about SEO in 2027? Five practical shifts, translated for Indian businesses that don't have huge content teams or budgets.",
     cover: "/seo-strategy-2027-cover.svg",
@@ -197,9 +197,9 @@ export const blogPosts: BlogPostMeta[] = [
   },
   {
     slug: "why-is-google-ads-cpc-high",
-    title: "Why Is My Google Ads Cost Per Click So High? 8 Causes and Fixes",
+    title: "Why Is My Google Ads CPC So High? 8 Causes & Fixes",
     description:
-      "Why is Google Ads CPC so high? Learn 8 common causes — Quality Score signals, broad ad groups, auction competition, match types, landing pages, competitor terms, bidding and conversion tracking — plus practical fixes.",
+      "Why is Google Ads CPC high? Check Quality Score, match types, auction competition, landing pages, bidding, competitors, and conversion tracking.",
     excerpt:
       "High Google Ads CPC is not always a bidding problem. Here are eight practical causes to check before simply lowering your bids, from ad relevance and search terms to landing pages and conversion tracking.",
     cover: "/google-ads-high-cpc-cover.svg",
@@ -212,7 +212,7 @@ export const blogPosts: BlogPostMeta[] = [
   },
   {
     slug: "google-ads-quality-score-explained",
-    title: "Google Ads Quality Score Explained (And How to Actually Improve It)",
+    title: "Google Ads Quality Score: How to Improve It",
     description: "Google Ads Quality Score explained in plain English: what the 1–10 score means, the three components behind it, what improves it, and what does not.",
     excerpt: "What does Google Ads Quality Score actually measure? A practical guide to Expected CTR, Ad Relevance, Landing Page Experience, and the changes that can genuinely improve account performance.",
     cover: "/google-ads-quality-score-explained.svg",
@@ -225,9 +225,9 @@ export const blogPosts: BlogPostMeta[] = [
   },
   {
     slug: "chatgpt-ads-india-spend-money",
-    title: "ChatGPT Ads Are Live in India. Should You Actually Spend Money on Them?",
+    title: "ChatGPT Ads in India: Should You Actually Spend?",
     description:
-      "ChatGPT Ads are now available in India. Here's what the early performance data shows, who should test the channel, what it costs, and why paid placement is different from organic AI visibility.",
+      "ChatGPT Ads are available in India. See what early performance data shows, who might test the channel, and how paid placement differs from organic AI visibility.",
     excerpt:
       "ChatGPT Ads have arrived in India. Here's what the early campaign data says, who has a real case for testing the channel, and where the format is still too immature to justify spend.",
     cover: "/chatgpt-ads-india.svg",
