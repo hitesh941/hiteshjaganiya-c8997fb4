@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+<title id="title">Pull vs Push Digital Marketing for CA Firms</title>
+<desc id="desc">A visual guide showing pull marketing such as SEO and educational content versus push promotion for CA firms.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#082f35"/>
+    <stop offset="100%" stop-color="#0f766e"/>
+  </linearGradient>
+</defs>
+<rect width="1200" height="675" rx="32" fill="url(#bg)"/>
+<circle cx="1060" cy="100" r="150" fill="#ffffff" opacity=".06"/>
+<circle cx="160" cy="600" r="210" fill="#ffffff" opacity=".05"/>
+<text x="90" y="105" fill="#b8f3e9" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" letter-spacing="3">CA FIRM DIGITAL MARKETING</text>
+<text x="90" y="165" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="700">Pull vs Push</text>
+<text x="90" y="205" fill="#d7f7f2" font-family="Arial, Helvetica, sans-serif" font-size="22">A practical way to think about online visibility</text>
+<rect x="90" y="270" width="485" height="275" rx="24" fill="#ffffff" opacity=".96"/>
+<rect x="625" y="270" width="485" height="275" rx="24" fill="#ffffff" opacity=".12" stroke="#ffffff" stroke-opacity=".35"/>
+<text x="125" y="325" fill="#0f766e" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">PULL — people search first</text>
+<text x="125" y="370" fill="#173b3e" font-family="Arial, Helvetica, sans-serif" font-size="20">• SEO and local search</text>
+<text x="125" y="408" fill="#173b3e" font-family="Arial, Helvetica, sans-serif" font-size="20">• Educational articles</text>
+<text x="125" y="446" fill="#173b3e" font-family="Arial, Helvetica, sans-serif" font-size="20">• Factual website information</text>
+<text x="125" y="484" fill="#173b3e" font-family="Arial, Helvetica, sans-serif" font-size="20">• Professional LinkedIn content</text>
+<text x="660" y="325" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">PUSH — promotion to people</text>
+<text x="660" y="370" fill="#e8fffb" font-family="Arial, Helvetica, sans-serif" font-size="20">• Commercial-style promotion</text>
+<text x="660" y="408" fill="#e8fffb" font-family="Arial, Helvetica, sans-serif" font-size="20">• Superlative claims</text>
+<text x="660" y="446" fill="#e8fffb" font-family="Arial, Helvetica, sans-serif" font-size="20">• Client testimonials / promotion</text>
+<text x="660" y="484" fill="#e8fffb" font-family="Arial, Helvetica, sans-serif" font-size="20">• Tactics that may need ICAI review</text>
+<text x="90" y="610" fill="#c9f4ee" font-family="Arial, Helvetica, sans-serif" font-size="18">Always check the current ICAI Code of Ethics for specific tactics.</text>
+<text x="1110" y="610" text-anchor="end" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Hitesh Jaganiya</text>
+</svg>
