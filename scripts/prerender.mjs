@@ -27,6 +27,7 @@ const routes = [
   "/blog/seo-strategy-2027",
   "/blog/chatgpt-ads-india-spend-money",
   "/blog/google-ads-quality-score-explained",
+  "/blog/digital-marketing-for-ca-firms-ahmedabad",
 ];
 
 const seoOverrides = {
@@ -115,6 +116,12 @@ const seoOverrides = {
     description: "Google Ads Quality Score explained in plain English: what the 1–10 score means, the three components behind it, what improves it, and what does not.",
     h1: "Google Ads Quality Score: How to Improve It",
     alt: "Google Ads Quality Score explained with Expected CTR, Ad Relevance and Landing Page Experience",
+  },
+  "/blog/digital-marketing-for-ca-firms-ahmedabad": {
+    title: "Digital Marketing for CA Firms in Ahmedabad: ICAI Rules",
+    description: "A practical guide to digital marketing for CA firms in Ahmedabad under ICAI's 13th Edition Code of Ethics — what's permitted, what isn't, and what works.",
+    h1: "Digital Marketing for CA Firms in Ahmedabad: What ICAI Actually Allows",
+    alt: "Digital Marketing for CA Firms in Ahmedabad — ICAI rules and practical marketing guide",
   },
   "/blog/why-is-google-ads-cpc-high": {
     title: "Why Is My Google Ads CPC So High? 8 Causes & Fixes",
