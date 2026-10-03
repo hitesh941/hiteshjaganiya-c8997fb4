@@ -18,6 +18,7 @@ import GoogleAdsCpcHigh from "./pages/blog/GoogleAdsCpcHigh";
 import SeoStrategy2027 from "./pages/blog/SeoStrategy2027";
 import ChatgptAdsIndia from "./pages/blog/ChatgptAdsIndia";
 import GoogleAdsQualityScore from "./pages/blog/GoogleAdsQualityScore";
+import DigitalMarketingCaFirmsAhmedabad from "./pages/blog/DigitalMarketingCaFirmsAhmedabad";
 import ThankYou from "./pages/ThankYou";
 import DigitalCard from "./pages/DigitalCard";
 import Blog from "./pages/Blog";
@@ -42,6 +43,7 @@ const routes: Record<string, React.ComponentType> = {
   "/blog/seo-strategy-2027": SeoStrategy2027,
   "/blog/chatgpt-ads-india-spend-money": ChatgptAdsIndia,
   "/blog/google-ads-quality-score-explained": GoogleAdsQualityScore,
+  "/blog/digital-marketing-for-ca-firms-ahmedabad": DigitalMarketingCaFirmsAhmedabad,
 };
 
 export function render(url: string) {
