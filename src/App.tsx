@@ -44,7 +44,7 @@ const RouteSeo = () => {
   const isNotFound = pathname !== "/" && pathname !== "/blog" && !pathname.startsWith("/blog/") && !isThankYou;
 
   if (isThankYou) return <Helmet><title>Thank You | Hitesh Jaganiya</title><meta name="description" content="Thank you for contacting Hitesh Jaganiya. Your message has been submitted successfully." /><meta name="robots" content="noindex, follow" /><link rel="canonical" href={`${SITE_URL}/thank-you`} /></Helmet>;
-  if (isDigitalCard) return <Helmet><title>Digital Card | Hitesh Jaganiya — Digital Marketing Consultant</title><meta name="description" content="Digital business card for Hitesh Jaganiya, Digital Marketing Consultant in Ahmedabad. Call, WhatsApp, email, save contact and connect online." /><meta name="robots" content="index, follow, max-image-preview:large" /><link rel="canonical" href={`${SITE_URL}/digital-card`} /></Helmet>;
+  if (isDigitalCard) return <Helmet><title>Digital Card | Hitesh Jaganiya</title><meta name="description" content="Digital business card for Hitesh Jaganiya, Digital Marketing Consultant in Ahmedabad. Call, WhatsApp, email, save contact and connect online." /><meta name="robots" content="index, follow, max-image-preview:large" /><link rel="canonical" href={`${SITE_URL}/digital-card`} /></Helmet>;
   if (isPackage) {
     const title = "Digital Marketing Packages in Ahmedabad: ₹15K vs ₹50K vs ₹1L+";
     const description = "Compare digital marketing packages in Ahmedabad from ₹15K to ₹1L+. See what is included, ad spend, SEO, pricing, and how to choose the right package in 2026.";
