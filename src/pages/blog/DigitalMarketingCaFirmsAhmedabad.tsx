@@ -31,6 +31,38 @@ const DigitalMarketingCaFirmsAhmedabad = () => {
     publisher: { "@type": "Person", "@id": `${SITE_URL}/#person`, name: "Hitesh Jaganiya", url: `${SITE_URL}/` },
   };
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Can CA firms in India advertise after the 2026 ICAI changes?",
+        acceptedAnswer: { "@type": "Answer", text: "The 13th Edition Code of Ethics gives more flexibility in website and content presentation and allows push-mode promotion for non-exclusive services, while the prohibition on soliciting professional work through advertisement remains in force." },
+      },
+      {
+        "@type": "Question",
+        name: "Can a CA firm collect Google reviews?",
+        acceptedAnswer: { "@type": "Answer", text: "Publishing client testimonials or appreciation is prohibited under the Code. The treatment of client-published Google reviews is a grey area that should be clarified with ICAI rather than assumed." },
+      },
+      {
+        "@type": "Question",
+        name: "Can a CA firm have a website in Ahmedabad?",
+        acceptedAnswer: { "@type": "Answer", text: "Yes. Firms may maintain a professional website with factual information including firm name, ICAI registration number, services, and partner details, subject to the applicable Code of Ethics." },
+      },
+      {
+        "@type": "Question",
+        name: "What kind of content can a CA firm publish?",
+        acceptedAnswer: { "@type": "Answer", text: "Educational and technical material such as regulatory updates, compliance explainers, filing requirements, and analysis of changes in tax law can be published, while promotional content and prohibited claims should be avoided." },
+      },
+      {
+        "@type": "Question",
+        name: "Is LinkedIn allowed for chartered accountants?",
+        acceptedAnswer: { "@type": "Answer", text: "Professional updates, industry insight, and educational content can be published on LinkedIn, subject to the applicable ICAI rules on solicitation and promotional claims." },
+      },
+    ],
+  };
+
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -74,6 +106,7 @@ const DigitalMarketingCaFirmsAhmedabad = () => {
         <meta name="twitter:image:alt" content={post.coverAlt} />
         <script type="application/ld+json">{JSON.stringify(schema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
       </Helmet>
 
       <Header />
