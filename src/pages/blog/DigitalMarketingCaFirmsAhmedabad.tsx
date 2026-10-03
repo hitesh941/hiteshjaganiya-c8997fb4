@@ -44,8 +44,8 @@ const DigitalMarketingCaFirmsAhmedabad = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Digital Marketing for CA Firms in Ahmedabad: ICAI Rules | Hitesh Jaganiya</title>
-        <meta name="description" content={post.description} />
+        <title>Digital Marketing for CA Firms in Ahmedabad | ICAI 2026</title>
+        <meta name="description" content="Practical digital marketing guide for CA firms in Ahmedabad under ICAI's 2026 ethics rules: what's permitted, what's restricted, and what works." />
         <meta name="keywords" content={post.keywords.join(", ")} />
         <meta name="author" content="Hitesh Jaganiya" />
         <meta name="robots" content="index, follow, max-image-preview:large" />
@@ -54,16 +54,24 @@ const DigitalMarketingCaFirmsAhmedabad = () => {
         <link rel="alternate" hrefLang="x-default" href={postUrl} />
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="Hitesh Jaganiya" />
-        <meta property="og:title" content="Digital Marketing for CA Firms in Ahmedabad: ICAI Rules" />
-        <meta property="og:description" content={post.description} />
+        <meta property="og:title" content="Digital Marketing for CA Firms in Ahmedabad | ICAI 2026" />
+        <meta property="og:description" content="Practical digital marketing guide for CA firms in Ahmedabad under ICAI's 2026 ethics rules: what's permitted, what's restricted, and what works." />
+        <meta property="og:image:type" content="image/svg+xml" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="article:section" content={post.category} />
+        <meta property="article:published_time" content="2026-10-03T09:00:00+05:30" />
+        <meta property="article:modified_time" content="2026-10-03T09:00:00+05:30" />
+        <meta property="article:author" content="Hitesh Jaganiya" />
         <meta property="og:url" content={postUrl} />
         <meta property="og:image" content={coverUrl} />
         <meta property="og:image:alt" content={post.coverAlt} />
         <meta property="og:locale" content="en_IN" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Digital Marketing for CA Firms in Ahmedabad: ICAI Rules" />
-        <meta name="twitter:description" content={post.description} />
+        <meta name="twitter:title" content="Digital Marketing for CA Firms in Ahmedabad | ICAI 2026" />
+        <meta name="twitter:description" content="Practical digital marketing guide for CA firms in Ahmedabad under ICAI's 2026 ethics rules: what's permitted, what's restricted, and what works." />
         <meta name="twitter:image" content={coverUrl} />
+        <meta name="twitter:image:alt" content={post.coverAlt} />
         <script type="application/ld+json">{JSON.stringify(schema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
@@ -119,6 +127,10 @@ const DigitalMarketingCaFirmsAhmedabad = () => {
                       <li>Post job vacancies</li>
                     </ul>
                     <p>The 2026 update also permits push-mode promotion for services that aren't exclusive to the CA profession — general accounting, bookkeeping, advisory and consultancy work. That's a genuine opening, but it needs care: the distinction between an exclusive and non-exclusive service isn't always obvious, and the safe approach is to treat anything statutory as off-limits for push promotion.</p>
+                    <figure className="my-10 overflow-hidden rounded-3xl border border-border bg-card shadow-sm">
+                      <img src="/ca-firm-digital-marketing-pull-vs-push.svg" alt="Pull vs push digital marketing for CA firms: SEO, educational content and professional visibility compared with promotional tactics" width="1200" height="675" loading="lazy" decoding="async" className="w-full h-auto" />
+                      <figcaption className="px-5 py-3 text-sm text-muted-foreground">Pull marketing helps prospective clients find factual, educational information; promotional tactics need to be assessed carefully against the current ICAI rules.</figcaption>
+                    </figure>
                   </section>
 
                   <section>
@@ -139,7 +151,7 @@ const DigitalMarketingCaFirmsAhmedabad = () => {
                     <h3 className="text-2xl font-bold text-foreground">Educational content is your strongest channel</h3>
                     <p>This is permitted, it's what ICAI explicitly encourages, and it's what people actually search for.</p>
                     <p>Your prospective clients in Ahmedabad are searching things like: GST registration requirements for a new business in Gujarat, what the current filing deadlines are, whether a particular expense is deductible, how to handle a specific notice. Every one of those is a question you answer for clients weekly.</p>
-                    <p>Writing clear, accurate explainers on these does three things at once. It ranks for genuine search demand, it demonstrates competence without claiming it, and it stays entirely inside the rules because it's information, not solicitation.</p>
+                    <p>Writing clear, accurate explainers on these does three things at once. It ranks for genuine search demand, it demonstrates competence without claiming it, and it stays entirely inside the rules because it's information, not solicitation. If you're building the technical side as well, my guide to <Link to="/blog/seo-strategy-2027" className="text-primary font-semibold hover:underline">SEO strategy for 2027</Link> covers the broader search shifts that matter for Indian businesses.</p>
                     <p>The firms that do this well in India tend to publish consistently on regulatory changes — not generic "importance of tax planning" content, but specific, timely, useful pieces that a business owner genuinely can't get elsewhere without paying someone.</p>
 
                     <h3 className="text-2xl font-bold text-foreground">Google Business Profile — with a caveat</h3>
@@ -153,12 +165,12 @@ const DigitalMarketingCaFirmsAhmedabad = () => {
 
                     <h3 className="text-2xl font-bold text-foreground">Local search visibility</h3>
                     <p>Someone searching "CA firm near Ashram Road" or "chartered accountant Satellite Ahmedabad" is looking for a firm to engage. Being findable for those searches is permitted — it's pull, not push.</p>
-                    <p>That means the ordinary technical work: a fast, mobile-friendly site, accurate and consistent name/address/phone details everywhere they appear, clear service pages written factually, and local signals done properly.</p>
+                    <p>That means the ordinary technical work: a fast, mobile-friendly site, accurate and consistent name/address/phone details everywhere they appear, clear service pages written factually, and local signals done properly. For the measurement side, see my guide on <Link to="/blog/how-to-read-google-analytics-search-console-without-an-agency" className="text-primary font-semibold hover:underline">how to read Google Analytics and Search Console without an agency</Link>.</p>
 
                     <h3 className="text-2xl font-bold text-foreground">What about Google Ads?</h3>
                     <p>This is the genuine grey zone, and I'd treat it cautiously.</p>
                     <p>Running paid search for services exclusively reserved to chartered accountants looks a lot like solicitation, whatever the 2026 flexibility on non-exclusive services. For genuinely non-exclusive offerings — bookkeeping, business advisory, outsourced accounting — there may be room, but the ad copy would still need to avoid superlatives and comparative claims, which rules out most of what makes ad copy work.</p>
-                    <p>My honest position: for a CA firm, the effort is better spent on organic visibility and content, where the rules are clear and the long-term return is better anyway. If a firm does want to explore paid, that specific question belongs with ICAI before a rupee is spent.</p>
+                    <p>My honest position: for a CA firm, the effort is better spent on organic visibility and content, where the rules are clear and the long-term return is better anyway. If a firm does want to explore paid, that specific question belongs with ICAI before a rupee is spent. If you are evaluating paid-search mechanics separately, see <Link to="/blog/google-ads-quality-score-explained" className="text-primary font-semibold hover:underline">how Google Ads Quality Score works</Link>.</p>
                   </section>
 
                   <section>
@@ -190,6 +202,27 @@ const DigitalMarketingCaFirmsAhmedabad = () => {
                   </section>
                 </div>
 
+                <section className="mt-14 border-t border-border pt-10" aria-labelledby="related-guides-heading">
+                  <h2 id="related-guides-heading" className="text-2xl md:text-3xl font-bold text-foreground tracking-tight mb-6">Related Digital Marketing Guides</h2>
+                  <div className="grid sm:grid-cols-2 gap-4">
+                    <Link to="/blog/business-not-showing-google-maps-ahmedabad" className="rounded-2xl border border-border bg-card p-5 hover:border-primary/40 transition-colors">
+                      <span className="text-xs font-bold uppercase tracking-wider text-primary">Local SEO</span>
+                      <span className="mt-2 block font-bold text-foreground">Business Not Showing on Google Maps in Ahmedabad?</span>
+                    </Link>
+                    <Link to="/blog/seo-strategy-2027" className="rounded-2xl border border-border bg-card p-5 hover:border-primary/40 transition-colors">
+                      <span className="text-xs font-bold uppercase tracking-wider text-primary">SEO</span>
+                      <span className="mt-2 block font-bold text-foreground">SEO Strategy 2027: 5 Shifts That Matter</span>
+                    </Link>
+                    <Link to="/blog/how-to-read-google-analytics-search-console-without-an-agency" className="rounded-2xl border border-border bg-card p-5 hover:border-primary/40 transition-colors">
+                      <span className="text-xs font-bold uppercase tracking-wider text-primary">Analytics</span>
+                      <span className="mt-2 block font-bold text-foreground">How to Read Google Analytics and Search Console</span>
+                    </Link>
+                    <Link to="/blog/google-ads-quality-score-explained" className="rounded-2xl border border-border bg-card p-5 hover:border-primary/40 transition-colors">
+                      <span className="text-xs font-bold uppercase tracking-wider text-primary">Google Ads</span>
+                      <span className="mt-2 block font-bold text-foreground">Google Ads Quality Score: How to Improve It</span>
+                    </Link>
+                  </div>
+                </section>
                 <div className="mt-14"><AuthorCard /></div>
               </div>
               <BlogSidebar />
