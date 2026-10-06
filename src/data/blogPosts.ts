@@ -30,6 +30,20 @@ export const blogPosts: BlogPostMeta[] = [
   },
 
   {
+    slug: "how-long-does-seo-take",
+    title: "How Long Does SEO Actually Take? Google Just Published Its Own Numbers",
+    description: "Google shared internal data on how long crawling, indexing and ranking changes take. Here's what those numbers mean for a business owner waiting on SEO results.",
+    excerpt: "Google has shared indicative timelines for crawling, indexing and serving changes. Here's what they mean if you're waiting for SEO results.",
+    cover: "/how-long-does-seo-take.svg",
+    coverAlt: "How long does SEO take? Google's indicative timelines for crawling, indexing and serving",
+    datePublished: "2026-10-06",
+    dateModified: "2026-10-06",
+    readingTime: "8 min read",
+    category: "SEO Strategy",
+    keywords: ["how long does SEO take", "SEO timeline", "how long does SEO take to work", "Google indexing time", "Google crawling time", "SEO results timeline", "Google ranking timeline"],
+  },
+
+  {
     slug: "top-8-digital-marketing-agencies-in-ahmedabad",
     title: "Top 8 Digital Marketing Agencies in Ahmedabad",
     description:
