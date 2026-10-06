@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+<title id="title">How Long Does SEO Actually Take?</title>
+<desc id="desc">Google's indicative timelines for crawling, indexing, serving and SEO changes.</desc>
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#082f35"/><stop offset="1" stop-color="#0f766e"/></linearGradient></defs>
+<rect width="1200" height="630" rx="30" fill="url(#g)"/>
+<circle cx="1040" cy="90" r="170" fill="#fff" opacity=".06"/><circle cx="130" cy="570" r="220" fill="#fff" opacity=".05"/>
+<text x="78" y="92" fill="#b8f3e9" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" letter-spacing="3">SEO TIMELINES • 2026</text>
+<text x="78" y="165" fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="48" font-weight="700">How Long Does SEO</text>
+<text x="78" y="220" fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="48" font-weight="700">Actually Take?</text>
+<text x="78" y="265" fill="#d7f7f2" font-family="Arial,Helvetica,sans-serif" font-size="22">Google's indicative numbers for crawling, indexing &amp; serving</text>
+<rect x="78" y="325" width="1044" height="150" rx="22" fill="#fff" opacity=".96"/>
+<text x="115" y="375" fill="#0f766e" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="700">NEW URL</text>
+<text x="115" y="418" fill="#173b3e" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="700">~20 hours</text>
+<text x="365" y="375" fill="#0f766e" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="700">UPDATED URL</text>
+<text x="365" y="418" fill="#173b3e" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="700">~30 days</text>
+<text x="650" y="375" fill="#0f766e" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="700">TITLE / SNIPPET</text>
+<text x="650" y="418" fill="#173b3e" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="700">1–2 days*</text>
+<text x="930" y="375" fill="#0f766e" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="700">CORE RECOVERY</text>
+<text x="930" y="418" fill="#173b3e" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="700">3–6 months*</text>
+<text x="78" y="545" fill="#c9f4ee" font-family="Arial,Helvetica,sans-serif" font-size="18">*Indicative figures presented by Gary Illyes — not guarantees.</text>
+<text x="1122" y="545" text-anchor="end" fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700">Hitesh Jaganiya</text>
+</svg>
