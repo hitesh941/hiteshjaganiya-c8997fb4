@@ -24,6 +24,7 @@ import ChatgptAdsIndia from "./pages/blog/ChatgptAdsIndia";
 import GoogleAdsQualityScore from "./pages/blog/GoogleAdsQualityScore";
 import SeoStrategy2027 from "./pages/blog/SeoStrategy2027";
 import DigitalMarketingCaFirmsAhmedabad from "./pages/blog/DigitalMarketingCaFirmsAhmedabad";
+import HowLongDoesSeoTake from "./pages/blog/HowLongDoesSeoTake";
 import NotFound from "./pages/NotFound";
 
 const SITE_URL = "https://www.hiteshjaganiya.com";
@@ -99,6 +100,7 @@ const App = () => (
           <Route path="/blog/why-is-google-ads-cpc-high" element={<GoogleAdsCpcHigh />} />
           <Route path="/blog/seo-strategy-2027" element={<SeoStrategy2027 />} />
           <Route path="/blog/digital-marketing-for-ca-firms-ahmedabad" element={<DigitalMarketingCaFirmsAhmedabad />} />
+          <Route path="/blog/how-long-does-seo-take" element={<HowLongDoesSeoTake />} />
           <Route path="/blog/chatgpt-ads-india-spend-money" element={<ChatgptAdsIndia />} />
           <Route path="/blog/google-ads-quality-score-explained" element={<GoogleAdsQualityScore />} />
           <Route path="*" element={<NotFound />} />
