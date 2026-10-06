@@ -1,22 +1,53 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
 <title id="title">How Long Does SEO Actually Take?</title>
-<desc id="desc">Google's indicative timelines for crawling, indexing, serving and SEO changes.</desc>
-<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#082f35"/><stop offset="1" stop-color="#0f766e"/></linearGradient></defs>
-<rect width="1200" height="630" rx="30" fill="url(#g)"/>
-<circle cx="1040" cy="90" r="170" fill="#fff" opacity=".06"/><circle cx="130" cy="570" r="220" fill="#fff" opacity=".05"/>
-<text x="78" y="92" fill="#b8f3e9" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" letter-spacing="3">SEO TIMELINES • 2026</text>
-<text x="78" y="165" fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="48" font-weight="700">How Long Does SEO</text>
-<text x="78" y="220" fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="48" font-weight="700">Actually Take?</text>
-<text x="78" y="265" fill="#d7f7f2" font-family="Arial,Helvetica,sans-serif" font-size="22">Google's indicative numbers for crawling, indexing &amp; serving</text>
-<rect x="78" y="325" width="1044" height="150" rx="22" fill="#fff" opacity=".96"/>
-<text x="115" y="375" fill="#0f766e" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="700">NEW URL</text>
-<text x="115" y="418" fill="#173b3e" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="700">~20 hours</text>
-<text x="365" y="375" fill="#0f766e" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="700">UPDATED URL</text>
-<text x="365" y="418" fill="#173b3e" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="700">~30 days</text>
-<text x="650" y="375" fill="#0f766e" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="700">TITLE / SNIPPET</text>
-<text x="650" y="418" fill="#173b3e" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="700">1–2 days*</text>
-<text x="930" y="375" fill="#0f766e" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="700">CORE RECOVERY</text>
-<text x="930" y="418" fill="#173b3e" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="700">3–6 months*</text>
-<text x="78" y="545" fill="#c9f4ee" font-family="Arial,Helvetica,sans-serif" font-size="18">*Indicative figures presented by Gary Illyes — not guarantees.</text>
-<text x="1122" y="545" text-anchor="end" fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700">Hitesh Jaganiya</text>
+<desc id="desc">A clean visual guide to Google's indicative timelines for crawling, indexing and serving SEO changes in 2026.</desc>
+<defs>
+  <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#eff6ff"/><stop offset="1" stop-color="#dbeafe"/></linearGradient>
+  <linearGradient id="green" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ecfdf5"/><stop offset="1" stop-color="#d1fae5"/></linearGradient>
+  <linearGradient id="orange" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff7ed"/><stop offset="1" stop-color="#ffedd5"/></linearGradient>
+</defs>
+<rect width="1200" height="630" fill="#ffffff"/>
+<text x="600" y="48" text-anchor="middle" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700" letter-spacing="3">SEO TIMELINE • GOOGLE INTERNAL DATA • 2026</text>
+<text x="600" y="98" text-anchor="middle" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="42" font-weight="700">How Long Does SEO Actually Take?</text>
+<text x="600" y="132" text-anchor="middle" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="19">Indicative timelines for crawling, indexing and serving changes</text>
+
+<circle cx="225" cy="204" r="42" fill="#dbeafe"/><text x="225" y="216" text-anchor="middle" fill="#2563eb" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="700">1</text>
+<circle cx="600" cy="204" r="42" fill="#d1fae5"/><text x="600" y="216" text-anchor="middle" fill="#059669" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="700">2</text>
+<circle cx="975" cy="204" r="42" fill="#ffedd5"/><text x="975" y="216" text-anchor="middle" fill="#ea580c" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="700">3</text>
+<path d="M275 204 H550 M650 204 H925" stroke="#cbd5e1" stroke-width="3"/><path d="M540 196 l12 8 -12 8 M915 196 l12 8 -12 8" fill="none" stroke="#94a3b8" stroke-width="3"/>
+
+<text x="225" y="278" text-anchor="middle" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="700">Crawling</text>
+<text x="225" y="303" text-anchor="middle" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="15">Google discovers your URL</text>
+<text x="600" y="278" text-anchor="middle" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="700">Indexing</text>
+<text x="600" y="303" text-anchor="middle" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="15">Google processes your page</text>
+<text x="975" y="278" text-anchor="middle" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="700">Serving</text>
+<text x="975" y="303" text-anchor="middle" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="15">Changes appear in Search</text>
+
+<rect x="55" y="335" width="345" height="160" rx="22" fill="url(#blue)" stroke="#bfdbfe"/>
+<text x="82" y="373" fill="#1d4ed8" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700">NEW URL</text>
+<text x="82" y="408" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="29" font-weight="700">~20 hours</text>
+<text x="82" y="441" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="14">Slow case: weeks or never</text>
+<line x1="82" y1="458" x2="373" y2="458" stroke="#bfdbfe"/>
+<text x="82" y="482" fill="#1d4ed8" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">UPDATED URL</text>
+<text x="225" y="482" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700">~30 days</text>
+
+<rect x="428" y="335" width="345" height="160" rx="22" fill="url(#green)" stroke="#a7f3d0"/>
+<text x="455" y="373" fill="#047857" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700">INDEXING</text>
+<text x="455" y="408" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="29" font-weight="700">~1.5 hours</text>
+<text x="455" y="441" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="14">End-to-end, once crawling happens</text>
+<line x1="455" y1="458" x2="746" y2="458" stroke="#a7f3d0"/>
+<text x="455" y="482" fill="#047857" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">RENDERING</text>
+<text x="570" y="482" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700">hours → days</text>
+
+<rect x="801" y="335" width="344" height="160" rx="22" fill="url(#orange)" stroke="#fed7aa"/>
+<text x="828" y="373" fill="#c2410c" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700">TITLE / SNIPPET</text>
+<text x="828" y="408" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="29" font-weight="700">1–2 days*</text>
+<text x="828" y="441" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="14">Slow case: weeks to months</text>
+<line x1="828" y1="458" x2="1118" y2="458" stroke="#fed7aa"/>
+<text x="828" y="482" fill="#c2410c" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">CORE RECOVERY</text>
+<text x="1010" y="482" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700">3–6 months*</text>
+
+<rect x="55" y="525" width="1090" height="62" rx="18" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="600" y="551" text-anchor="middle" fill="#475569" font-family="Arial,Helvetica,sans-serif" font-size="14">*Indicative figures presented by Gary Illyes. They are not guarantees.</text>
+<text x="600" y="572" text-anchor="middle" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="13">Actual timelines vary with content quality, site signals, technical issues and other factors.</text>
 </svg>
