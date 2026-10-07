@@ -51,7 +51,9 @@ const GoogleAnalyticsSearchConsoleWithoutAgency = () => (
         <div className="p-6 bg-secondary/40 rounded-2xl border border-border"><p className="text-sm font-semibold text-foreground mb-3">Related reading</p><div className="grid gap-3 text-base"><Link to="/blog/digital-marketing-packages-in-ahmedabad" className="text-primary font-semibold hover:underline">Digital Marketing Packages in Ahmedabad →</Link><Link to="/blog/google-ads-vs-meta-ads-ahmedabad" className="text-primary font-semibold hover:underline">Google Ads vs Meta Ads for Ahmedabad Businesses →</Link><Link to="/blog/seo-for-real-estate-businesses-in-ahmedabad" className="text-primary font-semibold hover:underline">SEO for Real Estate Businesses in Ahmedabad →</Link><Link to="/blog/top-8-digital-marketing-agencies-in-ahmedabad" className="text-primary font-semibold hover:underline">Top Digital Marketing Agencies in Ahmedabad →</Link></div></div>
         <section><h2 className="text-2xl md:text-3xl font-bold text-foreground mb-5">Frequently Asked Questions</h2><div className="space-y-6">{faqs.map((faq) => <div key={faq.q}><h3 className="text-xl font-semibold text-foreground mb-2">{faq.q}</h3><p>{faq.a}</p></div>)}</div></section>
       </div>
-      <div className="mt-12"><AuthorCard /></div><div className="mt-10 flex justify-center"><Button asChild variant="hero" size="lg"><Link to="/">Work With Hitesh <ArrowRight className="ml-2 w-4 h-4" /></Link></Button></div>
+      <div className="mt-12"><p className="mt-10 text-base text-muted-foreground">For businesses looking to turn these ideas into a practical growth plan, I work as a <Link to="/" className="text-primary font-semibold hover:underline">Digital Marketing Consultant in Ahmedabad</Link>.</p>
+
+<AuthorCard /></div><div className="mt-10 flex justify-center"><Button asChild variant="hero" size="lg"><Link to="/">Work With Hitesh <ArrowRight className="ml-2 w-4 h-4" /></Link></Button></div>
     </div><BlogSidebar currentSlug={post.slug} /></div></div></article></main><Footer />
   </div>
 );
