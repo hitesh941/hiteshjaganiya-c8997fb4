@@ -256,6 +256,8 @@ const GoogleAdsVsMetaAdsAhmedabad = () => (
                 </section>
               </div>
 
+<p className="mt-10 text-base text-muted-foreground">For businesses looking to turn these ideas into a practical growth plan, I work as a <Link to="/" className="text-primary font-semibold hover:underline">Digital Marketing Consultant in Ahmedabad</Link>.</p>
+
               <AuthorCard />
 
               <div className="mt-12 p-8 bg-secondary/40 rounded-2xl border border-border text-center">
