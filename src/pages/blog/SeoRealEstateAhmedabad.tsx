@@ -57,7 +57,9 @@ const SeoRealEstateAhmedabad = () => (
         <div className="p-6 bg-secondary/40 rounded-2xl border border-border"><p className="text-sm font-semibold text-foreground mb-2">Related reading</p><p className="text-base">If you're comparing agencies, start with <Link to="/blog/top-8-digital-marketing-agencies-in-ahmedabad" className="text-primary font-semibold hover:underline">the guide to digital marketing agencies in Ahmedabad</Link>. If you're planning paid acquisition alongside SEO, read <Link to="/blog/google-ads-vs-meta-ads-ahmedabad" className="text-primary font-semibold hover:underline">Google Ads vs Meta Ads for Ahmedabad businesses</Link> and <Link to="/blog/digital-marketing-packages-in-ahmedabad" className="text-primary font-semibold hover:underline">the guide to digital marketing packages and pricing</Link>.</p></div>
         <section><h2 className="text-2xl md:text-3xl font-bold text-foreground mb-5">Frequently Asked Questions</h2><div className="space-y-6">{faqs.map((faq) => <div key={faq.q}><h3 className="text-xl font-semibold text-foreground mb-2">{faq.q}</h3><p>{faq.a}</p></div>)}</div></section>
       </div>
-      <div className="mt-12"><AuthorCard /></div>
+      <div className="mt-12"><p className="mt-10 text-base text-muted-foreground">For businesses looking to turn these ideas into a practical growth plan, I work as a <Link to="/" className="text-primary font-semibold hover:underline">Digital Marketing Consultant in Ahmedabad</Link>.</p>
+
+<AuthorCard /></div>
     </div><aside><BlogSidebar currentSlug={post.slug} /></aside></div></div></article></main>
     <Footer />
   </div>
