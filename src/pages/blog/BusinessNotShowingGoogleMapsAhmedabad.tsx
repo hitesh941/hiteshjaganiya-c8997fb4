@@ -128,6 +128,7 @@ const BusinessNotShowingGoogleMapsAhmedabad = () => {
                     <p>
                       This is one of the most common frustrations I hear from small business owners in Ahmedabad — they know their business is on Google Business Profile, they search for their own shop name or category, and either nothing shows up, a competitor three streets away shows up first, or worse, a completely different business appears in their spot. It feels random, but it almost never is. There&apos;s usually a specific, identifiable reason.
                     </p>
+                    <p>If you’re looking for a practical partner to turn this into a measurable growth plan, I also work as a <Link to="/" className="text-primary font-semibold hover:underline">Digital Marketing Consultant in Ahmedabad</Link>.</p>
                     <p>
                       I&apos;m Hitesh Jaganiya, a digital marketing consultant with 11 years of experience, certified in Google Ads and Google Analytics. Local visibility issues like this come up constantly in my work, and most of the time the fix is more straightforward than people expect — it just requires knowing where to actually look. Here&apos;s how I&apos;d work through this problem systematically.
                     </p>
