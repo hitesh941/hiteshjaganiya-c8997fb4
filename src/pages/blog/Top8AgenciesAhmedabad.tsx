@@ -115,7 +115,9 @@ const Top8AgenciesAhmedabad = () => {
                 <div className="mt-12 p-6 bg-secondary/40 rounded-2xl border border-border"><p className="text-sm font-semibold text-foreground mb-2">Related reading</p><p className="text-muted-foreground">Comparing agencies is only half the decision. Read the guide to <Link to="/blog/digital-marketing-packages-in-ahmedabad" className="text-primary font-semibold hover:underline">digital marketing package pricing in Ahmedabad</Link> before you request quotes.</p></div>
                 <h2 className="text-2xl md:text-3xl font-bold text-foreground mt-16 mb-6">Frequently asked questions</h2>
                 <div className="space-y-6">{faqs.map((faq) => <div key={faq.q} className="p-6 bg-card rounded-xl border border-border"><h3 className="text-lg font-semibold text-foreground mb-2">{faq.q}</h3><p className="text-muted-foreground">{faq.a}</p></div>)}</div>
-                <AuthorCard />
+                <p className="mt-10 text-base text-muted-foreground">For businesses looking to turn these ideas into a practical growth plan, I work as a <Link to="/" className="text-primary font-semibold hover:underline">Digital Marketing Consultant in Ahmedabad</Link>.</p>
+
+<AuthorCard />
                 <div className="mt-12 p-8 bg-secondary/40 rounded-2xl border border-border text-center"><h2 className="text-2xl font-bold text-foreground mb-3">Still not sure who to hire?</h2><p className="text-muted-foreground mb-6">Tell me where your business is right now and I'll tell you honestly whether you need an agency, a consultant, or just a better foundation.</p><div className="flex flex-wrap justify-center gap-4"><Button asChild size="lg"><Link to="/#contact">Let's talk <ArrowRight className="w-4 h-4 ml-1" /></Link></Button><Button asChild size="lg" variant="outline"><Link to="/blog">Read more articles</Link></Button></div></div>
               </div>
               <BlogSidebar />
