@@ -107,6 +107,7 @@ const GoogleAdsCpcHigh = () => {
 
                   <section>
                     <p>High CPC is usually treated as a bidding problem, and that's why many attempts to fix it don't work. Someone lowers the max bid, impressions collapse, and they end up with a slightly cheaper click that is no longer reaching the people worth reaching.</p>
+                    <p>If you’re looking for a practical partner to turn this into a measurable growth plan, I also work as a <Link to="/" className="text-primary font-semibold hover:underline">Digital Marketing Consultant in Ahmedabad</Link>.</p>
                     <p>Cost per click is an output, not a single setting. It's what falls out of the auction after Google evaluates your bid alongside ad quality, competition, context and other factors. So the fix often sits somewhere other than the bid field.</p>
                     <p>I'm Hitesh Jaganiya, a digital marketing consultant certified in Google Ads and Google Analytics. Here are the eight causes I check when an account has a CPC problem, roughly in the order I would investigate them.</p>
                   </section>
