@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FolderOpen, Clock, Send, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -11,6 +11,46 @@ const BlogSidebar = ({ currentSlug }: { currentSlug?: string }) => {
   const { pathname } = useLocation();
   const { toast } = useToast();
   const [form, setForm] = useState({ name: "", email: "", message: "" });
+
+  useEffect(() => {
+    const article = document.querySelector("main article");
+    if (!article || article.querySelector('a[data-consultant-link="true"]')) return;
+
+    const walker = document.createTreeWalker(article, NodeFilter.SHOW_TEXT);
+    const nodes: Text[] = [];
+    let node: Node | null;
+
+    while ((node = walker.nextNode())) {
+      if (node.parentElement?.closest("a, script, style")) continue;
+      if (/digital marketing consultant/i.test(node.textContent || "")) {
+        nodes.push(node as Text);
+      }
+    }
+
+    const target = nodes[0];
+    if (!target || !target.textContent) return;
+
+    const text = target.textContent;
+    const match = text.match(/digital marketing consultant/i);
+    if (!match || match.index === undefined) return;
+
+    const before = text.slice(0, match.index);
+    const phrase = match[0];
+    const after = text.slice(match.index + phrase.length);
+
+    const fragment = document.createDocumentFragment();
+    if (before) fragment.appendChild(document.createTextNode(before));
+
+    const link = document.createElement("a");
+    link.href = "/";
+    link.textContent = phrase;
+    link.setAttribute("data-consultant-link", "true");
+    link.className = "text-primary font-semibold hover:underline";
+    fragment.appendChild(link);
+
+    if (after) fragment.appendChild(document.createTextNode(after));
+    target.parentNode?.replaceChild(fragment, target);
+  }, [pathname]);
 
   const categories = Array.from(
     blogPosts.reduce((map, post) => {
