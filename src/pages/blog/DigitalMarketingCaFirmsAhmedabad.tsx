@@ -134,6 +134,7 @@ const DigitalMarketingCaFirmsAhmedabad = () => {
                 <div className="max-w-4xl space-y-10 text-[17px] md:text-[18px] text-muted-foreground leading-[1.8]">
                   <section>
                     <p>Most articles on this topic are written by agencies who've never read the Code of Ethics. They'll tell a CA firm to collect Google reviews, publish client case studies, and run ads calling themselves the leading tax advisors in Ahmedabad — all of which range from questionable to flatly prohibited.</p>
+                    <p>If you’re looking for a practical partner to turn this into a measurable growth plan, I also work as a <Link to="/" className="text-primary font-semibold hover:underline">Digital Marketing Consultant in Ahmedabad</Link>.</p>
                     <p>That matters here more than in any other industry I work with. For a restaurant, bad marketing advice costs money. For a chartered accountant, it puts an ICAI membership at risk.</p>
                     <p>I'm Hitesh Jaganiya, a digital marketing consultant with 11 years of experience, certified in Google Ads and Google Analytics. This is a guide to what actually works for CA firms in Ahmedabad, written to sit inside the rules rather than around them.</p>
                   </section>
