@@ -86,22 +86,6 @@ const BlogSidebar = ({ currentSlug }: { currentSlug?: string }) => {
         </ul>
       </div>
 
-      <div className="bg-primary/5 rounded-2xl border border-primary/15 p-6 shadow-soft">
-        <h3 className="text-lg font-bold text-foreground mb-3">
-          Digital Marketing Consultant in Ahmedabad
-        </h3>
-        <p className="text-sm text-muted-foreground leading-relaxed mb-4">
-          Need help with SEO, Google Ads, or a complete digital marketing strategy? Learn more about my digital marketing consulting services in Ahmedabad.
-        </p>
-        <Link
-          to="/"
-          className="inline-flex items-center gap-2 text-sm font-bold text-primary hover:underline"
-          aria-label="Visit Hitesh Jaganiya homepage"
-        >
-          Visit My Homepage <ArrowRight className="w-4 h-4" />
-        </Link>
-      </div>
-
       <div className="bg-card rounded-2xl border border-border p-6 shadow-soft">
         <h3 className="flex items-center gap-2 text-lg font-bold text-foreground mb-2">
           <Send className="w-5 h-5 text-primary" /> Get in Touch
