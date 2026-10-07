@@ -102,6 +102,7 @@ const CanAiContentRankOnGoogle = () => {
 
                   <section>
                     <p>I get asked this question almost every week now, usually by a founder who&apos;s just tried an AI writing tool for the first time and either got excited about how fast it worked, or nervous that Google might quietly punish them for using it. Both reactions are understandable. Neither is quite right.</p>
+                    <p>If you’re looking for a practical partner to turn this into a measurable growth plan, I also work as a <Link to="/" className="text-primary font-semibold hover:underline">Digital Marketing Consultant in Ahmedabad</Link>.</p>
                     <p><strong className="text-foreground">Yes, AI content can rank on Google in 2026</strong> — but that answer needs more nuance than a yes or no. &quot;AI content&quot; covers everything from a lazy, unedited first draft dumped straight onto a page, to a carefully researched, fact-checked, expert-reviewed article that happened to start as an AI draft. Those two things can perform very differently in search.</p>
                     <p>I&apos;m Hitesh Jaganiya, a digital marketing consultant with 11 years of experience, certified in Google Ads and Google Analytics. I want to walk through what&apos;s actually true here, based on real data and how Google has publicly explained its own position — not the extreme takes you&apos;ll see on either side of this debate.</p>
                   </section>
