@@ -104,6 +104,7 @@ const GoogleAdsOptimizationMoves = () => {
 
                   <section>
                     <p>I've audited more Google Ads accounts than I can count over the last 11 years, and a pattern shows up almost every single time: the account isn't broken, it's just half-managed. Campaigns are live, budgets are being spent, and something is technically “working” — but nobody's actually gone in and done the specific, unglamorous optimization work that separates a genuinely well-run account from one that's just switched on and left alone.</p>
+                    <p>If you’re looking for a practical partner to turn this into a measurable growth plan, I also work as a <Link to="/" className="text-primary font-semibold hover:underline">Digital Marketing Consultant in Ahmedabad</Link>.</p>
                     <p>I'm Hitesh Jaganiya, a digital marketing consultant certified in Google Ads and Google Analytics, and this isn't a list of beginner tips you've already read a hundred times. These are the specific moves I actually look for when I open an account — the ones that quietly separate accounts run by a genuine Google Ads expert from ones that are just being kept alive.</p>
                   </section>
 
