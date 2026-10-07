@@ -97,6 +97,7 @@ const FirstYearStartupMarketingBudget = () => {
 
                   <section>
                     <p>Ask ten founders how much they've budgeted for marketing in year one, and you'll get ten completely different answers — some based on what a friend spent, some based on whatever's left over after everything else, and a few based on a percentage they read in a random article years ago. Almost none of them arrived at that number by actually thinking through what their business needs.</p>
+                    <p>If you’re looking for a practical partner to turn this into a measurable growth plan, I also work as a <Link to="/" className="text-primary font-semibold hover:underline">Digital Marketing Consultant in Ahmedabad</Link>.</p>
                     <p>I'm Hitesh Jaganiya. I've spent 11 years working in digital marketing, mostly with founders in Ahmedabad trying to figure out exactly this question, and I'm certified in Google Ads and Google Analytics, with regular hands-on work using HubSpot and SEMrush. I want to walk through how I'd actually think about this budget question — not a generic percentage rule, but the real factors that should shape the number.</p>
                   </section>
 
