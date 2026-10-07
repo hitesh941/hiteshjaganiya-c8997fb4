@@ -216,6 +216,8 @@ const HowLongDoesSeoTake = () => {
                   </section>
                 </div>
 
+<p className="mt-10 text-base text-muted-foreground">For businesses looking to turn these ideas into a practical growth plan, I work as a <Link to="/" className="text-primary font-semibold hover:underline">Digital Marketing Consultant in Ahmedabad</Link>.</p>
+
                 <div className="mt-14"><AuthorCard /></div>
               </div>
               <BlogSidebar />
