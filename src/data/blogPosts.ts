@@ -16,6 +16,20 @@ export interface BlogPostMeta {
 
 export const blogPosts: BlogPostMeta[] = [
   {
+    slug: "local-seo-checklist-ahmedabad",
+    title: "Local SEO Checklist for Ahmedabad Businesses",
+    description: "Use this practical local SEO checklist for Ahmedabad businesses to improve Google Business Profile, reviews, NAP consistency, website, local content and links.",
+    excerpt: "A step-by-step local SEO checklist for Ahmedabad businesses, covering Google Business Profile, reviews, NAP consistency, website basics, local content, local links and ongoing maintenance. Includes a free downloadable PDF checklist.",
+    cover: "/local-seo-checklist-ahmedabad.svg",
+    coverAlt: "Local SEO Checklist for Ahmedabad Businesses — Google Business Profile, reviews, website and local search",
+    datePublished: "2026-10-09",
+    dateModified: "2026-10-09",
+    readingTime: "10 min read",
+    category: "Local SEO",
+    keywords: ["local SEO checklist Ahmedabad", "local SEO Ahmedabad", "Google Business Profile Ahmedabad", "local search optimization", "Ahmedabad business SEO", "Google Maps SEO Ahmedabad", "local SEO tips"],
+  },
+
+  {
     slug: "digital-marketing-for-ca-firms-ahmedabad",
     title: "Digital Marketing for CA Firms in Ahmedabad: What ICAI Actually Allows",
     description: "A practical guide to digital marketing for CA firms in Ahmedabad under ICAI's 13th Edition Code of Ethics — what's permitted, what isn't, and what works.",
