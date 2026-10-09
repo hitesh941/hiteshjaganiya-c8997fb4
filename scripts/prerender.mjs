@@ -117,6 +117,12 @@ const seoOverrides = {
     h1: "Google Ads Quality Score: How to Improve It",
     alt: "Google Ads Quality Score explained with Expected CTR, Ad Relevance and Landing Page Experience",
   },
+  "/blog/local-seo-checklist-ahmedabad": {
+    title: "Local SEO Checklist for Ahmedabad Businesses",
+    description: "Use this practical local SEO checklist for Ahmedabad businesses to improve Google Business Profile, reviews, NAP consistency, website, local content and links.",
+    h1: "Local SEO Checklist for Ahmedabad Businesses",
+    alt: "Local SEO Checklist for Ahmedabad Businesses — Google Business Profile, reviews, website and local search",
+  },
   "/blog/how-long-does-seo-take": {
     title: "How Long Does SEO Take? Google SEO Timeline",
     description: "Google shared internal data on how long crawling, indexing and ranking changes take. Here's what those numbers mean for a business owner waiting on SEO results.",
@@ -166,7 +172,7 @@ function addImageDimensions(page) {
     const src = (attrs.match(/\bsrc=["']([^"']+)["']/i) || [])[1] || "";
     const className = (attrs.match(/\bclass=["']([^"']+)["']/i) || [])[1] || "";
     let dimensions = null;
-    if (/blog-top-8|digital-marketing-packages|google-ads-vs-meta-ads|seo-real-estate|google-analytics-search-console|smart-objectives-competitive-benchmarking|first-year-startup-marketing-budget|google-ads-optimization-moves-experts|google-ads-optimization-workflow|business-not-showing-google-maps-ahmedabad|business-not-showing-google-maps-workflow|ai-content-google-rankings-chart|competitive-benchmarking-beginners-guide|competitive-benchmarking-framework|competitive-benchmarking-scorecard|seo-strategy-2027-cover|google-ads-high-cpc-cover|google-ads-cpc-diagnosis|digital-marketing-ca-firms-ahmedabad|ca-firm-digital-marketing-pull-vs-push|how-long-does-seo-take/i.test(src)) {
+    if (/blog-top-8|digital-marketing-packages|google-ads-vs-meta-ads|seo-real-estate|google-analytics-search-console|smart-objectives-competitive-benchmarking|first-year-startup-marketing-budget|google-ads-optimization-moves-experts|google-ads-optimization-workflow|business-not-showing-google-maps-ahmedabad|business-not-showing-google-maps-workflow|ai-content-google-rankings-chart|competitive-benchmarking-beginners-guide|competitive-benchmarking-framework|competitive-benchmarking-scorecard|seo-strategy-2027-cover|google-ads-high-cpc-cover|google-ads-cpc-diagnosis|digital-marketing-ca-firms-ahmedabad|ca-firm-digital-marketing-pull-vs-push|how-long-does-seo-take|local-seo-checklist-ahmedabad/i.test(src)) {
       dimensions = /google-ads-optimization-workflow|business-not-showing-google-maps-workflow|google-ads-cpc-diagnosis|ca-firm-digital-marketing-pull-vs-push/i.test(src) ? [1200, 675] : /ai-content-google-rankings-chart/i.test(src) ? [1600, 900] : [1200, 630];
     } else if (/hitesh-new-profile/i.test(src) && /rounded-full/i.test(className)) {
       dimensions = [96, 96];
