@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { ArrowLeft, CalendarDays, Clock, Download, User, CheckCircle2 } from "lucide-react";
@@ -74,6 +75,39 @@ const checklistSections = [
 ];
 
 const LocalSeoChecklistAhmedabad = () => {
+  const [formOpen, setFormOpen] = useState(false);
+  const [leadName, setLeadName] = useState("");
+  const [leadPhone, setLeadPhone] = useState("");
+  const [leadEmail, setLeadEmail] = useState("");
+  const [leadSubmitting, setLeadSubmitting] = useState(false);
+  const [leadError, setLeadError] = useState("");
+  const [leadSuccess, setLeadSuccess] = useState(false);
+
+  const submitLead = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setLeadError("");
+    setLeadSubmitting(true);
+    try {
+      const response = await fetch("/api/local-seo-checklist-lead", {
+        method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name: leadName.trim(), phone: leadPhone.trim(), email: leadEmail.trim() }),
+      });
+      const result = await response.json();
+      if (!response.ok) throw new Error(result?.error || "We couldn’t submit your details. Please try again.");
+      setLeadSuccess(true);
+      const link = document.createElement("a");
+      link.href = pdfUrl;
+      link.download = "Local-SEO-Checklist-Ahmedabad-Hitesh-Jaganiya.pdf";
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      setFormOpen(false);
+    } catch (error) {
+      setLeadError(error instanceof Error ? error.message : "Something went wrong. Please try again.");
+    } finally {
+      setLeadSubmitting(false);
+    }
+  };
   const schema = {
     "@context": "https://schema.org", "@type": "BlogPosting", "@id": `${postUrl}#article`,
     headline: post.title, description, image: [coverUrl], url: postUrl,
@@ -137,8 +171,23 @@ const LocalSeoChecklistAhmedabad = () => {
             </header>
 
             <div className="mb-10 rounded-3xl border border-primary/20 bg-primary/5 p-6 md:p-8">
-              <div className="flex items-start gap-4"><div className="rounded-xl bg-primary/10 p-3 text-primary"><Download className="w-6 h-6" /></div><div className="flex-1"><h2 className="text-xl md:text-2xl font-bold text-foreground mb-2">Download the Free PDF Checklist</h2><p className="text-muted-foreground leading-relaxed mb-4">Keep the checklist handy and tick off each task as you complete it. The downloadable PDF is a concise, three-page version of this guide.</p><a href={pdfUrl} download="Local-SEO-Checklist-Ahmedabad-Hitesh-Jaganiya.pdf" className="inline-flex items-center gap-2 rounded-xl bg-primary px-5 py-3 font-semibold text-primary-foreground hover:opacity-90 transition-opacity"><Download className="w-4 h-4" /> Download PDF checklist</a></div></div>
+              <div className="flex items-start gap-4"><div className="rounded-xl bg-primary/10 p-3 text-primary"><Download className="w-6 h-6" /></div><div className="flex-1"><h2 className="text-xl md:text-2xl font-bold text-foreground mb-2">Download the Free PDF Checklist</h2><p className="text-muted-foreground leading-relaxed mb-4">Keep the checklist handy and tick off each task as you complete it. Enter your details to get the printable PDF.</p><button type="button" onClick={() => { setLeadError(""); setFormOpen(true); }} className="inline-flex items-center gap-2 rounded-xl bg-primary px-5 py-3 font-semibold text-primary-foreground hover:opacity-90 transition-opacity"><Download className="w-4 h-4" /> Download PDF checklist</button>{leadSuccess && <p className="mt-3 text-sm text-green-700">Your details were submitted successfully. Your download should have started.</p>}{leadError && !formOpen && <p role="alert" className="mt-3 text-sm text-red-600">{leadError}</p>}</div></div>
             </div>
+
+            {formOpen && <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 p-4" role="dialog" aria-modal="true" aria-labelledby="lead-form-title">
+              <div className="relative w-full max-w-md rounded-2xl bg-background p-6 shadow-2xl md:p-8">
+                <button type="button" onClick={() => setFormOpen(false)} aria-label="Close form" className="absolute right-4 top-4 rounded-md p-2 text-muted-foreground hover:bg-muted">✕</button>
+                <div className="mb-5"><div className="mb-3 inline-flex rounded-xl bg-primary/10 p-3 text-primary"><Download className="h-6 w-6" /></div><h2 id="lead-form-title" className="text-2xl font-bold text-foreground">Get Your Free Checklist</h2><p className="mt-2 text-sm leading-relaxed text-muted-foreground">Share your details and we’ll unlock your Local SEO Checklist PDF.</p></div>
+                <form onSubmit={submitLead} className="space-y-4">
+                  <div><label htmlFor="lead-name" className="mb-1.5 block text-sm font-medium text-foreground">Full name</label><input id="lead-name" name="name" autoComplete="name" required minLength={2} maxLength={100} value={leadName} onChange={e => setLeadName(e.target.value)} placeholder="Enter your full name" className="w-full rounded-lg border border-input bg-background px-3 py-3 text-foreground outline-none focus:ring-2 focus:ring-primary" /></div>
+                  <div><label htmlFor="lead-phone" className="mb-1.5 block text-sm font-medium text-foreground">Phone number</label><input id="lead-phone" name="phone" type="tel" autoComplete="tel" required minLength={10} maxLength={18} pattern="[+0-9 ()-]{10,18}" value={leadPhone} onChange={e => setLeadPhone(e.target.value)} placeholder="Enter your phone number" className="w-full rounded-lg border border-input bg-background px-3 py-3 text-foreground outline-none focus:ring-2 focus:ring-primary" /></div>
+                  <div><label htmlFor="lead-email" className="mb-1.5 block text-sm font-medium text-foreground">Email address</label><input id="lead-email" name="email" type="email" autoComplete="email" required maxLength={254} value={leadEmail} onChange={e => setLeadEmail(e.target.value)} placeholder="you@example.com" className="w-full rounded-lg border border-input bg-background px-3 py-3 text-foreground outline-none focus:ring-2 focus:ring-primary" /></div>
+                  {leadError && <p role="alert" className="text-sm text-red-600">{leadError}</p>}
+                  <button type="submit" disabled={leadSubmitting} className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-primary px-5 py-3 font-semibold text-primary-foreground disabled:cursor-not-allowed disabled:opacity-60">{leadSubmitting ? "Submitting..." : "Submit & Download PDF"} <Download className="h-4 w-4" /></button>
+                  <p className="text-xs leading-relaxed text-muted-foreground">Your details will be sent to Hitesh Jaganiya to respond to your checklist request. Please review the website privacy policy before submitting.</p>
+                </form>
+              </div>
+            </div>}
 
             <div className="max-w-4xl space-y-10 text-[17px] md:text-[18px] text-muted-foreground leading-[1.8]">
               <section><p>Local SEO has an unusual property: most of the work is unglamorous, none of it is secret, and the businesses that do it properly are a small minority. That gap is the opportunity. You are not competing against perfect execution — you are competing against businesses that set up a Google Business Profile years ago and never looked at it again.</p>
