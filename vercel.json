@@ -93,6 +93,10 @@
       "dest": "/blog/how-long-does-seo-take/index.html"
     },
     {
+      "src": "^/blog/local-seo-checklist-ahmedabad/?$",
+      "dest": "/blog/local-seo-checklist-ahmedabad/index.html"
+    },
+    {
       "src": "^/blog/?$",
       "dest": "/blog/index.html"
     },
