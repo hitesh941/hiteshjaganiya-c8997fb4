@@ -28,6 +28,7 @@ const routes = [
   "/blog/chatgpt-ads-india-spend-money",
   "/blog/google-ads-quality-score-explained",
   "/blog/digital-marketing-for-ca-firms-ahmedabad",
+  "/blog/track-whatsapp-enquiries-ga4",
 ];
 
 const seoOverrides = {
@@ -116,6 +117,12 @@ const seoOverrides = {
     description: "Google Ads Quality Score explained in plain English: what the 1–10 score means, the three components behind it, what improves it, and what does not.",
     h1: "Google Ads Quality Score: How to Improve It",
     alt: "Google Ads Quality Score explained with Expected CTR, Ad Relevance and Landing Page Experience",
+  },
+  "/blog/track-whatsapp-enquiries-ga4": {
+    title: "Track WhatsApp Enquiries in GA4: Step-by-Step Guide",
+    description: "Learn how to track WhatsApp link clicks in GA4 with and without Google Tag Manager, mark them as key events, import them into Google Ads, and understand what clicks cannot prove.",
+    h1: "How to Track WhatsApp Enquiries as Conversions in GA4",
+    alt: "How to Track WhatsApp Enquiries as Conversions in GA4 — website click, GA4 key event and campaign insights",
   },
   "/blog/local-seo-checklist-ahmedabad": {
     title: "Local SEO Checklist for Ahmedabad Businesses",
