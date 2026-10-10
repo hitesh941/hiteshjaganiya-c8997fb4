@@ -21,6 +21,7 @@ import GoogleAdsQualityScore from "./pages/blog/GoogleAdsQualityScore";
 import DigitalMarketingCaFirmsAhmedabad from "./pages/blog/DigitalMarketingCaFirmsAhmedabad";
 import HowLongDoesSeoTake from "./pages/blog/HowLongDoesSeoTake";
 import LocalSeoChecklistAhmedabad from "./pages/blog/LocalSeoChecklistAhmedabad";
+import TrackWhatsappEnquiriesGa4 from "./pages/blog/TrackWhatsappEnquiriesGa4";
 import ThankYou from "./pages/ThankYou";
 import DigitalCard from "./pages/DigitalCard";
 import Blog from "./pages/Blog";
@@ -48,6 +49,7 @@ const routes: Record<string, React.ComponentType> = {
   "/blog/digital-marketing-for-ca-firms-ahmedabad": DigitalMarketingCaFirmsAhmedabad,
   "/blog/how-long-does-seo-take": HowLongDoesSeoTake,
   "/blog/local-seo-checklist-ahmedabad": LocalSeoChecklistAhmedabad,
+  "/blog/track-whatsapp-enquiries-ga4": TrackWhatsappEnquiriesGa4,
 };
 
 export function render(url: string) {
