@@ -16,6 +16,19 @@ export interface BlogPostMeta {
 
 export const blogPosts: BlogPostMeta[] = [
   {
+    slug: "track-whatsapp-enquiries-ga4",
+    title: "How to Track WhatsApp Enquiries as Conversions in GA4",
+    description: "Learn how to track WhatsApp link clicks in GA4 with and without Google Tag Manager, mark them as key events, import them into Google Ads, and understand what clicks cannot prove.",
+    excerpt: "A practical, step-by-step guide to tracking WhatsApp button clicks as key events in Google Analytics 4, with and without Tag Manager — plus the measurement limitation most reports miss.",
+    cover: "/track-whatsapp-enquiries-ga4.svg",
+    coverAlt: "How to Track WhatsApp Enquiries as Conversions in GA4 — website click, GA4 key event and campaign insights",
+    datePublished: "2026-10-10",
+    dateModified: "2026-10-10",
+    readingTime: "9 min read",
+    category: "Analytics & Conversion Tracking",
+    keywords: ["track WhatsApp enquiries in GA4", "WhatsApp click tracking GA4", "GA4 WhatsApp conversion tracking", "whatsapp_click event", "Google Analytics WhatsApp button", "track WhatsApp clicks without Google Tag Manager", "Google Tag Manager WhatsApp tracking", "WhatsApp key event Google Analytics 4"],
+  },
+  {
     slug: "local-seo-checklist-ahmedabad",
     title: "Local SEO Checklist for Ahmedabad Businesses",
     description: "Use this practical local SEO checklist for Ahmedabad businesses to improve Google Business Profile, reviews, NAP consistency, website, local content and links.",
