@@ -116,7 +116,7 @@ const TrackWhatsappEnquiriesGa4 = () => (
                 </figure>
               </header>
 
-              <div className="max-w-4xl space-y-10 text-[17px] md:text-[18px] text-muted-foreground leading-[1.8]">
+              <div className="blog-article-content max-w-4xl text-[17px] md:text-[18px] text-muted-foreground leading-[1.8]">
                 <section aria-label="Introduction">
                   <p>For many Indian businesses, WhatsApp isn't a secondary channel — it's the main one. The website exists to get someone to tap the green button, and everything after that happens in a chat window.</p>
                   <p>That creates a measurement problem. Enquiries leave the website before they become conversations, so Analytics can show traffic without showing which pages and campaigns encourage people to contact you.</p>
