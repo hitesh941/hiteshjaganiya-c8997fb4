@@ -97,6 +97,10 @@
       "dest": "/blog/local-seo-checklist-ahmedabad/index.html"
     },
     {
+      "src": "^/blog/track-whatsapp-enquiries-ga4/?$",
+      "dest": "/blog/track-whatsapp-enquiries-ga4/index.html"
+    },
+    {
       "src": "^/blog/?$",
       "dest": "/blog/index.html"
     },
