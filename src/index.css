@@ -55,3 +55,74 @@
 .animation-delay-400 { animation-delay: 400ms; }
 .animation-delay-500 { animation-delay: 500ms; }
 .animation-delay-600 { animation-delay: 600ms; }
+
+/* Editorial rhythm for long-form blog articles: separate paragraphs, headings and lists. */
+.blog-article-content > section {
+  margin-bottom: 3.25rem;
+}
+.blog-article-content > section:last-child {
+  margin-bottom: 0;
+}
+.blog-article-content p {
+  margin-top: 0;
+  margin-bottom: 1.15rem;
+}
+.blog-article-content p:last-child {
+  margin-bottom: 0;
+}
+.blog-article-content h2 {
+  margin-top: 2.75rem;
+  margin-bottom: 1rem;
+  line-height: 1.25;
+  text-wrap: balance;
+}
+.blog-article-content h3 {
+  margin-top: 1.8rem;
+  margin-bottom: 0.7rem;
+  line-height: 1.35;
+  text-wrap: balance;
+}
+.blog-article-content h2:first-child,
+.blog-article-content h3:first-child {
+  margin-top: 0;
+}
+.blog-article-content ul,
+.blog-article-content ol {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+.blog-article-content li {
+  padding-left: 0.2rem;
+  margin-bottom: 0.55rem;
+}
+.blog-article-content li:last-child {
+  margin-bottom: 0;
+}
+.blog-article-content figure {
+  margin-top: 3rem;
+  margin-bottom: 3.25rem;
+}
+.blog-article-content figcaption {
+  border-top: 1px solid hsl(var(--border));
+}
+.blog-article-content strong {
+  font-weight: 700;
+}
+@media (max-width: 767px) {
+  .blog-article-content > section {
+    margin-bottom: 2.5rem;
+  }
+  .blog-article-content h2 {
+    margin-top: 2.2rem;
+    font-size: 1.65rem;
+  }
+  .blog-article-content h3 {
+    margin-top: 1.45rem;
+    font-size: 1.25rem;
+  }
+  .blog-article-content figure {
+    margin-top: 2.25rem;
+    margin-bottom: 2.5rem;
+  }
+}
