@@ -10,7 +10,7 @@ import { getPostBySlug, SITE_URL } from "@/data/blogPosts";
 
 const post = getPostBySlug("track-whatsapp-enquiries-ga4")!;
 const postUrl = `${SITE_URL}/blog/${post.slug}`;
-const coverUrl = `${SITE_URL}${post.cover}";
+const coverUrl = `${SITE_URL}${post.cover}`;
 const description = post.description;
 
 const faqItems = [
@@ -117,7 +117,7 @@ const TrackWhatsappEnquiriesGa4 = () => (
               </header>
 
               <div className="max-w-4xl space-y-10 text-[17px] md:text-[18px] text-muted-foreground leading-[1.8]">
-                <section aria-labelledby="intro">
+                <section aria-label="Introduction">
                   <p>For many Indian businesses, WhatsApp isn't a secondary channel — it's the main one. The website exists to get someone to tap the green button, and everything after that happens in a chat window.</p>
                   <p>That creates a measurement problem. Enquiries leave the website before they become conversations, so Analytics can show traffic without showing which pages and campaigns encourage people to contact you.</p>
                   <p>I'm Hitesh Jaganiya, a digital marketing consultant certified in Google Ads and Google Analytics. This guide explains how to track WhatsApp clicks in GA4 and, just as importantly, what the numbers can and cannot tell you. If you need broader help with measurement and campaign strategy, I also work as a <Link to="/" className="text-primary font-semibold hover:underline">Digital Marketing Consultant in Ahmedabad</Link>.</p>
