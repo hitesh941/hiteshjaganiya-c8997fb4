@@ -27,6 +27,7 @@ import DigitalMarketingCaFirmsAhmedabad from "./pages/blog/DigitalMarketingCaFir
 import HowLongDoesSeoTake from "./pages/blog/HowLongDoesSeoTake";
 import LocalSeoChecklistAhmedabad from "./pages/blog/LocalSeoChecklistAhmedabad";
 import TrackWhatsappEnquiriesGa4 from "./pages/blog/TrackWhatsappEnquiriesGa4";
+import HowToIncreaseGoogleReviews from "./pages/blog/HowToIncreaseGoogleReviews";
 import NotFound from "./pages/NotFound";
 
 const SITE_URL = "https://www.hiteshjaganiya.com";
@@ -105,6 +106,7 @@ const App = () => (
           <Route path="/blog/how-long-does-seo-take" element={<HowLongDoesSeoTake />} />
           <Route path="/blog/local-seo-checklist-ahmedabad" element={<LocalSeoChecklistAhmedabad />} />
           <Route path="/blog/track-whatsapp-enquiries-ga4" element={<TrackWhatsappEnquiriesGa4 />} />
+          <Route path="/blog/how-to-increase-google-reviews" element={<HowToIncreaseGoogleReviews />} />
           <Route path="/blog/chatgpt-ads-india-spend-money" element={<ChatgptAdsIndia />} />
           <Route path="/blog/google-ads-quality-score-explained" element={<GoogleAdsQualityScore />} />
           <Route path="*" element={<NotFound />} />
