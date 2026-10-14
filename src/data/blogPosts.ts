@@ -16,6 +16,19 @@ export interface BlogPostMeta {
 
 export const blogPosts: BlogPostMeta[] = [
   {
+    slug: "how-to-increase-google-reviews",
+    title: "How to Increase Google Reviews (Without Breaking Google's Rules)",
+    description: "Learn how to increase Google reviews for an Indian business with WhatsApp, QR codes and a consistent process—without incentives, fake reviews or review gating.",
+    excerpt: "A practical guide for Indian businesses to earn more genuine Google reviews through WhatsApp, QR codes and simple customer routines, while avoiding tactics that can put a Business Profile at risk.",
+    cover: "/how-to-increase-google-reviews.svg",
+    coverAlt: "How to increase Google reviews without breaking Google's rules — WhatsApp requests, QR codes and genuine customer feedback",
+    datePublished: "2026-10-14",
+    dateModified: "2026-10-14",
+    readingTime: "8 min read",
+    category: "Local SEO",
+    keywords: ["how to increase google reviews", "increase google reviews", "improve google reviews", "how to increase google rating", "Google review link", "Google reviews for local business", "Google Business Profile reviews", "get more Google reviews India"],
+  },
+  {
     slug: "track-whatsapp-enquiries-ga4",
     title: "How to Track WhatsApp Enquiries as Conversions in GA4",
     description: "Learn how to track WhatsApp link clicks in GA4 with and without Google Tag Manager, mark them as key events, import them into Google Ads, and understand what clicks cannot prove.",
