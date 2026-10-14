@@ -22,6 +22,7 @@ import DigitalMarketingCaFirmsAhmedabad from "./pages/blog/DigitalMarketingCaFir
 import HowLongDoesSeoTake from "./pages/blog/HowLongDoesSeoTake";
 import LocalSeoChecklistAhmedabad from "./pages/blog/LocalSeoChecklistAhmedabad";
 import TrackWhatsappEnquiriesGa4 from "./pages/blog/TrackWhatsappEnquiriesGa4";
+import HowToIncreaseGoogleReviews from "./pages/blog/HowToIncreaseGoogleReviews";
 import ThankYou from "./pages/ThankYou";
 import DigitalCard from "./pages/DigitalCard";
 import Blog from "./pages/Blog";
@@ -50,6 +51,7 @@ const routes: Record<string, React.ComponentType> = {
   "/blog/how-long-does-seo-take": HowLongDoesSeoTake,
   "/blog/local-seo-checklist-ahmedabad": LocalSeoChecklistAhmedabad,
   "/blog/track-whatsapp-enquiries-ga4": TrackWhatsappEnquiriesGa4,
+  "/blog/how-to-increase-google-reviews": HowToIncreaseGoogleReviews,
 };
 
 export function render(url: string) {
