@@ -16,6 +16,19 @@ export interface BlogPostMeta {
 
 export const blogPosts: BlogPostMeta[] = [
   {
+    slug: "google-ads-cost-ahmedabad",
+    title: "Google Ads Cost in Ahmedabad: What Local Businesses Actually Pay",
+    description: "What Google Ads really costs for Ahmedabad businesses: indicative cost per click by industry, practical budgets, management fees and seasonal competition.",
+    excerpt: "A local guide to Google Ads costs in Ahmedabad, with indicative CPC ranges by industry, monthly ad-spend budgets, management fees and the seasonal factors that affect auction competition.",
+    cover: "/google-ads-cost-ahmedabad.svg",
+    coverAlt: "Google Ads cost in Ahmedabad — indicative cost per click by industry, budgets and management fees",
+    datePublished: "2026-10-15",
+    dateModified: "2026-10-15",
+    readingTime: "9 min read",
+    category: "Paid Advertising",
+    keywords: ["google ads cost in Ahmedabad", "google ads pricing Ahmedabad", "google ads budget Ahmedabad", "ppc cost Ahmedabad", "Google Ads CPC Ahmedabad", "Google Ads management fees Ahmedabad", "Google Ads cost per click by industry"],
+  },
+  {
     slug: "how-to-increase-google-reviews",
     title: "How to Increase Google Reviews (Without Breaking Google's Rules)",
     description: "Learn how to increase Google reviews for an Indian business with WhatsApp, QR codes and a consistent process—without incentives, fake reviews or review gating.",
