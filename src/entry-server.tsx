@@ -24,6 +24,7 @@ import LocalSeoChecklistAhmedabad from "./pages/blog/LocalSeoChecklistAhmedabad"
 import TrackWhatsappEnquiriesGa4 from "./pages/blog/TrackWhatsappEnquiriesGa4";
 import HowToIncreaseGoogleReviews from "./pages/blog/HowToIncreaseGoogleReviews";
 import GoogleAdsCostAhmedabad from "./pages/blog/GoogleAdsCostAhmedabad";
+import InstagramMarketingAhmedabad from "./pages/blog/InstagramMarketingAhmedabad";
 import ThankYou from "./pages/ThankYou";
 import DigitalCard from "./pages/DigitalCard";
 import Blog from "./pages/Blog";
@@ -54,6 +55,7 @@ const routes: Record<string, React.ComponentType> = {
   "/blog/track-whatsapp-enquiries-ga4": TrackWhatsappEnquiriesGa4,
   "/blog/how-to-increase-google-reviews": HowToIncreaseGoogleReviews,
   "/blog/google-ads-cost-ahmedabad": GoogleAdsCostAhmedabad,
+  "/blog/instagram-marketing-ahmedabad": InstagramMarketingAhmedabad,
 };
 
 export function render(url: string) {
