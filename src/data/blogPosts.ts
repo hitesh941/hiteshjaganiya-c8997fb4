@@ -16,6 +16,19 @@ export interface BlogPostMeta {
 
 export const blogPosts: BlogPostMeta[] = [
   {
+    slug: "instagram-marketing-ahmedabad",
+    title: "Instagram Marketing for Ahmedabad Businesses: What Actually Works",
+    description: "An honest guide to Instagram marketing for businesses in Ahmedabad: who it suits, what to post, the WhatsApp conversion path, and when to skip it.",
+    excerpt: "Instagram is not the right channel for every business. Learn which Ahmedabad businesses benefit, what local content can work, how to turn profile visits into WhatsApp enquiries, and what metrics matter.",
+    cover: "/instagram-marketing-ahmedabad.svg",
+    coverAlt: "Instagram marketing for Ahmedabad businesses — local content, Reels and the path from profile visits to WhatsApp enquiries",
+    datePublished: "2026-10-16",
+    dateModified: "2026-10-16",
+    readingTime: "7 min read",
+    category: "Social Media Marketing",
+    keywords: ["instagram marketing for Ahmedabad businesses", "instagram marketing Ahmedabad", "instagram for local business India", "instagram marketing tips India", "Instagram marketing strategy Ahmedabad", "Instagram Reels for local business"],
+  },
+  {
     slug: "google-ads-cost-ahmedabad",
     title: "Google Ads Cost in Ahmedabad: What Local Businesses Actually Pay",
     description: "What Google Ads really costs for Ahmedabad businesses: indicative cost per click by industry, practical budgets, management fees and seasonal competition.",
