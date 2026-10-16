@@ -31,6 +31,7 @@ const routes = [
   "/blog/track-whatsapp-enquiries-ga4",
   "/blog/how-to-increase-google-reviews",
   "/blog/google-ads-cost-ahmedabad",
+  "/blog/instagram-marketing-ahmedabad",
 ];
 
 const seoOverrides = {
@@ -120,6 +121,12 @@ const seoOverrides = {
     h1: "Google Ads Quality Score: How to Improve It",
     alt: "Google Ads Quality Score explained with Expected CTR, Ad Relevance and Landing Page Experience",
   },
+  "/blog/instagram-marketing-ahmedabad": {
+    title: "Instagram Marketing for Ahmedabad Businesses: What Actually Works",
+    description: "An honest guide to Instagram marketing for businesses in Ahmedabad: who it suits, what to post, the WhatsApp conversion path, and when to skip it.",
+    h1: "Instagram Marketing for Ahmedabad Businesses: What Actually Works",
+    alt: "Instagram marketing for Ahmedabad businesses — local content, Reels and WhatsApp enquiries",
+  },
   "/blog/google-ads-cost-ahmedabad": {
     title: "Google Ads Cost in Ahmedabad: What Local Businesses Actually Pay",
     description: "What Google Ads really costs for Ahmedabad businesses: indicative cost per click by industry, practical budgets, management fees and seasonal competition.",
@@ -193,8 +200,8 @@ function addImageDimensions(page) {
     const src = (attrs.match(/\bsrc=["']([^"']+)["']/i) || [])[1] || "";
     const className = (attrs.match(/\bclass=["']([^"']+)["']/i) || [])[1] || "";
     let dimensions = null;
-    if (/blog-top-8|digital-marketing-packages|google-ads-vs-meta-ads|seo-real-estate|google-analytics-search-console|smart-objectives-competitive-benchmarking|first-year-startup-marketing-budget|google-ads-optimization-moves-experts|google-ads-optimization-workflow|business-not-showing-google-maps-ahmedabad|business-not-showing-google-maps-workflow|ai-content-google-rankings-chart|competitive-benchmarking-beginners-guide|competitive-benchmarking-framework|competitive-benchmarking-scorecard|seo-strategy-2027-cover|google-ads-high-cpc-cover|google-ads-cpc-diagnosis|digital-marketing-ca-firms-ahmedabad|ca-firm-digital-marketing-pull-vs-push|how-long-does-seo-take|local-seo-checklist-ahmedabad|how-to-increase-google-reviews|google-reviews-process-infographic|google-ads-cost-ahmedabad|google-ads-cost-ahmedabad-industry-chart/i.test(src)) {
-      dimensions = /google-ads-optimization-workflow|business-not-showing-google-maps-workflow|google-ads-cpc-diagnosis|ca-firm-digital-marketing-pull-vs-push|google-reviews-process-infographic|google-ads-cost-ahmedabad-industry-chart/i.test(src) ? [1200, 675] : /ai-content-google-rankings-chart/i.test(src) ? [1600, 900] : [1200, 630];
+    if (/blog-top-8|digital-marketing-packages|google-ads-vs-meta-ads|seo-real-estate|google-analytics-search-console|smart-objectives-competitive-benchmarking|first-year-startup-marketing-budget|google-ads-optimization-moves-experts|google-ads-optimization-workflow|business-not-showing-google-maps-ahmedabad|business-not-showing-google-maps-workflow|ai-content-google-rankings-chart|competitive-benchmarking-beginners-guide|competitive-benchmarking-framework|competitive-benchmarking-scorecard|seo-strategy-2027-cover|google-ads-high-cpc-cover|google-ads-cpc-diagnosis|digital-marketing-ca-firms-ahmedabad|ca-firm-digital-marketing-pull-vs-push|how-long-does-seo-take|local-seo-checklist-ahmedabad|how-to-increase-google-reviews|google-reviews-process-infographic|google-ads-cost-ahmedabad|google-ads-cost-ahmedabad-industry-chart|instagram-marketing-ahmedabad|instagram-marketing-ahmedabad-funnel/i.test(src)) {
+      dimensions = /google-ads-optimization-workflow|business-not-showing-google-maps-workflow|google-ads-cpc-diagnosis|ca-firm-digital-marketing-pull-vs-push|google-reviews-process-infographic|google-ads-cost-ahmedabad-industry-chart|instagram-marketing-ahmedabad-funnel/i.test(src) ? [1200, 675] : /ai-content-google-rankings-chart/i.test(src) ? [1600, 900] : [1200, 630];
     } else if (/hitesh-new-profile/i.test(src) && /rounded-full/i.test(className)) {
       dimensions = [96, 96];
     } else if (/hitesh-new-profile/i.test(src)) {
