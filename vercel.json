@@ -109,6 +109,10 @@
       "dest": "/blog/google-ads-cost-ahmedabad/index.html"
     },
     {
+      "src": "^/blog/instagram-marketing-ahmedabad/?$",
+      "dest": "/blog/instagram-marketing-ahmedabad/index.html"
+    },
+    {
       "src": "^/blog/?$",
       "dest": "/blog/index.html"
     },
