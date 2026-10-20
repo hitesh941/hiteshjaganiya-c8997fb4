@@ -16,6 +16,19 @@ export interface BlogPostMeta {
 
 export const blogPosts: BlogPostMeta[] = [
   {
+    slug: "get-mentioned-chatgpt-ai-search",
+    title: "How to Get Your Business Mentioned in ChatGPT and AI Search Results",
+    description: "A practical guide to AI search visibility: how ChatGPT, Gemini and Perplexity may surface businesses, what can influence visibility, and what no one can guarantee.",
+    excerpt: "Learn how AI assistants find and describe businesses, why independent mentions and consistent public profiles matter, how schema can clarify your identity, and how to measure AI search visibility without chasing guarantees.",
+    cover: "/get-mentioned-chatgpt-ai-search.svg",
+    coverAlt: "How to get mentioned in ChatGPT and AI search — credibility, consistent business information and useful citations",
+    datePublished: "2026-10-20",
+    dateModified: "2026-10-20",
+    readingTime: "8 min read",
+    category: "AI & SEO",
+    keywords: ["get mentioned in ChatGPT", "AI search visibility", "how to rank in ChatGPT", "generative engine optimization India", "GEO for local business", "ChatGPT business mentions", "AI search optimisation"],
+  },
+  {
     slug: "instagram-marketing-ahmedabad",
     title: "Instagram Marketing for Ahmedabad Businesses: What Actually Works",
     description: "An honest guide to Instagram marketing for businesses in Ahmedabad: who it suits, what to post, the WhatsApp conversion path, and when to skip it.",
