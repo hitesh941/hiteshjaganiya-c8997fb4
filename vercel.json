@@ -113,6 +113,10 @@
       "dest": "/blog/instagram-marketing-ahmedabad/index.html"
     },
     {
+      "src": "^/blog/get-mentioned-chatgpt-ai-search/?$",
+      "dest": "/blog/get-mentioned-chatgpt-ai-search/index.html"
+    },
+    {
       "src": "^/blog/?$",
       "dest": "/blog/index.html"
     },
