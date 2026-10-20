@@ -24,9 +24,9 @@ export const blogPosts: BlogPostMeta[] = [
     coverAlt: "How to get mentioned in ChatGPT and AI search — credibility, consistent business information and useful citations",
     datePublished: "2026-10-20",
     dateModified: "2026-10-20",
-    readingTime: "8 min read",
+    readingTime: "12 min read",
     category: "AI & SEO",
-    keywords: ["get mentioned in ChatGPT", "AI search visibility", "how to rank in ChatGPT", "generative engine optimization India", "GEO for local business", "ChatGPT business mentions", "AI search optimisation"],
+    keywords: ["get mentioned in ChatGPT", "AI search visibility", "how to rank in ChatGPT", "generative engine optimization India", "GEO", "AI SEO", "ChatGPT SEO", "Gemini SEO", "Perplexity SEO", "AI citation optimization", "GEO for local business", "ChatGPT business mentions", "AI search optimisation"],
   },
   {
     slug: "instagram-marketing-ahmedabad",
