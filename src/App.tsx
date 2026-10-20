@@ -30,6 +30,7 @@ import TrackWhatsappEnquiriesGa4 from "./pages/blog/TrackWhatsappEnquiriesGa4";
 import HowToIncreaseGoogleReviews from "./pages/blog/HowToIncreaseGoogleReviews";
 import GoogleAdsCostAhmedabad from "./pages/blog/GoogleAdsCostAhmedabad";
 import InstagramMarketingAhmedabad from "./pages/blog/InstagramMarketingAhmedabad";
+import GetMentionedChatGPTAiSearch from "./pages/blog/GetMentionedChatGPTAiSearch";
 import NotFound from "./pages/NotFound";
 
 const SITE_URL = "https://www.hiteshjaganiya.com";
@@ -111,6 +112,7 @@ const App = () => (
           <Route path="/blog/how-to-increase-google-reviews" element={<HowToIncreaseGoogleReviews />} />
           <Route path="/blog/google-ads-cost-ahmedabad" element={<GoogleAdsCostAhmedabad />} />
           <Route path="/blog/instagram-marketing-ahmedabad" element={<InstagramMarketingAhmedabad />} />
+          <Route path="/blog/get-mentioned-chatgpt-ai-search" element={<GetMentionedChatGPTAiSearch />} />
           <Route path="/blog/chatgpt-ads-india-spend-money" element={<ChatgptAdsIndia />} />
           <Route path="/blog/google-ads-quality-score-explained" element={<GoogleAdsQualityScore />} />
           <Route path="*" element={<NotFound />} />
