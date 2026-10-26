@@ -199,6 +199,7 @@ const GoogleAdsCostAhmedabad = () => (
                       <div className="rounded-2xl border border-border bg-card p-5"><h3 className="mb-2 text-xl font-bold text-foreground">₹50,000+ per month</h3><p className="mb-0">Real estate and education may need larger budgets because click costs can be high and the path from enquiry to customer can involve several steps.</p></div>
                     </div>
                     <p className="mt-5">Treat these as starting assumptions to test, not minimums enforced by Google. The right budget depends on the search volume available, your conversion rate, sales process and the value of a new customer.</p>
+                    <p className="mt-4">Healthcare campaigns have extra policy and privacy considerations. Read the focused guide to <Link to="/blog/google-ads-doctors-clinics-ahmedabad" className="font-semibold text-primary hover:underline">Google Ads for doctors and clinics in Ahmedabad</Link> before planning a clinic budget.</p>
                   </section>
 
                   <section id="fees" aria-labelledby="fees-heading">
