@@ -33,6 +33,7 @@ const routes = [
   "/blog/google-ads-cost-ahmedabad",
   "/blog/instagram-marketing-ahmedabad",
   "/blog/get-mentioned-chatgpt-ai-search",
+  "/blog/google-ads-doctors-clinics-ahmedabad",
 ];
 
 const seoOverrides = {
@@ -122,6 +123,12 @@ const seoOverrides = {
     h1: "Google Ads Quality Score: How to Improve It",
     alt: "Google Ads Quality Score explained with Expected CTR, Ad Relevance and Landing Page Experience",
   },
+  "/blog/google-ads-doctors-clinics-ahmedabad": {
+    title: "Google Ads for Doctors and Clinics in Ahmedabad: What's Allowed and What Works",
+    description: "How doctors and clinics in Ahmedabad can run Google Ads within medical advertising rules and Google's healthcare policy, with keyword, landing page, tracking and budget guidance.",
+    h1: "Google Ads for Doctors and Clinics in Ahmedabad: What's Allowed and What Works",
+    alt: "Google Ads for doctors and clinics in Ahmedabad — policy-aware healthcare PPC and appointment enquiries",
+  },
   "/blog/get-mentioned-chatgpt-ai-search": {
     title: "How to Get Your Business Mentioned in ChatGPT and AI Search Results",
     description: "A practical guide to AI search visibility: how ChatGPT, Gemini and Perplexity may surface businesses, what can influence visibility, and what no one can guarantee.",
@@ -207,8 +214,8 @@ function addImageDimensions(page) {
     const src = (attrs.match(/\bsrc=["']([^"']+)["']/i) || [])[1] || "";
     const className = (attrs.match(/\bclass=["']([^"']+)["']/i) || [])[1] || "";
     let dimensions = null;
-    if (/blog-top-8|digital-marketing-packages|google-ads-vs-meta-ads|seo-real-estate|google-analytics-search-console|smart-objectives-competitive-benchmarking|first-year-startup-marketing-budget|google-ads-optimization-moves-experts|google-ads-optimization-workflow|business-not-showing-google-maps-ahmedabad|business-not-showing-google-maps-workflow|ai-content-google-rankings-chart|competitive-benchmarking-beginners-guide|competitive-benchmarking-framework|competitive-benchmarking-scorecard|seo-strategy-2027-cover|google-ads-high-cpc-cover|google-ads-cpc-diagnosis|digital-marketing-ca-firms-ahmedabad|ca-firm-digital-marketing-pull-vs-push|how-long-does-seo-take|local-seo-checklist-ahmedabad|how-to-increase-google-reviews|google-reviews-process-infographic|google-ads-cost-ahmedabad|google-ads-cost-ahmedabad-industry-chart|instagram-marketing-ahmedabad|instagram-marketing-ahmedabad-funnel|get-mentioned-chatgpt-ai-search|get-mentioned-chatgpt-ai-search-framework|ai-search-training-vs-retrieval/i.test(src)) {
-      dimensions = /google-ads-optimization-workflow|business-not-showing-google-maps-workflow|google-ads-cpc-diagnosis|ca-firm-digital-marketing-pull-vs-push|google-reviews-process-infographic|google-ads-cost-ahmedabad-industry-chart|instagram-marketing-ahmedabad-funnel|get-mentioned-chatgpt-ai-search-framework|ai-search-training-vs-retrieval/i.test(src) ? [1200, 675] : /ai-content-google-rankings-chart/i.test(src) ? [1600, 900] : [1200, 630];
+    if (/blog-top-8|digital-marketing-packages|google-ads-vs-meta-ads|seo-real-estate|google-analytics-search-console|smart-objectives-competitive-benchmarking|first-year-startup-marketing-budget|google-ads-optimization-moves-experts|google-ads-optimization-workflow|business-not-showing-google-maps-ahmedabad|business-not-showing-google-maps-workflow|ai-content-google-rankings-chart|competitive-benchmarking-beginners-guide|competitive-benchmarking-framework|competitive-benchmarking-scorecard|seo-strategy-2027-cover|google-ads-high-cpc-cover|google-ads-cpc-diagnosis|digital-marketing-ca-firms-ahmedabad|ca-firm-digital-marketing-pull-vs-push|how-long-does-seo-take|local-seo-checklist-ahmedabad|how-to-increase-google-reviews|google-reviews-process-infographic|google-ads-cost-ahmedabad|google-ads-cost-ahmedabad-industry-chart|instagram-marketing-ahmedabad|instagram-marketing-ahmedabad-funnel|get-mentioned-chatgpt-ai-search|get-mentioned-chatgpt-ai-search-framework|ai-search-training-vs-retrieval|google-ads-doctors-clinics-ahmedabad-framework/i.test(src)) {
+      dimensions = /google-ads-optimization-workflow|business-not-showing-google-maps-workflow|google-ads-cpc-diagnosis|ca-firm-digital-marketing-pull-vs-push|google-reviews-process-infographic|google-ads-cost-ahmedabad-industry-chart|instagram-marketing-ahmedabad-funnel|get-mentioned-chatgpt-ai-search-framework|ai-search-training-vs-retrieval|google-ads-doctors-clinics-ahmedabad-framework/i.test(src) ? [1200, 675] : /ai-content-google-rankings-chart/i.test(src) ? [1600, 900] : [1200, 630];
     } else if (/hitesh-new-profile/i.test(src) && /rounded-full/i.test(className)) {
       dimensions = [96, 96];
     } else if (/hitesh-new-profile/i.test(src)) {
