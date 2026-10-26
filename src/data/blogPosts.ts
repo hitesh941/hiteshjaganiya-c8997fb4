@@ -16,6 +16,20 @@ export interface BlogPostMeta {
 
 export const blogPosts: BlogPostMeta[] = [
   {
+    slug: "google-ads-doctors-clinics-ahmedabad",
+    title: "Google Ads for Doctors and Clinics in Ahmedabad: What's Allowed and What Works",
+    description: "How doctors and clinics in Ahmedabad can run Google Ads within medical advertising rules and Google's healthcare policy, with keyword, landing page, tracking and budget guidance.",
+    excerpt: "A practical guide for Ahmedabad clinics covering medical advertising restrictions, Google healthcare policy, local keyword targeting, landing pages, patient privacy, conversion tracking and budget planning.",
+    cover: "/google-ads-doctors-clinics-ahmedabad.svg",
+    coverAlt: "Google Ads for doctors and clinics in Ahmedabad — policy-aware healthcare PPC and appointment enquiries",
+    datePublished: "2026-10-26",
+    dateModified: "2026-10-26",
+    readingTime: "10 min read",
+    category: "Google Ads",
+    keywords: ["google ads for doctors in Ahmedabad", "google ads for clinics", "doctor advertising India", "healthcare Google Ads policy", "dentist Google Ads Ahmedabad", "Google Ads for doctors India", "clinic advertising rules", "healthcare PPC Ahmedabad", "Google Ads medical policy", "clinic appointment tracking"],
+  },
+
+  {
     slug: "get-mentioned-chatgpt-ai-search",
     title: "How to Get Your Business Mentioned in ChatGPT and AI Search Results",
     description: "A practical guide to AI search visibility: how ChatGPT, Gemini and Perplexity may surface businesses, what can influence visibility, and what no one can guarantee.",
