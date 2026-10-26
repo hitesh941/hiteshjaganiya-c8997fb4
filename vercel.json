@@ -117,6 +117,10 @@
       "dest": "/blog/get-mentioned-chatgpt-ai-search/index.html"
     },
     {
+      "src": "^/blog/google-ads-doctors-clinics-ahmedabad/?$",
+      "dest": "/blog/google-ads-doctors-clinics-ahmedabad/index.html"
+    },
+    {
       "src": "^/blog/?$",
       "dest": "/blog/index.html"
     },
