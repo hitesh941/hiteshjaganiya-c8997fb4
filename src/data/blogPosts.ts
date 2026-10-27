@@ -16,6 +16,19 @@ export interface BlogPostMeta {
 
 export const blogPosts: BlogPostMeta[] = [
   {
+    slug: "google-business-profile-photos-posts-ranking",
+    title: "Do Google Business Profile Photos and Posts Actually Help You Rank?",
+    description: "Do Google Business Profile photos and posts improve local rankings? See Google's stated ranking factors, the limits of independent testing, and what to prioritise instead.",
+    excerpt: "Google names relevance, distance and prominence as the main local ranking factors. Here's what its guidance and a small independent test say about photos and posts—and where local SEO effort is better spent.",
+    cover: "/google-business-profile-photos-posts-ranking.svg",
+    coverAlt: "Do Google Business Profile photos and posts help rankings? Evidence-led local SEO guide by Hitesh Jaganiya",
+    datePublished: "2026-10-27",
+    dateModified: "2026-10-27",
+    readingTime: "7 min read",
+    category: "Local SEO",
+    keywords: ["do Google Business Profile photos help ranking", "Google Business Profile posts ranking", "Google Business Profile photos", "Google posts local SEO", "improve Google Maps ranking", "local SEO Ahmedabad", "Google Business Profile optimisation"],
+  },
+  {
     slug: "google-ads-doctors-clinics-ahmedabad",
     title: "Google Ads for Doctors and Clinics in Ahmedabad: What's Allowed and What Works",
     description: "How doctors and clinics in Ahmedabad can run Google Ads within medical advertising rules and Google's healthcare policy, with keyword, landing page, tracking and budget guidance.",
