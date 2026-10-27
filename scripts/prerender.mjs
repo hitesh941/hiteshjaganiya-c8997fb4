@@ -34,6 +34,7 @@ const routes = [
   "/blog/instagram-marketing-ahmedabad",
   "/blog/get-mentioned-chatgpt-ai-search",
   "/blog/google-ads-doctors-clinics-ahmedabad",
+  "/blog/google-business-profile-photos-posts-ranking",
 ];
 
 const seoOverrides = {
@@ -122,6 +123,12 @@ const seoOverrides = {
     description: "Google Ads Quality Score explained in plain English: what the 1–10 score means, the three components behind it, what improves it, and what does not.",
     h1: "Google Ads Quality Score: How to Improve It",
     alt: "Google Ads Quality Score explained with Expected CTR, Ad Relevance and Landing Page Experience",
+  },
+  "/blog/google-business-profile-photos-posts-ranking": {
+    title: "Do Google Business Profile Photos and Posts Actually Help You Rank?",
+    description: "Do Google Business Profile photos and posts improve local rankings? See Google's stated ranking factors, the limits of independent testing, and what to prioritise instead.",
+    h1: "Do Google Business Profile Photos and Posts Actually Help You Rank?",
+    alt: "Do Google Business Profile photos and posts help rankings? Evidence-led local SEO guide",
   },
   "/blog/google-ads-doctors-clinics-ahmedabad": {
     title: "Google Ads for Doctors and Clinics in Ahmedabad: What's Allowed and What Works",
