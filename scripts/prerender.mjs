@@ -49,7 +49,7 @@ const seoOverrides = {
   "/blog/top-8-digital-marketing-agencies-in-ahmedabad": {
     title: "Top 8 Digital Marketing Agencies in Ahmedabad (2026): An Independent Guide",
     description: "Eight digital marketing agencies in Ahmedabad compared by focus, best-fit business and what to ask before hiring. Independent guide, updated October 2026.",
-    h1: "Top 8 Digital Marketing Agencies in Ahmedabad (2026): An Independent Guide",
+    h1: "Top 8 Digital Marketing Agencies in Ahmedabad (2026)",
     alt: "Top 8 Digital Marketing Agencies in Ahmedabad — independent guide",
   },
   "/blog/digital-marketing-packages-in-ahmedabad": {
