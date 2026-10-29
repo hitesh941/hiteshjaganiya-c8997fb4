@@ -47,8 +47,9 @@ const seoOverrides = {
     description: "Hitesh Jaganiya, Digital Marketing Consultant in Ahmedabad, offering SEO, Google Ads, and performance-focused digital marketing strategies.",
   },
   "/blog/top-8-digital-marketing-agencies-in-ahmedabad": {
-    title: "Top 8 Digital Marketing Agencies in Ahmedabad",
-    description: "An independent guide to 8 digital marketing agencies in Ahmedabad, including who each agency suits, what to ask before hiring, and how to compare them.",
+    title: "Top 8 Digital Marketing Agencies in Ahmedabad (2026): An Independent Guide",
+    description: "Eight digital marketing agencies in Ahmedabad compared by focus, best-fit business and what to ask before hiring. Independent guide, updated October 2026.",
+    h1: "Top 8 Digital Marketing Agencies in Ahmedabad (2026): An Independent Guide",
     alt: "Top 8 Digital Marketing Agencies in Ahmedabad — independent guide",
   },
   "/blog/digital-marketing-packages-in-ahmedabad": {
