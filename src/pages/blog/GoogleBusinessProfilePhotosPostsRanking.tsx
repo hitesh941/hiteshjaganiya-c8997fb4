@@ -73,7 +73,7 @@ export default function GoogleBusinessProfilePhotosPostsRanking() {
       <section className="rounded-3xl border border-primary/20 bg-primary/[0.045] p-7 md:p-9"><p className="mb-3 text-sm font-bold uppercase tracking-[0.14em] text-primary">Next step</p><h2 className="mb-3 text-2xl font-bold tracking-tight text-foreground md:text-3xl">Build local visibility on the fundamentals.</h2><p>Start with a complete profile, the right category, genuine reviews and useful website information. Then use photos and posts to make the listing more helpful to customers.</p><Link to="/" className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-bold text-primary-foreground hover:opacity-90">Digital Marketing Consultant in Ahmedabad <MapPin className="h-4 w-4"/></Link></section>
      </div>
      <div className="mt-14"><AuthorCard/></div>
-    </div><aside className="lg:sticky lg:top-28"><BlogSidebar/></aside></div>
+    </div></div><aside className="lg:sticky lg:top-28"><BlogSidebar/></aside></div>
    </div></article></main><Footer/>
  </div>;
 }
