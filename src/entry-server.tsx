@@ -29,6 +29,7 @@ import GetMentionedChatGPTAiSearch from "./pages/blog/GetMentionedChatGPTAiSearc
 import GoogleAdsDoctorsClinicsAhmedabad from "./pages/blog/GoogleAdsDoctorsClinicsAhmedabad";
 import GoogleAdsDentistsAhmedabad from "./pages/blog/GoogleAdsDentistsAhmedabad";
 import GoogleBusinessProfilePhotosPostsRanking from "./pages/blog/GoogleBusinessProfilePhotosPostsRanking";
+import DigitalMarketingInteriorDesignersAhmedabad from "./pages/blog/DigitalMarketingInteriorDesignersAhmedabad";
 import ThankYou from "./pages/ThankYou";
 import DigitalCard from "./pages/DigitalCard";
 import Blog from "./pages/Blog";
@@ -64,6 +65,7 @@ const routes: Record<string, React.ComponentType> = {
   "/blog/google-ads-doctors-clinics-ahmedabad": GoogleAdsDoctorsClinicsAhmedabad,
   "/blog/google-ads-dentists-ahmedabad": GoogleAdsDentistsAhmedabad,
   "/blog/google-business-profile-photos-posts-ranking": GoogleBusinessProfilePhotosPostsRanking,
+  "/blog/digital-marketing-interior-designers-architects-ahmedabad": DigitalMarketingInteriorDesignersAhmedabad,
 };
 
 export function render(url: string) {
