@@ -34,10 +34,18 @@ const routes = [
   "/blog/instagram-marketing-ahmedabad",
   "/blog/get-mentioned-chatgpt-ai-search",
   "/blog/google-ads-doctors-clinics-ahmedabad",
+  "/blog/google-ads-dentists-ahmedabad",
   "/blog/google-business-profile-photos-posts-ranking",
 ];
 
 const seoOverrides = {
+  "/blog/google-ads-dentists-ahmedabad": {
+    title: "Google Ads for Dentists in Ahmedabad: Treatments, Keywords and Budget",
+    description: "How dental clinics in Ahmedabad can run Google Ads that bring booked appointments, from treatment-level keywords and emergency searches to landing pages, tracking and budget.",
+    h1: "Google Ads for Dentists in Ahmedabad: Treatments, Keywords and Budget",
+    alt: "Google Ads for dentists in Ahmedabad — dental treatment campaigns, local keywords and appointment tracking",
+  },
+
   "/digital-card": {
     title: "Digital Card | Hitesh Jaganiya",
     description: "Digital business card for Hitesh Jaganiya, Digital Marketing Consultant in Ahmedabad. Call, WhatsApp, email, save contact and connect online.",
