@@ -25,8 +25,8 @@ export const blogPosts: BlogPostMeta[] = [
     datePublished: "2026-10-30",
     dateModified: "2026-10-30",
     readingTime: "8 min read",
-    category: "Google Ads",
-    keywords: ["google ads for dentists in Ahmedabad", "dental clinic advertising Ahmedabad", "dentist marketing Ahmedabad", "dental implant google ads", "dental clinic google ads India"],
+    category: "Google Ads & Healthcare Marketing",
+    keywords: ["google ads for dentists in Ahmedabad", "Google Ads for dental clinics Ahmedabad", "dental clinic advertising Ahmedabad", "dentist marketing Ahmedabad", "dental implant Google Ads", "dental clinic Google Ads India", "dentist PPC Ahmedabad", "emergency dentist Google Ads", "dental clinic appointment leads"],
   },
   {
     slug: "google-business-profile-photos-posts-ranking",
