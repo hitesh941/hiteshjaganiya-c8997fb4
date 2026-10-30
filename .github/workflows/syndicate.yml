@@ -1,0 +1,81 @@
+name: Syndicate new blog posts
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "blog/**.html"
+  workflow_dispatch:
+    inputs:
+      file:
+        description: "Manually post one file (example: blog/my-post.html)"
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: syndicate
+  cancel-in-progress: false
+
+jobs:
+  syndicate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Find new post files
+        id: files
+        run: |
+          if [ -n "${{ github.event.inputs.file }}" ]; then
+            echo "list=${{ github.event.inputs.file }}" >> "$GITHUB_OUTPUT"
+          else
+            BEFORE="${{ github.event.before }}"
+            if [ -z "$BEFORE" ] || [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then
+              BEFORE="$(git rev-parse HEAD~1 2>/dev/null || git rev-parse HEAD)"
+            fi
+            LIST=$(git diff --name-only --diff-filter=A "$BEFORE" "${{ github.sha }}" -- 'blog/*.html' | tr '\n' ' ')
+            echo "list=$LIST" >> "$GITHUB_OUTPUT"
+          fi
+          echo "New files: $(cat "$GITHUB_OUTPUT")"
+
+      - name: Post short excerpts
+        if: steps.files.outputs.list != ''
+        env:
+          SITE_URL: ${{ vars.SITE_URL }}
+          SITE_NAME: ${{ vars.SITE_NAME }}
+          BLOG_DIR: blog
+          BLOGGER_CLIENT_ID: ${{ secrets.BLOGGER_CLIENT_ID }}
+          BLOGGER_CLIENT_SECRET: ${{ secrets.BLOGGER_CLIENT_SECRET }}
+          BLOGGER_REFRESH_TOKEN: ${{ secrets.BLOGGER_REFRESH_TOKEN }}
+          BLOGGER_BLOG_ID: ${{ secrets.BLOGGER_BLOG_ID }}
+          TUMBLR_CONSUMER_KEY: ${{ secrets.TUMBLR_CONSUMER_KEY }}
+          TUMBLR_CONSUMER_SECRET: ${{ secrets.TUMBLR_CONSUMER_SECRET }}
+          TUMBLR_TOKEN: ${{ secrets.TUMBLR_TOKEN }}
+          TUMBLR_TOKEN_SECRET: ${{ secrets.TUMBLR_TOKEN_SECRET }}
+          TUMBLR_BLOG: ${{ secrets.TUMBLR_BLOG }}
+          PINTEREST_ACCESS_TOKEN: ${{ secrets.PINTEREST_ACCESS_TOKEN }}
+          PINTEREST_BOARD_ID: ${{ secrets.PINTEREST_BOARD_ID }}
+        run: python scripts/syndicate.py ${{ steps.files.outputs.list }}
+
+      - name: Save posted.json
+        if: always() && steps.files.outputs.list != ''
+        run: |
+          if [ -n "$(git status --porcelain posted.json)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add posted.json
+            git commit -m "chore: update posted.json [skip ci]"
+            git pull --rebase origin main
+            git push
+          fi
