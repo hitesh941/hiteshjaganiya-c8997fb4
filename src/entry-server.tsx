@@ -27,6 +27,7 @@ import GoogleAdsCostAhmedabad from "./pages/blog/GoogleAdsCostAhmedabad";
 import InstagramMarketingAhmedabad from "./pages/blog/InstagramMarketingAhmedabad";
 import GetMentionedChatGPTAiSearch from "./pages/blog/GetMentionedChatGPTAiSearch";
 import GoogleAdsDoctorsClinicsAhmedabad from "./pages/blog/GoogleAdsDoctorsClinicsAhmedabad";
+import GoogleAdsDentistsAhmedabad from "./pages/blog/GoogleAdsDentistsAhmedabad";
 import GoogleBusinessProfilePhotosPostsRanking from "./pages/blog/GoogleBusinessProfilePhotosPostsRanking";
 import ThankYou from "./pages/ThankYou";
 import DigitalCard from "./pages/DigitalCard";
@@ -61,6 +62,7 @@ const routes: Record<string, React.ComponentType> = {
   "/blog/instagram-marketing-ahmedabad": InstagramMarketingAhmedabad,
   "/blog/get-mentioned-chatgpt-ai-search": GetMentionedChatGPTAiSearch,
   "/blog/google-ads-doctors-clinics-ahmedabad": GoogleAdsDoctorsClinicsAhmedabad,
+  "/blog/google-ads-dentists-ahmedabad": GoogleAdsDentistsAhmedabad,
   "/blog/google-business-profile-photos-posts-ranking": GoogleBusinessProfilePhotosPostsRanking,
 };
 
