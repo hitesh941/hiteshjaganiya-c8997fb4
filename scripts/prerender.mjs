@@ -36,9 +36,16 @@ const routes = [
   "/blog/google-ads-doctors-clinics-ahmedabad",
   "/blog/google-ads-dentists-ahmedabad",
   "/blog/google-business-profile-photos-posts-ranking",
+  "/blog/digital-marketing-interior-designers-architects-ahmedabad",
 ];
 
 const seoOverrides = {
+  "/blog/digital-marketing-interior-designers-architects-ahmedabad": {
+    title: "Digital Marketing for Interior Designers and Architects in Ahmedabad",
+    description: "A practical digital marketing guide for interior designers and architects in Ahmedabad, covering professional rules, project portfolios, local SEO, Instagram, paid ads and lead handling.",
+    h1: "Digital Marketing for Interior Designers and Architects in Ahmedabad",
+    alt: "Digital marketing for interior designers and architects in Ahmedabad — portfolio, local search and lead generation",
+  },
   "/blog/google-ads-dentists-ahmedabad": {
     title: "Google Ads for Dentists in Ahmedabad: Treatments, Keywords and Budget",
     description: "How dental clinics in Ahmedabad can run Google Ads that bring booked appointments, from treatment-level keywords and emergency searches to landing pages, tracking and budget.",
