@@ -16,6 +16,19 @@ export interface BlogPostMeta {
 
 export const blogPosts: BlogPostMeta[] = [
   {
+    slug: "google-ads-dentists-ahmedabad",
+    title: "Google Ads for Dentists in Ahmedabad: Treatments, Keywords and Budget",
+    description: "How dental clinics in Ahmedabad can run Google Ads that bring booked appointments, from treatment-level keywords and emergency searches to landing pages, tracking and budget.",
+    excerpt: "A practical Google Ads guide for Ahmedabad dental clinics, covering advertising rules, treatment-based search campaigns, landing pages, appointment tracking and realistic budgets.",
+    cover: "/google-ads-dentists-ahmedabad.svg",
+    coverAlt: "Google Ads for dentists in Ahmedabad — dental treatment campaigns, local keywords and appointment tracking",
+    datePublished: "2026-10-30",
+    dateModified: "2026-10-30",
+    readingTime: "8 min read",
+    category: "Google Ads",
+    keywords: ["google ads for dentists in Ahmedabad", "dental clinic advertising Ahmedabad", "dentist marketing Ahmedabad", "dental implant google ads", "dental clinic google ads India"],
+  },
+  {
     slug: "google-business-profile-photos-posts-ranking",
     title: "Do Google Business Profile Photos and Posts Actually Help You Rank?",
     description: "Do Google Business Profile photos and posts improve local rankings? See Google's stated ranking factors, the limits of independent testing, and what to prioritise instead.",
