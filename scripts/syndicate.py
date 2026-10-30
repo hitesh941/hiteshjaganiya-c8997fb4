@@ -1,19 +1,30 @@
 #!/usr/bin/env python3
 """
-Short-post syndication: new blog post in your RSS feed -> Blogger, Tumblr, Pinterest.
+Short-post syndication: new blog post -> Blogger, Tumblr, Pinterest.
 
-Only a short excerpt + "Read Full Post" link + home link + source link is posted
-(never the full article). posted.json remembers what was already posted.
+Where new posts come from:
+  1. the "routes" list in scripts/prerender.mjs  (every /blog/... route)
+  2. the RSS feed (optional extra source, failures are ignored)
 
-First run (no posted.json yet) only SEEDS the file with the posts that already exist,
-so your old posts are NOT re-posted.
+For each NEW post the script waits until the live page is deployed on Vercel,
+reads title / description / image from that page, and posts ONLY a short excerpt
++ "Read Full Post" link + home link + source link (never the full article).
+
+posted.json remembers what was already handled.
+
+Modes (set by the workflow):
+  - normal run : post every post that is not in posted.json yet
+  - SEED=true  : mark every post that exists right now as "already done", post nothing
+                 (also happens automatically when posted.json does not exist)
+  - POST_URL=  : force-post that one URL now (for testing / re-posting)
 """
 import json
 import os
+import re
 import sys
 import time
 from pathlib import Path
-from urllib.parse import urlencode
+from urllib.parse import urlencode, urlparse
 
 import feedparser
 import requests
@@ -22,12 +33,13 @@ from requests_oauthlib import OAuth1
 
 SITE_URL = os.environ.get("SITE_URL", "").strip().rstrip("/")
 SITE_NAME = os.environ.get("SITE_NAME", "").strip() or "My Site"
-FEED_URL = os.environ.get("FEED_URL", "").strip() or (SITE_URL + "/rss.xml")
+FEED_URL = os.environ.get("FEED_URL", "").strip() or (SITE_URL + "/feed.xml")
 DEFAULT_IMAGE = os.environ.get("DEFAULT_IMAGE", "").strip()
+ROUTES_FILE = os.environ.get("ROUTES_FILE", "scripts/prerender.mjs")
 STATE_FILE = Path("posted.json")
 EXCERPT_WORDS = int(os.environ.get("EXCERPT_WORDS", "70"))
 MAX_PER_RUN = int(os.environ.get("MAX_PER_RUN", "3"))
-FEED_WAIT_SECONDS = int(os.environ.get("FEED_WAIT_SECONDS", "480"))
+PAGE_WAIT_SECONDS = int(os.environ.get("PAGE_WAIT_SECONDS", "900"))
 UA = {"User-Agent": "Mozilla/5.0 (compatible; BlogSyndicator/1.0)"}
 
 
@@ -47,10 +59,21 @@ def save_state(state):
 
 
 # ---------------------------------------------------------------- helpers
+def normalize(url):
+    p = urlparse(url.strip())
+    path = p.path.rstrip("/") or "/"
+    return f"{p.scheme}://{p.netloc}{path}"
+
+
 def absolute(url):
     if url and url.startswith("/"):
         return SITE_URL + url
     return url
+
+
+def usable(url):
+    """Pinterest/Tumblr reject SVG, so only accept raster formats there."""
+    return bool(url) and not url.lower().split("?")[0].endswith(".svg")
 
 
 def with_utm(url, source):
@@ -71,67 +94,105 @@ def shorten(text, words):
     return " ".join(parts[:words]).rstrip(".,;:") + "..."
 
 
-def fetch_feed():
-    r = requests.get(FEED_URL, headers=UA, timeout=30)
-    r.raise_for_status()
-    feed = feedparser.parse(r.content)
-    if feed.bozo and not feed.entries:
-        raise RuntimeError(f"Could not parse feed at {FEED_URL}: {feed.bozo_exception}")
-    return feed.entries
+# -------------------------------------------------------------- discovery
+def routes_from_prerender():
+    p = Path(ROUTES_FILE)
+    if not p.exists():
+        print(f"[warn] {ROUTES_FILE} not found, skipping routes source")
+        return []
+    m = re.search(r"const\s+routes\s*=\s*\[(.*?)\]\s*;", p.read_text(encoding="utf-8"), re.S)
+    if not m:
+        print(f"[warn] could not find the routes list in {ROUTES_FILE}")
+        return []
+    found = re.findall(r'["\'](/blog/[^"\'\s?#]+)["\']', m.group(1))
+    return [normalize(SITE_URL + r) for r in found]
 
 
-def find_image(entry, url):
-    for key in ("media_content", "media_thumbnail"):
-        for m in entry.get(key, []) or []:
-            if m.get("url"):
-                return absolute(m["url"])
-    for enc in entry.get("enclosures", []) or []:
-        if enc.get("type", "").startswith("image") and enc.get("href"):
-            return absolute(enc["href"])
-
-    html = entry.get("summary", "") or ""
-    for c in entry.get("content", []) or []:
-        html += c.get("value", "")
-    img = BeautifulSoup(html, "html.parser").find("img")
-    if img and img.get("src"):
-        return absolute(img["src"])
-
+def urls_from_feed():
     try:
-        page = requests.get(url, headers=UA, timeout=20)
-        soup = BeautifulSoup(page.text, "html.parser")
-        tag = soup.find("meta", attrs={"property": "og:image"}) or soup.find(
-            "meta", attrs={"name": "twitter:image"}
-        )
-        if tag and tag.get("content"):
-            return absolute(tag["content"].strip())
-    except requests.RequestException:
-        pass
-    return DEFAULT_IMAGE
+        r = requests.get(FEED_URL, headers=UA, timeout=30)
+        r.raise_for_status()
+        return [normalize(e["link"]) for e in feedparser.parse(r.content).entries if e.get("link")]
+    except Exception as ex:
+        print(f"[warn] feed not used ({ex})")
+        return []
 
 
-def entry_to_post(entry):
-    url = entry.get("link", "").strip()
-    raw = entry.get("summary", "") or entry.get("description", "")
+def discover():
+    seen, ordered = set(), []
+    for u in urls_from_feed() + routes_from_prerender():
+        if u not in seen:
+            seen.add(u)
+            ordered.append(u)
+    return ordered
+
+
+# ------------------------------------------------------------ page parsing
+def parse_page(url, html):
+    """Return post data from a PRERENDERED page, or None if it is not live yet."""
+    soup = BeautifulSoup(html, "html.parser")
+
+    canon = soup.find("link", rel="canonical")
+    canon_path = urlparse(canon["href"]).path.rstrip("/") if canon and canon.get("href") else ""
+    if canon_path != urlparse(url).path.rstrip("/"):
+        return None  # still the old deploy / SPA fallback page
+
+    def meta(*names):
+        for n in names:
+            tag = soup.find("meta", attrs={"property": n}) or soup.find("meta", attrs={"name": n})
+            if tag and tag.get("content"):
+                return tag["content"].strip()
+        return ""
+
+    title = meta("og:title") or (soup.title.get_text(strip=True) if soup.title else "")
+    if not title:
+        return None
+    description = meta("description", "og:description")
+    if not description:
+        p = soup.find("article") or soup
+        para = p.find("p")
+        description = para.get_text(" ", strip=True) if para else ""
+
+    candidates = [meta("og:image"), meta("twitter:image")]
+    scope = soup.find("article") or soup.find("main") or soup
+    for img in scope.find_all("img"):
+        src = img.get("src") or ""
+        if src and not re.search(r"profile|logo|avatar|icon", src, re.I):
+            candidates.append(src)
+    candidates = [absolute(c) for c in candidates if c]
+    raster = next((c for c in candidates if usable(c)), "") or DEFAULT_IMAGE
+    any_img = next(iter(candidates), "") or raster
+
+    tags = [t.strip() for t in meta("keywords").split(",") if t.strip()]
+    if not tags:
+        tags = [t.get("content", "").strip() for t in soup.find_all("meta", attrs={"property": "article:tag"}) if t.get("content")]
+
     return {
-        "title": plain(entry.get("title", "")),
-        "excerpt": shorten(plain(raw), EXCERPT_WORDS),
+        "title": plain(title),
+        "excerpt": shorten(plain(description), EXCERPT_WORDS),
         "url": url,
-        "image": find_image(entry, url),
-        "tags": [t.get("term", "").strip() for t in entry.get("tags", []) if t.get("term")][:8],
+        "image": raster,
+        "image_any": any_img,
+        "tags": tags[:8],
     }
 
 
-def wait_until_live(url, timeout=600):
-    """Avoid posting a link that still 404s because Vercel is mid-deploy."""
+def load_post(url, timeout):
+    """Wait until Vercel serves the prerendered page, then read it."""
     end = time.time() + timeout
-    while time.time() < end:
+    while True:
         try:
-            if requests.get(url, headers=UA, timeout=15, allow_redirects=True).status_code == 200:
-                return True
+            r = requests.get(url, headers=UA, timeout=20, allow_redirects=True)
+            if r.status_code == 200:
+                post = parse_page(url, r.text)
+                if post:
+                    return post
         except requests.RequestException:
             pass
-        time.sleep(15)
-    return False
+        if time.time() >= end:
+            return None
+        print("  [wait] page not live yet (deploy running?), retrying in 20s...")
+        time.sleep(20)
 
 
 # ---------------------------------------------------------------- Blogger
@@ -151,11 +212,8 @@ def post_blogger(post):
 
     url = with_utm(post["url"], "blogger")
     home = with_utm(SITE_URL, "blogger")
-    img = (
-        f'<p><img src="{post["image"]}" alt="{post["title"]}" style="max-width:100%"></p>'
-        if post["image"]
-        else ""
-    )
+    pic = post.get("image_any") or post["image"]
+    img = f'<p><img src="{pic}" alt="{post["title"]}" style="max-width:100%"></p>' if pic else ""
     html = (
         f"{img}"
         f"<p>{post['excerpt']}</p>"
@@ -210,7 +268,7 @@ def post_tumblr(post):
 # -------------------------------------------------------------- Pinterest
 def post_pinterest(post):
     if not post["image"]:
-        raise RuntimeError("Pinterest needs an image (set DEFAULT_IMAGE or add one to the feed/page)")
+        raise RuntimeError("Pinterest needs a PNG/JPG image (set the DEFAULT_IMAGE variable)")
     base = env("PINTEREST_API_BASE") or "https://api.pinterest.com"
     desc = shorten(post["excerpt"], 40) + f" Source: {SITE_NAME}"
     r = requests.post(
@@ -243,64 +301,61 @@ PLATFORMS = {
 
 
 # ------------------------------------------------------------------- main
-def find_new(entries, state):
-    new = []
-    for e in entries:
-        url = e.get("link", "").strip()
-        if not url:
-            continue
-        entry = state.get(url)
-        if entry is None:
-            new.append(e)
-        elif not entry.get("seeded") and any(p not in entry["platforms"] for p in PLATFORMS):
-            new.append(e)  # retry platforms that failed earlier
-    return list(reversed(new))  # oldest first
+def needs_posting(state, url):
+    rec = state.get(url)
+    if rec is None:
+        return True
+    if rec.get("seeded"):
+        return False
+    return any(p not in rec["platforms"] for p in PLATFORMS)  # retry earlier failures
 
 
 def main():
     if not SITE_URL:
         sys.exit("SITE_URL is not set (repo Variables).")
 
-    manual = os.environ.get("GITHUB_EVENT_NAME") == "workflow_dispatch"
-    first_run = not STATE_FILE.exists()
+    forced = env("POST_URL")
+    seed = env("SEED").lower() == "true" or not STATE_FILE.exists()
     state = load_state()
 
-    deadline = time.time() + (0 if (manual or first_run) else FEED_WAIT_SECONDS)
-    while True:
-        entries = fetch_feed()
-        if first_run:
-            for e in entries:
-                url = e.get("link", "").strip()
-                if url:
-                    state[url] = {"seeded": True, "platforms": {}}
-            save_state(state)
-            print(f"[seed] Marked {len(state)} existing posts as already handled. Nothing posted.")
-            return 0
-        new = find_new(entries, state)
-        if new or time.time() >= deadline:
-            break
-        print("[wait] new post not in feed yet (deploy still running?), retrying in 30s...")
-        time.sleep(30)
+    if seed and not forced:
+        added = 0
+        for u in discover():
+            if u not in state:
+                state[u] = {"seeded": True, "platforms": {}}
+                added += 1
+        save_state(state)
+        print(f"[seed] Marked {added} existing post(s) as already handled ({len(state)} total). Nothing posted.")
+        return 0
 
-    if not new:
+    if forced:
+        targets = [normalize(forced)]
+        wait = min(PAGE_WAIT_SECONDS, 120)
+    else:
+        targets = [u for u in discover() if needs_posting(state, u)]
+        wait = PAGE_WAIT_SECONDS
+
+    if not targets:
         print("[done] Nothing new to post.")
         return 0
 
     failures = 0
-    for entry in new[:MAX_PER_RUN]:
-        post = entry_to_post(entry)
-        rec = state.setdefault(post["url"], {"platforms": {}})
-        rec.pop("seeded", None)
-        rec["title"] = post["title"]
-        pending = [p for p in PLATFORMS if p not in rec["platforms"]]
-
-        print(f"[post] {post['title']} -> {post['url']}")
-        if not wait_until_live(post["url"]):
-            print("  [error] URL not live after timeout, will retry next run")
+    for url in targets[:MAX_PER_RUN]:
+        print(f"[post] {url}")
+        post = load_post(url, wait)
+        if not post:
+            print("  [error] page not live / not readable in time, will retry on the next run")
             failures += 1
             continue
 
-        for name in pending:
+        rec = {"platforms": {}} if forced else state.setdefault(url, {"platforms": {}})
+        rec.pop("seeded", None)
+        rec["title"] = post["title"]
+        state[url] = rec
+
+        for name in PLATFORMS:
+            if name in rec["platforms"]:
+                continue
             needed, fn = PLATFORMS[name]
             if not all(env(k) for k in needed):
                 print(f"  [{name}] secrets missing, skipped")
@@ -309,15 +364,14 @@ def main():
             try:
                 rec["platforms"][name] = fn(post)
                 print(f"  [{name}] ok")
-            except Exception as ex:  # keep going with other platforms
+            except Exception as ex:  # keep going with the other platforms
                 failures += 1
                 detail = getattr(getattr(ex, "response", None), "text", "")
                 print(f"  [{name}] FAILED: {ex} {detail[:300]}")
         save_state(state)
 
-    if len(new) > MAX_PER_RUN:
-        print(f"[note] {len(new) - MAX_PER_RUN} more post(s) pending; they go out on the next run.")
-    save_state(state)
+    if len(targets) > MAX_PER_RUN:
+        print(f"[note] {len(targets) - MAX_PER_RUN} more post(s) pending; they go out on the next run.")
     return 1 if failures else 0
 
 
