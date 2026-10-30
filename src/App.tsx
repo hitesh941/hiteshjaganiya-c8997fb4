@@ -32,6 +32,7 @@ import GoogleAdsCostAhmedabad from "./pages/blog/GoogleAdsCostAhmedabad";
 import InstagramMarketingAhmedabad from "./pages/blog/InstagramMarketingAhmedabad";
 import GetMentionedChatGPTAiSearch from "./pages/blog/GetMentionedChatGPTAiSearch";
 import GoogleAdsDoctorsClinicsAhmedabad from "./pages/blog/GoogleAdsDoctorsClinicsAhmedabad";
+import GoogleAdsDentistsAhmedabad from "./pages/blog/GoogleAdsDentistsAhmedabad";
 import GoogleBusinessProfilePhotosPostsRanking from "./pages/blog/GoogleBusinessProfilePhotosPostsRanking";
 import NotFound from "./pages/NotFound";
 
@@ -114,6 +115,7 @@ const App = () => (
           <Route path="/blog/how-to-increase-google-reviews" element={<HowToIncreaseGoogleReviews />} />
           <Route path="/blog/google-ads-cost-ahmedabad" element={<GoogleAdsCostAhmedabad />} />
           <Route path="/blog/google-ads-doctors-clinics-ahmedabad" element={<GoogleAdsDoctorsClinicsAhmedabad />} />
+          <Route path="/blog/google-ads-dentists-ahmedabad" element={<GoogleAdsDentistsAhmedabad />} />
           <Route path="/blog/google-business-profile-photos-posts-ranking" element={<GoogleBusinessProfilePhotosPostsRanking />} />
           <Route path="/blog/instagram-marketing-ahmedabad" element={<InstagramMarketingAhmedabad />} />
           <Route path="/blog/get-mentioned-chatgpt-ai-search" element={<GetMentionedChatGPTAiSearch />} />
