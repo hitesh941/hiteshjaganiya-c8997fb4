@@ -5,7 +5,18 @@ on:
     branches: [main]
     paths:
       - "src/pages/blog/**"
+      - "scripts/prerender.mjs"
+      - "public/feed.xml"
   workflow_dispatch:
+    inputs:
+      seed:
+        description: "Seed only: mark all current posts as already done (posts nothing)"
+        type: boolean
+        default: false
+      post_url:
+        description: "Force-post ONE url now (example: https://www.hiteshjaganiya.com/blog/my-post)"
+        type: string
+        required: false
 
 permissions:
   contents: write
@@ -28,8 +39,10 @@ jobs:
       - name: Install dependencies
         run: pip install -r scripts/requirements.txt
 
-      - name: Post short excerpts from the RSS feed
+      - name: Post short excerpts
         env:
+          SEED: ${{ github.event.inputs.seed }}
+          POST_URL: ${{ github.event.inputs.post_url }}
           SITE_URL: ${{ vars.SITE_URL }}
           SITE_NAME: ${{ vars.SITE_NAME }}
           FEED_URL: ${{ vars.FEED_URL }}
