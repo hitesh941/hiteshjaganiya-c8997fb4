@@ -16,6 +16,20 @@ export interface BlogPostMeta {
 
 export const blogPosts: BlogPostMeta[] = [
   {
+    slug: "digital-marketing-interior-designers-architects-ahmedabad",
+    title: "Digital Marketing for Interior Designers and Architects in Ahmedabad",
+    description: "A practical digital marketing guide for interior designers and architects in Ahmedabad, covering professional rules, project portfolios, local SEO, Instagram, paid ads and lead handling.",
+    excerpt: "How Ahmedabad interior designers and architecture practices can build trust online through detailed project portfolios, local search, Instagram, compliant promotion and better enquiry handling.",
+    cover: "/digital-marketing-interior-designers-ahmedabad.svg",
+    coverAlt: "Digital marketing for interior designers and architects in Ahmedabad — portfolio, local search and lead generation",
+    datePublished: "2026-10-30",
+    dateModified: "2026-10-30",
+    readingTime: "9 min read",
+    category: "Industry-Specific Digital Marketing",
+    keywords: ["digital marketing for interior designers in Ahmedabad", "interior designer marketing Ahmedabad", "architect marketing India", "how interior designers get clients Ahmedabad", "SEO for interior designers", "interior design portfolio website", "local SEO for architects", "Instagram marketing for interior designers"],
+  },
+
+  {
     slug: "google-ads-dentists-ahmedabad",
     title: "Google Ads for Dentists in Ahmedabad: Treatments, Keywords and Budget",
     description: "How dental clinics in Ahmedabad can run Google Ads that bring booked appointments, from treatment-level keywords and emergency searches to landing pages, tracking and budget.",
