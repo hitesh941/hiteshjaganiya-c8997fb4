@@ -16,6 +16,20 @@ export interface BlogPostMeta {
 
 export const blogPosts: BlogPostMeta[] = [
   {
+    slug: "google-ads-not-getting-impressions",
+    title: "Google Ads Not Getting Impressions: 9 Reasons and Fixes",
+    description: "Your Google Ads campaign is live but not showing? Here are 9 common reasons for zero or low impressions, how to check each in your account, and what to change.",
+    excerpt: "Campaign approved but showing zero impressions? Work through nine practical checks covering eligibility, policy, billing, budget, bids, Ad Rank, targeting and keywords.",
+    cover: "/google-ads-not-getting-impressions.svg",
+    coverAlt: "Google Ads not getting impressions — nine reasons and troubleshooting fixes",
+    datePublished: "2026-11-02",
+    dateModified: "2026-11-02",
+    readingTime: "8 min read",
+    category: "Google Ads",
+    keywords: ["google ads not getting impressions", "google ads no impressions", "why are my google ads not showing", "google ads not showing impressions", "google ads low impressions"],
+  },
+
+  {
     slug: "digital-marketing-interior-designers-architects-ahmedabad",
     title: "Digital Marketing for Interior Designers and Architects in Ahmedabad",
     description: "A practical digital marketing guide for interior designers and architects in Ahmedabad, covering professional rules, project portfolios, local SEO, Instagram, paid ads and lead handling.",
