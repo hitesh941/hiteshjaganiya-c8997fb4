@@ -37,9 +37,17 @@ const routes = [
   "/blog/google-ads-dentists-ahmedabad",
   "/blog/google-business-profile-photos-posts-ranking",
   "/blog/digital-marketing-interior-designers-architects-ahmedabad",
+  "/blog/google-ads-not-getting-impressions",
 ];
 
 const seoOverrides = {
+  "/blog/google-ads-not-getting-impressions": {
+    title: "Google Ads Not Getting Impressions: 9 Reasons and Fixes",
+    description: "Your Google Ads campaign is live but not showing? Here are 9 common reasons for zero or low impressions, how to check each in your account, and what to change.",
+    h1: "Google Ads Not Getting Impressions: 9 Reasons and Fixes",
+    alt: "Google Ads not getting impressions — nine reasons and troubleshooting fixes",
+  },
+
   "/blog/digital-marketing-interior-designers-architects-ahmedabad": {
     title: "Digital Marketing for Interior Designers and Architects in Ahmedabad",
     description: "A practical digital marketing guide for interior designers and architects in Ahmedabad, covering professional rules, project portfolios, local SEO, Instagram, paid ads and lead handling.",
