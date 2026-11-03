@@ -35,7 +35,8 @@ import GoogleAdsDoctorsClinicsAhmedabad from "./pages/blog/GoogleAdsDoctorsClini
 import GoogleAdsDentistsAhmedabad from "./pages/blog/GoogleAdsDentistsAhmedabad";
 import GoogleBusinessProfilePhotosPostsRanking from "./pages/blog/GoogleBusinessProfilePhotosPostsRanking";
 import DigitalMarketingInteriorDesignersAhmedabad from "./pages/blog/DigitalMarketingInteriorDesignersAhmedabad";
-import GoogleAdsNotGettingImpressions from "./pages/blog/GoogleAdsNotGettingImpressions";\nimport GoogleAdsAccountStructureSmallBusiness from "./pages/blog/GoogleAdsAccountStructureSmallBusiness";
+import GoogleAdsNotGettingImpressions from "./pages/blog/GoogleAdsNotGettingImpressions";
+import GoogleAdsAccountStructureSmallBusiness from "./pages/blog/GoogleAdsAccountStructureSmallBusiness";
 import NotFound from "./pages/NotFound";
 
 const SITE_URL = "https://www.hiteshjaganiya.com";
@@ -120,7 +121,8 @@ const App = () => (
           <Route path="/blog/google-ads-dentists-ahmedabad" element={<GoogleAdsDentistsAhmedabad />} />
           <Route path="/blog/google-business-profile-photos-posts-ranking" element={<GoogleBusinessProfilePhotosPostsRanking />} />
           <Route path="/blog/digital-marketing-interior-designers-architects-ahmedabad" element={<DigitalMarketingInteriorDesignersAhmedabad />} />
-          <Route path="/blog/google-ads-not-getting-impressions" element={<GoogleAdsNotGettingImpressions />} />\n          <Route path="/blog/google-ads-account-structure-small-business" element={<GoogleAdsAccountStructureSmallBusiness />} />
+          <Route path="/blog/google-ads-not-getting-impressions" element={<GoogleAdsNotGettingImpressions />} />
+          <Route path="/blog/google-ads-account-structure-small-business" element={<GoogleAdsAccountStructureSmallBusiness />} />
           <Route path="/blog/instagram-marketing-ahmedabad" element={<InstagramMarketingAhmedabad />} />
           <Route path="/blog/get-mentioned-chatgpt-ai-search" element={<GetMentionedChatGPTAiSearch />} />
           <Route path="/blog/chatgpt-ads-india-spend-money" element={<ChatgptAdsIndia />} />
