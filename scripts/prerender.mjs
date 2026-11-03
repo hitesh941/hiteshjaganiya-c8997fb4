@@ -37,10 +37,10 @@ const routes = [
   "/blog/google-ads-dentists-ahmedabad",
   "/blog/google-business-profile-photos-posts-ranking",
   "/blog/digital-marketing-interior-designers-architects-ahmedabad",
-  "/blog/google-ads-not-getting-impressions",
+  "/blog/google-ads-not-getting-impressions",\n  "/blog/google-ads-account-structure-small-business",
 ];
 
-const seoOverrides = {
+const seoOverrides = {\n  "/blog/google-ads-account-structure-small-business": {\n    title: "Google Ads Account Structure for a Small Business: How to Set Up Campaigns and Ad Groups",\n    description: "Learn how to structure a Google Ads account for a small business, from campaign count and ad groups to targeting, budgets, conversion tracking and common setup mistakes.",\n    h1: "Google Ads Account Structure for a Small Business: How to Set Up Campaigns and Ad Groups",\n    alt: "Google Ads account structure showing account, campaign, ad group, ads and keywords",\n  },
   "/blog/google-ads-not-getting-impressions": {
     title: "Google Ads Not Getting Impressions: 9 Reasons and Fixes",
     description: "Your Google Ads campaign is live but not showing? Here are 9 common reasons for zero or low impressions, how to check each in your account, and what to change.",
