@@ -14,7 +14,20 @@ export interface BlogPostMeta {
   keywords: string[];
 }
 
-export const blogPosts: BlogPostMeta[] = [
+export const blogPosts: BlogPostMeta[] = [\n  { 
+    slug: "google-ads-account-structure-small-business",
+    title: "Google Ads Account Structure for a Small Business: How to Set Up Campaigns and Ad Groups",
+    description: "Learn how to structure a Google Ads account for a small business, from campaign count and ad groups to targeting, budgets, conversion tracking and common setup mistakes.",
+    excerpt: "A practical guide to organising Google Ads campaigns and ad groups so small-business budgets stay focused, relevant and easier to measure.",
+    cover: "/google-ads-account-structure-small-business.svg",
+    coverAlt: "Google Ads account structure showing account, campaign, ad group, ads and keywords",
+    datePublished: "2026-11-03",
+    dateModified: "2026-11-03",
+    readingTime: "8 min read",
+    category: "Google Ads",
+    keywords: ["google ads account structure", "google ads campaign structure small business", "how to structure google ads campaigns", "google ads ad groups", "google ads setup for small business"],
+  },
+
   {
     slug: "google-ads-not-getting-impressions",
     title: "Google Ads Not Getting Impressions: 9 Reasons and Fixes",
