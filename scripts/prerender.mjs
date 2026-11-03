@@ -37,10 +37,17 @@ const routes = [
   "/blog/google-ads-dentists-ahmedabad",
   "/blog/google-business-profile-photos-posts-ranking",
   "/blog/digital-marketing-interior-designers-architects-ahmedabad",
-  "/blog/google-ads-not-getting-impressions",\n  "/blog/google-ads-account-structure-small-business",
+  "/blog/google-ads-not-getting-impressions",
+  "/blog/google-ads-account-structure-small-business",
 ];
 
-const seoOverrides = {\n  "/blog/google-ads-account-structure-small-business": {\n    title: "Google Ads Account Structure for a Small Business: How to Set Up Campaigns and Ad Groups",\n    description: "Learn how to structure a Google Ads account for a small business, from campaign count and ad groups to targeting, budgets, conversion tracking and common setup mistakes.",\n    h1: "Google Ads Account Structure for a Small Business: How to Set Up Campaigns and Ad Groups",\n    alt: "Google Ads account structure showing account, campaign, ad group, ads and keywords",\n  },
+const seoOverrides = {
+  "/blog/google-ads-account-structure-small-business": {
+    title: "Google Ads Account Structure for a Small Business: How to Set Up Campaigns and Ad Groups",
+    description: "Learn how to structure a Google Ads account for a small business, from campaign count and ad groups to targeting, budgets, conversion tracking and common setup mistakes.",
+    h1: "Google Ads Account Structure for a Small Business: How to Set Up Campaigns and Ad Groups",
+    alt: "Google Ads account structure showing account, campaign, ad group, ads and keywords",
+  },
   "/blog/google-ads-not-getting-impressions": {
     title: "Google Ads Not Getting Impressions: 9 Reasons and Fixes",
     description: "Your Google Ads campaign is live but not showing? Here are 9 common reasons for zero or low impressions, how to check each in your account, and what to change.",
@@ -236,7 +243,8 @@ function cleanTemplate(source) {
 }
 
 function helmetToHead(helmet) {
-  return [helmet?.base?.toString?.() || "", helmet?.title?.toString?.() || "", helmet?.meta?.toString?.() || "", helmet?.link?.toString?.() || "", helmet?.style?.toString?.() || "", helmet?.script?.toString?.() || "", helmet?.noscript?.toString?.() || ""].filter(Boolean).join("\n");
+  return [helmet?.base?.toString?.() || "", helmet?.title?.toString?.() || "", helmet?.meta?.toString?.() || "", helmet?.link?.toString?.() || "", helmet?.style?.toString?.() || "", helmet?.script?.toString?.() || "", helmet?.noscript?.toString?.() || ""].filter(Boolean).join("
+");
 }
 
 function addImageDimensions(page) {
@@ -263,13 +271,16 @@ function applySeoOverrides(page, route) {
   let canonicalMatch = output.match(/<link\s+rel=["']canonical["']\s+href=["']([^"']+)["'][^>]*>/i);
   if (!canonicalMatch) {
     const canonicalUrl = `https://www.hiteshjaganiya.com${route === "/" ? "/" : route}`;
-    output = output.replace("</head>", `<link rel="canonical" href="${canonicalUrl}">\n</head>`);
+    output = output.replace("</head>", `<link rel="canonical" href="${canonicalUrl}">
+</head>`);
     canonicalMatch = [null, canonicalUrl];
   }
   // This site is English (India) only. Keep exactly one self-referencing en-IN
   // alternate and one x-default alternate on every indexable page.
   output = output.replace(/<link\s+rel=["']alternate["'][^>]*hreflang=["'][^"']+["'][^>]*>/gi, "");
-  output = output.replace("</head>", `<link rel="alternate" hrefLang="en-IN" href="${canonicalMatch[1]}">\n<link rel="alternate" hrefLang="x-default" href="${canonicalMatch[1]}">\n</head>`);
+  output = output.replace("</head>", `<link rel="alternate" hrefLang="en-IN" href="${canonicalMatch[1]}">
+<link rel="alternate" hrefLang="x-default" href="${canonicalMatch[1]}">
+</head>`);
   if (!override) return output;
   output = output.replace(/<title\b[^>]*>[\s\S]*?<\/title>/i, `<title>${override.title}</title>`);
   output = output.replace(/<meta\s+name=["']description["'][^>]*>/i, `<meta name="description" content="${override.description}">`);
@@ -287,7 +298,8 @@ template = cleanTemplate(template);
 for (const route of routes) {
   const { html, helmet } = render(route);
   const head = helmetToHead(helmet);
-  const page = applySeoOverrides(template.replace("<!--__PRERENDERED_ROOT__-->", `<div id="root">${html}</div>`).replace("</head>", `${head}\n</head>`), route);
+  const page = applySeoOverrides(template.replace("<!--__PRERENDERED_ROOT__-->", `<div id="root">${html}</div>`).replace("</head>", `${head}
+</head>`), route);
   const outputDir = path.join(distDir, route.replace(/^\//, ""));
   await fs.mkdir(outputDir, { recursive: true });
   await fs.writeFile(path.join(outputDir, "index.html"), page, "utf8");
