@@ -14,7 +14,8 @@ export interface BlogPostMeta {
   keywords: string[];
 }
 
-export const blogPosts: BlogPostMeta[] = [\n  { 
+export const blogPosts: BlogPostMeta[] = [
+  { 
     slug: "google-ads-account-structure-small-business",
     title: "Google Ads Account Structure for a Small Business: How to Set Up Campaigns and Ad Groups",
     description: "Learn how to structure a Google Ads account for a small business, from campaign count and ad groups to targeting, budgets, conversion tracking and common setup mistakes.",
