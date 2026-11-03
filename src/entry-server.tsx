@@ -30,7 +30,8 @@ import GoogleAdsDoctorsClinicsAhmedabad from "./pages/blog/GoogleAdsDoctorsClini
 import GoogleAdsDentistsAhmedabad from "./pages/blog/GoogleAdsDentistsAhmedabad";
 import GoogleBusinessProfilePhotosPostsRanking from "./pages/blog/GoogleBusinessProfilePhotosPostsRanking";
 import DigitalMarketingInteriorDesignersAhmedabad from "./pages/blog/DigitalMarketingInteriorDesignersAhmedabad";
-import GoogleAdsNotGettingImpressions from "./pages/blog/GoogleAdsNotGettingImpressions";\nimport GoogleAdsAccountStructureSmallBusiness from "./pages/blog/GoogleAdsAccountStructureSmallBusiness";
+import GoogleAdsNotGettingImpressions from "./pages/blog/GoogleAdsNotGettingImpressions";
+import GoogleAdsAccountStructureSmallBusiness from "./pages/blog/GoogleAdsAccountStructureSmallBusiness";
 import ThankYou from "./pages/ThankYou";
 import DigitalCard from "./pages/DigitalCard";
 import Blog from "./pages/Blog";
@@ -67,7 +68,8 @@ const routes: Record<string, React.ComponentType> = {
   "/blog/google-ads-dentists-ahmedabad": GoogleAdsDentistsAhmedabad,
   "/blog/google-business-profile-photos-posts-ranking": GoogleBusinessProfilePhotosPostsRanking,
   "/blog/digital-marketing-interior-designers-architects-ahmedabad": DigitalMarketingInteriorDesignersAhmedabad,
-  "/blog/google-ads-not-getting-impressions": GoogleAdsNotGettingImpressions,\n  "/blog/google-ads-account-structure-small-business": GoogleAdsAccountStructureSmallBusiness,
+  "/blog/google-ads-not-getting-impressions": GoogleAdsNotGettingImpressions,
+  "/blog/google-ads-account-structure-small-business": GoogleAdsAccountStructureSmallBusiness,
 };
 
 export function render(url: string) {
